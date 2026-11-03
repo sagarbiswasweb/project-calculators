@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barndominium Cost Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item active" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action active">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Barndominium Cost Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="barndominium">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="livingArea" class="form-label">Living Area (squre feet)
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total living area size in square feet. This includes all heated and finished spaces inside the barndominium.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="livingArea" step="any" required>
+                                                <span class="input-group-text my-input-group">ft<sup>2</sup></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="barnArea" class="form-label">Barn Area (squre feet)
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total barn area size in square feet. This includes unfinished or non-living spaces such as storage, workshops, or livestock areas.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="barnArea" step="any" required>
+                                                <span class="input-group-text my-input-group">ft<sup>2</sup></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="openArea" class="form-label">Open Area (squre feet)
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total open area size in square feet. This includes covered porches, patios, or any other open but sheltered spaces.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="openArea" step="any" required>
+                                                <span class="input-group-text my-input-group">ft<sup>2</sup></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="constructionCost" class="form-label">Construction Cost/sq ft
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the estimated construction cost per square foot. This cost varies based on materials, labor, and design complexity.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="constructionCost" step="any" required>
+                                                <span class="input-group-text my-input-group">$/sq ft</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="finishingCost" class="form-label">Finishing Cost/sq ft
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the estimated finishing cost per square foot. This includes interior work like flooring, painting, cabinetry, and fixtures.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="finishingCost" step="any" required>
+                                                <span class="input-group-text my-input-group">$/sq ft</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12 mt-3">
+                                <p id="result" style="background-color: rgb(181, 243, 174);"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table" id="table-info">
+                                        <tbody>
+                                            <tr id="totalConstructionCost">
+                                            </tr>
+                                            <tr id="totalFinishingCost">
+                                            </tr>
+                                            <tr id="livingAreaInfo">
+                                            </tr>
+                                            <tr id="barnAreaInfo">
+                                            </tr>
+                                            <tr id="openAreaInfo">
+                                            </tr>
+                                            <tr id="constructionCostInfo">
+                                            </tr>
+                                            <tr id="finishingCostInfo">
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Barndominium Cost Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Barndominium Cost Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Results</a>
+                                    <a href="#what-is-barndominium" class="list-group-item list-group-item-action">3. What is a Barndominium?</a>
+                                    <a href="#why-need-calculator" class="list-group-item list-group-item-action">4. The Reasons You Really Need a Cost Calculator</a>
+                                    <a href="#cost-factors" class="list-group-item list-group-item-action">5. What Makes Up the Price of a Barndominium</a>
+                                    <a href="#save-money" class="list-group-item list-group-item-action">6. How to Save Money on Your Barndominium</a>
+                                    <a href="#calculator-functionality" class="list-group-item list-group-item-action">7. Calculator Functionality</a>
+                                    <a href="#calculator-inputs" class="list-group-item list-group-item-action">8. Calculator Inputs</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">9. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use the Barndominium Cost Calculator</h2>
+                                <p>Planning your barndominium construction project? Our <strong>Barndominium Cost Calculator</strong> helps you estimate total costs accurately and efficiently. By entering key details such as square footage and cost estimates, you can get a precise idea of your expected budget. Follow this step-by-step guide to ensure accurate calculations:</p>
+                                
+                                <div>
+                                    <h3>1. Enter the Living Area Size</h3>
+                                    <p>The living area refers to the enclosed space where you and your family will reside. Enter the total square footage of this area to get an accurate cost estimation.</p>
+                                </div>
+                            
+                                <div>
+                                    <h3>2. Specify the Barn Area Size</h3>
+                                    <p>If your barndominium includes a barn for storage, animals, or workspace, input its square footage here. This ensures the calculator factors in all components of your structure.</p>
+                                </div>
+                            
+                                <div>
+                                    <h3>3. Input the Open Area Size</h3>
+                                    <p>Open spaces like porches, patios, or breezeways also contribute to the overall cost. Enter the total square footage of any open-air areas you plan to include.</p>
+                                </div>
+                            
+                                <div>
+                                    <h3>4. Enter the Construction Cost Per Square Foot</h3>
+                                    <p>Construction costs vary depending on materials, labor, and location. Input the estimated cost per square foot based on your contractor’s quote or industry averages.</p>
+                                </div>
+                            
+                                <div>
+                                    <h3>5. Provide the Finishing Cost Per Square Foot</h3>
+                                    <p>Finishing costs cover flooring, cabinetry, plumbing, electrical work, and other interior components. Enter the estimated cost per square foot to complete your barndominium.</p>
+                                </div>
+                            
+                                <div>
+                                    <h3>6. Review and Adjust Your Estimate</h3>
+                                    <p>Once you've entered all the necessary details, click the <strong>Calculate</strong> button. The calculator will generate an estimated total cost for your project. Review the breakdown carefully and adjust any figures if needed to align with your budget.</p>
+                                </div>
+                                
+                                <p>By using our Barndominium Cost Calculator, you can streamline your budgeting process and plan effectively for your dream home. Start your cost estimation now!</p>
+                            </section>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding Your Results</h2>
+                                <p>The barndominium cost calculator will then give you an estimate that comprises the different costs relevant to your project. To understand this information, dig in to how you can use these behaviors:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Total Cost:</strong> It includes the price of building your barndominium plus expenses related to it. Here you have an idea about the resources that are absolutely committed for your project which makes this figure very transparent in terms of total financial declaration on your end.</li>
+                                    <li class="mb-1"><strong>Cost Breakdown:</strong> This is the analysis of different cost factors contributing to total cost. This cost covers the land, materials/labor, interior finishes and permits (soft costs). This breakdown helps you to know your waste and where you can save or spend more. Or you can simply use our <a href="#">Construction Cost Calculator</a> to see accurate result for the construction</li>
+                                    <li class="mb-1"><strong>Budget Planning:</strong> Having a complete cost estimate will allow you to create detailed barndominium budget details. Set aside a budget that factors in unforeseen expenses for any surprises during construction.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>Have you ever wished to live in a trendy, great looking and presumably not so ordinary house that combines the history material with modern conveniences? Introducing the barndominium—a housing trend revolutionizing homes for homeowners, DIY enthusiasts and real estate investors alike. However, before you delve head first into constructing a dream barn; it is important to also learn the possible costs. This is where using a barndominium cost calculator really shines. That is where we come to this post; we will show you the workings of barndominium costs, everything thereon combined with some helpful tips so that whatever step you take after reading this excerpt would be an informed decision.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="what-is-barndominium">What is a Barndominium?</h2>
+                                <p>Barndominiums, or barn for short, are residential buildings that combine the traditional barn structure and modern home style convenience features. Mostly they are made from metal or wood barns and may be tailored to anyone's tastes. Whether you like your barn-style architecture with clean lines and an industrial look, or warm and rustic the likes of Joanna Gaines Farms finds a modern country twist on timeless design.</p>
+                                <p>So barndominiums are not just a trend, they're also practical as an affordable, durable and low maintenance living space. These homes frequently deliver open floor plans with great room spaces, high ceilings and large windows to keep them light-filled. On top of that, they are flexible enough to be used as a workshop or studio and even for events.</p>
+                                <p>As barndominiums continue to branch out in great numbers, many folks still do not know what it all takes to make a barn. We have then broken down each part and how you should think about them below to help get you started.</p>
+                            </section>
+                            
+                
+                            <section class="mb-5">
+                                <h2 id="why-need-calculator">The Reasons You Really Need A Cost Calculator</h2>
+                                <p>Home building costs are many regardless of the type, and barndominium homes are no different. From materials and labor to permits, inspections — costs start silly. That is why it is imperative to have a barndominium cost calculator at hand.</p>
+                                <p>Before you start the project, there is a cost calculator that helps you get an idea of what all money will be consumed in your barn and how much it should cover. A simple way to avoid any unpleasant surprise and not go over your budget.</p>
+                                <p>By having a cost calculator, you can also make more informed decisions for the most optimal materials used, how designs are chosen and what construction methods will be followed. It gives you the information to help negotiate with contractors, budget for contingencies and potentially save money.</p>
+                            </section>
+                            
+                
+                            <section class="mb-5">
+                                <h2 id="cost-factors">What Makes Up the Price of a Barndominium</h2>
+                                <p>Here are the important stuff parts of building a barndominium cost calculator to understand before you use one. These factors are among the most important to think about:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Land:</strong> Before even getting a barndominium, you will need some land to plop your new house on. Depending on the location, size and zoning regulations land costs can also be dramatically different. Do not forget to consider the extra costs of land preparation if you need any site work such as clearing, grading or utility connections.</li>
+                                    <li class="mb-1"><strong>Materials:</strong> Cost of materials in your barndominium build Some models replicate standard materials like metal, wood and concrete. While metal buildings can be built quicker and more cost effective, wood gives a more traditional finish. You will also need to add insulation, roofing and siding.</li>
+                                    <li class="mb-1"><strong>Labor:</strong> How expensive is 3D printing for your prototype? And what can be done to reduce labor costs? Professional quality build work can only be maintained if you select experienced contractors and workers. Depending on your level of DIY experience, you may consider doing part of the work yourself to save labor costs.</li>
+                                    <li class="mb-1"><strong>Interior Finishes:</strong> Furthermore, the interior finishes of your barndominium like flooring, cabinetry and fixtures can also have an influence upon the total cost. You will pay more for high-end finishes and custom features or less if you use cheaper substitutions.</li>
+                                    <li class="mb-1"><strong>Permits and Inspections:</strong> Before you can build a barndominium, first one has to get permits and go through the necessary inspections by your local building code. This might mean adding these costs into the per unit price, as many areas have different permit fees and inspection costs which are based of city/county codes.</li>
+                                </ul>
+                            </section>
+                        
+                
+                            <section class="mb-5">
+                                <h2 id="save-money">How to Save Money on Your Barndominium</h2>
+                                <p>Barndominiums Have Never Been More Affordable These are practical hints for maintaining your quality while reducing cost:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Opt for Standard Designs:</strong> Creative layouts on the other hand can be costly and time soaking. Go for basic designs because they are cheaper and easier to make. Most barndominium builders provide standard floor plans that can be specifically tailored to your requirements.</li>
+                                    <li class="mb-1"><strong>Source Affordable Materials:</strong> Collect multiple quotes and compare prices from different suppliers Search for sale, discounts or bulk deals to have a better deal. Reclaimed or recycled materials can also be a cost-effective approach and it is historically more sustainable.</li>
+                                    <li class="mb-1"><strong>DIY Where Possible:</strong> Assuming you have the knowhow and the experience, some of this work can be done in-house. Homeowner has to do: Paint, installation of fixtures and landscaping etc. As long as you understand that the heavy lifting and more advanced technical work should be left to those who do it for a living.</li>
+                                </ul>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <h2 id="calculator-functionality">Calculator Functionality</h2>
+                                <p>All Barndominium Cost Calculators are not created equal. Do make sure to keep in mind the following points when selecting a calculator:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>User-Friendly Interface:</strong> You also need to have an interface that is easy for you to check necessary details of your project and customize possibilities are available. Choose calculators that have easy to understand instructions and clear navigation.</li>
+                                    <li class="mb-1"><strong>Accurate Estimates:</strong> When we speak about estimation of cost, the central one is just accuracy. Be sure to select a calculator that processes the latest information with current algorithms. Reviews and testimonials will guide you as this is how we all know about whether the calculator works well or not.</li>
+                                    <li class="mb-1"><strong>Customization Options:</strong> Ideal cost calculators let you specify your project size, materials used and interior finishes among other customization features. This is keeping the estimate in line with how you need it to be.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="calculator-inputs">Calculator Inputs</h2>
+                                <p>Here are the details that you need to input so your barndominium cost calculator can generate a more precise estimate.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Project Size:</strong> Square feet: This will enable the calculator to build an exochi build and make an estimate of labor and materials needed for construction.</li>
+                                    <li class="mb-1"><strong>Material Preferences:</strong> Show what type of material you want to use in the foundation, roof and siding. Costs: Not all materials are charged the same way, and this price piece is important to help you get a proper estimate.</li>
+                                    <li class="mb-1"><strong>Interior Finishes:</strong> Select the interior finishes you desire, such as flooring, cabinetry and fixtures. The cost will add up with higher-end finishes, but there are some more budget-friendly choices if you need to save cash.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>Although a barndominium is an attractive way to save money — making it worth looking into further! A good barndominium cost calculator will quickly explain how much it costs to build a barndominium and you can then use that knowledge throughout the construction process.</p>
+                                <p>For the homeowner who wants to construct their dream home or a DIY person that is eager for construction in order to take on another project, as well as real estate investors looking at a profitable venture; there are limitless possibilities when constructing barndominium. Assuming you know what to do, and have the bronzed balls necessary — anything is possible.</p>
+                                <p>Ready to get started? So, you can use our barndominium cost calculator and start shaping that dream cozy cave now. Happy building!</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="barndominiumFAQ">
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a Barndominium Cost Calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        A Barndominium Cost Calculator helps you estimate the total cost of building a barndominium based on factors like size, materials, labor, and additional features.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How accurate is the cost estimate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator provides an estimate based on the data entered. Actual costs may vary depending on location, contractor rates, and material price fluctuations.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>What factors affect the total cost?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        Several factors influence cost, including:
+                                                        <ul>
+                                                            <li>Square footage</li>
+                                                            <li>Material choices (steel, wood, insulation, etc.)</li>
+                                                            <li>Labor costs</li>
+                                                            <li>Interior and exterior finishes</li>
+                                                            <li>Additional features (plumbing, HVAC, custom designs)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>Can I use the calculator for financing?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes! The calculator helps estimate your total cost, which can be useful for securing a loan or setting a budget for financing options.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>Does the calculator include land costs?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        No, this calculator estimates the construction cost only. You may need to factor in land purchase and site preparation separately.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>Can I customize the inputs?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes! You can enter specific values for size, materials, and features to get a more tailored estimate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>Does the calculator account for permits and fees?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        Some estimates may include building permit fees, but costs vary by location. Always check with your local building authority.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        <strong>How does insulation impact costs?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+                                                    data-bs-parent="#barndominiumFAQ">
+                                                    <div class="accordion-body">
+                                                        Higher-quality insulation increases upfront costs but improves energy efficiency, reducing long-term heating and cooling expenses.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/barndominium-cost-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

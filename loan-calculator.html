@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Other Calculators</a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item active" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action active">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Loan Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="loan-calculator">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanAmount" class="form-label">Loan Amount
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total amount you want to borrow. This is the principal amount of the loan.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="loanAmount" required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="interestRate" class="form-label">Interest Rate
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the annual interest rate as a percentage. This is the cost of borrowing money from the lender.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="interestRate" required>
+                                                <span class="input-group-text my-input-group">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanDuration" class="form-label">Loan Duration
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the loan term in years. This is the total time over which you will repay the loan.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="loanDuration" required>
+                                                <span class="input-group-text my-input-group">years</span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-md-6">
+                                            <label for="payBack" class="form-label">Pay Back Period
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <select class="form-select my-input-area" name="" id="payBack">
+                                                    <option value="select" selected disabled>Select</option>
+                                                    <option value="everyDay">Every Day</option>
+                                                    <option value="everyWeek">Every Week</option>
+                                                    <option value="everyHalfMonth">Every Half Month</option>
+                                                    <option value="everyMonth">Every Month</option>
+                                                    <option value="everyQuarter">Every Quarter</option>
+                                                    <option value="everyHalfMonth">Every Half Year</option>
+                                                    <option value="everyYear">Every Year</option>
+                                                </select>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit"
+                                            class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()"
+                                            class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 my-result-area">
+                            <div class="row m-0">
+                                <div class="col-md-12 mt-3 text-center">
+                                    <p id="monthlyPayment" style="background-color: rgb(181, 243, 174);"></p>
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody id="result">
+                                                <!-- result will be shown here  -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <canvas id="loanChart">
+                                        <!-- loan donut chart  -->
+                                    </canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-4 my-amortization-area">
+                            <div class="col-md-12 mt-3 mb-3">
+                                <canvas id="multiLineChart">
+                                    <!-- loan multi line chart  -->
+                                </canvas>
+                            </div>
+                            <div class="col-md-12">
+                                <h4 class="mt-3 mb-3 text-center" id="schedule"></h4>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped amortization">
+                                        <thead class="loan-thead">
+                                            <tr>
+                                                <th id="payment-no"></th>
+                                                <th id="princpal"></th>
+                                                <th id="interest"></th>
+                                                <th id="interest-paid"></th>
+                                                <th id="ending-balance"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="amortizationTableBody">
+                                            <!-- here monthly amortization table goes dynamically  -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Loan Calculators</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. Using the Loan Calculator Efficiently</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding the Loan Calculator Results</a>
+                                    <a href="#understanding-charts" class="list-group-item list-group-item-action">3. Understanding the Charts</a>
+                                    <a href="#amortization-schedule" class="list-group-item list-group-item-action">4. Understanding the Monthly Amortization Schedule</a>
+                                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">5. Types of Loan Calculators</a>
+                                    <a href="#essential-features" class="list-group-item list-group-item-action">6. Essential Features of Loan Calculators</a>
+                                    <a href="#why-use-calculator" class="list-group-item list-group-item-action">7. Why Should You Use a Loan Calculator?</a>
+                                    <a href="#common-mistakes" class="list-group-item list-group-item-action">8. Common Mistakes to Avoid</a>
+                                    <a href="#popular-tools" class="list-group-item list-group-item-action">9. Popular Loan Calculator Tools</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">10. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use" class="mb-3">Using Loan Calculator Efficiently</h2>
+                                <p>Our loan calculator is designed to be simple and intuitive. Follow these step-by-step instructions to get
+                                    started:</p>
+                                <div>
+                                    <div>
+                                        <h3>1. Enter the Loan Amount</h3>
+                                        <p>This is the total amount you plan to borrow. Input the full loan amount before interest is
+                                            applied.</p>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>2. Specify the Interest Rate</h3>
+                                        <p>Enter the annual interest rate provided by your lender. If you're unsure, you can use an
+                                            estimated rate based on current market conditions.</p>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>3. Enter the Loan Duration</h3>
+                                        <p>Input the number of years over which you plan to repay the loan. Common loan terms range from 1
+                                            to 30 years.</p>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>4. Click the "Calculate" Button</h3>
+                                        <p>Once all required fields are filled, click the <strong>Calculate</strong> button.</p>
+                                        <ul>
+                                            <li>Your estimated monthly payment.</li>
+                                            <li>The total interest paid over the loan term.</li>
+                                            <li>The total cost of the loan (principal + interest).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <h4>Explore Different Scenarios</h4>
+                                <p>Adjust the loan amount, interest rate, or loan duration to see how different factors affect your monthly
+                                    payments and total loan cost. This helps you make informed financial decisions before borrowing.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="understanding-results" class="mb-3">Understanding the Loan Calculator Results</h2>
+                                <h3 class="mb-3">How to Analyze Your Loan Payment Breakdown</h3>
+                                <p>Use the loan calculator results to assess your financial obligations and make informed borrowing
+                                    decisions.</p>
+                    
+                                <div>
+                                    <div>
+                                        <h3>1. Monthly Payments</h3>
+                                        <p>Your monthly loan payment is the amount you need to pay each month to repay your loan.</p>
+                                        <ul>
+                                            <li class="mb-1">Calculated based on the loan amount, interest rate, and loan term.</li>
+                                            <li class="mb-1">Ensures you stay on track with repayments without financial strain.</li>
+                                            <li class="mb-1">Helps in budgeting and financial planning.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>2. Total Loan Payments</h3>
+                                        <p>This represents the total number of payments required to fully repay your loan.</p>
+                                        <ul>
+                                            <li class="mb-1">For example, a 5-year loan term consists of 60 monthly payments.</li>
+                                            <li class="mb-1">Longer loan terms lead to smaller monthly payments but higher total interest.
+                                            </li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>3. Total Cost of Loan</h3>
+                                        <p>The total amount you will pay over the loan duration, including principal and interest.</p>
+                                        <ul>
+                                            <li class="mb-1">A key factor in evaluating the affordability of a loan.</li>
+                                            <li class="mb-1">Longer terms increase the total cost due to accumulating interest.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>4. Total Interest Paid</h3>
+                                        <p>The total interest cost over the life of the loan.</p>
+                                        <ul>
+                                            <li class="mb-1">A lower interest rate or shorter term helps minimize this amount.</li>
+                                            <li class="mb-1">Extra payments or early repayments can reduce total interest.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="understanding-charts" class="mb-3">Understanding the charts</h2>
+                                <div class="mb-4">
+                                    <div class="mb-2">
+                                        <h3>Donut Chart: </h3>
+                                        <p>This is a variation of a pie chart with a hollow center.
+                                            It is commonly used to visualize proportions or percentages of components within a whole.</p>
+                                    </div>
+                                    <p class="mb-1"><strong>What it Represents:</strong></p>
+                                    <ul class="mb-3">
+                                        <li class="mb-1"><strong>Blue (Loan Amount): </strong>The portion of the total cost representing the
+                                            loan amount borrowed.</li>
+                                        <li class="mb-1"><strong>Pink (Total Interest): </strong>The portion representing the total interest
+                                            paid over the life of the loan.</li>
+                                    </ul>
+                                    <p class="mb-1"><strong>Purpose:</strong></p>
+                                    <p>This chart visually breaks down the components of the total cost of the loan (Loan Amount + Total
+                                        Interest) to show their relative contributions. The legend at the top helps identify each segment.
+                                    </p>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <div class="mb-2">
+                                        <h3>Multi Line Chart: </h3>
+                                        <p>This is a multi-line chart, often used to represent
+                                            changes or trends over time. Here's what it shows based on the legend and the lines:</p>
+                                    </div>
+                                    <p class="mb-1"><strong>What It Represents:</strong></p>
+                                    <ol class="mb-3">
+                                        <li class="mb-3"><strong>Blue (Balance):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the remaining loan balance over time.</li>
+                                                <li class="mb-1">The line slopes downward as the balance decreases with each payment.</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-3"><strong>Green (Interest):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the portion of the monthly payment allocated to interest over
+                                                    time.</li>
+                                                <li class="mb-1">This line typically curves downward as the interest portion decreases while
+                                                    the principal portion increases (common in amortized loans).</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-3"><strong>Pink (Payment):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the total monthly payment.</li>
+                                                <li class="mb-1">It remains constant throughout the loan term in a fixed-rate loan.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <p class="mb-1"><strong>Purpose:</strong></p>
+                                    <ul>
+                                        <li>This chart is useful for visualizing how a loan progresses over its term:</li>
+                                        <ul>
+                                            <li class="mb-1">The balance decreases steadily.</li>
+                                            <li class="mb-1">The interest portion starts high but diminishes as more of the payment is
+                                                applied to the principal.</li>
+                                            <li class="mb-1">The total payment remains fixed (assuming a fixed-rate loan).</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <p>The information data obtained from interpreting these results and charts will help you with your aircraft
+                                    financing package decisions. By adjusting the purchase price, down payment, loan amount, interest rate
+                                    and term you can find a sweet spot between monthly payments that fit your budget but still keeping total
+                                    cost of loan to manageable level.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="amortization-schedule" class="mb-3">Understanding the Monthly Amortization Schedule</h2>
+                                <p>The amortization schedule provides a month-by-month breakdown of your mortgage payments, helping you
+                                    track how your loan balance decreases over time. Here's how to interpret each column:</p>
+                                <div class="mb-4">
+                                    <div class="mb-2">
+                                        <h3>1. Month</h3>
+                                        <ul>
+                                            <li class="mb-1">Displays the specific month number in your loan term. For example, "1"
+                                                represents the first month, "2" the second, and so on.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-2">
+                                        <h3>2. Principal</h3>
+                                        <ul>
+                                            <li class="mb-1">The portion of your monthly payment that reduces the loan balance (the amount
+                                                you borrowed).</li>
+                                            <li class="mb-1">As time progresses, the principal portion increases because you pay less
+                                                interest on the remaining loan balance.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-2">
+                                        <h3>3. Interest</h3>
+                                        <ul>
+                                            <li class="mb-1">This is the amount you pay toward interest for that month.</li>
+                                            <li class="mb-1">It is calculated based on the remaining balance of your loan and the interest
+                                                rate.</li>
+                                            <li class="mb-1">In the early stages of the loan, the interest portion is higher, gradually
+                                                decreasing as the loan balance reduces.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-2">
+                                        <h3>4. Interest Paid</h3>
+                                        <ul>
+                                            <li class="mb-1">A cumulative total of all interest payments made up to that month.</li>
+                                            <li class="mb-1">This shows how much of your money has gone toward interest over the life of the
+                                                loan so far.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-2">
+                                        <h3>5. Ending Balance</h3>
+                                        <ul>
+                                            <li class="mb-1">The remaining loan balance after your monthly payment is applied.</li>
+                                            <li class="mb-1">This figure decreases over time as more of your payment goes toward the
+                                                principal.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4>How to Use This Table Effectively</h4>
+                                    <ul>
+                                        <li class="mb-1"><strong>Track Loan Progress: </strong>See how your payments are distributed between
+                                            principal and interest.</li>
+                                        <li class="mb-1"><strong>Understand Interest Costs: </strong>Use the <strong>Interest Paid</strong>
+                                            column to assess how much you are paying in interest over time.</li>
+                                        <li class="mb-1"><strong>Plan for Early Payoff: </strong>If you want to pay off the loan early, this
+                                            table can help you identify how much principal is left and calculate additional payments to
+                                            achieve
+                                            your goal.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>In the world of personal finance, understanding loan costs is essential before making any borrowing
+                                    decision. Whether you're applying for a personal loan, auto loan, or business loan, knowing your
+                                    repayment details upfront can save you from financial surprises. A loan calculator helps estimate
+                                    monthly payments, total interest, and overall loan costs, giving you a clear picture of affordability
+                                    and budgeting. In this guide, we’ll explore how loan calculators work, their key features, and how they
+                                    can assist you in making informed financial decisions.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="types-of-calculators" class="mb-3">Types of Loan Calculators</h2>
+                                <p class="mb-2">Loan calculators help borrowers make informed financial decisions by estimating monthly
+                                    payments, total costs, and repayment schedules. Whether you're planning a personal loan, auto loan, or
+                                    business loan, these calculators provide essential insights. Here are some key types:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Loan Payment Calculator:</strong> Estimates your monthly payments based on loan
+                                        amount, interest rate, and term.</li>
+                                    <li class="mb-1"><strong>Loan Affordability Calculator:</strong> Helps determine how much you can borrow
+                                        without exceeding your budget.</li>
+                                    <li class="mb-1"><strong>Refinance Calculator:</strong> Compares your current loan with potential
+                                        refinancing options to calculate savings.</li>
+                                    <li class="mb-1"><strong>Amortization Calculator:</strong> Breaks down your loan payments into principal
+                                        and interest over time.</li>
+                                    <li class="mb-1"><strong>Early Payoff Calculator:</strong> Shows how extra payments can reduce interest
+                                        costs and shorten the loan term.</li>
+                                    <li class="mb-1"><strong>APR Calculator:</strong> Calculates the true cost of a loan, including interest
+                                        and additional fees.</li>
+                                </ul>
+                                <p class="mt-3">Using a loan calculator can help you plan better, compare different loan options, and make
+                                    more informed financial decisions.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="essential-features" class="mb-3">Essential Features of Loan Calculators</h2>
+                                <p class="mb-2">Loan calculators come equipped with various features to help borrowers make informed
+                                    financial decisions. These key elements enhance accuracy and ease of use:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Customizable Inputs:</strong> Adjust loan amount, interest rate, loan term, and
+                                        down payment to match your financial needs.</li>
+                                    <li class="mb-1"><strong>Interactive Charts & Tables:</strong> Visual breakdowns help illustrate monthly
+                                        payments, interest accumulation, and loan balance over time.</li>
+                                    <li class="mb-1"><strong>Payment Breakdown:</strong> See how each payment is allocated toward principal,
+                                        interest, and fees, giving a clearer picture of total costs.</li>
+                                    <li class="mb-1"><strong>Affordability Analysis:</strong> Input your income and expenses to determine a
+                                        loan amount that fits your budget comfortably.</li>
+                                    <li class="mb-1"><strong>Comparison Tools:</strong> Evaluate multiple loan options side by side to find
+                                        the best financing terms.</li>
+                                </ul>
+                                <p class="mt-3">With these features, loan calculators provide a precise and convenient way to plan your
+                                    borrowing strategy effectively.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="why-use-calculator" class="mb-3">Why Should You Use a Loan Calculator?</h2>
+                                <p class="mb-2">A loan calculator is a valuable tool that provides essential insights for borrowers. Here’s
+                                    why using one can make a difference in your financial planning:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Financial Clarity:</strong> Understand your monthly loan payments in detail,
+                                        ensuring they align with your budget and repayment capacity.</li>
+                                    <li class="mb-1"><strong>Quick & Accurate Estimates:</strong> Avoid manual calculations and get instant,
+                                        precise results to compare different loan options efficiently.</li>
+                                    <li class="mb-1"><strong>Informed Decision-Making:</strong> Experiment with various loan amounts,
+                                        interest rates, and terms to find the most affordable repayment plan.</li>
+                                    <li class="mb-1"><strong>Better Budgeting:</strong> Ensure that your loan payments fit within your
+                                        financial plan, preventing over-borrowing and financial strain.</li>
+                                    <li class="mb-1"><strong>Stress-Free Borrowing:</strong> Gain confidence in your loan application by
+                                        eliminating uncertainties and understanding your repayment obligations upfront.</li>
+                                </ul>
+                                <p class="mt-3">Whether you're applying for a personal, auto, or business loan, a loan calculator helps you
+                                    plan smarter and borrow responsibly.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="common-mistakes" class="mb-3">Common Mistakes to Avoid When Using a Loan Calculator</h2>
+                                <h5 class="mb-2">Loan calculators are powerful financial tools, but mistakes in usage can lead to inaccurate
+                                    projections. Here are some common pitfalls to watch out for:</h5>
+                                <ol>
+                                    <li class="mb-1"><strong>Entering Incorrect Data:</strong> Mistyping loan amounts, interest rates, or
+                                        loan terms can lead to unreliable results. Always double-check your inputs.</li>
+                                    <li class="mb-1"><strong>Ignoring Additional Costs:</strong> Many loans come with extra charges such as
+                                        processing fees, insurance, or prepayment penalties. Failing to account for these can lead to
+                                        unexpected expenses.</li>
+                                    <li class="mb-1"><strong>Overlooking Interest Variations:</strong> Some loans have variable interest
+                                        rates. If you assume a fixed rate in your calculations, your actual payments may differ
+                                        significantly over time.</li>
+                                    <li class="mb-1"><strong>Not Factoring in Early Payments:</strong> Many borrowers plan to pay off loans
+                                        faster, but some calculators don’t include prepayment effects. Using an advanced calculator that
+                                        considers extra payments can provide a clearer picture.</li>
+                                    <li class="mb-1"><strong>Using One Calculator for All Loans:</strong> Different loan types (personal,
+                                        auto, business, mortgage) have unique factors. Ensure you're using the right tool for the type of
+                                        loan you're applying for.</li>
+                                </ol>
+                                <p class="mt-3">By avoiding these mistakes, you can ensure that your loan calculations provide an accurate
+                                    and realistic picture of your financial commitments.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="popular-tools" class="mb-3">Popular Loan Calculator Tools</h2>
+                                <p class="mb-2">Here are some of the most widely used loan calculators that help borrowers estimate payments
+                                    and plan their finances:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Bankrate Loan Calculator:</strong> A versatile tool that calculates payments
+                                        for personal, auto, and business loans with detailed breakdowns.</li>
+                                    <li class="mb-1"><strong>NerdWallet Loan Calculator:</strong> Helps users estimate affordability and
+                                        compare different loan offers based on interest rates and repayment terms.</li>
+                                    <li class="mb-1"><strong>Credit Karma Loan Calculator:</strong> Offers insights into loan payments,
+                                        total interest costs, and payoff strategies.</li>
+                                    <li class="mb-1"><strong>Calculator.net Loan Calculator:</strong> A user-friendly tool that supports
+                                        various loan types, including personal and car loans.</li>
+                                    <li class="mb-1"><strong>SoFi Loan Calculator:</strong> Designed for student, personal, and home
+                                        improvement loans, providing clear payment schedules and interest details.</li>
+                                    <li class="mb-1"><strong>Chase Auto Loan Calculator:</strong> A specialized tool for estimating car loan
+                                        payments based on vehicle price, interest rate, and term length.</li>
+                                </ul>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <p>Loan calculators are essential tools for anyone considering a loan. They provide accurate estimates, save
+                                    time, and help you make well-informed financial decisions. By understanding the different types of loan
+                                    calculators, their features, and how to use them effectively, you can plan your finances with confidence
+                                    and avoid unnecessary financial strain.</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="loanCalculatorFAQ">
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a loan calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        A loan calculator helps you estimate your monthly payments based on loan amount,
+                                                        interest rate, loan term, and other factors.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How accurate are loan calculators?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Loan calculators provide estimates based on the values you input. Actual payments
+                                                        may vary due to lender fees, taxes, and other costs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>What information do I need to use a loan calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        You typically need the following details:
+                                                        <ul>
+                                                            <li>Loan amount</li>
+                                                            <li>Interest rate</li>
+                                                            <li>Loan term (years or months)</li>
+                                                            <li>Down payment (if applicable)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>Can a loan calculator help me determine affordability?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes! Some calculators allow you to input your income and expenses to determine how
+                                                        much you can afford to borrow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>Can a loan calculator be used for refinancing?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, refinance calculators help you estimate savings when refinancing an existing
+                                                        loan at a lower interest rate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>How does a loan calculator help with budgeting?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        It breaks down your monthly payments, allowing you to plan your budget and avoid
+                                                        overextending yourself financially.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>Do loan calculators include taxes and fees?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Some calculators allow you to include taxes, insurance, and lender fees for a more
+                                                        detailed estimate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        <strong>Can a loan calculator show an amortization schedule?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, an amortization calculator provides a schedule showing how each payment reduces
+                                                        the loan principal and interest.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqNine">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                        <strong>Why do my actual loan payments differ from the calculator’s
+                                                            estimate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine"
+                                                    data-bs-parent="#loanCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Actual payments may differ due to lender fees, interest rate changes, taxes, and
+                                                        other unexpected costs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="assets/js/loan-calculator.js"></script>
+
+
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

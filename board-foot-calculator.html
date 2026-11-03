@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Foot Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item active" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action active">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                      <div class="row justify-content-center mt-3 mb-3">
+                        <div class="col-md-10 mb-3">
+                          <form id="board-foot-calculator">
+                            <h1 class="mt-3 mb-3 text-center">Board Foot Calculator</h1>
+                            <div id="board-list">
+                              <!-- calculator ui will dynamically shown in here thus the user can add more calculations  -->
+                            </div>
+                
+                            <div class="text-center mb-3">
+                              <button type="button" class="btn btn-success" onclick="addBoard()">+ Add Another Board</button>
+                            </div>
+                
+                            <div class="my-calculate-button-area">
+                              <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                              <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <span id="nav-to-result"></span>
+                    <div class="container">
+                      <div class="row mt-4 mb-4 my-result-area" style="display:none;">
+                        <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table mt-3">
+                              <tbody id="result"></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <!-- board foot calculator content  -->
+                    
+                        <div class="container mb-4">
+                            <h2 class="mb-3">Table of Contents</h2>
+                            <div class="list-group">
+                                <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Board Foot Calculator?</a>
+                                <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Board Foot Calculation Results.</a>
+                                <a href="#types-of-calculators" class="list-group-item list-group-item-action">3. Types of Board Foot Calculators.</a>
+                                <a href="#essential-features" class="list-group-item list-group-item-action">4. Essential Features of a Board Foot Calculator.</a>
+                                <a href="#why-use-calculator" class="list-group-item list-group-item-action">5. Why Should You Use a Board Foot Calculator?</a>
+                                <a href="#common-mistakes" class="list-group-item list-group-item-action">6. Common Mistakes to Avoid.</a>
+                                <a href="#popular-calculators" class="list-group-item list-group-item-action">7. Popular Board Foot Calculators.</a>
+                                <a href="#faq" class="list-group-item list-group-item-action">8. FAQ</a>
+                            </div>
+                        </div>
+                    
+                    
+                        <section class="mb-5">
+                            <h2 id="how-to-use">How to Use the Board Foot Calculator</h2>
+                            <p>Planning a woodworking or lumber project? Our <strong>Board Foot Calculator</strong> helps you quickly and accurately calculate the volume of lumber you need — saving you time, money, and material. Whether you're estimating costs or planning a cut list, this easy tool ensures precision. Follow this step-by-step guide to get the most accurate results.</p>
+                            <h3>What is a Board Foot?</h3>
+                            <p>A <strong>board foot</strong> is a unit of measurement used in the lumber industry to quantify the volume of wood. One board foot is equivalent to a volume of 1 inch thick × 12 inches wide × 12 inches long.</p>
+                    
+                            <h3>Step 1: Enter Board Dimensions</h3>
+                            <p>In the <strong>Board Dimensions</strong> section:</p>
+                            <ul>
+                                <li class="mb-1"><strong>Thickness:</strong> Input the thickness of the board. You can select your preferred unit (inches, centimeters, feet etc.) using the dropdown.</li>
+                                <li class="mb-1"><strong>Width:</strong> Enter the width of the board and select the correct unit. </li>
+                                <li class="mb-1"><strong>Length:</strong> Type in the length of the board and choose the unit of measurement. </li>
+                            </ul>
+                            <p><i><strong>Tip:</strong> You can select different units of same bord for thickness, width or length. The calculator will convert them autometically.</i></p>
+                    
+                            <h3>Step 2: Enter the Quantity</h3>
+                            <p>In the <strong>Quantity</strong> field:</p>
+                            <ul>
+                                <li class="mb-1">Enter the total number of identical boards you are calculating.</li>
+                                <li class="mb-1">This ensures the calculator multiplies the board footage correctly for multiple pieces.</li>
+                            </ul>
+                    
+                            <h3>Step 3: (Optional) Enter the Price Per Board Foot</h3>
+                            <p>Want to estimate your total lumber cost?</p>
+                            <ul>
+                                <li class="mb-1">Input the <strong>Price per board foot</strong> in dollars.</li>
+                                <li class="mb-1">This step is optional — if left blank, the calculator will only provide the total board feet.</li>
+                            </ul>
+                    
+                            <h3>Step 4: Calculate or Clear</h3>
+                            <ul>
+                                <li class="mb-1"> Click the <strong>Calculate</strong> button to get your result.</li>
+                                <li class="mb-1"> The calculator will display:
+                                    <ul>
+                                        <li><strong>Total board feet</strong></li>
+                                        <li><strong>Total cost</strong> (if a price was provided)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p>Need to start over? Hit the Clear button to reset all fields and enter new values.</p>
+                    
+                            <h3>Why Use Our Board Foot Calculator?</h3>
+                            <p>Using this tool ensures you:</p>
+                            <ul>
+                                <li class="mb-1"> Accurately calculate the board footage for any project</li>
+                                <li class="mb-1"> Avoid overbuying or underestimating material</li>
+                                <li class="mb-1"> Stay within your lumber budget with real-time cost estimates</li>
+                                <li class="mb-1"> Save time on manual calculations</li>
+                            </ul>
+                    
+                            <h3>Perfect for Any Project</h3>
+                            <p>Whether you're a:</p>
+                            <ul>
+                                <li>Carpenter</li>
+                                <li>DIY woodworker</li>
+                                <li>Contractor</li>
+                                <li>Lumber supplier</li>
+                            </ul>
+                            <p>This calculator is designed to streamline your planning and help you make better purchasing decisions.</p>
+                        </section>
+                    
+                    
+                        <section class="mb-5">
+                            <h2 id="understanding-results">Understanding Your Board Foot Calculation Results</h2>
+                            <p>Once you enter your board dimensions, quantity, and optional price, the Board Foot Calculator provides detailed results to help you estimate the volume and cost of lumber. Here’s what each result means:</p>
+                        
+                            <h3>1. Total Board Feet</h3>
+                            <p>This value represents the total volume of lumber in board feet. One board foot equals 1 inch thick × 12 inches wide × 12 inches long.</p>
+                            <ul>
+                                <li class="mb-1"><strong>Board Feet:</strong> The calculated total volume for all boards based on your inputs.</li>
+                                <li class="mb-1"><strong>Per Board:</strong> You may also see the volume per board, useful for understanding individual piece sizes.</li>
+                            </ul>
+                            <p>This helps ensure you purchase or cut the correct amount of lumber needed for your project.</p>
+                        
+                            <h3>2. Total Cost</h3>
+                            <p>If you entered a price per board foot, the calculator will estimate the total cost of all boards combined.</p>
+                            <ul>
+                                <li class="mb-1"><strong>Cost Estimation:</strong> Based on board feet and price per unit, giving you a quick budget overview.</li>
+                            </ul>
+                            <p>This is especially useful when planning large projects or comparing lumber suppliers.</p>
+                        
+                            <h3>Why Are These Results Useful?</h3>
+                            <ul>
+                                <li class="mb-1"><strong>Accurate Material Estimation:</strong> Ensures you get the exact volume of lumber needed for your build.</li>
+                                <li class="mb-1"><strong>Budget Planning:</strong> Helps estimate total costs before purchasing materials.</li>
+                                <li class="mb-1"><strong>Project Efficiency:</strong> Reduces waste and overbuying by providing precise measurements.</li>
+                            </ul>
+                        
+                            <p>By understanding your board foot results, you can plan your lumber purchase more effectively, avoid surprises at the store, and keep your woodworking project on track.</p>
+                        </section>
+                        
+                        <section class="mb-5">
+                            <h2 id="board-feet-charts">Board Feet Charts</h2>
+                            <p>Use the board feet charts below to quickly reference the volume of 4/4 (1″ thick) and 8/4 (2″ thick) lumber based on common width and length combinations. These charts make estimating board feet faster and easier for your lumber needs.</p>
+                          
+                            <h3>4/4 Lumber (1″ Thick)</h3>
+                            <p>Board foot measurements for 4/4″ thick lumber at various widths and lengths:</p>
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-striped">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th>Width ↓ / Length →</th>
+                                    <th>4′ L</th>
+                                    <th>6′ L</th>
+                                    <th>8′ L</th>
+                                    <th>10′ L</th>
+                                    <th>12′ L</th>
+                                    <th>14′ L</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr><td>4″ W</td><td>1.33 BF</td><td>2.0 BF</td><td>2.67 BF</td><td>3.33 BF</td><td>4.0 BF</td><td>4.67 BF</td></tr>
+                                  <tr><td>6″ W</td><td>2.0 BF</td><td>3.0 BF</td><td>4.0 BF</td><td>5.0 BF</td><td>6.0 BF</td><td>7.0 BF</td></tr>
+                                  <tr><td>8″ W</td><td>2.67 BF</td><td>4.0 BF</td><td>5.33 BF</td><td>6.67 BF</td><td>8.0 BF</td><td>9.33 BF</td></tr>
+                                  <tr><td>10″ W</td><td>3.33 BF</td><td>5.0 BF</td><td>6.67 BF</td><td>8.33 BF</td><td>10.0 BF</td><td>11.67 BF</td></tr>
+                                  <tr><td>12″ W</td><td>4.0 BF</td><td>6.0 BF</td><td>8.0 BF</td><td>10.0 BF</td><td>12.0 BF</td><td>14.0 BF</td></tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          
+                            <h3>8/4 Lumber (2″ Thick)</h3>
+                            <p>Board foot measurements for 8/4″ thick lumber at various widths and lengths:</p>
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-striped">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th>Width ↓ / Length →</th>
+                                    <th>4′ L</th>
+                                    <th>6′ L</th>
+                                    <th>8′ L</th>
+                                    <th>10′ L</th>
+                                    <th>12′ L</th>
+                                    <th>14′ L</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr><td>4″ W</td><td>2.67 BF</td><td>4.0 BF</td><td>5.33 BF</td><td>6.67 BF</td><td>8.0 BF</td><td>9.33 BF</td></tr>
+                                  <tr><td>6″ W</td><td>4.0 BF</td><td>6.0 BF</td><td>8.0 BF</td><td>10.0 BF</td><td>12.0 BF</td><td>14.0 BF</td></tr>
+                                  <tr><td>8″ W</td><td>5.33 BF</td><td>8.0 BF</td><td>10.67 BF</td><td>13.33 BF</td><td>16.0 BF</td><td>18.67 BF</td></tr>
+                                  <tr><td>10″ W</td><td>6.67 BF</td><td>10.0 BF</td><td>13.33 BF</td><td>16.67 BF</td><td>20.0 BF</td><td>23.33 BF</td></tr>
+                                  <tr><td>12″ W</td><td>8.0 BF</td><td>12.0 BF</td><td>16.0 BF</td><td>20.0 BF</td><td>24.0 BF</td><td>28.0 BF</td></tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </section>
+                          
+                    
+                        <section class="mb-5">
+                            <h2 id="types-of-calculators">Different Types of Board Foot Calculators</h2>
+                            <p>Board foot calculators come in various types to accommodate different user needs and lumber measurements. Whether you're a professional in the woodworking industry or a DIY builder, using the right type of calculator ensures accurate material estimates. Below are the most common types of board foot calculators available online and in mobile apps:</p>
+                          
+                            <h3>1. Standard Board Foot Calculator</h3>
+                            <p>This is the most basic type of calculator that uses the standard board foot formula:</p>
+                            <p><code>(Thickness × Width × Length) ÷ 144</code></p>
+                            <p>You simply enter the board dimensions in inches, and the calculator returns the total board feet. It's perfect for quick and simple lumber estimations.</p>
+                          
+                            <h3>2. Multi-Board Calculator</h3>
+                            <p>If you're purchasing or working with several boards of varying sizes, a multi-board calculator allows you to input dimensions for each board and then totals the board feet across all entries. This helps streamline bulk calculations for large projects.</p>
+                          
+                            <h3>3. Dimensional Lumber Calculator</h3>
+                            <p>This calculator is designed for standard lumber sizes like 2x4, 2x6, 4x4, etc. Instead of entering individual dimensions, you select the lumber type and length, making it easier and faster for those working with common cuts of wood.</p>
+                          
+                            <h3>4. Price Estimator Board Foot Calculator</h3>
+                            <p>This tool not only calculates the board feet but also estimates the total cost of lumber based on a price per board foot. It’s especially useful for budgeting and material planning in both commercial and residential construction.</p>
+                          
+                            <h3>5. Metric Conversion Board Foot Calculator</h3>
+                            <p>Some calculators offer support for metric units (mm, cm, meters) and convert them into inches automatically before calculating board feet. This is ideal for users working outside the U.S. or with international lumber specifications.</p>
+                          
+                            <h3>6. Mobile App Calculators</h3>
+                            <p>Many mobile apps provide board foot calculators with advanced features like voice input, saved calculations, and integration with shopping lists. These are ideal for contractors and carpenters who need instant results on the go.</p>
+                          
+                            <h3>Choosing the Right Calculator</h3>
+                            <p>The best board foot calculator for you depends on your specific needs. If you only need occasional estimates, a standard calculator may be enough. For professional use or larger projects, a multi-board or cost estimator calculator can save time and money.</p>
+                          
+                            <p>Using the right type of board foot calculator ensures accuracy, prevents waste, and helps manage your lumber budget efficiently.</p>
+                        </section>
+                          
+                    
+                    
+                        <section class="mb-5">
+                            <h2 id="essential-features">Essential Features of a Board Foot Calculator</h2>
+                            <p>A reliable board foot calculator is more than just a formula tool—it should offer practical features that enhance accuracy, usability, and efficiency. Whether you're a contractor, woodworker, or hobbyist, choosing a calculator with the right features can save you time and reduce material waste. Here are the must-have features of an effective board foot calculator:</p>
+                          
+                            <h3>1. Accurate Board Foot Formula</h3>
+                            <p>The core feature of any board foot calculator is the use of the correct formula: <code>(Thickness × Width × Length) ÷ 144</code>. This formula calculates the volume of lumber in board feet using dimensions in inches. Accuracy here is critical for cost and material planning.</p>
+                          
+                            <h3>2. Support for Multiple Units</h3>
+                            <p>A versatile calculator should support both imperial (inches, feet) and metric (mm, cm, meters) units. This helps users from different regions input measurements without needing manual conversions.</p>
+                          
+                            <h3>3. Multi-Board Entry</h3>
+                            <p>For projects involving multiple boards of varying sizes, the ability to input and calculate totals for each board is essential. A multi-board feature streamlines calculations and prevents errors in estimation.</p>
+                          
+                            <h3>4. Real-Time Cost Estimation</h3>
+                            <p>Some calculators let you enter the price per board foot and instantly show the total cost of lumber. This is helpful for budgeting and provides a clearer picture of project expenses.</p>
+                          
+                            <h3>5. User-Friendly Interface</h3>
+                            <p>An intuitive layout with clearly labeled fields, dropdowns for common lumber sizes, and responsive design for mobile devices makes the calculator accessible and efficient for all users.</p>
+                          
+                            <h3>6. Results Summary</h3>
+                            <p>After calculations, a detailed summary showing board feet, total volume, and estimated cost helps users review and document their planning. Some calculators also allow downloading or printing results for convenience.</p>
+                          
+                            <h3>7. Custom Lumber Sizes</h3>
+                            <p>Not all wood projects use standard sizes. A good calculator should allow users to enter custom thicknesses, widths, and lengths to fit any unique requirement.</p>
+                          
+                            <h3>8. Mobile Compatibility</h3>
+                            <p>Many professionals work on-site. A mobile-friendly calculator or dedicated app ensures that calculations can be done anywhere, anytime.</p>
+                          
+                            <h3>9. Save or Share Results</h3>
+                            <p>Advanced calculators include features to save past calculations or share them via email or messaging apps. This is especially useful for collaborative projects and order management.</p>
+                          
+                            <h3>10. Error Prevention & Validation</h3>
+                            <p>Built-in validation that alerts users to invalid inputs (like negative numbers or missing fields) helps avoid mistakes and ensures that calculations are based on accurate data.</p>
+                          
+                            <p>Choosing a board foot calculator with these essential features can improve project planning, reduce waste, and ensure precise lumber cost estimation. Whether online or as a mobile app, the right tool can make all the difference.</p>
+                          </section>
+                          
+                    
+                    
+                          <section class="mb-5">
+                            <h2 id="why-use-calculator">Why Should You Use a Board Foot Calculator?</h2>
+                            <p>Accurately calculating lumber volume is essential for any woodworking or construction project. A <strong>board foot calculator</strong> simplifies this process by providing quick and precise measurements, helping you determine the exact amount of wood required. Whether you’re building furniture, framing a house, or crafting DIY projects, here’s why using a board foot calculator is a smart and practical choice.</p>
+                          
+                            <h3>1. Ensures Precise Lumber Estimation</h3>
+                            <p>Manual board foot calculations can be error-prone, especially when dealing with multiple boards of various sizes. A board foot calculator uses the industry-standard formula:</p>
+                            <p><code>Board Feet = (Thickness in inches × Width in inches × Length in feet) ÷ 12</code></p>
+                            <p>This eliminates the guesswork and ensures you get the most accurate results, helping you purchase just the right amount of lumber—nothing more, nothing less.</p>
+                          
+                            <h3>2. Saves Time on Complex Calculations</h3>
+                            <p>Quickly calculate board footage without needing a calculator, pencil, or conversion chart. Whether you're working on one board or an entire list, board foot calculators handle the math instantly—reducing the time spent on planning and allowing you to focus on execution.</p>
+                          
+                            <h3>3. Helps Prevent Material Waste and Shortages</h3>
+                            <p>Over-ordering lumber leads to wasted resources and extra cost, while under-ordering causes project delays and unexpected trips to the supplier. Using a board foot calculator helps strike the perfect balance by accurately estimating the wood you need, minimizing waste, and optimizing project efficiency.</p>
+                          
+                            <h3>4. Supports Budgeting and Cost Estimation</h3>
+                            <p>Most board foot calculators allow you to input the <strong>cost per board foot</strong>, giving you an instant estimate of the total lumber cost. This is essential for budgeting, especially in larger construction or remodeling projects where every dollar counts.</p>
+                          
+                            <h3>5. Works with Standard and Custom Dimensions</h3>
+                            <p>Whether you're purchasing common lumber sizes or custom-milled boards, a board foot calculator can handle any combination of dimensions. It accommodates various thicknesses, widths, and lengths, making it versatile for projects of all sizes and types.</p>
+                          
+                            <h3>6. Ideal for Multi-Board Projects</h3>
+                            <p>If you're working with several different boards, some calculators let you enter and calculate board feet for each piece and total them together. This is especially useful for contractors, builders, and carpenters managing multiple materials at once.</p>
+                          
+                            <h3>7. Accessible Anywhere, Anytime</h3>
+                            <p>Most board foot calculators are mobile-friendly or available as apps. This means you can use them on the job site, at the lumber yard, or in your workshop—ensuring you always have the tools you need, wherever you are.</p>
+                          
+                            <h3>8. Increases Confidence and Accuracy for DIYers</h3>
+                            <p>You don’t need to be a professional woodworker to use a board foot calculator. Its intuitive interface and automatic calculations help beginners avoid costly mistakes and gain confidence in their measurements.</p>
+                          
+                            <h3>9. Optimized for Both Imperial and Metric Units</h3>
+                            <p>Depending on your location or preference, many calculators support both imperial (inches and feet) and metric (centimeters and meters) units, offering flexibility for global users and different lumber markets.</p>
+                          
+                            <h3>10. Enhances Project Planning</h3>
+                            <p>From estimating materials to preparing quotes, a board foot calculator plays a vital role in efficient project planning. You can better communicate needs with suppliers, compare prices, and ensure timely completion by knowing exactly what’s required from the start.</p>
+                          
+                            <p>In summary, using a <strong>board foot calculator</strong> is not just about convenience—it’s about accuracy, cost-efficiency, and smarter project planning. Whether you're cutting one board or hundreds, this tool helps you make informed decisions, avoid waste, and stay on budget with ease.</p>
+                        </section>
+                          
+                    
+                    
+                        <section class="mb-5">
+                            <h2 id="common-mistakes">Common Mistakes to Avoid When Using a Board Foot Calculator</h2>
+                            <p>Using a <strong>board foot calculator</strong> can greatly simplify lumber estimation, but even a small oversight can lead to inaccurate results and costly errors. To ensure precise calculations every time, it’s important to avoid these common mistakes when measuring and inputting your lumber dimensions.</p>
+                          
+                            <h3>1. Confusing Inches and Feet</h3>
+                            <p>One of the most frequent errors users make is entering all measurements in inches without converting the length to feet. The standard formula for board feet requires length in <strong>feet</strong>, not inches:</p>
+                            <p><code>Board Feet = (Thickness in inches × Width in inches × Length in feet) ÷ 12</code></p>
+                            <p><strong>Tip:</strong> Always double-check that you're entering the length in feet, or use a calculator that auto-converts units for you.</p>
+                          
+                            <h3>2. Forgetting to Multiply for Multiple Boards</h3>
+                            <p>If you're buying or using more than one board of the same size, forgetting to multiply the board footage by the quantity can result in major underestimation.</p>
+                            <p><strong>Tip:</strong> Use a board foot calculator that includes a quantity input field or remember to multiply the final result by the number of boards needed.</p>
+                          
+                            <h3>3. Rounding Off Measurements Too Early</h3>
+                            <p>Rounding off thickness, width, or length before inputting values can lead to inaccurate totals—especially when working with fractional dimensions like 1.25" or 2.75".</p>
+                            <p><strong>Tip:</strong> Always use exact measurements for each dimension and let the calculator handle any necessary rounding at the final stage.</p>
+                          
+                            <h3>4. Entering Nominal Instead of Actual Dimensions</h3>
+                            <p>Lumber is often labeled with nominal dimensions (e.g., 2×4), which are not the same as the actual dimensions (1.5" × 3.5"). Using nominal sizes can significantly overstate board footage.</p>
+                            <p><strong>Tip:</strong> Always measure or use the <strong>actual size</strong> of the board when calculating board feet.</p>
+                          
+                            <h3>5. Ignoring Irregular Shapes or Cuts</h3>
+                            <p>Board foot calculators typically assume rectangular, uniform boards. If your board has notches, tapers, or irregular cuts, the calculator may not reflect the true volume.</p>
+                            <p><strong>Tip:</strong> For irregular shapes, break the board into measurable sections or consult a custom calculator with shape options.</p>
+                          
+                            <h3>6. Not Accounting for Waste or Overages</h3>
+                            <p>Even accurate calculations won’t help if you don’t order a little extra for cuts, defects, or mistakes. Under-ordering can delay projects and increase costs.</p>
+                            <p><strong>Tip:</strong> Add 10–15% extra board feet to your total to cover unexpected waste or errors during cutting and fitting.</p>
+                          
+                            <h3>7. Using the Wrong Unit System</h3>
+                            <p>Mixing up metric and imperial units—or not paying attention to what the calculator expects—can result in wildly inaccurate measurements.</p>
+                            <p><strong>Tip:</strong> Use calculators that clearly indicate the required unit for each field or offer automatic conversion options.</p>
+                          
+                            <h3>8. Not Verifying Custom Board Sizes</h3>
+                            <p>Custom-milled boards may not fit standard dimensions. Relying on assumptions without measuring can throw off your total board footage.</p>
+                            <p><strong>Tip:</strong> Always measure each custom board individually to ensure you input accurate figures.</p>
+                          
+                            <h3>9. Overlooking Thickness Variations</h3>
+                            <p>In some projects, boards may have varying thicknesses. Using the same thickness for all calculations can skew the total volume required.</p>
+                            <p><strong>Tip:</strong> Calculate board footage separately for boards with different thicknesses and then add the results together.</p>
+                          
+                            <h3>10. Not Double-Checking Final Results</h3>
+                            <p>Relying on any tool without verifying the output can be risky. Simple typos or misclicks can go unnoticed.</p>
+                            <p><strong>Tip:</strong> Always review the final numbers and, if possible, cross-check with a manual formula for peace of mind.</p>
+                          
+                            <p>By avoiding these common mistakes, you can ensure your board foot calculator delivers highly accurate and reliable results—saving you time, money, and materials in any woodworking or construction project.</p>
+                        </section>
+                          
+                    
+                    
+                        <section class="mb-5">
+                            <h2 id="popular-calculators">Popular Board Foot Calculators You Should Know</h2>
+                            <p>Whether you're a professional woodworker, contractor, or DIY enthusiast, having the right <strong>board foot calculator</strong> can streamline your lumber estimation process and reduce costly mistakes. Below are some of the most popular and trusted board foot calculators available online and offline, each offering unique features to meet different needs.</p>
+                          
+                            <h3>1. Woodworkers Source Board Foot Calculator</h3>
+                            <p>This is a straightforward and widely used tool ideal for quick board foot calculations. It allows you to enter thickness, width, and length to get instant results.</p>
+                            <ul>
+                              <li>Supports both inches and feet</li>
+                              <li>User-friendly interface</li>
+                              <li>No sign-up required</li>
+                            </ul>
+                          
+                            <h3>2. The Calculator Site – Lumber Board Foot Calculator</h3>
+                            <p>Offered by a general calculator platform, this tool is perfect for those looking for additional unit conversions and detailed breakdowns.</p>
+                            <ul>
+                              <li>Handles metric and imperial conversions</li>
+                              <li>Option to calculate by quantity</li>
+                              <li>Free and mobile-friendly</li>
+                            </ul>
+                          
+                            <h3>3. WoodWeb Online Board Foot Calculator</h3>
+                            <p>A favorite among professional woodworkers and builders, WoodWeb’s calculator supports custom input fields and advanced features.</p>
+                            <ul>
+                              <li>Batch calculation for multiple board sizes</li>
+                              <li>Support for nominal and actual sizes</li>
+                              <li>Designed for industry professionals</li>
+                            </ul>
+                          
+                            <h3>4. Canadian Wood Council’s Wood Volume Calculator</h3>
+                            <p>This calculator is ideal for those working with softwood or hardwood in Canada and provides both volume and weight estimates.</p>
+                            <ul>
+                              <li>Includes wood species selection</li>
+                              <li>Calculates weight in kg and lbs</li>
+                              <li>Customizable for different use cases</li>
+                            </ul>
+                          
+                            <h3>5. Mobile Apps for On-the-Go Calculations</h3>
+                            <p>If you prefer working on your smartphone or tablet, several mobile apps are available for iOS and Android:</p>
+                            <ul>
+                              <li><strong>Board Foot Easy Calculator:</strong> Great for carpenters and cabinetmakers</li>
+                              <li><strong>Carpenter's Helper Lite:</strong> Offers board foot plus angle, rafter, and stud calculations</li>
+                              <li><strong>iHandy Carpenter:</strong> Combines board foot calculator with virtual measurement tools</li>
+                            </ul>
+                          
+                            <h3>6. Custom Board Foot Calculators</h3>
+                            <p>Some websites and businesses offer custom-built calculators tailored to specific project types—such as timber framing, decking, or cabinetry. These tools may include:</p>
+                            <ul>
+                              <li>Shape-based volume estimation (e.g., tapered cuts, bevels)</li>
+                              <li>Project templates for easier batch input</li>
+                              <li>Integration with cost estimators</li>
+                            </ul>
+                          
+                            <h3>Choosing the Right Board Foot Calculator</h3>
+                            <p>When selecting a board foot calculator, consider the following:</p>
+                            <ul>
+                              <li><strong>Input Units:</strong> Does it accept inches, feet, or both?</li>
+                              <li><strong>Batch Calculation:</strong> Can you enter multiple boards at once?</li>
+                              <li><strong>Cost Estimation:</strong> Does it include a pricing feature?</li>
+                              <li><strong>Mobile Accessibility:</strong> Is it available as an app?</li>
+                              <li><strong>Ease of Use:</strong> Is the interface intuitive?</li>
+                            </ul>
+                          
+                            <p>Using a <strong>popular and reliable board foot calculator</strong> ensures accurate estimates, saves time, and helps you better manage your project costs—whether you're working on a home renovation, custom furniture, or large construction project.</p>
+                        </section>
+                          
+                    
+                        <section class="mb-5">
+                            <p>You may also like <a href="https://propercalculators.com/calculators/construction/tile-calculator/" target="_blank" rel="noopener">Tile Calculator</a> | <a href="https://propercalculators.com/calculators/construction/brick-calculator/" target="_blank">Brick Calculator</a> | <a href="https://propercalculators.com/calculators/construction/construction-cost-calculator/" target="_blank">Construction Cost Calculator</a> | <a href="https://propercalculators.com/calculators/construction/concrete-calculator/"  target="_blank">Concrete Calculator</a></p>
+                        </section>
+                    
+                    
+                        <section class="mb-5">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-10">
+                                    <h2 id="faq" class="mb-3">FAQ</h2>
+                                    <div class="accordion" id="boardFootCalculatorFAQ">
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <strong>1. What is a board foot?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    A <strong>board foot</strong> is a unit of volume used to measure lumber. One board foot is equal to a 12-inch length by 12-inch width by 1-inch thickness (12″ × 12″ × 1″). It's commonly used in the lumber industry for pricing and inventory management.
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <strong>2. How do I calculate board feet manually?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    <p>You can calculate board feet using the formula:</p>
+                                                    <p><code>Board Feet = (Thickness [in] × Width [in] × Length [ft]) ÷ 12</code></p>
+                                                    <p>Or use our <strong>Board Foot Calculator</strong> to save time and ensure accuracy!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <strong>3. What units does your board foot calculator support?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    Our calculator supports both <strong>inches</strong> and <strong>feet</strong> for dimensions. It automatically converts your inputs into board feet and can also calculate total board feet for multiple pieces.
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqFour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    <strong>4. Can I use the board foot calculator for multiple boards?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    Yes! You can input the number of boards along with their dimensions. The calculator will multiply and sum the total board feet to give you an accurate total.
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqFive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    <strong>5. Why is it important to calculate board feet accurately?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    <p>Accurate board foot calculations help with:</p>
+                                                    <ul>
+                                                    <li>Estimating lumber quantity and cost</li>
+                                                    <li>Reducing material waste</li>
+                                                    <li>Planning deliveries and storage</li>
+                                                    <li>Budgeting your woodworking or construction project</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqSix">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                    <strong>6. Can I use this calculator for metric measurements?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    Currently, this calculator uses the imperial system (inches and feet). For metric input, you’ll need to convert your measurements before entering them. A metric version is in development!
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqSeven">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                    <strong>7. Is this board foot calculator mobile-friendly?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    Yes, our calculator is fully responsive and works on all devices, including smartphones and tablets. You can quickly calculate board feet on-site or in your workshop.
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqEight">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                    <strong>8. Does this calculator help estimate cost?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    Absolutely! You can enter a price per board foot, and the calculator will estimate the <strong>total cost of lumber</strong> based on your input dimensions and quantity.
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqNine">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                    <strong>9. Who should use a board foot calculator?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    <p>This tool is perfect for:</p>
+                                                    <ul>
+                                                    <li>Woodworkers</li>
+                                                    <li>Contractors</li>
+                                                    <li>Furniture builders</li>
+                                                    <li>DIY enthusiasts</li>
+                                                    <li>Lumberyard customers</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faqTen">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                    <strong>10. Is this calculator free to use?</strong>
+                                                </button>
+                                            </h3>
+                                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="faqTen" data-bs-parent="#sandCalculatorFAQ">
+                                                <div class="accordion-body">
+                                                    Yes! Our <strong>Board Foot Calculator</strong> is 100% free and accessible online anytime you need to plan your lumber purchases or cuts.
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/board-foot-calcuator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

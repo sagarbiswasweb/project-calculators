@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Age Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item active" href="dog-age-calculator.html">Dog Age Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage
+                            Calculator</a>
+                        <a href="mortgage-recast-calculator.html"
+                            class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree
+                            Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk
+                            Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft
+                            Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan
+                            Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan
+                            Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole
+                            Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action active">Dog Age
+                            Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age
+                            Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income
+                            Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing
+                            Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day
+                            Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie
+                            Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan
+                            Calculator</a>
+                        <a href="construction-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick
+                            Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand
+                            Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete
+                            Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile
+                            Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Dog Age Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="dog-age-calculator">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="age" class="form-label">Age of Dog
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Enter the age of the dog in years">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="age" min="1"
+                                                    step="any" required>
+                                                <span class="input-group-text my-input-group">year</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="size" class="form-label">Size of Dog
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Select the size of your dog. It actually depends on the breed.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <select class="form-select my-input-area"
+                                                    aria-label="Default select example" id="size" required>
+                                                    <option value="select" selected disabled>select</option>
+                                                    <option value="small">Small (20 lbs or less)</option>
+                                                    <option value="medium">Medium (21 - 50 lbs)</option>
+                                                    <option value="large">Large (51 - 100 lbs)</option>
+                                                    <option value="giant">Giant (greater than 100 lbs)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit"
+                                            class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()"
+                                            class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody>
+                                            <tr id="result">
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- theme a social share button dynamic kore deoa hoyeche akhon. tai r shob calculator a nicher code paste korte ba link update korte hobe na  -->
+                    <!-- social share buttons -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 text-center mt-4 mb-3">
+                            <h5>Share This Calculator</h5>
+                            <div class="share-on-social-btn d-flex flex-wrap justify-content-center gap-1 mx-auto">
+                                
+                                <!-- Facebook Share -->
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode('https://propercalculators.com/calculators/age-calculators/dog-age-calculator/'); ?>"
+                                    target="_blank" title="Share on Facebook" aria-label="Share on Facebook">
+                                    <span class="share-box">
+                                        <span class="share-face">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                    
+                                <!-- Twitter (X) Share -->
+                                <a href="https://twitter.com/intent/tweet?url=https://propercalculators.com/calculators/age-calculators/dog-age-calculator&text=Check out this Dog Age Calculator!"
+                                    target="_blank" title="Share on X" aria-label="Share on X">
+                                    <span class="share-box">
+                                        <span class="share-face">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                    
+                                <!-- WhatsApp Share -->
+                                <a href="https://api.whatsapp.com/send?text=Check out this Dog Age Calculator: https://propercalculators.com/calculators/age-calculators/dog-age-calculator/"
+                                    target="_blank" title="Share on WhatsApp" aria-label="Share on WhatsApp">
+                                    <span class="share-box">
+                                        <span class="share-face">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                    
+                                <!-- LinkedIn Share -->
+                                <a href="https://www.linkedin.com/shareArticle?url=<?php echo urlencode('https://propercalculators.com/calculators/age-calculators/dog-age-calculator/'); ?>&title=Dog Age Calculator"
+                                    target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <span class="share-box">
+                                        <span class="share-face">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                    
+                                <!-- Reddit Share -->
+                                <a href="https://www.reddit.com/submit?url=https://propercalculators.com/calculators/age-calculators/dog-age-calculator&title=Dog Age Calculator"
+                                    target="_blank" title="Share on Reddit" aria-label="Share on Reddit">
+                                    <span class="share-box">
+                                        <span class="share-face">
+                                            <i class="fab fa-reddit-alien"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                    
+                                <!-- Email Share -->
+                                <a href="mailto:?subject=Dog Age Calculator&body=Check out this Dog Age Calculator: https://propercalculators.com/calculators/age-calculators/dog-age-calculator/"
+                                    title="Share via Email" aria-label="Share via Email">
+                                    <span class="share-box">
+                                        <span class="share-face">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-article">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Dog Age Calculator</h1>
+                            </section>
+
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use
+                                        the Dog Age Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2.
+                                        Understanding the Result</a>
+                                    <a href="#dog-aging" class="list-group-item list-group-item-action">3. Understanding
+                                        Dog Aging</a>
+                                    <a href="#life-stages" class="list-group-item list-group-item-action">4. Stages of a
+                                        Dog's Life</a>
+                                    <a href="#how-calculators-work" class="list-group-item list-group-item-action">5.
+                                        How Dog Age Calculators Work</a>
+                                    <a href="#science-behind" class="list-group-item list-group-item-action">6. The
+                                        Science Behind the Dog Age Calculator</a>
+                                    <a href="#real-life-uses" class="list-group-item list-group-item-action">7.
+                                        Real-Life Uses of Dog Age Knowledge</a>
+                                    <a href="#best-calculators" class="list-group-item list-group-item-action">8. Best
+                                        Dog Age Calculators</a>
+                                    <a href="#types-calculators" class="list-group-item list-group-item-action">9. Types
+                                        of Dog Age Calculators</a>
+                                    <a href="#future-of-calculators" class="list-group-item list-group-item-action">10.
+                                        The Future of Dog Age Calculators</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">11. FAQ</a>
+                                </div>
+                            </div>
+
+
+                            <section class="mb-5">
+                                <h2 id="how-to-use">Step by Step Guide for Calculating Your Dog's Age</h2>
+                                <div>
+                                    <div>
+                                        <h3>Enter the Dog's Age</h3>
+                                        <p>In the input field labeled "Year," type in your dog’s current age in years.
+                                            If your dog is younger than one year, round down to the nearest whole
+                                            number.</p>
+                                    </div>
+
+                                    <div>
+                                        <h3>Select the Dog’s Size</h3>
+                                        <p class="mb-1">Choose the size category that best fits your dog:</p>
+                                        <ul>
+                                            <li class="mb-1"><strong>Small </strong>(e.g., Chihuahua, Dachshund)</li>
+                                            <li class="mb-1"><strong>Medium </strong>(e.g., Beagle, Border Collie)</li>
+                                            <li class="mb-1"><strong>Large </strong>(e.g., Labrador Retriever, German
+                                                Shepherd)</li>
+                                            <li class="mb-1"><strong>Giant </strong>(e.g., Great Dane, Saint Bernard)
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h3>Calculate</h3>
+                                        <p>Click the "Calculate" button to determine your dog's approximate age in human
+                                            years. The calculator uses factors like breed size and weight to provide a
+                                            more accurate conversion.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding the result</h2>
+                                <p>The result will display your dog’s age in human years based on its size and age. Use
+                                    this information as a helpful reference for understanding your dog’s life stage.</p>
+                                <h5>Here is a chart which shows the dog ages equivalent human age for different dog
+                                    size:</h5>
+                                <div class="d-flex justify-content-center">
+                                    <div class="col-lg-6 col-12 text-center">
+                                        <table class="table table-striped table-bordered border-primary">
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2" class="age-header"></th>
+                                                    <th colspan="4" class="size-header">Size of Dog</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Small<br><span class="fw-light">(20 lbs or less)</span></th>
+                                                    <th>Medium<br><span class="fw-light">(21-50 lbs)</span></th>
+                                                    <th>Large<br><span class="fw-light">(51-100 lbs)</span></th>
+                                                    <th>Giant<br><span class="fw-light">(100+ lbs)</span></th>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="2" class="age-header">Age of Dog</th>
+                                                    <th colspan="4" class="size-header">Age in Human Years</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1 Year</td>
+                                                    <td>15 Years</td>
+                                                    <td>15 Years</td>
+                                                    <td>15 Years</td>
+                                                    <td>12 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2 Years</td>
+                                                    <td>24 Years</td>
+                                                    <td>24 Years</td>
+                                                    <td>24 Years</td>
+                                                    <td>22 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3 Years</td>
+                                                    <td>28 Years</td>
+                                                    <td>28 Years</td>
+                                                    <td>28 Years</td>
+                                                    <td>31 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4 Years</td>
+                                                    <td>32 Years</td>
+                                                    <td>32 Years</td>
+                                                    <td>32 Years</td>
+                                                    <td>38 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 Years</td>
+                                                    <td>36 Years</td>
+                                                    <td>36 Years</td>
+                                                    <td>36 Years</td>
+                                                    <td>45 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6 Years</td>
+                                                    <td>40 Years</td>
+                                                    <td>42 Years</td>
+                                                    <td>45 Years</td>
+                                                    <td>49 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7 Years</td>
+                                                    <td>44 Years</td>
+                                                    <td>47 Years</td>
+                                                    <td>50 Years</td>
+                                                    <td>56 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8 Years</td>
+                                                    <td>48 Years</td>
+                                                    <td>51 Years</td>
+                                                    <td>55 Years</td>
+                                                    <td>64 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9 Years</td>
+                                                    <td>52 Years</td>
+                                                    <td>56 Years</td>
+                                                    <td>61 Years</td>
+                                                    <td>71 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 Years</td>
+                                                    <td>56 Years</td>
+                                                    <td>60 Years</td>
+                                                    <td>66 Years</td>
+                                                    <td>79 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11 Years</td>
+                                                    <td>60 Years</td>
+                                                    <td>64 Years</td>
+                                                    <td>72 Years</td>
+                                                    <td>86 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12 Years</td>
+                                                    <td>64 Years</td>
+                                                    <td>69 Years</td>
+                                                    <td>77 Years</td>
+                                                    <td>93 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13 Years</td>
+                                                    <td>68 Years</td>
+                                                    <td>74 Years</td>
+                                                    <td>82 Years</td>
+                                                    <td>100 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14 Years</td>
+                                                    <td>72 Years</td>
+                                                    <td>78 Years</td>
+                                                    <td>88 Years</td>
+                                                    <td>107 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15 Years</td>
+                                                    <td>76 Years</td>
+                                                    <td>83 Years</td>
+                                                    <td>93 Years</td>
+                                                    <td>114 Years</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16 Years</td>
+                                                    <td>80 Years</td>
+                                                    <td>87 Years</td>
+                                                    <td>99 Years</td>
+                                                    <td>121 Years</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2>Pro Tips for Accuracy</h2>
+                                <ul>
+                                    <li class="mb-1">Ensure you input the correct age of your dog.</li>
+                                    <li class="mb-1">Select the appropriate size category to reflect their breed and
+                                        body type.</li>
+                                </ul>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <p>Have you ever wondered how old your dog is in human years? Many pet owners are
+                                    curious about this, but there’s a common misconception that one dog year equals
+                                    seven human years. While this rule of thumb is widely known, it oversimplifies the
+                                    aging process.</p>
+                                <p>In this guide, we’ll explore the various factors that influence a dog's age and how
+                                    specialized dog age calculators work.</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="dog-aging">Understanding Dog Aging</h2>
+                                <p>Factors Affecting a Dog's Age But as nice and simple as the seven-year rule is, it's
+                                    not exactly accurate when we talk about dog aging. DOG AGE Several factors
+                                    contribute to how slow or fast a dog ages, such as:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Breed to Breed Differences: </strong>Some small breed dogs
+                                        such as Chihuahuas tend to live longer lives and age more slowly than large
+                                        breeds like Great Danes.</li>
+                                    <li class="mb-1"><strong>Physical health: </strong>Dogs with fewer exposure to
+                                        internal and external toxins, better nutrition habits through diet or proper vet
+                                        care usually age more gracefully.</li>
+                                </ul>
+                                <p>Nutrition- the quality of food and proper nutrition have an important role in aging
+                                    dogs.</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="life-stages">Stages of a Dog's Life</h2>
+                                <p>Understanding this Dogs go through different life stages, Just as we do:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Puppy: </strong>Dogs are rapidly growing at this time, and
+                                        they need a lot more protein than adult dogs to form new tissues.</li>
+                                    <li class="mb-1"><strong>Middle age: </strong>Dogs hit their highpoint in these
+                                        years, usually from 2 to 7 depending on the breed</li>
+                                    <li class="mb-1"><strong>In Senior Years: </strong>By the time dogs reach their
+                                        senior years, it is pretty evident that there are signs of aging — for example
+                                        less activity, gray fur and arthritis.</li>
+                                </ul>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="how-calculators-work">How Dog Age Calculators Work</h2>
+                                <p>Dog age calculators are tools designed to help pet owners estimate their dog's age on
+                                    a human scale. Unlike the traditional "one dog year equals seven human years" rule,
+                                    these calculators take into account specific factors to provide a more accurate
+                                    estimate.</p>
+                                <h3>Key Factors Considered:</h3>
+                                <ol>
+                                    <li class="mb-1"><strong>Breed: </strong>Different breeds have varying lifespans and
+                                        aging patterns. For example, smaller breeds generally live longer than larger
+                                        breeds.</li>
+                                    <li class="mb-1"><strong>Size or Weight: </strong>Larger dogs tend to age faster
+                                        compared to smaller or medium-sized dogs.</li>
+                                    <li class="mb-1"><strong>Life Stages: </strong>Dogs mature rapidly in their early
+                                        years, so the human equivalent for the first few years is much higher than for
+                                        later years.</li>
+                                </ol>
+                                <p>By factoring in these elements, dog age calculators go beyond simple age comparisons,
+                                    offering a more precise understanding of where your dog is in their life stage.</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="science-behind">The Science Behind The Dog Age Calculator</h2>
+                                <p>Studies show that dog aging is a non-linear process. Smaller dogs tend to age more
+                                    slowly and often live longer than larger breeds. This difference in aging patterns
+                                    has been a key focus for researchers. To better estimate a dog's age in human years,
+                                    researchers have developed mathematical formulas and algorithms. These calculations
+                                    take into account factors such as breed, size, and life stage, providing a more
+                                    accurate human-equivalent age for a given dog. By using this scientific data, dog
+                                    age calculators offer pet owners a valuable tool for understanding their dog's aging
+                                    process and life stage.</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="real-life-uses">Real-Life Uses of Dog Age Knowledge</h2>
+                                <p>Understanding your dog's age in human years can significantly improve the care you
+                                    provide, ensuring their well-being as they age.</p>
+                                <div>
+                                    <div>
+                                        <h4>1. Tailored Diet and Nutrition</h4>
+                                        <ul>
+                                            <li class="mb-1"><strong>Adjusting Diet: </strong>Older dogs may benefit
+                                                from a lower-calorie diet to prevent weight gain.</li>
+                                            <li class="mb-1"><strong>Specific Nutrients: </strong>Include ingredients
+                                                like omega-3 fatty acids to support joint health and cognitive function.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4>2. Age-Appropriate Exercise</h4>
+                                        <ul>
+                                            <li class="mb-1"><strong>Gentle Routines: </strong>Older dogs require
+                                                routines that promote mobility without placing undue stress on their
+                                                joints.</li>
+                                            <li class="mb-1"><strong>Low-Impact Activities: </strong>Focus on light
+                                                walks and swimming to maintain fitness safely.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4>3. Regular Check-Ups and Preventative Care</h4>
+                                        <ul>
+                                            <li class="mb-1"><strong>Comprehensive Vet Visits: </strong>As dogs age,
+                                                regular check-ups become vital for early detection and management of
+                                                age-related conditions.</li>
+                                            <li class="mb-1"><strong>Preventative Measures: </strong>Stay ahead of
+                                                issues like arthritis, dental problems, or vision loss to improve your
+                                                dog's quality of life.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4>4. Home Environment Adjustments</h4>
+                                        <ul>
+                                            <li class="mb-1"><strong>Comfortable Bedding: </strong>Replace firm bedding
+                                                with softer options to reduce stress on aging joints.</li>
+                                            <li class="mb-1"><strong>Accessibility: </strong>Create ramps or steps to
+                                                help your dog reach favorite spots, minimizing strain and discomfort.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4>5. Mental and Emotional Stimulation</h4>
+                                        <ul>
+                                            <li class="mb-1"><strong>Interactive Play: </strong>Use engaging toys and
+                                                puzzles to keep your dog's mind active and prevent boredom.</li>
+                                            <li class="mb-1"><strong>Socialization: </strong>Ensure they remain
+                                                connected with family and other pets to maintain emotional well-being.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="best-calculators">Best Dog Age Calculators: Compare Top Online Tools</h2>
+                                <p>Find the most accurate way to convert your dog's age to human years.</p>
+
+                                <h3>Top 3 Dog Age Calculators for Accurate Results</h3>
+                                <p>Dog age calculators help pet owners determine their dog's age in human years based on
+                                    breed, size, and other factors. Here are three of the most reliable and widely used
+                                    calculators available online:</p>
+
+                                <ol>
+                                    <li class="mb-1">
+                                        <strong>Pedigree Dog Age Calculator</strong> – Ideal for <strong>breed-specific
+                                            dog age calculations</strong>, helping you understand how your dog ages
+                                        compared to humans.
+                                    </li>
+                                    <li class="mb-1">
+                                        <strong>Purina Dog Age Calculator</strong> – Uses <strong>breed and size
+                                            factors</strong> for a more precise dog-to-human age conversion.
+                                    </li>
+                                    <li class="mb-1">
+                                        <strong>Omni Dog Age Calculator</strong> – Covers a <strong>wider range of dog
+                                            breeds and sizes</strong> for a highly accurate age comparison.
+                                    </li>
+                                </ol>
+
+                                <p>These calculators use advanced algorithms based on scientific research to provide a
+                                    more realistic dog-to-human age conversion. Choose the best one based on your pet’s
+                                    specific needs!</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="types-calculators">Types of Dog Age Calculators: Pros and Cons</h2>
+                                <p>Dog age calculators are widely available online, offering free and premium versions.
+                                    While free calculators provide a quick estimate, premium tools offer more detailed
+                                    insights, including <strong>age-based dietary recommendations</strong>. However,
+                                    it’s important to remember that <strong>no calculator can replace professional
+                                        veterinary advice</strong> when it comes to your pet’s health.</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <h2 id="future-of-calculators">The Future of Dog Age Calculators</h2>
+                                <h3>Breakthroughs in Canine Genomics and Aging Studies</h3>
+                                <p>Advancements in <strong>canine genomics</strong> and <strong>aging research</strong>
+                                    are paving the way for more precise dog age calculators. Future models may
+                                    incorporate <strong>genetic data</strong> to provide personalized aging predictions
+                                    based on your dog's unique DNA. These breakthroughs could revolutionize pet care,
+                                    allowing for <strong>customized health plans</strong> tailored to your dog's
+                                    specific genetic makeup.</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <p>Understanding your dog's age equivalent is more than just an interesting fact—it's
+                                    essential for responsible pet care. A <strong>dog age calculator</strong> helps you
+                                    provide <strong>tailored nutrition</strong>, <strong>age-appropriate
+                                        exercise</strong>, and <strong>proactive health care</strong> at every life
+                                    stage. By knowing your dog’s true age, you can ensure a <strong>healthier, happier,
+                                        and longer life</strong> for your furry companion.</p>
+                            </section>
+
+
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="dogAgeFAQ">
+                                            <!-- FAQ Item 1 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>The Verdict on Dog Age Calculators</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#dogAgeFAQ">
+                                                    <div class="accordion-body">
+                                                        Dog age calculators provide a helpful approximation of your
+                                                        pet's age in human years.
+                                                        However, these tools should be used as a guideline and
+                                                        supplemented with regular
+                                                        veterinary check-ups for a comprehensive understanding of your
+                                                        dog's health and life stage.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Additional FAQs -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>Are Dog Age Calculators a Substitute for Veterinary
+                                                            Advice?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#dogAgeFAQ">
+                                                    <div class="accordion-body">
+                                                        No, dog age calculators are not a substitute for professional
+                                                        veterinary expertise.
+                                                        While they offer valuable insights, only a veterinarian can
+                                                        provide accurate and
+                                                        personalized care based on your dog's specific health needs.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>How Accurate Are Dog Age Calculators?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#dogAgeFAQ">
+                                                    <div class="accordion-body">
+                                                        Dog age calculators provide a general estimate of your dog's
+                                                        human-equivalent age but
+                                                        cannot account for individual health conditions, breed-specific
+                                                        traits, or unique aging processes.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>Can Small and Large Dogs Use the Same
+                                                            Calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFour" data-bs-parent="#dogAgeFAQ">
+                                                    <div class="accordion-body">
+                                                        Many dog age calculators differentiate between small, medium,
+                                                        and large breeds,
+                                                        as their aging processes vary significantly. Ensure the
+                                                        calculator you use factors in breed size
+                                                        for more accurate results.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                        aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>Why Do Smaller Dogs Live Longer Than Larger
+                                                            Dogs?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFive" data-bs-parent="#dogAgeFAQ">
+                                                    <div class="accordion-body">
+                                                        Smaller dogs generally age more slowly and live longer than
+                                                        larger breeds due to differences
+                                                        in metabolism and growth rates. Larger breeds often experience
+                                                        more rapid aging and are
+                                                        prone to age-related health issues earlier in life.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                        aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>How Can I Keep My Dog Healthy as They Age?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingSix" data-bs-parent="#dogAgeFAQ">
+                                                    <div class="accordion-body">
+                                                        Regular exercise, a balanced diet, routine veterinary check-ups,
+                                                        and proper dental care are
+                                                        essential for maintaining your dog's health as they age.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                                        aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>At What Age Is a Dog Considered a Senior?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingSeven" data-bs-parent="#dogAgeFAQ">
+                                                    <div class="accordion-body">
+                                                        Small dogs are typically considered seniors around age 10-12,
+                                                        medium breeds around 8-10 years,
+                                                        and large breeds as early as 6-8 years old.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/dog-age-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+</body>
+
+</html>

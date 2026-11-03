@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Other Calculators</a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item active" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action active">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Mortgage Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="mortgage">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="homeValue" class="form-label">Home Value
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total price of the home you are purchasing. This is the full cost before any down payment or loan calculations.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="homeValue"
+                                                    required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="downPayment" class="form-label">Down Payment
+                                                <span></span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the amount you are paying upfront. You can input a fixed amount in dollars or select a percentage of the home value.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="downPayment" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <select class="my-input-area form-select" id="downPayment-unit">
+                                                        <option selected value="percentage">%</option>
+                                                        <option value="dollar">$</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanAmount" class="form-label">Loan Amount
+                                                <span></span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="This value is automatically calculated as the Home Value minus the Down Payment. No manual input is needed.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="loanAmount"
+                                                    required readonly>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="interestRate" class="form-label">Interest Rate
+                                                <span></span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the annual interest rate for your mortgage loan. This rate affects your monthly payments and total loan cost.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="interestRate" step="any" required>
+                                                <span class="input-group-text my-input-group">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanDuration" class="form-label">Loan Duration
+                                                <span></span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the length of your mortgage in years. Common terms are 15, 20, or 30 years.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area"
+                                                    id="loanDuration" required>
+                                                <span class="input-group-text my-input-group">years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit"
+                                            class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()"
+                                            class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 my-result-area">
+                            <div class="row m-0">
+                                <div class="col-md-12 mt-3 text-center">
+                                    <p id="monthlyPayment" style="background-color: rgb(181, 243, 174);"></p>
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody id="result">
+                                                <!-- result will be shown here  -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <canvas id="mortgageChart">
+                                        <!-- mortgage donut chart  -->
+                                    </canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-4 my-amortization-area">
+                            <div class="col-md-12 mt-3 mb-3">
+                                <canvas id="multiLineChart">
+                                    <!-- mortgage multi line chart  -->
+                                </canvas>
+                            </div>
+                            <div class="col-md-12">
+                                <h4 class="mt-3 mb-3 text-center" id="schedule"></h4>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped amortization">
+                                        <thead class="mortgage-thead">
+                                            <tr>
+                                                <th id="payment-no"></th>
+                                                <th id="princpal"></th>
+                                                <th id="interest"></th>
+                                                <th id="interest-paid"></th>
+                                                <th id="ending-balance"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="amortizationTableBody">
+                                            <!-- here monthly amortization table goes dynamically  -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Mortgage Calculators</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. Using the Mortgage Calculator Efficiently</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding the Results</a>
+                                    <a href="#understanding-charts" class="list-group-item list-group-item-action">3. Understanding the Charts</a>
+                                    <a href="#amortization-schedule" class="list-group-item list-group-item-action">4. Understanding the Monthly Amortization Schedule</a>
+                                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">5. Types of Mortgage Calculators</a>
+                                    <a href="#crucial-elements" class="list-group-item list-group-item-action">6. Crucial Elements of Mortgage Calculators</a>
+                                    <a href="#why-use-calculator" class="list-group-item list-group-item-action">7. Why Do You Need a Mortgage Calculator?</a>
+                                    <a href="#common-mistakes" class="list-group-item list-group-item-action">8. Common Mistakes to Avoid</a>
+                                    <a href="#popular-tools" class="list-group-item list-group-item-action">9. Popular Mortgage Calculator Tools</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">10. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use" class="mb-3">Using Mortgage Calculator Efficiently</h2>
+                                <p>Our mortgage calculator is designed to be simple and intuitive. Follow these step-by-step instructions to
+                                    get started:</p>
+                                <div>
+                                    <div class="mb-3">
+                                        <h3>1. Enter the Purchase Price</h3>
+                                        <ul>
+                                            <li>This is the total cost of the home before applying any down payment. Input the full price of
+                                                the property you plan to purchase.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-3">
+                                        <h3>2. Enter the Down Payment</h3>
+                                        <ul>
+                                            <li class="mb-2">Specify the amount you plan to pay upfront. You can choose either a percentage
+                                                (%) of the purchase price or a fixed dollar amount ($).</li>
+                                            <ul>
+                                                <li class="mb-1">If you select <strong>%</strong>, enter the percentage of the property
+                                                    price you will pay as a down payment.</li>
+                                                <li class="mb-1">If you select <strong>$</strong>, input the exact amount of money you will
+                                                    pay.</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-3">
+                                        <h3>3.  Amount (Auto-Calculated)</h3>
+                                        <ul>
+                                            <li>You don’t need to fill in this field! The loan amount is automatically calculated based on
+                                                the purchase price and down payment you entered.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-3">
+                                        <h3>4. Specify the Interest Rate</h3>
+                                        <ul>
+                                            <li>Enter the annual interest rate provided by your lender. If you're uncertain, you can use an
+                                                average rate based on the current market conditions.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-3">
+                                        <h3>5. Specify the Loan Term</h3>
+                                        <ul>
+                                            <li>Input the number of years you plan to repay the loan. Typical terms range from 5 to 30
+                                                years, depending on your lender and financial situation.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <ldivi class="mb-3">
+                                        <h3>6. Click the "Calculate" Button</h3>
+                                        <ul>
+                                            <li class="mb-1">Once all the required fields are filled, click the Calculate button.</li>
+                                            <li class="mb-1">The calculator will instantly display:</li>
+                                            <ul>
+                                                <li class="mb-1">Your estimated monthly payments.</li>
+                                                <li class="mb-1">The total cost of borrowing, including interest.</li>
+                                            </ul>
+                                            <li class="mb-1">Additionally, you’ll see an easy-to-understand visual graph of your mortgage
+                                                details.</li>
+                                        </ul>
+                                    </ldivi>
+                                </div>
+                                <h6>Explore Different Scenarios</h6>
+                                <ul>
+                                    <li>Adjust the purchase price, down payment, interest rate, or loan term to explore various financial
+                                        scenarios. This helps you find the best mortgage solution for your needs.</li>
+                                </ul>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <h2 id="understanding-results" class="mb-3">Understanding The Results</h2>
+                                <h3 class="mb-3">You can gain valuable insights from the mortgage calculator results. Here's how to
+                                    interpret them:</h3>
+                                <div>
+                                    <div class="mb-3">
+                                        <h4>1. Monthly Payments</h4>
+                                        <ul>
+                                            <li class="mb-1">This is the amount you need to pay each month to repay your mortgage.</li>
+                                            <li class="mb-1">It is calculated based on the loan amount, interest rate, and loan term.</li>
+                                            <li class="mb-1">Make sure this payment comfortably fits into your monthly budget and doesn’t
+                                                create financial strain.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-3">
+                                        <h4>2. Total Payments</h4>
+                                        <ul>
+                                            <li class="mb-1">This represents the total number of months required to pay off the loan.</li>
+                                            <li class="mb-1">For example, a 30-year loan term will typically consist of 360 monthly
+                                                payments.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-3">
+                                        <h4>3. Total Cost of Loan</h4>
+                                        <ul>
+                                            <li class="mb-1">This includes both the initial loan amount and the total interest paid over the
+                                                life of the mortgage.</li>
+                                            <li class="mb-1">It's essential to focus on this figure, as it reflects the overall amount you
+                                                will pay for your home, including interest.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="mb-3">
+                                        <h4>4. Total Interest</h4>
+                                        <ul>
+                                            <li class="mb-1">This is the total amount of interest you will pay throughout the life of the
+                                                loan.</li>
+                                            <li class="mb-1">A lower interest rate or shorter loan term can significantly reduce this
+                                                figure.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-charts" class="mb-3">Understanding the charts</h2>
+                                <div class="mb-4">
+                                    <div class="mb-2">
+                                        <h3>1. Donut Chart: </h3>
+                                        <p>This is a variation of a pie chart with a hollow center.
+                                            It is commonly used to visualize proportions or percentages of components within a whole.</p>
+                                    </div>
+                                    <h4 class="mb-1">What it Represents:</h4>
+                                    <ul class="mb-3">
+                                        <li class="mb-1"><strong>Blue (Loan Amount): </strong>The portion of the total cost representing the
+                                            loan amount borrowed.</li>
+                                        <li class="mb-1"><strong>Pink (Total Interest): </strong>The portion representing the total interest
+                                            paid over the life of the loan.</li>
+                                        <li class="mb-1"><strong>Yellow (Down Payment): </strong>The portion representing the upfront down
+                                            payment made at the time of purchase.</li>
+                                    </ul>
+                                    <h4 class="mb-1">Purpose:</h4>
+                                    <p>This chart visually breaks down the components of the total cost of the loan (Loan Amount + Total
+                                        Interest + Down Payment) to show their relative contributions. The legend at the top helps identify
+                                        each segment.</p>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <div class="mb-2">
+                                        <h3>2. Multi Line Chart: </h3>
+                                        <p>This is a multi-line chart, often used to represent
+                                            changes or trends over time. Here's what it shows based on the legend and the lines:</p>
+                                    </div>
+                                    <h4 class="mb-1">What It Represents:</h4>
+                                    <ol class="mb-3">
+                                        <li class="mb-3"><strong>Blue (Balance):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the remaining loan balance over time.</li>
+                                                <li class="mb-1">The line slopes downward as the balance decreases with each payment.</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-3"><strong>Green (Interest):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the portion of the monthly payment allocated to interest over
+                                                    time.</li>
+                                                <li class="mb-1">This line typically curves downward as the interest portion decreases while
+                                                    the principal portion increases (common in amortized loans).</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-3"><strong>Pink (Payment):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the total monthly payment.</li>
+                                                <li class="mb-1">It remains constant throughout the loan term in a fixed-rate loan.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <h4 class="mb-1"><strong>Purpose:</strong></h4>
+                                    <ul>
+                                        <li>This chart is useful for visualizing how a loan progresses over its term:</li>
+                                        <ul>
+                                            <li class="mb-1">The balance decreases steadily.</li>
+                                            <li class="mb-1">The interest portion starts high but diminishes as more of the payment is
+                                                applied to the principal.</li>
+                                            <li class="mb-1">The total payment remains fixed (assuming a fixed-rate loan).</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <p>The information data obtained from interpreting these results and charts will help you with your aircraft
+                                    financing package decisions. By adjusting the purchase price, down payment, loan amount, interest rate
+                                    and term you can find a sweet spot between monthly payments that fit your budget but still keeping total
+                                    cost of loan to manageable level.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="amortization-schedule" class="mb-3">Understanding the Monthly Amortization Schedule</h2>
+                                <p>The amortization schedule provides a month-by-month breakdown of your mortgage payments, helping you
+                                    track how your loan balance decreases over time. Here's how to interpret each column:</p>
+                                <ol>
+                                    <li class="mb-2">
+                                        <strong>Month</strong>
+                                        <ul>
+                                            <li class="mb-1">Displays the specific month number in your loan term. For example, "1"
+                                                represents the first month, "2" the second, and so on.</li>
+                                        </ul>
+                                    </li>
+                    
+                                    <li class="mb-2">
+                                        <strong>Principal</strong>
+                                        <ul>
+                                            <li class="mb-1">The portion of your monthly payment that reduces the loan balance (the amount
+                                                you borrowed).</li>
+                                            <li class="mb-1">As time progresses, the principal portion increases because you pay less
+                                                interest on the remaining loan balance.</li>
+                                        </ul>
+                                    </li>
+                    
+                                    <li class="mb-2">
+                                        <strong>Interest</strong>
+                                        <ul>
+                                            <li class="mb-1">This is the amount you pay toward interest for that month.</li>
+                                            <li class="mb-1">It is calculated based on the remaining balance of your loan and the interest
+                                                rate.</li>
+                                            <li class="mb-1">In the early stages of the loan, the interest portion is higher, gradually
+                                                decreasing as the loan balance reduces.</li>
+                                        </ul>
+                                    </li>
+                    
+                                    <li class="mb-2">
+                                        <strong>Interest Paid</strong>
+                                        <ul>
+                                            <li class="mb-1">A cumulative total of all interest payments made up to that month.</li>
+                                            <li class="mb-1">This shows how much of your money has gone toward interest over the life of the
+                                                loan so far.</li>
+                                        </ul>
+                                    </li>
+                    
+                                    <li class="mb-2">
+                                        <strong>Ending Balance</strong>
+                                        <ul>
+                                            <li class="mb-1">The remaining loan balance after your monthly payment is applied.</li>
+                                            <li class="mb-1">This figure decreases over time as more of your payment goes toward the
+                                                principal.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <P class="mb-1">How to Use This Table Effectively</P>
+                                <ul>
+                                    <li class="mb-1"><strong>Track Loan Progress: </strong>See how your payments are distributed between
+                                        principal and interest.</li>
+                                    <li class="mb-1"><strong>Understand Interest Costs: </strong>Use the <strong>Interest Paid</strong>
+                                        column to assess how much you are paying in interest over time.</li>
+                                    <li class="mb-1"><strong>Plan for Early Payoff: </strong>If you want to pay off the loan early, this
+                                        table can help you identify how much principal is left and calculate additional payments to achieve
+                                        your goal.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>In such a fast-paced industry, experience is the best teacher and that goes without saying when it comes
+                                    to buying property and getting a mortgage. Knowing your expenses up front can make a huge difference
+                                    whether you are a first time home buyer or an experienced real estate investor. Mortgage calculators
+                                    make it easy to estimate monthly payments, as well as help you visualize how interest affects your
+                                    affordability and fit within a budget. To help you better understand mortgage calculators, we are going
+                                    to talk about what they really offer with their different types and features in this guide!</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="types-of-calculators" class="mb-3">Types of Mortgage Calculators</h2>
+                                <p class="mb-2">Mortgage calculators come in many varieties and are specialized based on the information the
+                                    home buyer inputs. Here are some common types:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Basic Mortgage Calculator: </strong>Estimates monthly payments by entering the
+                                        loan amount, interest rate, and loan term.</li>
+                                    <li class="mb-1"><strong>Maximum Investment Calculator: </strong>Helps you determine the maximum house
+                                        price and mortgage you can afford to avoid payment shock.</li>
+                                    <li class="mb-1"><strong>Refinance Calculator: </strong>Estimates the potential savings from refinancing
+                                        an existing mortgage at a new interest rate.</li>
+                                    <li class="mb-1"><strong>Amortization Calculator: </strong>Breaks down your loan payments over time,
+                                        showing the division between principal and interest.</li>
+                                    <li class="mb-1"><strong>Early Payoff Calculator: </strong>Illustrates the savings achieved by making
+                                        extra payments to reduce the loan balance faster.</li>
+                                    <li class="mb-1"><strong>APR Calculator: </strong>Calculates the Annual Percentage Rate (APR) to provide
+                                        a clearer understanding of the total loan cost.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="crucial-elements" class="mb-3">Crucial Elements of Mortgage Calculators</h2>
+                                <p class="mb-2">Mortgage calculators include various features to make them highly effective tools for home
+                                    buyers. Key elements include:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Flexible Inputs: </strong>Users can adjust loan amount, interest rate, loan
+                                        term, and down payment to reflect their specific needs and financial situation.</li>
+                                    <li class="mb-1"><strong>Visual charts and tables: </strong>Many calculators provide visual aids, such
+                                        as charts and tables, to illustrate payments over time, offering a clearer understanding of the
+                                        loan's progression.</li>
+                                    <li class="mb-1"><strong>Detailed Breakdown: </strong>On a granular level, some calculators show how
+                                        each payment is allocated toward principal, interest, taxes, and insurance.</li>
+                                    <li class="mb-1"><strong>Affordability Assessment: </strong>To determine how much you can afford,
+                                        certain calculators allow you to input your income and monthly expenses, providing a realistic
+                                        estimate.</li>
+                                    <li class="mb-1"><strong>Comparison Tools: </strong>Advanced calculators enable users to compare
+                                        multiple mortgage scenarios, helping them evaluate and choose the best option.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="why-use-calculator" class="mb-3">Why Do You Need a Mortgage Calculator?</h2>
+                                <p class="mb-2">Mortgage calculators are powerful tools that offer several benefits for potential home
+                                    buyers. Here’s why you should use one:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Financial Clarity: </strong>Gain a clear understanding of your mortgage
+                                        payments, going beyond rough estimates to see detailed figures that match your financial situation.
+                                    </li>
+                                    <li class="mb-1"><strong>Time-Saving: </strong>Get quick and accurate estimates without needing to
+                                        perform complex calculations or consult a professional, saving you time during the home-buying
+                                        process.</li>
+                                    <li class="mb-1"><strong>Informed Decision-Making: </strong>Experiment with various scenarios, such as
+                                        loan amounts, interest rates, and terms, to choose the best mortgage option based on your financial
+                                        state.</li>
+                                    <li class="mb-1"><strong>Better Budgeting: </strong>Stay within your budget by determining the loan
+                                        payment amount that aligns with your financial goals, helping you avoid overextending yourself.</li>
+                                    <li class="mb-1"><strong>Reduced Stress: </strong>Eliminate the guesswork and reduce stress by gaining
+                                        confidence in your mortgage application process, thanks to the clarity provided by the calculator.
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="common-mistakes" class="mb-3">Common Mistakes to Avoid</h2>
+                                <h5 class="mb-2">While mortgage calculators are excellent tools for home buyers, there are some common
+                                    mistakes you should be aware of to ensure accurate results:</h5>
+                                <ol>
+                                    <li class="mb-1"><strong>Incorrect Data Entry: </strong>Inputting inaccurate information can lead to
+                                        misleading results, causing you to base decisions on incorrect figures. Always double-check the loan
+                                        amount, interest rate, and other details.</li>
+                                    <li class="mb-1"><strong>Overlooking Additional Costs: </strong>Neglecting to account for property
+                                        taxes, insurance, and maintenance can create a false impression that your monthly payments will be
+                                        lower than they actually are.</li>
+                                    <li class="mb-1"><strong>Ignoring Fees: </strong>Forgetting to include closing costs, loan origination
+                                        fees, and other expenses can make your affordability estimate less accurate.</li>
+                                    <li class="mb-1"><strong>Assuming Fixed Rates: </strong>Failing to consider changes in interest rates
+                                        over time—especially for adjustable-rate mortgages (ARMs)—can result in unexpected financial
+                                        challenges.</li>
+                                    <li class="mb-1"><strong>Using One Calculator for All Scenarios: </strong>Different mortgage scenarios
+                                        require specialized tools. Using a basic calculator for all situations may not provide the detailed
+                                        insights you need.</li>
+                                </ol>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="popular-tools" class="mb-3">Popular Mortgage Calculator Tools</h2>
+                                <p class="mb-2">Here are some of the most popular mortgage calculators that cater to various needs:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Bankrate Mortgage Calculator: </strong>Offers a range of calculators for
+                                        different mortgage requirements, making it versatile and comprehensive.</li>
+                                    <li class="mb-1"><strong>Zillow Mortgage Calculator: </strong>Features a user-friendly interface with
+                                        detailed affordability analyses, helping users make informed decisions.</li>
+                                    <li class="mb-1"><strong>Quicken Loans Mortgage Calculator: </strong>Highly rated for its accuracy and
+                                        detailed breakdowns, providing valuable insights for potential borrowers.</li>
+                                    <li class="mb-1"><strong>MortgageCalculator.org: </strong>A simple yet powerful tool that delivers clear
+                                        and precise mortgage calculations.</li>
+                                    <li class="mb-1"><strong>NerdWallet Mortgage Calculator: </strong>Includes options for affordability
+                                        assessments and loan comparisons, making it ideal for exploring different financial scenarios.</li>
+                                    <li class="mb-1"><strong>Realtor.com Accunet Mortgage Calculator: </strong>Combines simplicity with
+                                        advanced features, offering an easy-to-use interface for estimating values and monthly payment
+                                        plans.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>Mortgage calculators are invaluable tools for anyone considering a mortgage. They provide clear
+                                    explanations, save time, and empower you to make informed decisions about your financial future. By
+                                    understanding the different types of mortgage calculators, their features, and how to use them, you can
+                                    take full advantage of these resources to plan confidently and effectively.</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="faqAccordion">
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                        <strong>What is a mortgage calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        A mortgage calculator is a tool that helps you estimate your monthly mortgage payments based on 
+                                                        factors like loan amount, interest rate, loan term, and down payment.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                        <strong>How accurate are mortgage calculators?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Mortgage calculators provide accurate estimates based on the inputs you provide. However, actual 
+                                                        payments may vary due to additional factors like property taxes, insurance, and lender fees.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                        <strong>What information do I need to use a mortgage calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        You typically need the following details:
+                                                        <ul>
+                                                            <li>Loan amount</li>
+                                                            <li>Interest rate</li>
+                                                            <li>Loan term (in years)</li>
+                                                            <li>Down payment amount</li>
+                                                        </ul>
+                                                        Some calculators may also ask for property tax rates, insurance costs, and other fees for a more 
+                                                        detailed estimate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                        <strong>Can a mortgage calculator determine how much house I can afford?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes! Many calculators include affordability assessments, allowing you to input your income, 
+                                                        expenses, and debt to estimate a suitable mortgage amount.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                                        <strong>What is the difference between fixed-rate and adjustable-rate mortgage calculations?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        A fixed-rate mortgage calculator uses a consistent interest rate throughout the loan term. 
+                                                        An adjustable-rate mortgage (ARM) calculator factors in initial rates and potential future 
+                                                        rate changes.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                                        <strong>Can I use a mortgage calculator for refinancing?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, refinance calculators are specifically designed to show potential savings if you refinance 
+                                                        your existing mortgage at a lower interest rate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                                        <strong>How does a mortgage calculator help with budgeting?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        A mortgage calculator provides a breakdown of your monthly payments, helping you plan your budget 
+                                                        by understanding how much of your income will go toward housing costs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                                        <strong>Do mortgage calculators include property taxes and insurance?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Some calculators allow you to input property tax and insurance estimates for a more comprehensive 
+                                                        calculation. Be sure to check if these fields are available.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                                                        <strong>Can a mortgage calculator show an amortization schedule?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, an amortization calculator provides a detailed schedule showing how each payment is split 
+                                                        between principal and interest over the loan term.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                                                        <strong>Why do my actual mortgage costs differ from the calculator’s estimate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Actual costs may vary due to factors like lender fees, changes in interest rates, or differences 
+                                                        in property taxes and insurance premiums.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="assets/js/mortgage-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

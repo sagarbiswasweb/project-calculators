@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Add gap between the tabs */
+        .nav-tabs .nav-item {
+            margin-right: 10px;
+            /* Adjust the value for more or less gap */
+        }
+
+        /* Style for the active tab */
+        .nav-tabs .nav-link.active {
+            background-color: #007bff;
+            /* Change this to your desired active color */
+            color: #fff;
+            /* Text color for the active tab */
+            border-radius: 0;
+            /* Remove border-radius if previously applied */
+            position: relative;
+            /* For positioning the borders */
+            border-bottom: 3px solid #007bff;
+            /* Bottom border to highlight the active tab */
+            border-top: 3px solid #007bff;
+            /* Top border to highlight the active tab */
+        }
+
+        /* Optional: Add hover effect to tabs */
+        .nav-tabs .nav-link {
+            color: #007bff;
+            /* Default tab text color */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .nav-tabs .nav-link:hover {
+            background-color: #e0e0e0;
+            /* Hover background color */
+            color: #007bff;
+            /* Hover text color */
+        }
+
+        /* Add a border to non-active tabs to align with the active tab */
+        .nav-tabs .nav-link {
+            border-bottom: 3px solid transparent;
+            /* Keeps the height consistent with active tab */
+            border-top: 3px solid transparent;
+            /* Keeps the height consistent with active tab */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item active" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action active">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">BMI Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="bmi-calculator">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="us-tab" data-bs-toggle="tab" href="#us"
+                                                role="tab" aria-controls="us" aria-selected="true">US Unit</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="metric-tab" data-bs-toggle="tab" href="#metric"
+                                                role="tab" aria-controls="metric" aria-selected="false">Metric Unit</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-3" id="myTabContent">
+                                        <!-- US Unit Tab -->
+                                        <div class="tab-pane fade show active" id="us" role="tabpanel"
+                                            aria-labelledby="us-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="age-us" class="form-label">Age
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your age in years">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="age-us" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">years</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Gender
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your gender">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="male-us" id="male-us">
+                                                            <label class="form-check-label" for="male-us">Male</label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="female-us" id="female-us">
+                                                            <label class="form-check-label"
+                                                                for="female-us">Female</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="us-height-feet" class="form-label">Height
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your height in feet and inches">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="us-height-feet" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">ft</span>
+                                                        <input type="number" class="form-control my-input-area ms-2"
+                                                            id="us-height-inches" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">in</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="weight-us" class="form-label">Weight
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your weight in pounds">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="weight-us" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">pounds</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-calculate-button-area">
+                                                <button type="submit" id="submit-us"
+                                                    class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                                <button type="button" id="clear-us" onclick="clearInputs()"
+                                                    class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                            </div>
+                                        </div>
+                                        <!-- Metric Unit Tab -->
+                                        <div class="tab-pane fade" id="metric" role="tabpanel"
+                                            aria-labelledby="metric-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="age-metric" class="form-label">Age
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your age in years">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="age-metric" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">years</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Gender
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your gender">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="male-metric" id="male-metric">
+                                                            <label class="form-check-label"
+                                                                for="male-metric">Male</label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="female-metric" id="female-metric">
+                                                            <label class="form-check-label"
+                                                                for="female-metric">Female</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="metric-height-feet" class="form-label">Height
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your height in cm (centimeter)">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="metric-height-feet" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group me-2">cm</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="weight-metric" class="form-label">Weight
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your weight in kg (kilogram)">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="weight-metric" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">kg</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-calculate-button-area">
+                                                <button type="submit" id="submit-metric"
+                                                    class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                                <button type="button" id="clear-metric" onclick="clearInputs()"
+                                                    class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="row m-0">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table mt-3">
+                                            <tbody id="result">
+                                                <!-- results will be shown in here  -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6 position-relative" id="gauge-chart-area">
+                                        <div class="gauge-chart-and-niddle">
+                                            <canvas id="bmiGaugeChart">
+                                                <!-- gauge chart will be shown here -->
+                                            </canvas>
+                                            <div id="gauge-needle" class="gauge-needle">
+                                                <!-- niddle indicator will be shown here  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped" id="classification-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>BMI Range (kg/m²)</th>
+                                                    <th>Classification</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Less than 16</td>
+                                                    <td>Severe Thinness</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16 - 16.9</td>
+                                                    <td>Moderate Thinness</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17 - 18.4</td>
+                                                    <td>Mild Thinness</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18.5 - 24.9</td>
+                                                    <td>Normal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25 - 29.9</td>
+                                                    <td>Overweight</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30 - 34.9</td>
+                                                    <td>Obese Class I</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>35 - 39.9</td>
+                                                    <td>Obese Class II</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>40 and above</td>
+                                                    <td>Obese Class III</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- calculator ends  -->
+        </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">BMI Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the BMI Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your BMI Calculator Result</a>
+                                    <a href="#why-important" class="list-group-item list-group-item-action">3. Why is BMI Important for Your Health?</a>
+                                    <a href="#bmi-children-teens" class="list-group-item list-group-item-action">4. BMI for Children and Teens</a>
+                                    <a href="#limitations-bmi" class="list-group-item list-group-item-action">5. Limitations of BMI</a>
+                                    <a href="#types-bmi-calculators" class="list-group-item list-group-item-action">6. Types of BMI Calculators</a>
+                                    <a href="#common-uses" class="list-group-item list-group-item-action">7. Common Uses of BMI Calculators</a>
+                                    <a href="#key-features" class="list-group-item list-group-item-action">8. Key Features of Advanced BMI Calculators</a>
+                                    <a href="#limitations-controversies" class="list-group-item list-group-item-action">9. Limitations and Controversies</a>
+                                    <a href="#interesting-facts" class="list-group-item list-group-item-action">10. Interesting Facts About BMI</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">11. FAQ</a>
+                                </div>
+                            </div>
+                            
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use the BMI Calculator</h2>
+                                <p>The BMI Calculator allows you to calculate your Body Mass Index (BMI) based on your weight and
+                                    height. It
+                                    also categorizes your BMI result to help you understand your health status. Here's a step-by-step
+                                    guide
+                                    on how to use the calculator:</p>
+                                <div class="ms-4">
+                                    <div>
+                                        <h3>Choose the Measurement Unit</h3>
+                                        <ul>
+                                            <li class="mb-1"><strong>US Unit: </strong>Select this if you prefer to input your height in
+                                                feet and inches, and weight in pounds.</li>
+                                            <li class="mb-1"><strong>Metric Unit: </strong>Choose this if you want to input your height
+                                                in
+                                                centimeters and weight in kilograms.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Enter Your Age</h3>
+                                        <ul>
+                                            <li class="mb-1">Input your age in the <strong>Age</strong> field. Ensure it is accurate to
+                                                get
+                                                better results.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Select Your Gender</h3>
+                                        <ul>
+                                            <li class="mb-1">Choose either <strong>Male</strong> or <strong>Female</strong> under the
+                                                <strong>Gender</strong> section by clicking the appropriate option.
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Provide Your Height</h4>
+                                            <ul>
+                                                <li class="mb-1">If using <strong>US Unit</strong>: Enter your height in the <strong>ft
+                                                        (feet)</strong> and <strong>in (inches)</strong> fields.</li>
+                                                <li class="mb-1">If using <strong>Metric Unit</strong>: Enter your height in <strong>cm
+                                                        (centimeters)</strong>.</li>
+                                            </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Enter Your Weight</h3>
+                                        <ul>
+                                            <li class="mb-1">If using <strong>US Unit</strong>: Input your weight in the
+                                                <strong>pounds</strong> field.
+                                            </li>
+                                            <li class="mb-1">If using <strong>Metric Unit</strong>: Input your weight in the
+                                                <strong>kilograms</strong> field.
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Click 'Calculate'</h3>
+                                        <ul>
+                                            <li class="mb-1">After filling in all the fields, press the blue <strong>Calculate</strong>
+                                                button.</li>
+                                            <li class="mb-1">The calculator will instantly compute your BMI and display your result,
+                                                along
+                                                with its classification (e.g., Normal, Overweight, etc.).</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Use the 'Clear' Button</h3>
+                                        <ul>
+                                            <li class="mb-1">To reset the fields and input new data, click the red
+                                                <strong>Clear</strong>
+                                                button. This will clear all the input fields, allowing you to start over.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                
+                                <h3>Helpful Notes</h3>
+                                <ul>
+                                    <li class="mb-1">Hover over the <strong>question marks (?)</strong> next to fields for additional
+                                        tips
+                                        or information about the input requirements.</li>
+                                    <li class="mb-1">Ensure all required fields are filled in before clicking <strong>Calculate</strong>
+                                        to
+                                        avoid errors.</li>
+                                    <li class="mb-1">BMI is a general guideline and does not account for factors like muscle mass or
+                                        body
+                                        composition. For a more accurate health assessment, consult a healthcare professional.</li>
+                                </ul>
+                
+                                <p>Enjoy using the BMI Calculator to track your health journey!</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding Your BMI Calculator Result</h2>
+                                <p>Body Mass Index (BMI) is a widely used measurement to assess whether an individual’s body weight is
+                                    appropriate for their height. It provides a simple numeric value and a corresponding classification
+                                    that
+                                    helps you understand your overall health status. Let’s break down the components of your BMI result
+                                    and
+                                    what they mean.</p>
+                                <div class="ms-4">
+                                    <div>
+                                        <h3>1. Your BMI Value</h3>
+                                        <p>The Body Mass Index (BMI) value is calculated based on your weight and height. It is
+                                            expressed in
+                                            units of kg/m², which represents kilograms per square meter. This number indicates your body
+                                            composition and is a quick way to gauge your overall health.</p>
+                                    </div>
+                
+                                    <div>
+                                        <h3>1. BMI Classification</h3>
+                                        <p>The BMI calculator classifies your BMI into categories based on standard medical guidelines.
+                                            These categories help you interpret your result in terms of health risks. Below are the
+                                            common
+                                            classifications:</p>
+                                        <ul>
+                                            <li class="mb-1"><strong>Severe Thinness (< 16): </strong>Indicates significant underweight
+                                                        and
+                                                        possible nutritional deficiencies. Medical consultation is strongly advised.
+                                            </li>
+                                            <li class="mb-1"><strong>Moderate Thinness (16 - 16.9): </strong>Suggests underweight but
+                                                less
+                                                severe than severe thinness. It may indicate the need for improved nutrition.</li>
+                                            <li class="mb-1"><strong>Mild Thinness (17 - 18.4): </strong>A slightly below-normal weight
+                                                range. Regular monitoring and a balanced diet may help.</li>
+                                            <li class="mb-1"><strong>Normal (18.5 - 24.9): </strong>Indicates a healthy weight range
+                                                associated with lower health risks.</li>
+                                            <li class="mb-1"><strong>Overweight (25 - 29.9): </strong>Reflects a weight above the normal
+                                                range. It may increase the risk of certain conditions like diabetes or heart disease.
+                                            </li>
+                                            <li class="mb-1"><strong>Obese Class I (30 - 34.9): </strong>Represents mild obesity. It is
+                                                associated with moderate health risks and may require weight management strategies.</li>
+                                            <li class="mb-1"><strong>Obese Class II (35 - 39.9): </strong>Indicates severe obesity,
+                                                which
+                                                significantly increases the risk of serious health conditions.</li>
+                                            <li class="mb-1"><strong>Obese Class III (40 and above): </strong>Categorized as extreme
+                                                obesity, posing a very high risk to health. Medical intervention is often necessary.
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>3. Visual Gauge Indicator</h3>
+                                        <p>The colorful gauge provides a visual representation of your BMI category:</p>
+                                        <ul>
+                                            <li class="mb-1"><strong>Red: </strong>Represents Severe or Moderate Thinness, or Class
+                                                II/III
+                                                Obesity, indicating higher health risks.</li>
+                                            <li class="mb-1"><strong>Yellow/Orange: </strong>Represents Mild Thinness or Overweight,
+                                                indicating moderate concerns.</li>
+                                            <li class="mb-1"><strong>Green: </strong>Indicates a Normal BMI, representing a healthy
+                                                weight
+                                                range.</li>
+                                        </ul>
+                                        <p>The needle on the gauge points to the specific range your BMI falls into, making it easy to
+                                            see
+                                            your status at a glance.</p>
+                                        <p>If you hover or tap on the colors the popup will show you the nge value for that color</p>
+                                    </div>
+                
+                                    <div>
+                                        <h3>4. Health Implications</h3>
+                                        <p>Each BMI category is associated with specific health implications. For example:</p>
+                                        <ul>
+                                            <li class="mb-1">A <strong>normal BMI</strong> suggests that your weight is in balance with
+                                                your
+                                                height, reducing the likelihood of weight-related health issues.</li>
+                                            <li class="mb-1">Being <strong>underweight</strong> could mean inadequate nutrition, leading
+                                                to
+                                                weakened immunity and other health concerns.</li>
+                                            <li class="mb-1">Being <strong>overweight</strong> or obese increases the risk of chronic
+                                                conditions such as diabetes, heart disease, and joint problems.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Next Steps</h3>
+                                        <p>Your BMI result is a helpful starting point for assessing your health, but it’s important to
+                                            consider other factors such as age, muscle mass, and overall body composition. To gain a
+                                            more
+                                            comprehensive understanding of your health:</p>
+                                        <ul>
+                                            <li class="mb-1">Consult with a healthcare professional for personalized advice.</li>
+                                            <li class="mb-1">Maintain a balanced diet and regular physical activity.</li>
+                                            <li class="mb-1">Monitor your BMI periodically to track any significant changes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>Remember, BMI is a general guideline and may not fully capture your unique health profile. Use it as
+                                    one
+                                    of several tools to guide your journey toward better health.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <p>Body Mass Index (BMI) is a widely used measure to estimate a person’s body fat based on their weight
+                                    and
+                                    height. It provides a quick and general indication of whether an individual’s weight is in a healthy
+                                    range.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="why-important">Why is BMI Important for Your Health?</h2>
+                                <p>Body Mass Index (BMI) is a widely used health indicator that helps determine whether your weight is
+                                    within a healthy range based on your height. It is an essential tool for identifying potential
+                                    health
+                                    risks such as obesity, heart disease, and diabetes. Used by healthcare professionals, fitness
+                                    experts,
+                                    and individuals alike, BMI provides valuable insights for maintaining a balanced and healthy
+                                    lifestyle.
+                                </p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="bmi-children-teens">BMI for Children and Teens: Understanding Healthy Growth</h2>
+                                <p>For children and teenagers aged 2 to 19, Body Mass Index (BMI) is assessed using age- and
+                                    sex-specific
+                                    percentile charts. Unlike adults, BMI for kids accounts for natural growth patterns and
+                                    developmental
+                                    differences. Tracking BMI percentiles helps parents and healthcare providers monitor a child's
+                                    growth,
+                                    ensuring they maintain a healthy weight for their age and gender.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="limitations-bmi">Limitations of BMI: Understanding Its Accuracy and Shortcomings</h2>
+                                <p>Body Mass Index (BMI) is a widely used screening tool for assessing body weight relative to height,
+                                    but
+                                    it has several limitations. BMI does not differentiate between muscle mass, bone density, or fat
+                                    distribution, which can result in misleading classifications. For example, athletes with high muscle
+                                    mass may be categorized as overweight or obese, despite having low body fat. Similarly, elderly
+                                    individuals with lower muscle mass may appear to have a healthy BMI, even if they have excess body
+                                    fat.
+                                    For a more accurate health assessment, BMI should be considered alongside other factors such as body
+                                    fat
+                                    percentage, waist-to-hip ratio, and overall lifestyle.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="types-bmi-calculators">Types of BMI Calculators: Choosing the Best Method for You</h2>
+                                <p>There are several ways to calculate Body Mass Index (BMI), ranging from simple manual methods to
+                                    advanced
+                                    digital tools. Below are the most common types:</p>
+                
+                                <ul>
+                                    <li class="mb-3">
+                                        <h5>Online BMI Calculators</h5>
+                                        <p>These web-based and mobile app calculators provide instant BMI results by requiring users to
+                                            input their weight and height. They are fast, convenient, and widely accessible.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Manual BMI Calculation</h5>
+                                        <p>Using the BMI formula (<code>BMI = weight (kg) / height² (m²)</code>), you can calculate your
+                                            BMI
+                                            with a simple calculator, pen, and paper. This method is useful when digital tools aren’t
+                                            available.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Advanced Digital Tools</h5>
+                                        <p>Modern fitness devices and health-tracking apps offer BMI calculators along with additional
+                                            metrics such as body fat percentage, muscle mass, and caloric needs, providing a more
+                                            comprehensive health assessment.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="common-uses">Common Uses of BMI Calculators in Health and Wellness</h2>
+                                <p>Body Mass Index (BMI) calculators play a crucial role in various fields, from personal health
+                                    management
+                                    to scientific research. Here are some of the key applications:</p>
+                
+                                <ol>
+                                    <li class="mb-3">
+                                        <h5>Healthcare and Medical Assessments</h5>
+                                        <p>Doctors and healthcare professionals use BMI as an initial screening tool to assess risks
+                                            related
+                                            to obesity, malnutrition, and conditions such as diabetes, hypertension, and cardiovascular
+                                            disease.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Fitness, Weight Management, and Wellness</h5>
+                                        <p>Individuals use BMI calculators to track their weight status and set fitness goals. Whether
+                                            for
+                                            weight loss, muscle gain, or maintaining a healthy weight, BMI provides a simple benchmark
+                                            for
+                                            progress.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Public Health Research and Statistical Analysis</h5>
+                                        <p>Researchers and policymakers rely on BMI data to monitor obesity and malnutrition trends
+                                            across
+                                            different populations. This information is essential for shaping public health policies and
+                                            preventive healthcare strategies.</p>
+                                    </li>
+                                </ol>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="key-features">Key Features of Advanced BMI Calculators</h2>
+                                <p>Modern BMI calculators go beyond basic weight and height measurements, offering enhanced features for
+                                    a
+                                    more detailed health analysis. Here are some advanced functionalities:</p>
+                
+                                <ul>
+                                    <li class="mb-3">
+                                        <h5>Comprehensive Health Metrics</h5>
+                                        <p>Many advanced BMI calculators integrate additional health indicators such as body fat
+                                            percentage,
+                                            Basal Metabolic Rate (BMR), muscle mass, and waist-to-hip ratio, providing a more accurate
+                                            picture of overall health.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Customizable Units and Settings</h5>
+                                        <p>Users can switch between metric and imperial measurement units and customize settings based
+                                            on
+                                            age, gender, and activity levels for more personalized results.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Progress Tracking and Health Monitoring</h5>
+                                        <p>These calculators often include built-in tracking features that allow users to monitor their
+                                            BMI
+                                            trends over time, helping them stay on top of their health goals.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Personalized Health Recommendations</h5>
+                                        <p>Many tools provide tailored suggestions based on BMI results, including diet plans, exercise
+                                            routines, and lifestyle modifications to improve overall well-being.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="limitations-controversies">Limitations and Controversies</h2>
+                                <ul>
+                                    <li class="mb-3">
+                                        <h5>Inaccuracy for Certain Populations</h5>
+                                        <p>BMI does not distinguish between muscle and fat, making it less accurate for athletes,
+                                            bodybuilders, or the elderly.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Misinterpretation Risks</h5>
+                                        <p>Relying solely on BMI may lead to overlooking other important health factors, such as blood
+                                            pressure, cholesterol levels, or lifestyle habits</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h5>Cultural and Genetic Differences</h5>
+                                        <p>BMI thresholds may not equally apply to all populations due to genetic and cultural
+                                            differences
+                                            in body composition.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="interesting-facts">Interesting Facts About Body Mass Index (BMI)</h2>
+                                <ul>
+                                    <li class="mb-3">
+                                        <h3>The History and Origin of BMI</h3>
+                                        <p>Body Mass Index (BMI) was first developed by Belgian mathematician Adolphe Quetelet in the
+                                            1830s. It was originally designed as a simple statistical measure to assess weight and
+                                            height relationships in populations.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h3>Global Obesity Trends and BMI Importance</h3>
+                                        <p>According to the <a
+                                                href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+                                                target="_blank">World Health Organization (WHO)</a>, global obesity rates have tripled
+                                            since 1975. BMI is widely used to classify weight categories and help address
+                                            obesity-related health risks.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h3>BMI vs. Other Health Metrics</h3>
+                                        <p>Although BMI is a popular measurement, alternative health indicators such as waist-to-height
+                                            ratio and body fat percentage offer more detailed insights into overall health and fitness.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <p>BMI is a valuable tool for assessing whether a person’s weight falls within a healthy range. Although
+                                    simple and widely used, it should be complemented with other health metrics for a complete picture.
+                                </p>
+                                <p>Whether you’re monitoring your fitness journey, assessing health risks, or conducting research, a BMI
+                                    calculator can be a practical and effective too</p>
+                            </section>
+                
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="bmiCalculatorFAQ">
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a BMI calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                                                    data-bs-parent="#bmiCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        A BMI (Body Mass Index) calculator is a tool that measures body weight relative
+                                                        to
+                                                        height to classify individuals into categories such as underweight, normal
+                                                        weight,
+                                                        overweight, or obese.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How is BMI calculated?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                                                    data-bs-parent="#bmiCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li><strong>Metric units: </strong>BMI = weight (kg) ÷ [height (m)]²</li>
+                                                            <li><strong>Imperial units: </strong>BMI = [weight (lbs) ÷ height (in)²] ×
+                                                                703
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        <strong>Is BMI an accurate measure of health?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                                                    data-bs-parent="#bmiCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        BMI provides a general guideline but does not account for factors like muscle
+                                                        mass,
+                                                        bone density, or body fat percentage. It’s best used alongside other health
+                                                        metrics.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        <strong>Can BMI calculators be used for children?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                                                    data-bs-parent="#bmiCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, but BMI for children is interpreted differently. It is compared against
+                                                        age-
+                                                        and gender-specific percentiles to assess their growth and development.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        <strong>What are the BMI categories?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                                                    data-bs-parent="#bmiCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>Severe Thinness: BMI < 16</li>
+                                                            <li>Moderate Thinness: BMI 16 - 16.9</li>
+                                                            <li>Mild Thinness: BMI 17 - 18.4</li>
+                                                            <li>Normal: BMI 18.5 - 24.9</li>
+                                                            <li>Overweight: BMI 25 - 29.9</li>
+                                                            <li>Obese Class I: BMI 30 - 34.9</li>
+                                                            <li>Obese Class II: BMI 35 - 39.9</li>
+                                                            <li>Obese Class III: BMI ≥ 40</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>Can BMI calculators give health recommendations?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                                                    data-bs-parent="#bmiCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Some advanced calculators provide health advice, such as ideal weight ranges,
+                                                        dietary tips, or fitness plans based on BMI results.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="assets/js/bmi-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

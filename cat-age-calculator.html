@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Age Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item active" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action active">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Cat Age Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="cat-age-calculator">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="age" class="form-label">Age of Cat</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="age" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">year</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="nav-to-result"></span>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody>
+                                            <tr id="result">
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-article">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Cat Age Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use a Cat Age Calculator</a>
+                                    <a href="#calculate-human-years" class="list-group-item list-group-item-action">2. How to Calculate Human Years for Cats</a>
+                                    <a href="#cat-age-chart" class="list-group-item list-group-item-action">3. Cat Age to Human Years Chart</a>
+                                    <a href="#myth-of-cat-years" class="list-group-item list-group-item-action">4. The Myth of Cat Years</a>
+                                    <a href="#life-stages" class="list-group-item list-group-item-action">5. Stages of a Cat’s Life</a>
+                                    <a href="#how-calculator-works" class="list-group-item list-group-item-action">6. How a Cat Age Calculator Works</a>
+                                    <a href="#factors-affecting-aging" class="list-group-item list-group-item-action">7. Factors That Affect a Cat’s Aging Process</a>
+                                    <a href="#calculator-ideas" class="list-group-item list-group-item-action">8. Cat Age Calculator Ideas</a>
+                                    <a href="#importance-of-age" class="list-group-item list-group-item-action">9. Why Understanding Your Cat’s Age Matters</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">10. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use a Cat Age Calculator: Convert Cat Years to Human Years</h2>
+                                <p>Wondering how old your cat is in human years? Our cat age calculator makes it easy to determine your
+                                    feline friend's age equivalent. Follow these simple steps:</p>
+                    
+                                <div>
+                                    <div>
+                                        <h3>Step 1: Locate the Input Field</h3>
+                                        <ul>
+                                            <li>Find the section labeled <strong>"Age of Cat"</strong> or <strong>"Cat's Age"</strong>.</li>
+                                            <li>Some calculators have separate fields for years and months for more accuracy.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>Step 2: Enter Your Cat’s Age</h3>
+                                        <ul>
+                                            <li>Input the number of years your cat has lived.</li>
+                                            <li>If available, add months for a more precise calculation.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>Step 3: Click the 'Calculate' Button</h3>
+                                        <ul>
+                                            <li>Press the <strong>Calculate</strong> button to convert your cat’s age into human years.</li>
+                                            <li>The results will instantly display how old your cat is in human years.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div>
+                                        <h3>Step 4: Clear (Optional)</h3>
+                                        <ul>
+                                            <li>Click the <strong>Clear</strong> button to reset the input fields and calculate another
+                                                cat’s age.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <p>Understanding your cat’s age in human years helps provide age-appropriate care, from diet to veterinary
+                                    checkups.
+                                    Use the <strong>best cat age calculator</strong> to accurately determine your feline's age and ensure
+                                    their well-being.
+                                    — The post <strong>Best Cat Age Calculator: Do You Know How to Calculate Your Cat's Age in Human
+                                        Years?</strong></p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="calculate-human-years">How can you calculate human years when it comes to your cat's age?</h2>
+                                <p>Your cat's age matters</p>
+                                <p>Likewise, Everybody knows that cats age differently from people and by translating the age of your cat to
+                                    their human equivalent, you can better take care of them. If you are feeding them differently, making
+                                    preventative care checkups or just understanding how to properly treat your cat with its now known age
+                                    may better serve it the relaxation and happy lifestyle that will keep him in great health. For instance,
+                                    older cats may need a different diet or more frequent checkups.</p>
+                                <h3 id="cat-age-chart">Here is the chart that shows the cat age in human years:</h3>
+                                <div class="d-flex justify-content-center">
+                                    <div class="col-lg-6 col-12 text-center">
+                                        <table class="table table-striped table-bordered border-primary">
+                                            <tr>
+                                                <th>Cat age</th>
+                                                <th>Human age</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1 year</td>
+                                                <td>15years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2 years</td>
+                                                <td>24 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 years</td>
+                                                <td>28 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4 years</td>
+                                                <td>32 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5 years</td>
+                                                <td>36 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6 years</td>
+                                                <td>40 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7 years</td>
+                                                <td>44 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 years</td>
+                                                <td>48 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9 years</td>
+                                                <td>52 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10 years</td>
+                                                <td>56 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11 years</td>
+                                                <td>60 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 years</td>
+                                                <td>64 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13 years</td>
+                                                <td>68 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14 years</td>
+                                                <td>72 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15 years</td>
+                                                <td>76 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16 years</td>
+                                                <td>80 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>17 years</td>
+                                                <td>84 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>18 years</td>
+                                                <td>88 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>19 years</td>
+                                                <td>92 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20 years</td>
+                                                <td>96 years</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="myth-of-cat-years">The Myth of Cat Years: Does 1 Cat Year Really Equal 7 Human Years?</h2>
+                                <p>A common misconception is that one cat year equals seven human years. However, this is not accurate.
+                                    Cats age rapidly in their first year, reaching the equivalent of a 15-year-old human. By the time a cat
+                                    is 2 years old, they are roughly 24 in human years.
+                                    After that, each additional cat year equals about four human years. Understanding your cat’s real age
+                                    helps provide better care throughout their life stages.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="life-stages">Stages of a Cat’s Life: Understanding Your Cat’s Aging Process</h2>
+                                <p>Knowing the different <strong>life stages of a cat</strong> helps you provide the right care and
+                                    recognize signs of aging. Here’s a breakdown of each stage in your cat’s life:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Kitten (0-6 months):</strong> This is your cat’s baby stage, similar to a human
+                                        toddler. Kittens experience rapid growth, sensory development, and endless curiosity. Expect lots of
+                                        playful energy and bonding opportunities.</li>
+                                    <li class="mb-1"><strong>Junior (7 months - 2 years):</strong> This is the "teenage" phase, where your
+                                        cat is highly active, learning boundaries, and developing habits. It’s a crucial time for
+                                        socialization and training.</li>
+                                    <li class="mb-1"><strong>Young Adult (3-6 years):</strong> Your cat is now in their prime, equivalent to
+                                        a human in their late twenties or early thirties. They are strong, agile, and generally in peak
+                                        health.</li>
+                                    <li class="mb-1"><strong>Mature Adult (7-10 years):</strong> This is the middle-aged stage, where cats
+                                        may begin slowing down. Regular vet check-ups, a healthy diet, and weight management become
+                                        essential.</li>
+                                    <li class="mb-1"><strong>Senior (11-14 years):</strong> Your cat is now considered a senior. You may
+                                        notice reduced activity levels, changing sleep patterns, and a greater need for specialized
+                                        nutrition and vet care.</li>
+                                    <li class="mb-1"><strong>Geriatric (15+ years):</strong> Cats over 15 are in their golden years. They
+                                        require extra comfort, gentle handling, and more frequent health monitoring. With proper care, some
+                                        cats can live well into their 20s!</li>
+                                </ul>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="how-calculator-works">How a Cat Age Calculator Works</h2>
+                                <p>The <strong>cat age calculator</strong> is a simple yet effective tool that converts your cat’s age into
+                                    human years.
+                                    By entering your cat’s age, the calculator estimates their equivalent age in human years, helping you
+                                    understand their life stage and care needs.</p>
+                                <p>Some advanced <strong>cat-to-human age calculators</strong> consider factors like <strong>breed, size,
+                                        weight, and overall health</strong> for a more precise estimate.
+                                    This gives you a better idea of how old your cat is in human years and helps you provide age-appropriate
+                                    care.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="factors-affecting-aging">Key Factors That Affect a Cat’s Aging Process</h2>
+                                <p>Several factors influence how fast a cat ages. While genetics play a major role, certain lifestyle
+                                    choices can impact your cat’s lifespan and overall health.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Cat Breed and Lifespan:</strong> Some cat breeds, like <strong>Siamese and
+                                            Maine Coons</strong>, tend to live longer than others. If you’re looking for a long-term feline
+                                        companion, choosing a breed with a longer lifespan can be beneficial.</li>
+                                    <li class="mb-1"><strong>Indoor vs. Outdoor Cats:</strong> Indoor cats generally live <strong>longer and
+                                            healthier lives</strong> than outdoor cats. Outdoor cats are exposed to risks like traffic,
+                                        predators, and contagious diseases, which can shorten their lifespan.</li>
+                                    <li class="mb-1"><strong>Genetics and Aging:</strong> Just like humans, a cat's lifespan is influenced
+                                        by their <strong>genetic makeup</strong>. While you can’t change genetics, regular vet check-ups can
+                                        help detect and manage age-related health concerns early.</li>
+                                    <li class="mb-1"><strong>Nutrition and Lifestyle:</strong> A <strong>balanced diet, regular exercise,
+                                            and proper veterinary care</strong> contribute significantly to a cat’s longevity. Choosing
+                                        <strong>age-appropriate cat food</strong> ensures your cat gets the necessary nutrients at every
+                                        stage of life.
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="calculator-ideas">Cat Age Calculator Ideas</h2>
+                                <p>Understanding your cat’s age in human years is crucial for ensuring their health and well-being. Our
+                                    <strong>cat age calculator</strong> helps you determine your feline friend's age, providing insights
+                                    into their life stage and care needs.
+                                </p>
+                                <h3>Why Use a Cat Age Calculator?</h3>
+                                <ul>
+                                    <li><strong>Adjust Care for Senior Cats:</strong> As cats age, they require a specialized diet, gentle
+                                        exercise, and regular veterinary check-ups. Knowing your cat’s age can help you tailor their care
+                                        accordingly.</li>
+                                    <li><strong>Identify Early Signs of Aging:</strong> Keep an eye out for age-related health issues such
+                                        as arthritis, dental problems, or reduced mobility. Detecting these symptoms early can lead to
+                                        better treatment and improved quality of life.</li>
+                                </ul>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <h2 id="importance-of-age">Why Understanding Your Cat’s Age Matters</h2>
+                                <p>Knowing how old your cat is in human years is essential for providing the right care at every stage of
+                                    life. A <strong>cat age calculator</strong> helps you determine your pet’s age, ensuring they receive
+                                    proper nutrition, exercise, and veterinary attention.</p>
+                                <p>By converting <strong>cat years to human years</strong>, you can better understand their aging process
+                                    and adjust their lifestyle accordingly. This proactive approach helps maintain their health and
+                                    well-being, preventing potential age-related issues.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="catFAQ">
+                                            <!-- FAQ Item 1 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>Is it true that every cat ages equally?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                                    data-bs-parent="#catFAQ">
+                                                    <div class="accordion-body">
+                                                        A cat's age is significantly influenced by factors such as breed, genetics, and living environment. These factors can cause considerable variation in how cats age over time.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 2 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>I have a domestic cat. Does this matter?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                                    data-bs-parent="#catFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, it does. Domestic cats generally live longer, but their genetics play a major role in determining their lifespan, which can reach up to 20 years. Their quality of life and environment also have a huge impact on their overall health.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 3 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>Are cat age calculators accurate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                                    data-bs-parent="#catFAQ">
+                                                    <div class="accordion-body">
+                                                        Cat age calculators provide an estimate rather than a precise measurement. They offer a general guideline to compare a cat's age to human years, helping owners understand their pet’s life stage.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 4 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>Will my cat age gracefully?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                                    data-bs-parent="#catFAQ">
+                                                    <div class="accordion-body">
+                                                        Absolutely! A well-balanced diet, regular vet visits, and a comfortable living environment can greatly improve your cat’s quality of life and help them age gracefully.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 5 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>High-Strengthow can I keep my cat healthy as it ages?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                                    data-bs-parent="#catFAQ">
+                                                    <div class="accordion-body">
+                                                        Regular vet check-ups, a balanced diet, mental stimulation, and exercise are key factors in keeping your cat healthy as it ages.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 6 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>Do indoor cats live longer than outdoor cats?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                                    data-bs-parent="#catFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, indoor cats typically live longer than outdoor cats due to fewer risks such as accidents, diseases, and predators. Indoor cats can live 15-20 years on average, whereas outdoor cats often have shorter lifespans.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 7 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>What are signs of aging in cats?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                                    data-bs-parent="#catFAQ">
+                                                    <div class="accordion-body">
+                                                        Common signs of aging in cats include reduced activity, weight changes, duller coat, vision or hearing issues, and increased sleep. Regular vet visits can help monitor their health.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/cat-age-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+</body>
+
+</html>

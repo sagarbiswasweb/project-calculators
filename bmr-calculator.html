@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item active" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action active">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">BMR Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="bmr-calculator">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="us-tab" data-bs-toggle="tab" href="#us"
+                                                role="tab" aria-controls="us" aria-selected="true">US Unit</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="metric-tab" data-bs-toggle="tab" href="#metric"
+                                                role="tab" aria-controls="metric" aria-selected="false">Metric Unit</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-3" id="myTabContent">
+                                        <!-- US Unit Tab -->
+                                        <div class="tab-pane fade show active" id="us" role="tabpanel"
+                                            aria-labelledby="us-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="age-us" class="form-label">Age
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your age in years">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="age-us" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">years</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Gender
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your gender">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="male-us" id="male-us">
+                                                            <label class="form-check-label" for="male-us">Male</label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="female-us" id="female-us">
+                                                            <label class="form-check-label"
+                                                                for="female-us">Female</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="us-height-feet" class="form-label">Height
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your height in feet and inches">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="us-height-feet" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">ft</span>
+                                                        <input type="number" class="form-control my-input-area ms-2"
+                                                            id="us-height-inches" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">in</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="weight-us" class="form-label">Weight
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your weight in pounds">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="weight-us" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">pounds</span>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-md-6">
+                                                    <label for="activity-us" class="form-label">Activity</label>
+                                                    <div class="input-group mb-3">
+                                                        <select class="form-select my-input-area" name=""
+                                                            id="activity-us">
+                                                            <option value="select" selected disabled>Select</option>
+                                                            <option value="no-exercise">No Exercise</option>
+                                                            <option value="light-exercise">Light Exercise</option>
+                                                            <option value="moderate-exercise">Moderate Exercise</option>
+                                                            <option value="active">Active</option>
+                                                            <option value="very-active">Very Active</option>
+                                                            <option value="extra-active">Extra Active</option>
+                                                        </select>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="my-calculate-button-area">
+                                                <button type="submit" id="submit-us"
+                                                    class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                                <button type="button" id="clear-us" onclick="clearInputs()"
+                                                    class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                            </div>
+                                        </div>
+                                        <!-- Metric Unit Tab -->
+                                        <div class="tab-pane fade" id="metric" role="tabpanel"
+                                            aria-labelledby="metric-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="age-metric" class="form-label">Age
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your age in years">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="age-metric" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">years</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Gender
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your gender">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="male-metric" id="male-metric">
+                                                            <label class="form-check-label"
+                                                                for="male-metric">Male</label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="female-metric" id="female-metric">
+                                                            <label class="form-check-label"
+                                                                for="female-metric">Female</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="metric-height-feet" class="form-label">Height
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your height in cm (centimeter)">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="metric-height-feet" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group me-2">cm</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="weight-metric" class="form-label">Weight
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your weight in kg (kilogram)">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="weight-metric" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">kg</span>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-md-6">
+                                                    <label for="activity-metric" class="form-label">Activity</label>
+                                                    <div class="input-group mb-3">
+                                                        <select class="form-select my-input-area" name=""
+                                                            id="activity-metric">
+                                                            <option value="select" selected disabled>Select</option>
+                                                            <option value="no-exercise">No Exercise</option>
+                                                            <option value="light-exercise">Light Exercise</option>
+                                                            <option value="moderate-exercise">Moderate Exercise</option>
+                                                            <option value="active">Active</option>
+                                                            <option value="very-active">Very Active</option>
+                                                            <option value="extra-active">Extra Active</option>
+                                                        </select>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="my-calculate-button-area">
+                                                <button type="submit" id="submit-metric"
+                                                    class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                                <button type="button" id="clear-metric" onclick="clearInputs()"
+                                                    class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody id="result">
+                                            <!-- results will be shown in here  -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- calculator ends  -->
+        </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">BMR Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the BMR Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your BMR Calculator Result</a>
+                                    <a href="#how-bmr-calculated" class="list-group-item list-group-item-action">3. How BMR is Calculated</a>
+                                    <a href="#factors-affecting-bmr" class="list-group-item list-group-item-action">4. Factors That Affect BMR</a>
+                                    <a href="#types-bmr-calculators" class="list-group-item list-group-item-action">5. Different Types of BMR Calculators</a>
+                                    <a href="#key-applications" class="list-group-item list-group-item-action">6. Key Applications of BMR Calculators</a>
+                                    <a href="#key-features" class="list-group-item list-group-item-action">7. Key Features of Advanced BMR Calculators</a>
+                                    <a href="#limitations-bmr" class="list-group-item list-group-item-action">8. Limitations of BMR Calculators</a>
+                                    <a href="#create-bmr-calculator" class="list-group-item list-group-item-action">9. How to Create a BMR Calculator</a>
+                                    <a href="#fun-facts" class="list-group-item list-group-item-action">10. Fun and Surprising Facts About BMR</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">11. FAQ</a>
+                                </div>
+                            </div>
+                            
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use the BMR Calculator</h2>
+                                <p>The <strong>BMR (Basal Metabolic Rate) Calculator</strong> helps you estimate the number of calories
+                                    your body needs to perform basic functions like breathing, circulation, and cell production. Follow
+                                    these simple steps to calculate your BMR:</p>
+                                <div>
+                                    <h3>Step 1: Choose Your Unit System</h3>
+                                    <ul>
+                                        <li>Select either <strong>US Unit</strong> (feet, inches, and pounds) or <strong>Metric
+                                                Unit</strong> (centimeters and kilograms) based on your preference.</li>
+                                    </ul>
+                                </div>
+                
+                                <div>
+                                    <h3>Step 2: Enter Your Age</h3>
+                                    <ul>
+                                        <li>Input your age in years to ensure an accurate BMR calculation.</li>
+                                    </ul>
+                                </div>
+                
+                                <div>
+                                    <h3>Step 3: Select Your Gender</h3>
+                                    <ul>
+                                        <li>Choose <strong>Male</strong> or <strong>Female</strong>, as BMR calculations vary based on
+                                            gender due to physiological differences.</li>
+                                    </ul>
+                                </div>
+                
+                                <div>
+                                    <h3>Step 4: Input Your Height</h3>
+                                    <ul>
+                                        <li>If using the <strong>US Unit</strong>, enter your height in <strong>feet</strong> and
+                                            <strong>inches</strong>.
+                                        </li>
+                                        <li>If using the <strong>Metric Unit</strong>, enter your height in
+                                            <strong>centimeters</strong>.
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <div>
+                                    <h3>Step 5: Enter Your Weight</h3>
+                                    <ul>
+                                        <li>If using the <strong>US Unit</strong>, enter your weight in <strong>pounds</strong>.</li>
+                                        <li>If using the <strong>Metric Unit</strong>, enter your weight in <strong>kilograms</strong>.
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <div>
+                                    <h3>Step 6: Calculate Your BMR</h3>
+                                    <p>Click the <strong>“Calculate”</strong> button to get your <strong>BMR result</strong>, which
+                                        shows the number of calories your body burns at rest.</p>
+                                </div>
+                
+                                <div>
+                                    <h3>Step 7: Clear the Fields (Optional)</h3>
+                                    <ul>
+                                        <li>If you want to reset the values and start over, click the <strong>“Clear”</strong> button.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding Your BMR Calculator Result</h2>
+                                <p>After using the BMR Calculator, you’ll receive a number representing your Basal Metabolic Rate (BMR).
+                                    But what does this mean, and how can you use it to improve your health and fitness goals? Let’s
+                                    break it down.</p>
+                                <div>
+                                    <h3>What is BMR?</h3>
+                                    <p>Your <strong>Basal Metabolic Rate (BMR)</strong> is the number of calories your body burns at
+                                        rest to maintain vital functions such as:</p>
+                                    <ul>
+                                        <li class="mb-1">Breathing</li>
+                                        <li class="mb-1">Circulating blood</li>
+                                        <li class="mb-1">Regulating body temperature</li>
+                                        <li class="mb-1">Cell growth and repair</li>
+                                    </ul>
+                                    <p>This means that even if you stay in bed all day, your body would still need this amount of energy
+                                        to function properly.</p>
+                                </div>
+                
+                                <div>
+                                    <h3>How to Use Your BMR Result</h3>
+                                    <p>Once you have your BMR, you can use it to estimate your Total Daily Energy Expenditure (TDEE)—the
+                                        total number of calories your body needs based on your activity level.</p>
+                                    <div>
+                                        <h3>Step 1: Determine Your Activity Level</h3>
+                                        <p>Multiply your BMR by the appropriate factor below to estimate your daily calorie needs:</p>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th>Activity Level</th>
+                                                                <th>Multiplier</th>
+                                                                <th>Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Sedentary</td>
+                                                                <td>BMR × 1.2</td>
+                                                                <td>Little to no exercise</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Lightly Active</td>
+                                                                <td>BMR × 1.375</td>
+                                                                <td>Light exercise 1-3 days per week</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Moderately Active</td>
+                                                                <td>BMR × 1.55</td>
+                                                                <td>Moderate exercise 3-5 days per week</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Very Active</td>
+                                                                <td>BMR × 1.725</td>
+                                                                <td>Hard exercise 6-7 days per week</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Super Active</td>
+                                                                <td>BMR × 1.9</td>
+                                                                <td>Intense daily training or physical job</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div>
+                                        <h3>Step 2: Set Your Goal</h3>
+                                        <p class="mb-2">Once you know your TDEE, adjust your calorie intake based on your goal:</p>
+                                        <ul>
+                                            <li class="mb-1"><strong>Weight Loss: </strong>Eat fewer calories than your TDEE (typically
+                                                500-750 calorie deficit per day).</li>
+                                            <li class="mb-1"><strong>Weight Maintenance: </strong>Consume about the same number of
+                                                calories as your TDEE.</li>
+                                            <li class="mb-1"><strong>Muscle Gain: </strong>Eat more calories than your TDEE (typically
+                                                250-500 calorie surplus per day).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                
+                                <div>
+                                    <h3>Factors Affecting Your BMR</h3>
+                                    <p>Your BMR is influenced by several factors, including:</p>
+                                    <ul>
+                                        <li class="mb-1"><strong>Age</strong> – BMR decreases with age.</li>
+                                        <li class="mb-1"><strong>Gender</strong> – Males typically have a higher BMR due to muscle mass.
+                                        </li>
+                                        <li class="mb-1"><strong>Muscle Mass</strong> – More muscle means a higher BMR.</li>
+                                        <li class="mb-1"><strong>Body Size</strong> – Taller and larger individuals have a higher BMR.
+                                        </li>
+                                        <li class="mb-1"><strong>Genetics</strong> – Some people naturally have a faster metabolism.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p>Understanding your BMR is key to making informed diet and fitness choices. Whether your goal is to
+                                    lose weight, gain muscle, or maintain your current weight, using your BMR alongside your activity
+                                    level will help you create a sustainable and effective nutrition plan.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2>Some High Calorie Foods</h2>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-8">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead class="table-dark">
+                                                        <tr>
+                                                            <th>Food</th>
+                                                            <th>Calories per 100g</th>
+                                                            <th>Macronutrients</th>
+                                                            <th>Health Benefits</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Peanut Butter</td>
+                                                            <td>588 kcal</td>
+                                                            <td>Protein, Healthy Fats, Carbs</td>
+                                                            <td>Great for muscle gain, rich in antioxidants</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Avocado</td>
+                                                            <td>160 kcal</td>
+                                                            <td>Healthy Fats, Fiber, Vitamins</td>
+                                                            <td>Supports heart health, packed with nutrients</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Oats</td>
+                                                            <td>389 kcal</td>
+                                                            <td>Carbs, Fiber, Protein</td>
+                                                            <td>Good for digestion, provides sustained energy</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dark Chocolate (85%+ Cocoa)</td>
+                                                            <td>600 kcal</td>
+                                                            <td>Healthy Fats, Fiber, Antioxidants</td>
+                                                            <td>Boosts brain function, reduces stress</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cheese</td>
+                                                            <td>402 kcal</td>
+                                                            <td>Protein, Calcium, Healthy Fats</td>
+                                                            <td>Good for bone health, high in protein</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Almonds</td>
+                                                            <td>579 kcal</td>
+                                                            <td>Healthy Fats, Protein, Vitamin E</td>
+                                                            <td>Supports brain health, good for skin</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Whole Milk</td>
+                                                            <td>61 kcal</td>
+                                                            <td>Protein, Carbs, Calcium</td>
+                                                            <td>Supports muscle recovery, rich in vitamins</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Salmon</td>
+                                                            <td>208 kcal</td>
+                                                            <td>Protein, Omega-3 Fatty Acids</td>
+                                                            <td>Boosts heart and brain health</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Eggs</td>
+                                                            <td>155 kcal</td>
+                                                            <td>Protein, Healthy Fats, Vitamins</td>
+                                                            <td>Helps muscle growth, full of essential nutrients</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rice</td>
+                                                            <td>130 kcal</td>
+                                                            <td>Carbs, Fiber, Protein</td>
+                                                            <td>Quick energy source, easy to digest</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Olive Oil</td>
+                                                            <td>884 kcal</td>
+                                                            <td>Healthy Fats, Antioxidants</td>
+                                                            <td>Supports heart health, reduces inflammation</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="how-bmr-calculated">How BMR is Calculated</h2>
+                                <ul>
+                                    <li>
+                                        <h3>The Basic Concept</h3>
+                                        <p>BMR calculates the energy expenditure required for basic physiological processes without
+                                            accounting for physical activities or digestion. It’s an important starting point for
+                                            understanding total daily calorie needs.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h4>BMR Formulas</h4>
+                                        <p>Two common methods for calculating BMR include:</p>
+                                        <ol>
+                                            <li>
+                                                <strong>Harris-Benedict Equation:</strong>
+                                                <ul>
+                                                    <li class="mb-1"><strong>Men:</strong> BMR = 88.362 + (13.397 × weight in kg) +
+                                                        (4.799 × height in cm) - (5.677 × age in years)</li>
+                                                    <li class="mb-1"><strong>Women:</strong> BMR = 447.593 + (9.247 × weight in kg) +
+                                                        (3.098 × height in cm) - (4.330 × age in years)</li>
+                                                </ul>
+                                            </li>
+                
+                                            <li>
+                                                <strong>Mifflin-St Jeor Equation (More Accurate):</strong>
+                                                <ul>
+                                                    <li class="mb-1"><strong>Men:</strong> BMR = (10 × weight in kg) + (6.25 × height in
+                                                        cm) - (5 × age in years) + 5</li>
+                                                    <li class="mb-1"><strong>Women:</strong> BMR = (10 × weight in kg) + (6.25 × height
+                                                        in cm) - (5 × age in years) - 161</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                
+                                    <li>
+                                        <h4>Example Calculation</h4>
+                                        <p>For a 30-year-old woman weighing 60 kg and 165 cm tall, using the Mifflin-St Jeor equation:
+                                        </p>
+                                        <ul>
+                                            <li class="mb-1">BMR = (10 × 60) + (6.25 × 165) - (5 × 30) - 161</li>
+                                            <li class="mb-1">BMR = 600 + 1031.25 - 150 - 161 = 1320.25 calories/day This means she
+                                                requires approximately 1320 calories daily to maintain basic bodily functions.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="factors-affecting-bmr">Factors That Affect BMR</h2>
+                                <ul>
+                                    <li class="mb-2"><strong>Age: </strong>Metabolism slows with age, decreasing BMR over time.</li>
+                                    <li class="mb-2"><strong>Gender: </strong>Men typically have a higher BMR due to greater muscle
+                                        mass.</li>
+                                    <li class="mb-2"><strong>Body Composition: </strong>More muscle increases BMR, while higher fat
+                                        content decreases it.</li>
+                                    <li class="mb-2"><strong>Genetics: </strong>Some people naturally have faster or slower metabolisms.
+                                    </li>
+                                    <li class="mb-2"><strong>Health Conditions: </strong>Conditions like hyperthyroidism or
+                                        hypothyroidism can significantly influence BMR.</li>
+                                    <li class="mb-2"><strong>External Factors: </strong>Stress, illness, and environmental temperature
+                                        may temporarily alter BMR.</li>
+                                </ul>
+                            </section>
+                
+                            
+                            <section class="mb-5">
+                                <h2 id="types-bmr-calculators">Different Types of BMR Calculators and How They Work</h2>
+                                <ul>
+                                    <li>
+                                        <h3>Online BMR Calculators: Quick and Easy</h3>
+                                        <p>Online <strong>Basal Metabolic Rate (BMR) calculators</strong> are widely available on health
+                                            websites and mobile apps. Users simply enter their age, weight, height, and gender to
+                                            receive instant results. Try our <a href="your-bmr-calculator-link" target="_blank">free BMR
+                                                calculator</a> to estimate your daily calorie needs.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Manual BMR Calculation: Using Formulas</h3>
+                                        <p>For those who prefer a hands-on approach, BMR can be calculated manually using formulas like
+                                            the <strong>Harris-Benedict Equation</strong> or <strong>Mifflin-St Jeor Equation</strong>.
+                                            This method is useful when internet access is unavailable.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Advanced Fitness Apps: Track and Optimize</h3>
+                                        <p>Modern <strong>fitness apps</strong> integrate BMR calculators alongside tools for monitoring
+                                            calorie intake, activity levels, and fitness progress. These apps provide personalized
+                                            recommendations to help users achieve their health goals.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="key-applications">Key Applications of BMR Calculators in Health and Fitness</h2>
+                                <ul>
+                                    <li>
+                                        <h3>Weight Management and Fat Loss</h3>
+                                        <p>A <strong>BMR calculator</strong> helps determine your daily calorie needs for maintaining,
+                                            losing, or gaining weight. By incorporating physical activity levels, you can estimate your
+                                            <strong>Total Daily Energy Expenditure (TDEE)</strong> and create a customized meal plan.
+                                        </p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Personalized Fitness and Nutrition Planning</h3>
+                                        <p>Knowing your <strong>Basal Metabolic Rate (BMR)</strong> allows you to design a tailored
+                                            workout and diet plan. Whether you're an athlete or just starting a fitness journey,
+                                            understanding your calorie requirements ensures your goals are achievable.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>BMR in Healthcare and Medical Assessments</h3>
+                                        <p>In clinical settings, <strong>BMR calculations</strong> help healthcare professionals assess
+                                            energy requirements for patients with specific medical conditions, such as metabolic
+                                            disorders or nutritional deficiencies.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Public Health and Scientific Research</h3>
+                                        <p>BMR data plays a vital role in <strong>public health research</strong>, helping experts study
+                                            calorie requirements across different demographics. This data informs policies related to
+                                            nutrition, obesity prevention, and health interventions.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="key-features">Key Features of Advanced BMR Calculators</h2>
+                                <ul>
+                                    <li>
+                                        <h3>Integration with Total Daily Energy Expenditure (TDEE)</h3>
+                                        <p>Modern <strong>BMR calculators</strong> incorporate <strong>TDEE calculations</strong> to
+                                            provide a complete overview of daily calorie needs, considering both metabolism and physical
+                                            activity.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Support for Multiple Measurement Units</h3>
+                                        <p>Advanced tools allow users to switch between <strong>metric (kg, cm)</strong> and
+                                            <strong>imperial (lbs, inches)</strong> units, ensuring accuracy and convenience.
+                                        </p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Customizable Inputs for Personalized Results</h3>
+                                        <p>Unlike basic calculators, some <strong>BMR calculators</strong> include additional factors
+                                            such as <strong>body fat percentage, lifestyle habits, and fitness goals</strong> (e.g.,
+                                            weight loss, muscle gain).</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Personalized Calorie and Nutrition Recommendations</h3>
+                                        <p>Get <strong>custom calorie goals</strong> and meal suggestions based on your metabolic rate
+                                            and activity levels, making it easier to plan your diet effectively.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="limitations-bmr">Limitations of BMR Calculators</h2>
+                                <ul>
+                                    <li>
+                                        <h3>Generalized Estimates and Individual Variations</h3>
+                                        <p>While <strong>BMR calculators</strong> provide useful estimates, they do not fully account
+                                            for <strong>metabolic differences, muscle mass, or specific health conditions</strong>,
+                                            which can influence actual calorie needs.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Accuracy Depends on User Input</h3>
+                                        <p>Entering incorrect <strong>weight, height, age, or gender</strong> may lead to inaccurate BMR
+                                            results. Always ensure precise measurements for the best accuracy.</p>
+                                    </li>
+                
+                                    <li>
+                                        <h3>Does Not Include Calories Burned from Activity</h3>
+                                        <p>BMR only measures <strong>calories burned at rest</strong> and does not account for
+                                            <strong>exercise, daily movement, or digestion</strong>. To estimate total energy needs,
+                                            combine BMR with <a href="your-tdee-calculator-link" target="_blank"><strong>TDEE
+                                                    calculations</strong></a>.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="create-bmr-calculator">How to Create a BMR Calculator: A Step-by-Step Guide</h2>
+                                <ul>
+                                    <li class="mb-3">
+                                        <h3>Step-by-Step Guide to Building a BMR Calculator</h3>
+                                        <ol>
+                                            <li class="mb-2"><strong>Collect User Data:</strong> Gather essential inputs such as
+                                                <strong>weight, height, age, and gender</strong>.</li>
+                                            <li class="mb-2"><strong>Select a Calculation Formula:</strong> Use either the
+                                                <strong>Harris-Benedict equation</strong> or the <strong>Mifflin-St Jeor
+                                                    formula</strong> for accuracy.</li>
+                                            <li class="mb-2"><strong>Allow Unit Selection:</strong> Provide options for users to enter
+                                                data in <strong>metric (kg, cm)</strong> or <strong>imperial (lbs, inches)</strong>
+                                                units.</li>
+                                            <li class="mb-2"><strong>Calculate and Display Results:</strong> Show the computed
+                                                <strong>Basal Metabolic Rate (BMR)</strong> along with insights on calorie needs.</li>
+                                        </ol>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h3>Programming Examples for a BMR Calculator</h3>
+                                        <ul>
+                                            <li class="mb-2"><strong>JavaScript:</strong> Perfect for building an <strong>interactive
+                                                    web-based BMR calculator</strong>. Ideal for fitness websites and apps.</li>
+                                            <li class="mb-2"><strong>Python:</strong> Useful for <strong>standalone
+                                                    applications</strong> or integrating with <strong>data analysis and machine
+                                                    learning</strong> projects.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="fun-facts">Fun and Surprising Facts About BMR (Basal Metabolic Rate)</h2>
+                                <ul>
+                                    <li class="mb-2">
+                                        <strong>Your Body Burns Calories Even at Rest:</strong> While sleeping, your body continues to
+                                        burn calories to maintain vital functions like breathing and circulation. In fact, the
+                                        <strong>brain alone uses about 20% of your daily energy</strong> needs.
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Peak BMR in Early Life:</strong> Your <strong>Basal Metabolic Rate is highest during
+                                            infancy</strong>, fueling rapid growth and development. As you age, BMR naturally decreases.
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Cold Weather Boosts Metabolism:</strong> Exposure to <strong>cold temperatures</strong>
+                                        can temporarily increase BMR as the body works harder to maintain warmth, burning more calories
+                                        in the process.
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <p><strong>Why Use a BMR Calculator?</strong> Understanding your Basal Metabolic Rate (BMR) is essential
+                                    for managing your <strong>caloric intake, weight loss, muscle gain, and overall health.</strong></p>
+                
+                                <p>By calculating your BMR, you can create a personalized <strong>diet and exercise plan</strong> that
+                                    aligns with your fitness goals. Whether you're looking to <strong>lose weight, build muscle, or
+                                        maintain a balanced lifestyle</strong>, a BMR calculator provides the foundation for effective
+                                    health management.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="bmrFAQ">
+                                            <!-- FAQ Item 1 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is BMR?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#bmrFAQ">
+                                                    <div class="accordion-body">
+                                                        BMR stands for <strong>Basal Metabolic Rate</strong>, which is the number of
+                                                        calories your body needs to perform essential functions like breathing,
+                                                        circulating blood, and cell production while at rest.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 2 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How does the BMR calculator work?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                                    data-bs-parent="#bmrFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator uses standard formulas such as the <em>Harris-Benedict</em> and
+                                                        <em>Mifflin-St Jeor</em> equations to estimate the number of calories your body
+                                                        burns at rest, based on your age, gender, height, and weight.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 3 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        <strong>How accurate is the BMR calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#bmrFAQ">
+                                                    <div class="accordion-body">
+                                                        While the calculator provides a good estimate of your basal metabolic rate,
+                                                        individual variations such as muscle mass, genetics, and lifestyle factors can
+                                                        affect accuracy. For personalized advice, consider consulting a nutrition or
+                                                        health professional.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 4 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        <strong>How can I use my BMR result?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                                    data-bs-parent="#bmrFAQ">
+                                                    <div class="accordion-body">
+                                                        Your BMR result helps you determine your <strong>Total Daily Energy Expenditure
+                                                            (TDEE)</strong>. By multiplying your BMR with an activity factor, you can
+                                                        estimate how many calories you need daily to maintain, lose, or gain weight.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 5 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        <strong>Is BMR the same as TDEE?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                                    data-bs-parent="#bmrFAQ">
+                                                    <div class="accordion-body">
+                                                        No, <strong>BMR</strong> represents the calories burned at rest, while
+                                                        <strong>TDEE</strong> (Total Daily Energy Expenditure) factors in your daily
+                                                        activities. TDEE is calculated by multiplying your BMR by an activity level
+                                                        multiplier.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/bmr-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

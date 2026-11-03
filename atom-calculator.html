@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atom Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item active" href="dog-age-calculator.html">Dog Age Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage
+                            Calculator</a>
+                        <a href="mortgage-recast-calculator.html"
+                            class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree
+                            Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk
+                            Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft
+                            Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan
+                            Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan
+                            Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole
+                            Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action active">Dog Age
+                            Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age
+                            Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income
+                            Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing
+                            Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day
+                            Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie
+                            Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan
+                            Calculator</a>
+                        <a href="construction-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick
+                            Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand
+                            Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete
+                            Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile
+                            Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Atom Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="atom-calculator">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="atomicNumber" class="form-label">Atomic number</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="atomicNumber" min="1" step="any" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="massNumber" class="form-label">Mass number</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="massNumber" min="1" step="any" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="charge" class="form-label">Charge</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="charge" step="any">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="nav-to-result"></span>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody id="result">
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <article class="my-atricle">
+            <!-- atom calculator content  -->
+        
+            <div class="container mb-4">
+                <h2 class="mb-3">Table of Contents</h2>
+                <div class="list-group">
+                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Atom Calculator</a>
+                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Atom Calculation Results</a>
+                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">3. Types of Atom Calculators</a>
+                    <a href="#essential-features" class="list-group-item list-group-item-action">4. Essential Features of a Atom Calculator</a>
+                    <a href="#why-use-calculator" class="list-group-item list-group-item-action">5. Why Should You Use a Atom Calculator?</a>
+                    <a href="#common-mistakes" class="list-group-item list-group-item-action">6. Common Mistakes to Avoid</a>
+                    <a href="#popular-calculators" class="list-group-item list-group-item-action">7. Popular Atom Calculators</a>
+                    <a href="#faq" class="list-group-item list-group-item-action">8. FAQ</a>
+                </div>
+            </div>
+        
+        
+            <section class="mb-5">
+                <h2 id="how-to-use">How to Use the Atom Calculator</h2>
+                <p>Our <strong>Atom Calculator</strong> helps you quickly determine the number of protons, neutrons, and electrons in an atom. It also calculate total mass of the atom and can also find the given element from the periodic table. Whether you're a student, teacher, or science enthusiast, this tool simplifies atomic structure calculations with ease.</p>
+            
+                <h3>Step 1: Enter the Atomic Details</h3>
+                <ul>
+                    <li class="mb-1"><strong>Atomic Number:</strong> Input the atomic number (Z), which determines the number of protons.</li>
+                    <li class="mb-1"><strong>Mass Number:</strong> Enter the mass number (A), which is the total of protons and neutrons.</li>
+                    <li class="mb-1"><strong>Charge:</strong> Optionally, enter the atom's charge to calculate the number of electrons.</li>
+                </ul>
+            
+                <h3>Step 2: Calculate Atomic Particles</h3>
+                <ul>
+                    <li class="mb-1">Click the <strong>“Calculate”</strong> button to view the number of protons, neutrons, electrons, total mass, elemant name etc.</li>
+                    <li class="mb-1">If charge is entered, the result includes the correct number of electrons for ions.</li>
+                </ul>
+            
+                <h3>Step 3: Clear and Reset</h3>
+                <p>If you want to start over or enter new values, click the <strong>“Clear”</strong> button to reset all fields.</p>
+            
+                <h3>Why Use This Atom Calculator?</h3>
+                <ul>
+                    <li class="mb-1"> Fast and accurate atomic structure calculation</li>
+                    <li class="mb-1"> Ideal for chemistry homework and classroom use</li>
+                    <li class="mb-1"> Supports both neutral atoms and ions</li>
+                    <li class="mb-1"> User-friendly interface with simple inputs</li>
+                </ul>
+            
+                <p>Use this calculator to save time and understand the basic composition of atoms, including their subatomic particles.</p>
+            </section>
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="understanding-results">Understanding Your Atom Calculation Results</h2>
+                <p>Once you input the atomic number, mass number, and optional charge, the Atom Calculator provides a detailed breakdown of the atom’s subatomic structure. Here’s what each result means:</p>
+            
+                <h3>1. Protons</h3>
+                <p>This is the number of positively charged particles in the atom. It’s equal to the atomic number (Z) and defines the identity of the element (e.g., hydrogen has 1 proton).</p>
+            
+                <h3>2. Neutrons</h3>
+                <p>Neutrons are neutral particles in the nucleus. Their count is calculated by subtracting the atomic number from the mass number (A - Z). Neutrons contribute to the atom’s mass and stability.</p>
+            
+                <h3>3. Electrons</h3>
+                <p>Electrons are negatively charged particles that orbit the nucleus. In a neutral atom, the number of electrons equals the number of protons. If the atom has a charge (ion), the electron count adjusts accordingly:</p>
+                <ul>
+                    <li class="mb-1"><strong>Positive Charge:</strong> Electrons = Protons - Charge</li>
+                    <li class="mb-1"><strong>Negative Charge:</strong> Electrons = Protons + Charge</li>
+                </ul>
+                <p>This helps you understand how ions differ from neutral atoms in terms of electrical charge.</p>
+            
+                <h3>Why Are These Results Useful?</h3>
+                <ul>
+                    <li class="mb-1"><strong>Element Identification:</strong> Know which element you’re working with based on protons.</li>
+                    <li class="mb-1"><strong>Atomic Structure Insight:</strong> Understand how many neutrons and electrons are present in different isotopes or ions.</li>
+                    <li class="mb-1"><strong>Educational Clarity:</strong> Makes learning atomic theory simpler and more visual.</li>
+                </ul>
+            
+                <p>By understanding these results, you gain a clearer picture of atomic composition, useful for chemistry education, lab work, and science projects.</p>
+            </section>
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="types-of-calculators">Types of Atom Calculators: Choose the Right One for Your Needs</h2>
+                <p>Atom calculators come in various forms, each designed to focus on specific aspects of atomic structure and behavior. Whether you're a student, educator, or researcher, selecting the right type of calculator ensures precise and useful atomic data.</p>
+            
+                <h3>1. <strong>Basic Atom Structure Calculator</strong></h3>
+                <p>This is the most common type, providing a breakdown of protons, neutrons, and electrons based on atomic number, mass number, and charge.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best for:</strong> Students and educators learning atomic basics.</li>
+                    <li class="mb-1"><strong>Outputs:</strong> Protons, neutrons, electrons, and ion charge.</li>
+                </ul>
+            
+                <h3>2. <strong>Isotope Calculator</strong></h3>
+                <p>This calculator helps identify and compare isotopes of an element by adjusting the neutron count while keeping the atomic number constant.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best for:</strong> Chemistry studies involving isotopes and atomic mass.</li>
+                    <li class="mb-1"><strong>Outputs:</strong> Neutron variations, isotope notation, atomic mass.</li>
+                </ul>
+            
+                <h3>3. <strong>Ion Calculator</strong></h3>
+                <p>Focuses on calculating the number of electrons in ions. Users input the atomic number and charge to determine electron gain or loss.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best for:</strong> Understanding cations, anions, and ionic behavior.</li>
+                    <li class="mb-1"><strong>Outputs:</strong> Electrons in charged atoms (ions).</li>
+                </ul>
+            
+                <h3>4. <strong>Electron Configuration Calculator</strong></h3>
+                <p>This advanced tool provides the electron configuration of an element, showing how electrons are distributed among energy levels and orbitals.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best for:</strong> High school and college chemistry, periodic trends analysis.</li>
+                    <li class="mb-1"><strong>Includes:</strong> Shell and subshell configuration (e.g., 1s² 2s² 2p⁶).</li>
+                </ul>
+            
+                <h3>5. <strong>Average Atomic Mass Calculator</strong></h3>
+                <p>This calculator computes the average atomic mass of an element based on the relative abundance and mass of its isotopes.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best for:</strong> Chemical analysis and molecular weight calculations.</li>
+                    <li class="mb-1"><strong>Inputs:</strong> Isotope masses and relative abundances.</li>
+                </ul>
+            
+                <h3>6. <strong>Molar Mass Calculator</strong></h3>
+                <p>Used to calculate the molar mass of compounds by summing the atomic masses of constituent atoms.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best for:</strong> Chemistry labs, stoichiometry, and reaction equations.</li>
+                    <li class="mb-1"><strong>Outputs:</strong> Total mass of one mole of a substance.</li>
+                </ul>
+            
+                <h3>7. <strong>Valence Electron Calculator</strong></h3>
+                <p>This calculator helps identify the number of valence electrons in an element, useful for predicting bonding behavior.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best for:</strong> Covalent and ionic bonding predictions, Lewis structures.</li>
+                    <li class="mb-1"><strong>Outputs:</strong> Number of electrons in the outermost shell.</li>
+                </ul>
+            
+                <h2>Which Atom Calculator Should You Use?</h2>
+                <p>Choosing the right atom calculator depends on your learning or project goal. For basic atomic breakdowns, a structure calculator is ideal. For chemical analysis, tools like molar mass or isotope calculators are better suited.</p>
+            </section>
+        
+        
+            <section class="mb-5">
+                <h2 id="manual-calculation" class="mb-3">How to Calculate Atomic Properties Manually</h2>
+                <p>To manually calculate atomic properties like atomic mass, number of neutrons, and others, you need to understand the basic principles of atomic structure. Here's how you can do it:</p>
+    
+                <h4>1. Atomic Number</h4>
+                <p>The atomic number (Z) represents the number of protons in the nucleus of an atom. It determines the identity of the element. For example, carbon has an atomic number of 6, meaning it has 6 protons.</p>
+    
+                <h4>2. Mass Number</h4>
+                <p>The mass number (A) is the sum of the number of protons and neutrons in the nucleus. It is typically rounded to a whole number and can be used to calculate the number of neutrons in the atom.</p>
+                <p><strong>Mass Number (A) = Number of Protons (Z) + Number of Neutrons</strong></p>
+    
+                <h4>3. Number of Neutrons</h4>
+                <p>The number of neutrons in an atom can be calculated by subtracting the atomic number from the mass number:</p>
+                <p><strong>Number of Neutrons = Mass Number (A) - Atomic Number (Z)</strong></p>
+                <p>For example, the isotope Carbon-14 has a mass number of 14 and an atomic number of 6, so the number of neutrons is:</p>
+                <p><strong>14 (A) - 6 (Z) = 8 neutrons</strong></p>
+    
+                <h4>4. Atomic Mass</h4>
+                <p>The atomic mass is the weighted average mass of an atom of an element, taking into account the abundance of isotopes. It can be found on the periodic table. If you know the isotope's mass and the abundance of each isotope, you can calculate the average atomic mass using the following formula:</p>
+                <p><strong>Atomic Mass = (Isotope 1 Mass × Isotope 1 Abundance) + (Isotope 2 Mass × Isotope 2 Abundance) + ...</strong></p>
+    
+                <h4>5. Isotope Notation</h4>
+                <p>In isotope notation, the element's symbol is written with the mass number as a superscript and the atomic number as a subscript, like this:</p>
+                <p><strong>Mass Number (A)</strong><sub>Atomic Number (Z)</sub>Element Symbol</p>
+                <p>For example, Carbon-12 is written as <strong><sup>12</sup>₆C</strong>, where 12 is the mass number and 6 is the atomic number.</p>
+    
+                <h4>6. Example: Carbon-12 Calculation</h4>
+                <p>Let's take Carbon-12 as an example:</p>
+                <ul>
+                    <li>Atomic number (Z) = 6 (6 protons)</li>
+                    <li>Mass number (A) = 12 (6 protons + 6 neutrons)</li>
+                    <li>Number of neutrons = 12 - 6 = 6 neutrons</li>
+                </ul>
+                <p>Carbon-12's isotope notation is <strong><sup>12</sup>₆C</strong>, and its atomic mass is approximately 12 amu (atomic mass units).</p>
+    
+                <h4>7. Using the Calculator for More Complex Calculations</h4>
+                <p>While these calculations are straightforward, some properties like atomic mass require the use of isotopic data and more advanced tools for accurate results. The atom calculator simplifies these calculations and provides instant results for complex isotopic calculations.</p>
+            </section>
+            
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="essential-features">Essential Features of an Atom Calculator</h2>
+                <p>An atom calculator is a vital tool in chemistry and physics education, research, and professional applications. It helps users perform atomic-level calculations with precision. Below are the key features that make an atom calculator effective, informative, and user-friendly:</p>
+            
+                <h3>1. Accurate Atomic Calculations</h3>
+                <p>The core function is to compute atomic properties based on user inputs such as atomic number, mass number, or isotopic data.</p>
+                <ul>
+                    <li class="mb-1"><strong>Inputs:</strong> Atomic number, mass number, element symbol.</li>
+                    <li class="mb-1"><strong>Output:</strong> Number of protons, neutrons, and electrons.</li>
+                    <li class="mb-1"><strong>Application:</strong> Ideal for students, researchers, and chemistry educators.</li>
+                </ul>
+            
+                <h3>2. Isotope Identification</h3>
+                <p>The calculator can identify isotopes and display their atomic composition and stability.</p>
+                <ul>
+                    <li class="mb-1"><strong>Feature:</strong> Highlights stable vs. unstable isotopes.</li>
+                    <li class="mb-1"><strong>Use Case:</strong> Useful for nuclear chemistry and atomic research.</li>
+                </ul>
+            
+                <h3>3. Customizable Unit Selection</h3>
+                <p>Users can choose units and formats for displaying atomic mass and other properties.</p>
+                <ul>
+                    <li class="mb-1"><strong>Atomic Mass:</strong> Unified atomic mass units (u), kilograms (kg), or electronvolts (eV).</li>
+                    <li class="mb-1"><strong>Charge:</strong> Elementary charge units or coulombs.</li>
+                </ul>
+            
+                <h3>4. Electron Configuration Display</h3>
+                <p>Automatically provides the full electron configuration of an element.</p>
+                <ul>
+                    <li class="mb-1"><strong>Formats:</strong> Long form and noble gas shorthand notation.</li>
+                    <li class="mb-1"><strong>Best For:</strong> Chemistry learning and orbital theory understanding.</li>
+                </ul>
+            
+                <h3>5. Periodic Table Integration</h3>
+                <p>Links results to an interactive periodic table for better visualization and context.</p>
+                <ul>
+                    <li class="mb-1"><strong>Benefit:</strong> Helps users cross-reference elements and their properties easily.</li>
+                    <li class="mb-1"><strong>Feature:</strong> Clickable elements, category filters, and color-coded groups.</li>
+                </ul>
+            
+                <h3>6. User-Friendly Interface</h3>
+                <p>The calculator should be intuitive, allowing quick access to atomic data with minimal input.</p>
+                <ul>
+                    <li class="mb-1"><strong>Design:</strong> Dropdown selectors, instant validation, and clean layout.</li>
+                    <li class="mb-1"><strong>Audience:</strong> Students, teachers, and professionals.</li>
+                </ul>
+            
+                <h3>7. Mobile Compatibility</h3>
+                <p>Responsive design ensures it works seamlessly on smartphones, tablets, and desktops.</p>
+                <ul>
+                    <li class="mb-1"><strong>Responsive Layout:</strong> Optimized for all devices.</li>
+                    <li class="mb-1"><strong>Touch-Ready:</strong> Easy navigation for mobile users.</li>
+                </ul>
+            
+                <h3>8. Instant Calculation & Results</h3>
+                <p>Real-time updates show immediate atomic data as users enter values or select elements.</p>
+                <ul>
+                    <li class="mb-1"><strong>Benefit:</strong> Saves time and improves learning outcomes.</li>
+                    <li class="mb-1"><strong>Example:</strong> Entering atomic number instantly displays the element name, configuration, and atomic structure.</li>
+                </ul>
+            
+                <h3>9. Additional Chemistry Tools</h3>
+                <p>Some atom calculators also include molecular mass calculators, mole conversion tools, and valency charts.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best For:</strong> Comprehensive chemistry problem-solving and classroom demonstrations.</li>
+                </ul>
+            </section>
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="why-use-calculator">Why Should You Use an Atom Calculator?</h2>
+                <p>Whether you're a student, researcher, or educator working in chemistry or physics, an atom calculator is an essential tool. It helps ensure accuracy, deepen understanding, and save time when analyzing atomic structure. Below are the key reasons why using an atom calculator is beneficial.</p>
+            
+                <h3>1. <strong>Accurate Atomic Composition</strong></h3>
+                <p>One of the biggest challenges in atomic studies is determining the correct number of protons, neutrons, and electrons. An atom calculator eliminates guesswork by providing precise atomic data based on your input values.</p>
+                <ul>
+                    <li class="mb-1"><strong>Removes uncertainty:</strong> Ensures correct identification of atomic structure.</li>
+                    <li class="mb-1"><strong>Avoids manual errors:</strong> Automates complex atomic calculations.</li>
+                </ul>
+            
+                <h3>2. <strong>Supports Learning and Research</strong></h3>
+                <p>Whether you're in a classroom or laboratory, an atom calculator helps you:</p>
+                <ul>
+                    <li class="mb-1"><strong>Understand elements:</strong> Learn atomic number, mass number, and configuration.</li>
+                    <li class="mb-1"><strong>Analyze isotopes:</strong> Explore atomic variations with ease.</li>
+                </ul>
+            
+                <h3>3. <strong>Instant Unit Conversions</strong></h3>
+                <p>Atomic properties are measured in various units. An atom calculator automatically converts values for convenience, including:</p>
+                <ul>
+                    <li class="mb-1"><strong>Atomic mass:</strong> Atomic mass units (u), kilograms (kg), or MeV/c².</li>
+                    <li class="mb-1"><strong>Charge:</strong> Elementary charges (e), coulombs (C).</li>
+                </ul>
+                <p>This feature is especially useful for researchers working with different measurement systems.</p>
+            
+                <h3>4. <strong>Aids in Molecular and Elemental Analysis</strong></h3>
+                <p>Accurate atomic data is crucial for building molecules and studying reactions. Using an atom calculator allows you to:</p>
+                <ul>
+                    <li class="mb-1"><strong>Determine bonding potential:</strong> Analyze valency and electron configurations.</li>
+                    <li class="mb-1"><strong>Build molecules accurately:</strong> Use atomic data as a foundation.</li>
+                </ul>
+            
+                <h3>5. <strong>Improves Scientific Accuracy</strong></h3>
+                <p>By calculating atomic properties precisely, you contribute to more reliable scientific work by:</p>
+                <ul>
+                    <li class="mb-1"><strong>Reducing errors:</strong> Less reliance on estimations or outdated tables.</li>
+                    <li class="mb-1"><strong>Increasing reproducibility:</strong> Standardized outputs for repeated experiments.</li>
+                </ul>
+            
+                <h3>6. <strong>Time-Saving & Convenient</strong></h3>
+                <p>Manual atomic calculations can be time-consuming and complex. An atom calculator provides instant results, saving time and effort for students, teachers, and researchers alike.</p>
+            
+                <h3>7. <strong>Useful Across Disciplines</strong></h3>
+                <p>An atom calculator is valuable for various fields, including:</p>
+                <ul>
+                    <li class="mb-1"><strong>Chemistry:</strong> Element analysis, bonding predictions, isotope studies.</li>
+                    <li class="mb-1"><strong>Physics:</strong> Atomic structure, charge-to-mass ratios, nuclear properties.</li>
+                    <li class="mb-1"><strong>Education:</strong> Classroom demonstrations, homework help, and exams.</li>
+                </ul>
+            
+                <h3>8. <strong>Suitable for All Skill Levels</strong></h3>
+                <p>Whether you're a beginner in chemistry or a professional scientist, an atom calculator adapts to your needs, making it a versatile tool for all users.</p>
+            </section>
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="common-mistakes">Common Mistakes to Avoid When Using an Atom Calculator</h2>
+                <p>An atom calculator is a valuable tool for determining atomic mass, moles, electrons, or other atomic-level properties. However, incorrect inputs and misunderstandings can lead to inaccurate calculations. Below are the most common mistakes to avoid when using an atom calculator.</p>
+            
+                <h3>1. <strong>Incorrect Unit Selection</strong></h3>
+                <p>One of the most frequent mistakes users make is selecting or assuming the wrong unit of measurement. Calculations involving atoms can require:</p>
+                <ul>
+                    <li class="mb-1"><strong>Mass:</strong> Grams (g), atomic mass units (amu).</li>
+                    <li class="mb-1"><strong>Quantity:</strong> Moles, number of atoms (using Avogadro’s number).</li>
+                </ul>
+                <p><strong>Solution:</strong> Always verify the unit input/output to ensure consistency in your calculations.</p>
+            
+                <h3>2. <strong>Incorrect Atomic Number or Mass</strong></h3>
+                <p>Using the wrong atomic number or average atomic mass can skew your results, especially in molecular weight or mole calculations.</p>
+                <p><strong>Solution:</strong> Double-check the atomic data from a reliable periodic table source before entering it into the calculator.</p>
+            
+                <h3>3. <strong>Ignoring Significant Figures</strong></h3>
+                <p>Scientific calculations require careful attention to significant digits, especially when dealing with very small or large numbers.</p>
+                <p><strong>Solution:</strong> Use the appropriate number of significant figures based on the precision of your input data.</p>
+            
+                <h3>4. <strong>Mixing Up Mass and Moles</strong></h3>
+                <p>Mass and moles are often confused. Remember that moles represent quantity, while mass represents weight.</p>
+                <p><strong>Solution:</strong> Use the correct formula: <code>moles = mass (g) / molar mass (g/mol)</code>, and confirm what your calculator expects.</p>
+            
+                <h3>5. <strong>Wrong Use of Avogadro’s Number</strong></h3>
+                <p>Avogadro’s constant (6.022×10²³) is often misused when converting between moles and number of atoms or molecules.</p>
+                <p><strong>Solution:</strong> Clearly understand when to multiply or divide by Avogadro’s number depending on whether you're going from moles to particles or vice versa.</p>
+            
+                <h3>6. <strong>Forgetting to Specify Charge or Isotope</strong></h3>
+                <p>Atoms can vary in electrons or neutrons (ions and isotopes). Omitting these details may give misleading results in advanced calculations.</p>
+                <p><strong>Solution:</strong> If your atom calculator supports ions or isotopes, always specify the charge or neutron count as needed.</p>
+            
+                <h3>7. <strong>Not Considering Molecular Compounds</strong></h3>
+                <p>Some users try to calculate molecular weights using atomic data without properly accounting for each atom in the compound.</p>
+                <p><strong>Solution:</strong> For compounds, use a molecular calculator or ensure each element and its quantity is accurately input.</p>
+            
+                <h3>8. <strong>Neglecting Unit Conversions</strong></h3>
+                <p>Many calculators expect inputs in standard SI units. Entering mass in milligrams instead of grams, for example, leads to errors.</p>
+                <p><strong>Solution:</strong> Convert all input values to the correct base units before starting your calculation.</p>
+            
+                <h3>9. <strong>Skipping Input Validation</strong></h3>
+                <p>Failing to verify inputs or overlooking misentered values can result in faulty outputs.</p>
+                <p><strong>Solution:</strong> Always double-check your input values for typos or unit mismatches before calculating.</p>
+            </section>
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="popular-calculators">Popular Atom Calculators for Accurate Scientific Computation</h2>
+                <p>Atom calculators are vital tools in chemistry, physics, and molecular sciences. Whether you're a student, researcher, or professional, choosing the right atom calculator can streamline complex calculations involving atomic structure, molecular mass, isotopes, and more. Below are some of the most widely used atom calculators available today.</p>
+            
+                <h3>1. <strong>Atomic Mass Calculator</strong></h3>
+                <p>This calculator computes the average atomic mass of an element based on the relative abundances and masses of its isotopes.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Supports input of multiple isotopes and relative abundances.</li>
+                    <li class="mb-1">Displays weighted average atomic mass.</li>
+                    <li class="mb-1">Includes periodic table integration for element selection.</li>
+                </ul>
+            
+                <h3>2. <strong>Molecular Weight Calculator</strong></h3>
+                <p>Essential for chemists and biologists, this calculator determines the molecular weight of chemical compounds based on their atomic composition.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Allows molecular formula input (e.g., H<sub>2</sub>O, C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>).</li>
+                    <li class="mb-1">Breaks down molecular structure by atomic contributions.</li>
+                    <li class="mb-1">Calculates molar mass for solution preparation.</li>
+                </ul>
+            
+                <h3>3. <strong>Avogadro’s Number Calculator</strong></h3>
+                <p>This tool helps calculate the number of atoms, molecules, or particles in a given number of moles using Avogadro’s constant.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Converts between moles and number of particles.</li>
+                    <li class="mb-1">Accurate to scientific standards (6.022 × 10²³/mol).</li>
+                    <li class="mb-1">Ideal for stoichiometry problems in chemistry.</li>
+                </ul>
+            
+                <h3>4. <strong>Isotope Abundance Calculator</strong></h3>
+                <p>Useful in analytical chemistry, this calculator determines the percentage of each isotope in a sample based on atomic mass data.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Accepts experimental or given mass values.</li>
+                    <li class="mb-1">Supports dual-isotope and multi-isotope calculations.</li>
+                    <li class="mb-1">Used in radiometric dating and spectroscopy analysis.</li>
+                </ul>
+            
+                <h3>5. <strong>Electron Configuration Calculator</strong></h3>
+                <p>This tool provides the electron configuration of elements based on their atomic number and placement in the periodic table.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Outputs standard and noble gas shorthand notations.</li>
+                    <li class="mb-1">Visualizes orbital filling (s, p, d, f blocks).</li>
+                    <li class="mb-1">Useful for understanding chemical reactivity and bonding.</li>
+                </ul>
+            </section>
+        
+        
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <h2 id="faq" class="mb-3">FAQ</h2>
+                        <div class="accordion" id="atomCalculatorFAQ">
+            
+                            <div class="accordion-item" id="what-is-atom-cal">
+                                <h3 class="accordion-header" id="faqOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>What is an atom calculator?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        An atom calculator helps calculate the properties and behaviors of atoms based on various inputs, such as atomic number, mass number, and element type.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="how-do-i-use">
+                                <h3 class="accordion-header" id="faqTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <strong>how-do-i-use</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Enter the atomic number, mass number, and other relevant details like the element's isotope to get information like atomic mass, number of neutrons, and more.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="supported-elements">
+                                <h3 class="accordion-header" id="faqThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <strong>What elements does the atom calculator support?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        The atom calculator supports all elements from the periodic table and can calculate properties for stable and unstable isotopes.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="calc-isotopes">
+                                <h3 class="accordion-header" id="faqFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <strong>Can I calculate properties for isotopes?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        No, this calculator dont allow you to input specific isotopes of elements.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="accuracy">
+                                <h3 class="accordion-header" id="faqFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <strong>How accurate is the atom calculator?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        The atom calculator provides highly accurate results based on the current known data for atomic properties, but keep in mind that properties like atomic masses can have slight variations due to isotopic differences.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="why-use-atom-cal">
+                                <h3 class="accordion-header" id="faqSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <strong>Why should I use the atom calculator?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        The atom calculator is useful for students, researchers, and anyone interested in understanding atomic properties, whether it's for educational purposes, experiments, or research projects.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="atom-mass-calculation">
+                                <h3 class="accordion-header" id="faqSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        <strong>Can the atom calculator calculate atomic mass?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Yes, the atom calculator can calculate the atomic mass based on the isotope's atomic number and mass number, providing precise data for both stable and unstable isotopes.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="how-to-enter-data">
+                                <h3 class="accordion-header" id="faqEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        <strong>How do I enter data for the atom calculator?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight" data-bs-parent="#atomCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Enter the atomic number, mass number, and any other relevant data such as the element's isotope number. The calculator will compute and display various atomic properties.
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </article>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/atom-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+</body>
+
+</html>

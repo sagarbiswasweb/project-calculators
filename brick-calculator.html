@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item active" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action active">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Brick Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="brick-calculator">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="wallLength" class="form-label">Wall Length
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total length of the wall in meters. This measurement helps determine the number of bricks needed.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="wallLength" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">meter</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="wallHeight" class="form-label">Wall Height
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total height of the wall in meters. This is used to calculate the total wall area for brick estimation.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="wallHeight" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">meter</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="brickLength" class="form-label">Brick Length
+                                                <!-- <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the length of a single brick in inches. This helps determine how many bricks fit in the wall’s length.">?</button>
+                                                </span> -->
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="brickLength" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">in</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="brickHeight" class="form-label">Brick Height
+                                                <!-- <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the height of a single brick in inches. This helps calculate the number of rows needed for the wall.">?</button>
+                                                </span> -->
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="brickHeight" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">in</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="brickWidth" class="form-label">Brick Width
+                                                <!-- <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the width of a single brick in inches. This is used to estimate mortar volume and wall thickness.">?</button>
+                                                </span> -->
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="brickWidth" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">in</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="jointThickness" class="form-label">Morter Joint Thickness
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the thickness of the mortar joint in millimeters. This affects the total number of bricks needed and the overall wall dimensions.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="jointThickness" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">mm</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="brickWastage" class="form-label">Brick Wastage
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the percentage of brick wastage to account for breakage, cutting, and other losses during construction. It is 5% by default.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" value="5" id="brickWastage" step="any" required>
+                                                <span class="input-group-text my-input-group">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody>
+                                            <tr id="result">
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Brick Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use a Brick Calculator</a>
+                                    <a href="#how-it-works" class="list-group-item list-group-item-action">2. How a Brick Calculator Works</a>
+                                    <a href="#importance" class="list-group-item list-group-item-action">3. Why is a Brick Calculator Important?</a>
+                                    <a href="#factors-affecting" class="list-group-item list-group-item-action">4. Factors That Affect Brick Calculation</a>
+                                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">5. Types of Brick Calculators</a>
+                                    <a href="#applications" class="list-group-item list-group-item-action">6. Applications of a Brick Calculator</a>
+                                    <a href="#features" class="list-group-item list-group-item-action">7. Features of Advanced Brick Calculators</a>
+                                    <a href="#limitations" class="list-group-item list-group-item-action">8. Limitations of Brick Calculators</a>
+                                    <a href="#how-to-create" class="list-group-item list-group-item-action">9. How to Create a Brick Calculator</a>
+                                    <a href="#fun-facts" class="list-group-item list-group-item-action">10. Fun Facts About Bricks</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">11. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use a Brick Calculator – A Step-by-Step Guide</h2>
+                                <p>Building a wall or structure with bricks requires accurate calculations to estimate the number of bricks
+                                    needed. A brick calculator simplifies this process, saving time and reducing material waste. Follow this
+                                    step-by-step guide to use the Brick Calculator effectively.</p>
+                                <div>
+                                    <h3>Step 1: Enter Wall Dimensions</h3>
+                                    <ul>
+                                        <li class="mb-1"><strong>Wall Length</strong> – Input the total length of the wall in meters.</li>
+                                        <li class="mb-1"><strong>Wall Height</strong> – Enter the height of the wall in meters.</li>
+                                    </ul>
+                                    <p>These values determine the total wall area, which is essential for calculating the number of bricks
+                                        required.</p>
+                                </div>
+                    
+                                <div>
+                                    <h3>Step 2: Provide Brick Dimensions</h3>
+                                    <ul>
+                                        <li class="mb-1">Brick Length – Input the length of a single brick in inches.</li>
+                                        <li class="mb-1">Brick Height – Enter the height of a brick in inches.</li>
+                                        <li class="mb-1">Brick Width – Although not always required, width is useful for estimating volume.
+                                        </li>
+                                    </ul>
+                                    Accurate brick measurements help in precise calculations.
+                                </div>
+                    
+                                <div>
+                                    <h3>Step 3: Set Mortar Joint Thickness</h3>
+                                    <ul>
+                                        <li class="mb-1">Enter the thickness of the mortar joint in millimeters (mm). Mortar joints affect
+                                            the number of bricks required as they add spacing between bricks.</li>
+                                    </ul>
+                                </div>
+                    
+                                <div>
+                                    <h3>Step 4: Adjust Brick Wastage Percentage</h3>
+                                    <ul>
+                                        <li class="mb-1">A certain percentage of bricks may break or be wasted during construction. Set a
+                                            reasonable wastage percentage (default is 5%).</li>
+                                    </ul>
+                                </div>
+                    
+                                <div>
+                                    <h3>Step 5: Calculate the Number of Bricks</h3>
+                                    <ul>
+                                        <li class="mb-1">Click the "Calculate" button to get results. The calculator will estimate the total
+                                            bricks needed, considering mortar thickness and wastage.</li>
+                                    </ul>
+                                </div>
+                    
+                                <div>
+                                    <h3>Step 6: Clear and Recalculate (If Needed)</h3>
+                                    <ul>
+                                        <li class="mb-1">Use the "Clear" button to reset all input fields and enter new values for
+                                            recalculation.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="how-it-works">How a Brick Calculator Works</h2>
+                                <div>
+                                    <h3>The Basic Concept</h3>
+                                    <p>A brick calculator determines the number of bricks required for a specific project by dividing the
+                                        wall or structure area by the area of a single brick. This ensures accurate estimates tailored to
+                                        the dimensions of your project.</p>
+                                </div>
+                    
+                                <div>
+                                    <h4>Example Calculation</h4>
+                                    <p>Let’s calculate the number of bricks for a 3-meter-high and 5-meter-long wall using bricks that
+                                        measure 0.2 meters by 0.1 meters, with a 10 mm mortar gap:</p>
+                                    <ol>
+                                        <li class="mb-1"><strong>Wall Area</strong> = 3 × 5 = 15 square meters</li>
+                                        <li class="mb-1"><strong>Brick Area (with mortar)</strong> = (0.2 + 0.01) × (0.1 + 0.01) = 0.021
+                                            square meters</li>
+                                        <li class="mb-1"><strong>Number of Bricks</strong> = 15 / 0.021 ≈ 714 brick</li>
+                                    </ol>
+                                    <p>You would need approximately 714 bricks for this project.</p>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2>Brick Calculator: Estimate Bricks for Your Construction Project</h2>
+                                <p>A brick calculator is an essential tool for builders, contractors, and homeowners to accurately estimate the number of bricks needed for construction. By inputting the dimensions of your wall or structure, this tool helps you calculate the required bricks, reducing material waste and ensuring cost efficiency. Whether you're building a wall, a house, or any brick-based structure, a brick calculator simplifies the planning process and prevents overordering or underordering materials.</p>
+                            </section>
+                            
+                
+                            <section class="mb-5">
+                                <h2 id="importance">Why is a Brick Calculator Important?</h2>
+                                <p>A brick calculator is essential for construction planning as it saves time, reduces material waste, and
+                                    helps in cost estimation. Whether you're building a wall, pathway, or fence, a brick calculator ensures
+                                    that your project stays on track and within budget.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="factors-affecting">Factors That Affect Brick Calculation</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Wall Dimensions</h4>
+                                        <p>The height and length of the wall directly affect the total area and, consequently, the number of
+                                            bricks needed.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Brick Size</h4>
+                                        <p>Different sizes of bricks, such as standard or modular, will influence the total count.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Mortar Joints</h4>
+                                        <p>Including the thickness of mortar joints can significantly impact the calculation, as it
+                                            increases the effective area of each brick.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Openings in Walls</h4>
+                                        <p>Deducting areas for windows, doors, or vents ensures accurate brick estimates.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Construction Waste</h4>
+                                        <p>Account for an additional 5-10% of bricks to cover breakage and errors during construction.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="types-of-calculators">Types of Brick Calculators</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Basic Online Brick Calculators</h4>
+                                        <p>These are simple tools available on websites, designed for quick estimates. Users input
+                                            dimensions and receive results instantly.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Advanced Construction Apps</h4>
+                                        <p>These apps offer additional features such as adjustable brick sizes, mortar thickness, and even
+                                            cost estimation.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Manual Calculation</h4>
+                                        <p>For those who prefer hands-on calculations, the formula can be applied using a basic calculator
+                                            and the project’s dimensions.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Integrated Tools</h4>
+                                        <p>Some advanced project management software includes brick calculators as part of their suite of
+                                            tools for construction planning.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="applications">Applications of a Brick Calculator</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Construction Projects</h4>
+                                        <p>Brick calculators help estimate the number of bricks required for walls, fences, pathways, and
+                                            other structures, ensuring efficient planning.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Cost Estimation</h4>
+                                        <p>By providing an accurate count of bricks needed, a calculator helps estimate the overall cost of
+                                            materials, including bricks and mortar.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Project Planning</h4>
+                                        <p>Brick calculators aid in scheduling material deliveries and managing inventory, preventing
+                                            delays.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Renovation and Repairs</h4>
+                                        <p>For smaller projects like repairing a section of a wall, brick calculators ensure you purchase
+                                            just the right number of bricks.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="features">Features of Advanced Brick Calculators</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Multiple Unit Systems</h4>
+                                        <p>Advanced calculators allow users to input dimensions in metric (meters) or imperial (feet) units,
+                                            making them versatile for global use.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Customization Options</h4>
+                                        <p>Users can customize inputs such as brick sizes, mortar thickness, and wall types for precise
+                                            calculations.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Adjustment for Openings</h4>
+                                        <p>These calculators subtract the dimensions of windows, doors, and other openings from the total
+                                            wall area.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>3D Visualization</h4>
+                                        <p>Some tools offer 3D visualizations of brick layouts, helping users visualize their project.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Wastage Adjustment</h4>
+                                        <p>Advanced calculators include a feature to account for material wastage by adding a percentage to
+                                            the final brick count.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="limitations">Limitations of Brick Calculators</h2>
+                                <ul>
+                                    <li>
+                                        <h4>Generalized Estimates</h4>
+                                        <p>While brick calculators provide close estimates, they may not account for specific construction
+                                            practices or irregularities.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Dependent on Accurate Inputs</h4>
+                                        <p>Incorrect dimensions or ignoring factors like openings can lead to inaccurate results.</p>
+                                    </li>
+                    
+                                    <li>
+                                        <h4>Excludes Specialty Bricks</h4>
+                                        <p>Most calculators are designed for standard bricks and may not accommodate unique shapes or custom
+                                            designs.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-create">How to Create a Brick Calculator</h2>
+                                <div>
+                                    <p><strong>Step-by-Step Guide</strong></p>
+                                    <ol>
+                                        <li class="mb-1"><strong>Input Dimensions: </strong>Allow users to enter wall dimensions, brick
+                                            size, and mortar gap.</li>
+                                        <li class="mb-1"><strong>Apply Formula: </strong>Calculate the number of bricks using the general
+                                            formula.</li>
+                                        <li class="mb-1"><strong>Account for Openings: </strong>Deduct areas for windows, doors, or other
+                                            features.</li>
+                                        <li class="mb-1"><strong>Adjust for Wastage: </strong>Include a percentage to cover breakage or
+                                            errors.</li>
+                                        <li class="mb-1"><strong>Display Results: </strong>Provide the total brick count and optional
+                                            insights such as cost estimation.</li>
+                                    </ol>
+                                </div>
+                    
+                                <div>
+                                    <p><strong>Programming Examples</strong></p>
+                                    <ul>
+                                        <li class="mb-1"><strong>JavaScript: </strong>Ideal for creating web-based calculators with
+                                            interactive input fields.</li>
+                                        <li class="mb-1"><strong>Python: </strong>Suitable for building desktop or web applications using
+                                            frameworks like Flask or Django.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="fun-facts">Fun Facts About Bricks</h2>
+                                <ul>
+                                    <li class="mb-1"><strong>Historical Use: </strong>Bricks have been a key construction material for over
+                                        5,000 years.</li>
+                                    <li class="mb-1"><strong>World’s Largest Brick Structure: </strong>The Great Wall of China includes an
+                                        estimated 3.9 billion bricks.</li>
+                                    <li class="mb-1"><strong>Variety of Bricks: </strong>Bricks come in different colors, shapes, and sizes,
+                                        depending on regional availability and design needs.</li>
+                                    <li class="mb-1"><strong>Eco-Friendly Options: </strong>Modern bricks are often made using sustainable
+                                        materials and production methods.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>Brick calculators are invaluable tools for construction and renovation projects. They simplify planning,
+                                    reduce waste, and provide accurate estimates of brick requirements, ensuring efficient project
+                                    management.</p>
+                                <p>Whether you’re a professional builder or a DIY enthusiast, a brick calculator can save you time and
+                                    effort. It’s an essential tool for planning any project involving bricks.</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="brickFAQ">
+                                            <!-- FAQ Item 1 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>1. What is a Brick Calculator?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        A brick calculator is a tool that helps estimate the number of bricks needed to
+                                                        build a wall or structure based on its dimensions, brick size, mortar thickness, and
+                                                        wastage percentage.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 2 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>2. How Does the Brick Calculator Work?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator takes inputs like wall length, height, brick dimensions, and mortar
+                                                        joint thickness. It then divides the <strong>total wall area</strong> by the
+                                                        <strong>effective brick area</strong> (including mortar) to estimate the required
+                                                        number of bricks.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 3 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>3. Why Do I Need to Include Mortar Thickness?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        Mortar joints add spacing between bricks, affecting the total number needed. If you
+                                                        exclude mortar thickness, your estimate may be inaccurate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 4 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>4. What Is the Wastage Percentage?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        The wastage percentage accounts for <strong>broken, cut, or damaged</strong> bricks
+                                                        during construction. A standard wastage rate is 5%, but you can adjust it based on
+                                                        project needs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 5 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>5. What Units Does the Calculator Support?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li><strong>Wall dimensions</strong> – Meters (m)</li>
+                                                            <li><strong>Brick dimensions</strong> – Inches (in)</li>
+                                                            <li><strong>Mortar thickness</strong> – Millimeters (mm)</li>
+                                                            <li><strong>Wastage percentage</strong> – Percentage (%)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 6 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>6. How Accurate Is the Brick Calculator?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator provides a close estimate, but actual brick usage may vary due to:
+                                                        <ul>
+                                                            <li>Variations in brick sizes</li>
+                                                            <li>Construction techniques</li>
+                                                            <li>Extra bricks needed for design patterns (e.g., arches, corners)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 7 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>7. Can I Use This Calculator for Different Brick Sizes?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes! You can input any brick dimensions to match the type you’re using.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 8 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        <strong>8. How Can I Reduce Brick Wastage?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>Use <strong>quality bricks</strong> to minimize breakage</li>
+                                                            <li>Plan cuts efficiently to avoid unnecessary waste</li>
+                                                            <li>Order a small extra quantity to avoid shortages</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 9 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingNine">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                        <strong>9. Does This Calculator Work for Paving Bricks?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, but for paving projects, you may need to consider gaps between bricks, ground leveling, and additional factors.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 10 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTen">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                        <strong>10. What If I Want to Build Multiple Walls?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        Simply calculate each wall separately and add up the results to get the total number of bricks required.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 11 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingEleven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                                        <strong>11. Can I Use This for a House Construction Estimate?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes! However, for <strong>entire buildings</strong>, factors like windows, doors, and structural reinforcements should be considered separately.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- FAQ Item 12 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwelve">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                                        <strong>12. What Should I Do If My Brick Size Is Not in Inches?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                                                    data-bs-parent="#brickFAQ">
+                                                    <div class="accordion-body">
+                                                        Convert the measurements to inches before inputting them into the calculator. You can use <strong>1 inch = 25.4 mm</strong> for conversion.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/brick-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

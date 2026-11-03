@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculators: Your Essential Math Tool</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action active">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage
+                            Calculator</a>
+                        <a href="mortgage-recast-calculator.html"
+                            class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree
+                            Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk
+                            Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft
+                            Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan
+                            Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan
+                            Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole
+                            Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age
+                            Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age
+                            Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income
+                            Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing
+                            Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day
+                            Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie
+                            Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan
+                            Calculator</a>
+                        <a href="construction-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick
+                            Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand
+                            Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete
+                            Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile
+                            Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center text-center mt-3 mb-3">
+                            <h2 class="mt-3 mb-3">Basic Calculator</h2>
+                            <div class="col-md-8 my-calculator-frame mb-3" style="background-color: #0d0d0e;">
+                                <div class="row">
+                                    <div class="col-md-12" style="background-color: #e3e5e6;">
+                                        <h2><input class="my-calculator-display" type="text" id="MyResult" readonly>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 my-calculator-button" onclick="DeleteMe()"
+                                        style="background-color: #f1955f;">
+                                        <h2>c</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator('(')">
+                                        <h2>(</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator(')')">
+                                        <h2>)</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator('%')">
+                                        <h2>%</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('7')">
+                                        <h2>7</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('8')">
+                                        <h2>8</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('9')">
+                                        <h2>9</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator('+')">
+                                        <h2>+</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('4')">
+                                        <h2>4</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('5')">
+                                        <h2>5</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('6')">
+                                        <h2>6</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator('-')">
+                                        <h2>-</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('1')">
+                                        <h2>1</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('2')">
+                                        <h2>2</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('3')">
+                                        <h2>3</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator('*')">
+                                        <h2>x</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 my-calculator-button my-calculator-digits"
+                                        onclick="calculator('0')">
+                                        <h2>0</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator('.')">
+                                        <h2>.</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="Answer()"
+                                        style="background-color: #5f8df1;">
+                                        <h2>=</h2>
+                                    </div>
+                                    <div class="col-3 my-calculator-button" onclick="calculator('/')">
+                                        <h2>/</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <h1>Online Calculators: Your Essential Math Tool</h1>
+                    <p>In today's fast-paced, digitally-driven world, online calculators have become an indispensable
+                        tool for students, professionals, and anyone needing quick and accurate calculations. From basic
+                        arithmetic to complex scientific equations, these digital marvels have revolutionized how we
+                        approach math problems, breaking down barriers and enhancing productivity.
+                        Whether you're searching for a free online calculator for everyday use, a math calculator for
+                        school assignments, or a specialized tool for professional tasks, this comprehensive guide will
+                        explore everything you need to know about online calculators. We'll delve into their rise,
+                        various types, essential features, popular tools, usage tips, and benefits across different
+                        fields.
+                    </p>
+                    <h2>The Rise of Online Calculator</h2>
+                    <p>The advent of the internet brought with it a plethora of digital tools designed to simplify our
+                        lives, and online calculators are among the most widely used. Unlike traditional handheld
+                        calculators, online calculators offer the convenience of being accessible from any device with
+                        an internet connection. They eliminate the need for physical hardware and provide a wide range
+                        of functionalities that cater to diverse needs.
+                        From academic settings to business environments, the demand for accurate and versatile
+                        calculation tools has skyrocketed. The rise of online calculators can be attributed to
+                        advancements in technology, increased internet accessibility, and the growing need for efficient
+                        solutions in both personal and professional spheres.
+                    </p>
+                    <h2>Types of Online Calculators</h2>
+                    <p>Online calculators come in various forms, each designed to cater to specific needs. Here's a
+                        breakdown of the most common types:</p>
+                    <h3>Basic Calculator</h3>
+                    <p>Basic calculators handle everyday arithmetic operations such as addition, subtraction,
+                        multiplication, and division. They are perfect for simple calculations and are widely used by
+                        students and professionals alike.</p>
+                    <h3>Scientific Calculator</h3>
+                    <p>Scientific calculators offer advanced functions like trigonometry, logarithms, and exponential
+                        calculations. They are essential tools for students, engineers, and scientists working on
+                        complex mathematical problems.</p>
+                    <h3>Financial Calculator</h3>
+                    <p>These types are tailored for financial professionals and individuals managing personal finances.
+                        They can perform calculations related to interest rates, loan payments, investments, and tax
+                        estimations.</p>
+                    <h3>Graphing Calculator</h3>
+                    <p>Graphing types allow users to plot graphs and solve equations involving variables. They are
+                        commonly used in higher education and fields requiring data visualization and analysis.</p>
+                    <h3>Conversion Calculator</h3>
+                    <p>Conversion types simplify the process of converting units of measurement, currency, and other
+                        metrics. They are particularly useful for professionals dealing with international standards and
+                        exchanges.</p>
+                    <h3>Specialized Calculator</h3>
+                    <p>Some online calculators are designed for specific industries or tasks, such as health calculator
+                        for BMI and calorie intake, construction calculator for material estimates, and chemistry
+                        calculator for molecular weight calculations.</p>
+                    <h2>Features to Look for in Online Calculator</h2>
+                    <p>When choosing an online calculator, it's essential to consider the features that will best suit
+                        your needs. Here are some key attributes to look for:</p>
+                    <h3>User-Friendly Interface</h3>
+                    <p>A well-designed, intuitive interface ensures that even beginners can use the calculator
+                        effectively without a steep learning curve.</p>
+                    <h3>Accuracy</h3>
+                    <p>Accuracy is paramount in any calculator. Ensure that the tool you choose provides precise results
+                        consistently.</p>
+                    <h3>Versatility</h3>
+                    <p>Multi-functional calculators that offer a wide range of operations and capabilities can save time
+                        and increase productivity.</p>
+                    <h3>Accessibility</h3>
+                    <p>Opt for calculators that are accessible on multiple devices, including smartphones, tablets, and
+                        computers, so you can perform calculations on the go.</p>
+                    <h3>Customization</h3>
+                    <p>Some advanced calculators allow users to customize functions and settings to match their specific
+                        requirements.</p>
+                    <h3>Security</h3>
+                    <p>For calculators handling sensitive data, such as financial or health information, ensure that the
+                        platform offers robust security measures to protect your data.</p>
+                    <h2>Popular Online Calculator Tools</h2>
+                    <p>Several online calculators have gained popularity due to their reliability and comprehensive
+                        features. Here are a few worth exploring:</p>
+                    <h3>Desmos</h3>
+                    <p>A powerful graphing calculator is popular among educators and students. Desmos offers interactive
+                        graph plotting and various mathematical functions.</p>
+                    <h3>Wolfram Alpha</h3>
+                    <p>Known for its computational intelligence, Wolfram Alpha can solve complex mathematical problems,
+                        provide detailed explanations, and offer step-by-step solutions.</p>
+                    <h3>Google Calculator</h3>
+                    <p>Integrated into the Google search engine, this basic calculator is easily accessible and perfect
+                        for quick calculations.</p>
+                    <h3>Calculator.net</h3>
+                    <p>A versatile platform offering a wide range of calculators, including scientific, financial, and
+                        conversion tools.</p>
+                    <h3>Symbolab</h3>
+                    <p>Aimed at students, Symbolab provides step-by-step solutions to algebraic equations, calculus
+                        problems, and more.</p>
+                    <h2>How to Use Online Calculators Effectively</h2>
+                    <p>To get the most out of online calculators, follow these tips:</p>
+                    <h3>Understand the Functions</h3>
+                    <p>Familiarize yourself with the available functions and how they work. This will save time and
+                        ensure accurate results.</p>
+                    <h3>Double-Check Inputs</h3>
+                    <p>Always double-check your inputs to avoid errors. Small mistakes can lead to incorrect results,
+                        especially in complex calculations.</p>
+                    <h3>Use Tutorials</h3>
+                    <p>Many online calculators offer tutorials or help sections. Utilize these resources to learn how to
+                        use the tool effectively.</p>
+                    <h3>Save Results</h3>
+                    <p>If the calculator allows, save or document your results for future reference, especially for
+                        complex or multi-step calculations.</p>
+                    <h3>Explore Advanced Features</h3>
+                    <p>Don't hesitate to explore advanced features and settings. These can enhance your productivity and
+                        streamline complex tasks.</p>
+                    <h2>Benefits of Online Calculators in Different Fields</h2>
+                    <p>Online calculators offer numerous benefits across various fields:</p>
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Enhance learning by providing quick solutions and visual aids.</li>
+                        <li>Aid in understanding complex mathematical concepts.</li>
+                    </ul>
+                    <h3>Finance</h3>
+                    <ul>
+                        <li>Simplify financial planning and budgeting.</li>
+                        <li>Provide accurate estimations for loans and investments.</li>
+                    </ul>
+                    <h3>Engineering</h3>
+                    <ul>
+                        <li>Assist in solving complex equations and modeling scenarios.</li>
+                        <li>Improve accuracy in project planning and execution.</li>
+                    </ul>
+                    <h3>Healthcare</h3>
+                    <ul>
+                        <li>Calculate vital health metrics like BMI and calorie intake.</li>
+                        <li>Aid in accurate dosage calculations and health assessments.</li>
+                    </ul>
+                    <h3>Business</h3>
+                    <ul>
+                        <li>Streamline financial analysis and tax calculations.</li>
+                        <li>Enhance decision-making with accurate data projections.</li>
+                    </ul>
+                    <h2>Conclusion</h2>
+                    <p>Online calculators have revolutionized how we approach calculations, offering unparalleled
+                        convenience, accuracy, and versatility. Whether you're a student, professional, or someone who
+                        needs quick computational assistance, these digital tools are invaluable. By understanding the
+                        different types of online calculators, their features, and how to use them effectively, you can
+                        make informed decisions and enhance your productivity.</p>
+                    <h1>FAQs</h1>
+                    <h3>Are online calculators free to use?</h3>
+                    <p>Most online calculators are free to use, though some advanced tools may offer premium features at
+                        a cost.</p>
+                    <h3>How accurate are online calculators?</h3>
+                    <p>Reputable online calculators provide highly accurate results. However, always double-check
+                        complex calculations for precision.</p>
+                    <h3>Can online calculators handle complex equations?</h3>
+                    <p>Yes, many online calculators, especially scientific and graphing calculators, are designed to
+                        handle complex mathematical equations.</p>
+                    <h3>Do I need to download software to use an online calculator?</h3>
+                    <p>No, online calculators are typically web-based and do not require any downloads. They can be
+                        accessed directly through your web browser.</p>
+                    <h3>Are online calculators safe to use for sensitive information?</h3>
+                    <p>While most online calculators are secure, it's essential to choose tools that offer robust
+                        security measures if you're handling sensitive data.</p>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer mt-3"><a href="" class="my-footer-link-style"><strong>About Us</strong></a>
+                        </li>
+                        <li class="my-footer mt-3"><a href="" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer mt-3"><a href="" class="my-footer-link-style"><strong>Privecy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae
+                        ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem
+                        rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                    </div>
+                    <div class="my-footer-socials">
+                        <a href="" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                    </div>
+                    <div class="my-footer-socials">
+                        <a href="" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas
+                                (Sagar)</a></span> & <span><a href="" target="_blank"
+                                class="my-footer-link-style">Kishor
+                                Sarker</a></span>
+                        &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+</body>
+
+</html>

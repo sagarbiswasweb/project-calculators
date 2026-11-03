@@ -1,0 +1,476 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* margins  */
+.my-mt-80 {
+    margin-top: 80px;
+}
+
+/* navbar  */
+.my-navbar-color {
+    background-color: #343a40;
+}
+.my-navbar-color .dropdown-menu{
+    background-color: #343a40;
+}
+.navbar-nav .dropdown-menu .dropdown-item.active{
+    background-color: #36699c;
+}
+.my-navbar-text-color {
+    color: rgb(220, 237, 247);
+}
+
+/* main area background color  */
+.my-main-bg-color{
+    background-color: #f3f3f3;
+}
+
+/* list group area acrive color  */
+.list-group-item.active{
+    background-color: #e2edfa;
+    border-color: #DDDCDC;
+    color: #000000;
+}
+
+/* calculator area bg color  */
+.my-calculator-bg{
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(175, 175, 175, 0.705);
+}
+
+/* input area  */
+.my-input-area::-webkit-outer-spin-button,
+.my-input-area::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.my-input-area {
+    border: 1px solid rgb(66, 66, 66);
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.my-input-area:focus {
+    border-color: rgb(33, 33, 33);
+    box-shadow: 0 0 5px rgba(66, 66, 66, 0.5);
+}
+.my-input-group{
+    border: 1px solid rgb(66, 66, 66);
+    border-left: none;
+}
+
+/* calculate button area */
+.my-calculate-button-area{
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+/* calculate & clear button  */
+.my-calculate-button, .my-clear-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Ensure no extra margin */
+}
+.my-calculate-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.my-calculate-button:active {
+    background-color: #004080; /* Even darker shade for active state */
+}
+.my-calculate-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.my-clear-button:hover {
+    background-color: #c82333; /* Darker shade for hover effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.my-clear-button:active {
+    background-color: #bd2130; /* Even darker shade for active state */
+}
+.my-clear-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+/* result and amortization area  */
+.my-result-area{
+    display: none;
+    /* margin: 4px; */
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+.my-comparisn-area{ /* for mortgage recast calculator comparisn table, hide with js */
+    display: none;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+.my-result-area-b{ /* for bridge loan calculators calculation B, hide with js */
+    display: none;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+.my-amortization-area{
+    display: none;
+    border: 1px solid rgb(138, 138, 138);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+
+/* basic calculator  */
+.my-calculator-display {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    height: 70px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid rgb(131, 130, 130);
+    border-radius: 10px;
+}
+.my-calculator-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(129, 129, 129);
+}
+.my-calculator-button h2 {
+    margin: 0;
+}
+.my-calculator-digits {
+    background-color: rgb(243, 243, 243);
+}
+.my-calculator-frame {
+    border: 5px solid rgb(77, 76, 76);
+    padding: auto;
+    border-radius: 10px;
+}
+.my-calculator-button:hover {
+    background-color: rgb(217, 218, 218);
+}
+
+/* mortgage calculator  */
+.mortgage-thead th{
+    background-color: #e9e9e9;
+}
+
+/* mortgage recast calculator  */
+.comparisn th{
+    /* background-color: #E5ECF0; */
+    background-color: #e9e9e9;
+}
+
+/* calculator content  */
+.my-calculator-content {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Footer Styles */
+.my-footer-container {
+    color: #DDDCDC;
+    background-color: #343a40;
+    padding: 20px 0;
+}
+.my-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.my-footer-item {
+    list-style: none;
+}
+.my-footer-ul {
+    list-style: none;
+    text-align: center;
+}
+.my-footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.my-footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    color: #DDDCDC;
+    transition: color 0.3s;
+}
+.my-footer-icon:hover {
+    color: #17a2b8;
+}
+.my-footer-link-style {
+    color: #DDDCDC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.my-footer-link-style:hover {
+    color: #17a2b8;
+}
+.developed-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BMI calculator  */
+/* bmi calculatoor gauge chart */
+.gauge-needle {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 5px;
+    height: 40%;
+    background-color: rgb(116, 115, 115);
+    transform-origin: bottom center;
+    transform: translateX(-50%) translateY(-100%) rotate(270deg);
+    z-index: 10;
+    transition: transform 5s ease; /* Smooth transition for rotation */
+}
+#bmiGaugeChart {
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+}
+.gauge-needle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(116, 115, 115);
+    border-radius: 50%; /* Making it a circle */
+    transform: translateX(-50%);
+}
+#gauge-chart-area {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; /* Ensure the element takes up only as much space as needed */
+}
+#classification-table{
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; /* Ensure the element takes up only as much space as needed */
+}
+
+/* construction calculator  */
+.estimated-cost-of-various-construction-area{ /* for construction calculator. estimate constructions various area value, hide with js */
+    display: none;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+
+
+/* =================== media queries start ================  */
+@media (max-width: 767.98px) {
+    .order-md-1 {
+        order: 2;
+        margin-bottom: 20px;
+    }
+    .order-md-2 {
+        order: 1;
+    }
+    .order-md-2 {
+        order: 3;
+    }
+    .my-calculator-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* =================== media queries ends ================  */
+
+
+/* ===========================overlay start======================== */
+/* touch prevention on mobile view when navbar is collapsed with overlay & Overlay styles */
+/* Overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998; /* Make sure it's just below the navbar */
+    display: none; /* Initially hidden */
+}
+/* Navbar */
+.navbar {
+    z-index: 999; /* Ensure the navbar is above the overlay */
+}
+body.overlay-active {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Right-aligned Navbar (mobile view) */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Initially off-screen */
+        width: 70%; /* Adjust width as needed */
+        height: 100%;
+        padding: 15px;
+        background-color: #343a40; /* Navbar background color */
+        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5); /* Optional: add shadow */
+        z-index: 1000; /* Ensure it's above the overlay */
+        transition: right 0.3s ease; /* Smooth transition */
+    }
+
+    .navbar-collapse.show {
+        right: 0; /* Show the navbar by bringing it into view */
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+    }
+
+    .navbar-nav .dropdown-menu > li {
+        position: relative;
+        white-space: normal; /* Allow text to wrap */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        word-wrap: break-word;
+        white-space: normal; /* Ensure long text wraps within the dropdown */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item.active,
+    .navbar-nav .dropdown-menu .dropdown-item:focus,
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: #36699c; /* Adjust the color as needed */
+    }
+
+    .dropdown-menu {
+        background-color: #343a40;
+    }
+}
+/* ===========================overlay ends======================= */
+
+/* Ensure label text starts from the left */
+.form-label {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+}
+
+
+/* ================== for tooltiip ==============  */
+/* Style for the ? button */
+.tooltip-btn {
+    background-color: #E9E9E9;
+    color: rgb(155, 155, 155);
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 0px;
+    padding: 0;
+    position: relative;
+  }
+.tooltip-btn:hover {
+    background-color: #E9E9E9;
+    color: rgb(44, 44, 44);
+    border: 1px solid rgb(44, 44, 44);
+  }
+.tooltip {
+    z-index: 1 !important; /* Ensure tooltip appears on top */
+ }
+
+
+/* //////////////////////// SOCIAL SHARE BUTTON STARTS /////////////////////// */
+
+.share-on-social-btn a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: transform 0.8s ease;
+}
+
+.share-on-social-btn a .share-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; /* Darker background for contrast */
+    border-radius: 50%;
+    transition: background-color 0.8s ease;
+}
+
+.share-on-social-btn a:hover .share-box {
+    background-color: #ebebeb; /* Slightly lighter on hover */
+    transform: scale(1.1);
+}
+
+.share-on-social-btn a .share-face {
+    font-size: 18px;
+    color: #fff; /* White icons for contrast */
+    transition: color 0.3s ease;
+}
+
+.share-on-social-btn a:hover .share-face {
+    color: #fff;
+}
+
+/* Existing Social Buttons */
+.share-on-social-btn a[title*="Facebook"] .share-face {
+    color: #3b5998;
+}
+
+.share-on-social-btn a[title*="X"] .share-face {
+    color: #1da1f2;
+}
+
+.share-on-social-btn a[title*="WhatsApp"] .share-face {
+    color: #25d366;
+}
+
+.share-on-social-btn a[title*="LinkedIn"] .share-face {
+    color: #0077b5;
+}
+
+.share-on-social-btn a[title*="Reddit"] .share-face {
+    color: #ff4500;
+}
+
+.share-on-social-btn a[title*="Email"] .share-face {
+    color: #333333;
+}
+
+/* //////////////////////// SOCIAL SHARE BUTTON ENDS /////////////////////// */
+
+  

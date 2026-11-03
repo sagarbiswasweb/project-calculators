@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sand Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item active" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action active">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Sand Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="sand-calculator">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="length" class="form-label">Area Length
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the length of the area where the sand will be applied. You can select the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-8">
+                                                    <input type="number" class="form-control my-input-area" id="length" min="1" step="any" required>
+                                                </div>
+                                                <div class="col-4 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="length-unit">
+                                                            <option value="centimeter">centimeter</option>
+                                                            <option selected value="meter">meter</option>
+                                                            <option value="inch">inch</option>
+                                                            <option value="feet">foot</option>
+                                                            <option value="yard">yard</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="width" class="form-label">Area Width
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the width of the area where the sand will be applied. You can select the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-8">
+                                                    <input type="number" class="form-control my-input-area" id="width" min="1" step="any" required>
+                                                </div>
+                                                <div class="col-4 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="width-unit">
+                                                            <option value="centimeter">centimeter</option>
+                                                            <option selected value="meter">meter</option>
+                                                            <option value="inch">inch</option>
+                                                            <option value="feet">foot</option>
+                                                            <option value="yard">yard</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="depth" class="form-label">Area Depth
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the depth or thickness of the sand layer. This determines the total volume of sand needed. You can select the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-8">
+                                                    <input type="number" class="form-control my-input-area" id="depth" min="1" step="any" required>
+                                                </div>
+                                                <div class="col-4 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="depth-unit">
+                                                            <option value="centimeter">centimeter</option>
+                                                            <option selected value="meter">meter</option>
+                                                            <option value="inch">inch</option>
+                                                            <option value="feet">foot</option>
+                                                            <option value="yard">yard</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h6 class="text-center">Sand price field is optional</h6>
+                                    <div class="row">
+                                        <div class="col-md-10 col-lg-8">
+                                            <label for="sand-price" class="form-label">Sand Cost
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the cost of sand. You can select unit as well. This field is optional and is used to estimate the total cost of sand based on the calculated quantity.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-8">
+                                                    <input type="number" class="form-control my-input-area" id="sand-price" min="1" step="any">
+                                                </div>
+                                                <div class="col-4 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="sand-price-unit">
+                                                            <option value="kg">/ kg</option>
+                                                            <option value="cubic-meter">/ cubic meter</option>
+                                                            <option value="cubic-foot">/ cubic foot</option>
+                                                            <option value="cubic-yard">/ cubic yard</option>
+                                                            <option selected value="metric-ton">/ metric ton</option>
+                                                            <option value="pound">/ pound</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody id="result">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Sand Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Sand Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Sand Calculation Results</a>
+                                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">3. Types of Sand Calculators</a>
+                                    <a href="#essential-features" class="list-group-item list-group-item-action">4. Essential Features of a Sand Calculator</a>
+                                    <a href="#why-use-calculator" class="list-group-item list-group-item-action">5. Why Should You Use a Sand Calculator?</a>
+                                    <a href="#common-mistakes" class="list-group-item list-group-item-action">6. Common Mistakes to Avoid</a>
+                                    <a href="#popular-calculators" class="list-group-item list-group-item-action">7. Popular Sand Calculators</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">8. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use the Sand Calculator</h2>
+                                <p>Our <strong>Sand Calculator</strong> helps you estimate the quantity of sand needed for your project.
+                                    Whether you’re filling a sandbox, preparing for construction, or leveling an area, this tool simplifies
+                                    your calculations.</p>
+                    
+                                <h3>Step 1: Enter the Area Dimensions</h3>
+                                <ul>
+                                    <li class="mb-1"><strong>Area Length:</strong> Input the length of the area and select the unit (meter,
+                                        feet, yard).</li>
+                                    <li class="mb-1"><strong>Area Width:</strong> Enter the width and choose the unit from the dropdown.
+                                    </li>
+                                    <li class="mb-1"><strong>Area Depth:</strong> Specify the depth of sand coverage and select the unit.
+                                    </li>
+                                </ul>
+                    
+                                <h3>Step 2: Optional – Enter Sand Cost</h3>
+                                <p>If you want to estimate the total cost, enter the price of sand per metric ton. This step is optional.
+                                </p>
+                    
+                                <h3>Step 3: Calculate the Required Sand</h3>
+                                <ul>
+                                    <li class="mb-1">Click the <strong>“Calculate”</strong> button to determine the total volume of sand
+                                        needed in cubic meters or cubic feet.</li>
+                                    <li class="mb-1">The result also shows the estimated weight in metric tons.</li>
+                                </ul>
+                    
+                                <h3>Step 4: Clear and Reset</h3>
+                                <p>If you need to start over, click the <strong>“Clear”</strong> button to reset all fields.</p>
+                    
+                                <h3>Why Use This Sand Calculator?</h3>
+                                <ul>
+                                    <li class="mb-1"> Quick and accurate sand volume estimation</li>
+                                    <li class="mb-1"> Supports multiple unit options for flexibility</li>
+                                    <li class="mb-1"> Helps in budgeting with an optional cost field</li>
+                                    <li class="mb-1"> User-friendly design for easy input and calculation</li>
+                                </ul>
+                    
+                                <p>Use this calculator to save time and ensure accurate material estimates for your construction or
+                                    landscaping projects.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding Your Sand Calculation Results</h2>
+                                <p>Once you input your area dimensions and sand cost, the sand calculator provides detailed results to help
+                                    you estimate the required quantity and cost. Here’s what each result means:</p>
+                    
+                                <h3>1. Sand Volume</h3>
+                                <p>This value represents the total volume of sand needed to fill the specified area. It is displayed in
+                                    multiple units for convenience:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>m³ (Cubic Meters):</strong> The volume in metric units.</li>
+                                    <li class="mb-1"><strong>yd³ (Cubic Yards):</strong> Commonly used in the US.</li>
+                                    <li class="mb-1"><strong>ft³ (Cubic Feet):</strong> Another imperial unit option.</li>
+                                </ul>
+                                <p>These conversions ensure you can easily compare measurements based on your preferred unit system.</p>
+                    
+                                <h3>2. Sand Needed</h3>
+                                <p>The calculator also estimates the total weight of sand required based on the volume:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Tons:</strong> The weight in metric tons, which is a standard for bulk material
+                                        purchase.</li>
+                                    <li class="mb-1"><strong>Kilograms (kg):</strong> Ideal for smaller-scale projects requiring precise
+                                        weight calculations.</li>
+                                    <li class="mb-1"><strong>Pounds (lbs):</strong> Useful for those using the imperial system.</li>
+                                </ul>
+                                <p>Knowing the weight of the sand helps in transportation planning and cost estimation.</p>
+                    
+                                <h3>3. Total Cost</h3>
+                                <p>If you entered a price per metric ton, the calculator will display an estimated total cost. This helps
+                                    you budget effectively for your project.</p>
+                    
+                                <h3>Why Are These Results Useful?</h3>
+                                <ul>
+                                    <li class="mb-1"><strong>Accurate Material Planning:</strong> Helps you order the right amount of sand,
+                                        avoiding shortages or excess.</li>
+                                    <li class="mb-1"><strong>Cost Estimation:</strong> Provides a clear budget forecast if you enter the
+                                        price per ton.</li>
+                                    <li class="mb-1"><strong>Unit Flexibility:</strong> Allows you to work with metric or imperial units as
+                                        needed.</li>
+                                </ul>
+                    
+                                <p>By understanding these results, you can efficiently plan your sand requirements and expenses for any
+                                    project.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="types-of-calculators">Types of Sand Calculators: Choose the Right One for Your Needs</h2>
+                                <p>Sand calculators come in different types, each designed for specific applications. Whether you’re
+                                    estimating sand for construction, landscaping, or decorative purposes, choosing the right calculator
+                                    ensures accuracy and efficiency.</p>
+                    
+                                <h3>1. <strong>Volume-Based Sand Calculator</strong></h3>
+                                <p>This is the most commonly used sand calculator. It estimates the total sand volume required based on the
+                                    length, width, and depth of the area.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Construction projects, filling voids, and general sand
+                                        estimation.</li>
+                                    <li class="mb-1"><strong>Units:</strong> Cubic meters (m³), cubic yards (yd³), and cubic feet (ft³).
+                                    </li>
+                                </ul>
+                    
+                                <h3>2. <strong>Weight-Based Sand Calculator</strong></h3>
+                                <p>Instead of volume, this calculator determines the total weight of sand needed for a project. It uses the
+                                    density of sand to convert volume into weight.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Transport and logistics, bulk sand purchases.</li>
+                                    <li class="mb-1"><strong>Units:</strong> Tons, kilograms (kg), and pounds (lbs).</li>
+                                </ul>
+                    
+                                <h3>3. <strong>Cost Estimation Sand Calculator</strong></h3>
+                                <p>This calculator helps budget projects by estimating the total cost of sand. Users enter the price per
+                                    metric ton or cubic yard to get a final cost estimate.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Budget planning, cost analysis for large-scale projects.
+                                    </li>
+                                    <li class="mb-1"><strong>Units:</strong> Total cost based on selected currency.</li>
+                                </ul>
+                    
+                                <h3>4. <strong>Bricklaying & Mortar Sand Calculator</strong></h3>
+                                <p>Designed for masonry work, this calculator estimates the amount of sand required to mix mortar for
+                                    bricklaying and plastering.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Bricklayers, masons, and construction workers.</li>
+                                    <li class="mb-1"><strong>Includes:</strong> Sand-to-cement ratio calculations.</li>
+                                </ul>
+                    
+                                <h3>5. <strong>Playground Sand Calculator</strong></h3>
+                                <p>This specialized calculator determines the amount of sand needed to cover a play area at a safe depth for
+                                    children’s safety.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Playgrounds, sandpits, and recreational areas.</li>
+                                    <li class="mb-1"><strong>Units:</strong> Depth requirements for safety compliance.</li>
+                                </ul>
+                    
+                                <h3>6. <strong>Arena & Equestrian Sand Calculator</strong></h3>
+                                <p>Used for horse arenas and riding tracks, this calculator factors in the required sand depth for proper
+                                    footing.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Horse training grounds, racetracks, and equestrian arenas.
+                                    </li>
+                                    <li class="mb-1"><strong>Includes:</strong> Recommended sand depth for traction and drainage.</li>
+                                </ul>
+                    
+                                <h3>7. <strong>Decorative & Landscaping Sand Calculator</strong></h3>
+                                <p>Ideal for garden projects, this calculator estimates the amount of sand needed for pathways, rock
+                                    gardens, and decorative landscaping.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Garden designers, landscapers, and DIY projects.</li>
+                                    <li class="mb-1"><strong>Includes:</strong> Coverage estimates based on layer thickness.</li>
+                                </ul>
+                    
+                                <h2>Which Sand Calculator Should You Use?</h2>
+                                <p>Choosing the right sand calculator depends on the purpose of your project. If you need to estimate
+                                    material quantity, a volume or weight-based calculator is best. For cost planning, a price-based
+                                    calculator will be helpful.</p>
+                    
+                                <p>Using a sand calculator ensures you buy the right amount, prevent waste, and stay within budget. Try our
+                                    <a href="your-sand-calculator-url">sand calculator</a> today for accurate results!</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="essential-features">Essential Features of a Sand Calculator</h2>
+                                <p>A sand calculator is a crucial tool for construction, landscaping, and other projects that require
+                                    precise sand estimation. Below are the key features that make a sand calculator accurate, efficient, and
+                                    user-friendly.</p>
+                    
+                                <h3>1. <strong>Accurate Volume Calculation</strong></h3>
+                                <p>The core function of a sand calculator is to compute the exact volume of sand required based on the
+                                    provided dimensions.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Inputs:</strong> Area length, width, and depth.</li>
+                                    <li class="mb-1"><strong>Units:</strong> Cubic meters (m³), cubic yards (yd³), and cubic feet (ft³).
+                                    </li>
+                                    <li class="mb-1"><strong>Application:</strong> Ideal for construction and bulk material estimation.</li>
+                                </ul>
+                    
+                                <h3>2. <strong>Weight Estimation</strong></h3>
+                                <p>The calculator converts the volume into weight, considering the density of sand.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Units:</strong> Metric tons, kilograms (kg), and pounds (lbs).</li>
+                                    <li class="mb-1"><strong>Use Case:</strong> Helpful for transport logistics and purchasing sand in bulk.
+                                    </li>
+                                </ul>
+                    
+                                <h3>3. <strong>Customizable Unit Selection</strong></h3>
+                                <p>Users can select different measurement units for input values to match their regional or industry
+                                    preferences.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Length & Width:</strong> Meters, feet, yards.</li>
+                                    <li class="mb-1"><strong>Depth:</strong> Inches, centimeters, meters.</li>
+                                </ul>
+                    
+                                <h3>4. <strong>Sand Cost Estimation</strong></h3>
+                                <p>For budgeting purposes, the calculator allows users to input the sand price per unit (ton or cubic meter)
+                                    to determine the total cost.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Contractors, suppliers, and project planners.</li>
+                                    <li class="mb-1"><strong>Feature:</strong> Adjustable pricing based on market rates.</li>
+                                </ul>
+                    
+                                <h3>5. <strong>Multi-Unit Conversion</strong></h3>
+                                <p>Since sand is measured differently worldwide, the calculator automatically converts results into multiple
+                                    units.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Example Output:</strong> "1,000 m³ (1,308 yd³ / 35,314 ft³)".</li>
+                                    <li class="mb-1"><strong>Benefit:</strong> Eliminates manual conversions and errors.</li>
+                                </ul>
+                    
+                                <h3>6. <strong>User-Friendly Interface</strong></h3>
+                                <p>A well-designed calculator should be easy to navigate, with clear input fields and instant results.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Features:</strong> Dropdowns for unit selection, tooltips for guidance, and
+                                        responsive design for mobile users.</li>
+                                    <li class="mb-1"><strong>Purpose:</strong> Ensures smooth usage for professionals and DIY users alike.
+                                    </li>
+                                </ul>
+                    
+                                <h3>7. <strong>Mobile Compatibility</strong></h3>
+                                <p>With increasing mobile usage, a sand calculator should work seamlessly on smartphones and tablets.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Responsive Design:</strong> Adjusts to different screen sizes.</li>
+                                    <li class="mb-1"><strong>Touch-Friendly:</strong> Easy-to-use dropdowns and input fields.</li>
+                                </ul>
+                    
+                                <h3>8. <strong>Instant Calculation & Results</strong></h3>
+                                <p>Real-time calculations ensure quick and accurate results without the need for reloading the page.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Benefit:</strong> Saves time by displaying immediate calculations as inputs
+                                        change.</li>
+                                    <li class="mb-1"><strong>Example:</strong> Adjusting depth updates sand volume and cost automatically.
+                                    </li>
+                                </ul>
+                    
+                                <h3>9. <strong>Additional Material Calculations</strong></h3>
+                                <p>Some sand calculators also estimate other materials like cement, gravel, and aggregate needed for
+                                    projects.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Best for:</strong> Concrete mixing, mortar calculations, and landscaping.</li>
+                                </ul>
+                    
+                                <h3>10. <strong>Dark Mode & Accessibility Options</strong></h3>
+                                <p>For better usability, some calculators offer a dark mode and accessibility features for visually impaired
+                                    users.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Dark Mode:</strong> Reduces eye strain for prolonged use.</li>
+                                    <li class="mb-1"><strong>Accessibility Features:</strong> Larger text, high contrast, and screen reader
+                                        compatibility.</li>
+                                </ul>
+                    
+                                <h2>Why Use a Sand Calculator?</h2>
+                                <p>Using a sand calculator eliminates guesswork, reduces waste, and ensures cost-effective purchasing.
+                                    Whether for large-scale construction or small DIY projects, an efficient sand calculator helps you plan
+                                    better and avoid unnecessary expenses.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="why-use-calculator">Why Should You Use a Sand Calculator?</h2>
+                                <p>Whether you're planning a construction project, landscaping, or any other task that requires sand, a sand
+                                    calculator is an essential tool. It helps ensure accuracy, reduce costs, and improve efficiency. Below
+                                    are the key reasons why using a sand calculator is beneficial.</p>
+                    
+                                <h3>1. <strong>Accurate Sand Estimation</strong></h3>
+                                <p>One of the biggest challenges in construction and landscaping is estimating the right amount of sand
+                                    needed. A sand calculator eliminates guesswork by providing precise volume and weight measurements based
+                                    on your input values.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Prevents shortages:</strong> Ensures you don’t run out of sand mid-project.
+                                    </li>
+                                    <li class="mb-1"><strong>Avoids wastage:</strong> Helps in purchasing only the necessary amount.</li>
+                                </ul>
+                    
+                                <h3>2. <strong>Cost Savings</strong></h3>
+                                <p>Over-ordering or under-ordering sand can lead to unnecessary expenses. A sand calculator helps you:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Optimize material usage:</strong> Purchase the exact amount needed.</li>
+                                    <li class="mb-1"><strong>Budget effectively:</strong> Estimate the total cost based on sand price per
+                                        unit.</li>
+                                </ul>
+                    
+                                <h3>3. <strong>Easy Unit Conversions</strong></h3>
+                                <p>Sand is measured in different units worldwide. A sand calculator automatically converts volume and weight
+                                    into various units like:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Volume:</strong> Cubic meters (m³), cubic yards (yd³), cubic feet (ft³).</li>
+                                    <li class="mb-1"><strong>Weight:</strong> Tons, kilograms (kg), pounds (lbs).</li>
+                                </ul>
+                                <p>This feature is especially useful for international projects where unit standards vary.</p>
+                    
+                                <h3>4. <strong>Helps in Project Planning</strong></h3>
+                                <p>Accurate sand estimation is crucial for scheduling and resource management. Using a sand calculator
+                                    allows you to:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Plan deliveries:</strong> Arrange timely sand supply without delays.</li>
+                                    <li class="mb-1"><strong>Ensure smooth workflow:</strong> Avoid interruptions due to material shortages.
+                                    </li>
+                                </ul>
+                    
+                                <h3>5. <strong>Reduces Environmental Impact</strong></h3>
+                                <p>By calculating the exact amount of sand needed, you contribute to sustainable construction practices by:
+                                </p>
+                                <ul>
+                                    <li class="mb-1"><strong>Minimizing waste:</strong> Prevents excessive sand extraction and reduces
+                                        environmental damage.</li>
+                                    <li class="mb-1"><strong>Efficient transportation:</strong> Less unnecessary transport, leading to lower
+                                        carbon emissions.</li>
+                                </ul>
+                    
+                                <h3>6. <strong>Time-Saving & Convenience</strong></h3>
+                                <p>Manual calculations can be time-consuming and prone to errors. A sand calculator provides instant
+                                    results, saving time and effort for contractors, builders, and DIY enthusiasts.</p>
+                    
+                                <h3>7. <strong>Ideal for Various Applications</strong></h3>
+                                <p>A sand calculator is useful for multiple purposes, including:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Construction:</strong> Estimating sand for concrete, mortar, and foundation
+                                        work.</li>
+                                    <li class="mb-1"><strong>Landscaping:</strong> Determining the sand needed for pathways, gardens, and
+                                        leveling.</li>
+                                    <li class="mb-1"><strong>Playgrounds & Sports Fields:</strong> Calculating sand quantity for safe and
+                                        even coverage.</li>
+                                </ul>
+                    
+                                <h3>8. <strong>Works for Any Project Size</strong></h3>
+                                <p>Whether you're working on a small DIY project or a large-scale commercial build, a sand calculator adapts
+                                    to any project size, making it a versatile tool for homeowners and professionals alike.</p>
+                    
+                                <h2>Get Accurate Sand Estimates Instantly</h2>
+                                <p>Using a sand calculator ensures efficiency, cost-effectiveness, and accuracy in your project planning.
+                                    Try our <a href="your-sand-calculator-url">sand calculator</a> today and make your calculations
+                                    hassle-free!</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="common-mistakes">Common Mistakes to Avoid When Using a Sand Calculator</h2>
+                                <p>A sand calculator is a powerful tool for estimating the amount of sand needed for construction,
+                                    landscaping, and other projects. However, incorrect inputs and misunderstandings can lead to inaccurate
+                                    calculations. Below are the most common mistakes to avoid when using a sand calculator.</p>
+                    
+                                <h3>1. <strong>Incorrect Unit Selection</strong></h3>
+                                <p>One of the biggest mistakes users make is selecting the wrong unit of measurement. Sand can be measured
+                                    in different units such as:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Volume:</strong> Cubic meters (m³), cubic yards (yd³), cubic feet (ft³).</li>
+                                    <li class="mb-1"><strong>Weight:</strong> Tons, kilograms (kg), pounds (lbs).</li>
+                                </ul>
+                                <p><strong>Solution:</strong> Always double-check the unit settings in the calculator to ensure consistency
+                                    in your measurements.</p>
+                    
+                                <h3>2. <strong>Ignoring the Depth Measurement</strong></h3>
+                                <p>Some users forget to include the depth of sand required, leading to inaccurate estimates. Depth is a
+                                    crucial factor in calculating the correct sand volume.</p>
+                                <p><strong>Solution:</strong> Always input the correct depth based on your project requirements to get an
+                                    accurate estimate.</p>
+                    
+                                <h3>3. <strong>Overlooking Sand Compaction</strong></h3>
+                                <p>Sand compacts under pressure, reducing its volume over time. If compaction is not considered, you may
+                                    order less sand than needed.</p>
+                                <p><strong>Solution:</strong> Adjust your calculation by adding an extra percentage (usually 5-10%) to
+                                    account for compaction.</p>
+                    
+                                <h3>4. <strong>Not Factoring in Wastage</strong></h3>
+                                <p>During transport and application, some sand may be lost due to spillage, wind, or uneven spreading.</p>
+                                <p><strong>Solution:</strong> Add a safety margin (typically 5-10%) to your calculation to avoid running
+                                    short on materials.</p>
+                    
+                                <h3>5. <strong>Misinterpreting the Cost Calculation</strong></h3>
+                                <p>If your project involves purchasing sand, ensure you input the correct price per unit. Mistakes in
+                                    pricing can lead to incorrect cost estimates.</p>
+                                <p><strong>Solution:</strong> Verify the price per metric ton, cubic yard, or any other unit you are using
+                                    before calculating the total cost.</p>
+                    
+                                <h3>6. <strong>Forgetting to Convert Units</strong></h3>
+                                <p>Different regions use different measurement systems (metric vs. imperial), leading to confusion when
+                                    ordering sand.</p>
+                                <p><strong>Solution:</strong> Use the built-in unit conversion feature in the sand calculator to ensure
+                                    accurate measurements.</p>
+                    
+                                <h3>7. <strong>Not Considering the Type of Sand</strong></h3>
+                                <p>Different types of sand have varying densities, which affect weight calculations. Beach sand, river sand,
+                                    and construction sand do not have the same weight per cubic meter.</p>
+                                <p><strong>Solution:</strong> Check with your supplier for the exact density of the sand type you are using
+                                    and adjust the calculator settings accordingly.</p>
+                    
+                                <h3>8. <strong>Neglecting Project-Specific Requirements</strong></h3>
+                                <p>Every project has unique requirements, such as sand for concrete, filling, or drainage. Using a
+                                    one-size-fits-all approach can lead to incorrect estimates.</p>
+                                <p><strong>Solution:</strong> Understand the specific needs of your project and choose the right type and
+                                    amount of sand accordingly.</p>
+                    
+                                <h3>9. <strong>Skipping a Double-Check</strong></h3>
+                                <p>Relying solely on the calculator without verifying the inputs and results can lead to costly errors.</p>
+                                <p><strong>Solution:</strong> Review all inputs and results before finalizing your order to ensure accuracy.
+                                </p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="popular-calculators">Popular Sand Calculators for Accurate Material Estimation</h2>
+                                <p>Sand calculators are essential tools for estimating the right amount of sand needed for construction,
+                                    landscaping, and other projects. Whether you're a contractor, builder, or homeowner, choosing the right
+                                    sand calculator can save time, reduce material waste, and optimize costs. Below are some of the most
+                                    popular sand calculators available today.</p>
+                    
+                                <h3>1. <strong>Construction Sand Calculator</strong></h3>
+                                <p>Designed for builders and contractors, this calculator helps determine the sand volume required for
+                                    concrete mixing, masonry work, and foundation projects.</p>
+                                <p><strong>Key Features:</strong></p>
+                                <ul>
+                                    <li class="mb-1">Supports multiple unit conversions (m³, yd³, ft³, tons, kg, lbs).</li>
+                                    <li class="mb-1">Includes sand density variations for different types.</li>
+                                    <li class="mb-1">Adjustable for wastage and compaction factors.</li>
+                                </ul>
+                    
+                                <h3>2. <strong>Landscaping Sand Calculator</strong></h3>
+                                <p>Perfect for gardening, backyard projects, and patio installations, this calculator helps estimate the
+                                    sand required for leveling and filling spaces.</p>
+                                <p><strong>Key Features:</strong></p>
+                                <ul>
+                                    <li class="mb-1">Calculates sand volume based on length, width, and depth.</li>
+                                    <li class="mb-1">Provides results in cubic meters, cubic yards, and tons.</li>
+                                    <li class="mb-1">Includes cost estimation for bulk purchases.</li>
+                                </ul>
+                    
+                                <h3>3. <strong>Beach Sand Volume Calculator</strong></h3>
+                                <p>This specialized calculator helps estimate sand volume for beach replenishment, playgrounds, and
+                                    volleyball courts.</p>
+                                <p><strong>Key Features:</strong></p>
+                                <ul>
+                                    <li class="mb-1">Accounts for sand displacement due to weather and usage.</li>
+                                    <li class="mb-1">Supports large-scale sand volume calculations.</li>
+                                    <li class="mb-1">Customizable depth settings for different applications.</li>
+                                </ul>
+                    
+                                <h3>4. <strong>Brickwork and Mortar Sand Calculator</strong></h3>
+                                <p>Designed for bricklaying and plastering projects, this tool estimates the amount of sand required based
+                                    on brick count and mortar thickness.</p>
+                                <p><strong>Key Features:</strong></p>
+                                <ul>
+                                    <li class="mb-1">Calculates sand needed for mortar mix ratios.</li>
+                                    <li class="mb-1">Provides estimates based on different brick sizes.</li>
+                                    <li class="mb-1">Adjustable for various sand-to-cement proportions.</li>
+                                </ul>
+                    
+                                <h3>5. <strong>Golf Course and Sports Field Sand Calculator</strong></h3>
+                                <p>Used by groundskeepers and golf course managers, this calculator helps determine the sand required for
+                                    maintaining turf and drainage systems.</p>
+                                <p><strong>Key Features:</strong></p>
+                                <ul>
+                                    <li class="mb-1">Calculates sand for topdressing and aeration.</li>
+                                    <li class="mb-1">Supports fine-grain and coarse-grain sand variations.</li>
+                                    <li class="mb-1">Allows adjustments for seasonal maintenance needs.</li>
+                                </ul>
+                    
+                                <h2>Choosing the Right Sand Calculator</h2>
+                                <p>Each sand calculator serves a unique purpose based on project requirements. Whether you're working on a
+                                    small DIY task or a large-scale construction project, selecting the right tool ensures accuracy and cost
+                                    efficiency. Try our <a href="your-sand-calculator-url">sand calculator</a> today for precise
+                                    measurements!</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="sandCalculatorFAQ">
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a sand calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        A sand calculator helps estimate the amount of sand needed for construction,
+                                                        landscaping, or other projects based on volume, area, and depth.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How do I use the sand calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Enter the length, width, and depth of the area where you need sand. The calculator
+                                                        will provide an estimate in cubic meters, cubic yards, or other units.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>What units does the sand calculator support?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator supports metric and imperial units, including cubic meters, cubic
+                                                        feet, cubic yards, and tons.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>Does the calculator consider sand density?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, the calculator allows you to input the density of sand to get more accurate
+                                                        weight estimates.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>Can I use the sand calculator for different types of sand?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, you can adjust the density setting to match the specific type of sand you are
+                                                        using, such as dry, wet, or compacted sand.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>How accurate is the sand calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator provides an estimate based on the input values. For precise
+                                                        calculations, consider factors like sand compaction and wastage.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>Can I calculate the cost of sand?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, by entering the price per unit (e.g., per cubic meter or ton), the calculator
+                                                        can estimate the total cost of sand needed.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        <strong>What should I consider when ordering sand?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+                                                    data-bs-parent="#sandCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Consider factors such as sand type, supplier availability, transportation costs, and
+                                                        potential wastage when ordering sand.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/sand-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

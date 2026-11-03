@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Loan Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item active" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action active">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Aircraft Loan Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="aircraft-loan">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="purchasePrice" class="form-label">Purchase Price
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total purchase price of the aircraft. This is the amount before taxes, fees, or any additional costs">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="purchasePrice" required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="downPayment" class="form-label">Down Payment
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the initial amount you will pay upfront for the aircraft. It can be amount or percentage of the purchase price, select it from right side. A higher down payment can reduce your loan amount and monthly payments.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="downPayment" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <select class="my-input-area form-select" id="downPayment-unit">
+                                                        <option value="percentage">%</option>
+                                                        <option value="dollar">$</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanAmount" class="form-label">Loan Amount
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="The loan amount is automatically calculated as the purchase price minus the down payment. This is the amount you will finance through the loan.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="loanAmount" required readonly>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="interestRate" class="form-label">Interest Rate
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the annual interest rate for your loan. This rate affects your monthly payments and the total cost of financing">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="interestRate" required>
+                                                <span class="input-group-text my-input-group">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanDuration" class="form-label">Term
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the loan term in years. This is the duration over which you will repay the loan. A longer term may lower monthly payments but increase total interest costs.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="loanDuration" required>
+                                                <span class="input-group-text my-input-group">years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 my-result-area">
+                            <div class="row m-0">
+                                <div class="col-md-12 mt-3 text-center">
+                                    <p id="monthlyPayment" style="background-color: rgb(181, 243, 174);"></p>
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody id="result">
+                                                <!-- result will be shown here  -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <canvas id="aircraftLoanChart">
+                                        <!-- aircraft loan donut chart  -->
+                                    </canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-4 my-amortization-area">
+                            <div class="col-md-12 mt-3 mb-3">
+                                <canvas id="multiLineChart">
+                                    <!-- aircraft loan multi line chart  -->
+                                </canvas>
+                            </div>
+                            <div class="col-md-12">
+                                <!-- <p class="text-center" id="scheduleParagraph">To see amortization table, input credentials and calculate</p> -->
+                                <h4 class="mt-3 mb-3 text-center" id="schedule"></h4>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped amortization">
+                                        <thead class="mortgage-thead">
+                                            <tr>
+                                                <th id="payment-no"></th>
+                                                <th id="princpal"></th>
+                                                <th id="interest"></th>
+                                                <th id="interest-paid"></th>
+                                                <th id="ending-balance"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="amortizationTableBody">
+                                            <!-- here monthly amortization table goes dynamically  -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Aircraft Loan Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Aircraft Loan Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Results</a>
+                                    <a href="#what-is-loan" class="list-group-item list-group-item-action">3. What is an Aircraft Loan?</a>
+                                    <a href="#why-essential" class="list-group-item list-group-item-action">4. Why an Aircraft Loan Calculator Is Essential</a>
+                                    <a href="#cost-determination" class="list-group-item list-group-item-action">5. What Determines the Costs of an Aircraft Loan</a>
+                                    <a href="#why-use" class="list-group-item list-group-item-action">6. Why Use Our Aircraft Loan Calculator</a>
+                                    <a href="#reduce-costs" class="list-group-item list-group-item-action">7. Ways to Reduce Your Aircraft Loan Costs</a>
+                                    <a href="#walk-rates" class="list-group-item list-group-item-action">8. Walk the Rates</a>
+                                    <a href="#financing-simplified" class="list-group-item list-group-item-action">9. Aircraft Financing Made Simple</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">10. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use" class="mb-3">How to Use the Aircraft Loan Calculator</h2>
+                                <p>Our airplane loan calculator is simple to use. Here is the full instruction to get started with it.</p>
+                                <div>
+                                    <h3>1. Enter Purchase Price:</h3>
+                                    <p>It is the price to buy the aircraft. This is the cost of everything before your down payment.</p>
+                                </div>
+                                <div>
+                                    <h3>2. Enter Down Payment:</h3>
+                                    <p>This is the downpayment value you have to pay for buying the aircraft. You can either select
+                                        '<strong>%</strong>' or '<strong>$</strong>'. If it is percentage(%) then you have to input that how
+                                        many percent of the Aircraft Purchase Price you have to pay as the downpayment. If it is dollar($),
+                                        then you have to specify the amount you have to pay for the downpayment.</p>
+                                </div>
+                                <div>
+                                    <h3>3. Loan Amount:</h3>
+                                    <p>You don't have to put any values in this field, as it is autometically calculate the <strong><i>Loan
+                                                Amount</i></strong> from your submitted <strong><i>Purchase Price</i></strong> and
+                                        <strong><i>DownPayment</i></strong>.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>4. Specify the Interest Rate:</h3>
+                                    <p>Key Annual interest rate, value given by your lender. If you are unsure, use an average value related
+                                        to the present state of the market.</p>
+                                </div>
+                                <div>
+                                    <h3>5. Specify the Loan Term:</h3>
+                                    <p>Enter in the number of years you want for your loan term. Terms typically approved by lenders will
+                                        vary from 5 to 20 years, based on the lender and your financial scenario.</p>
+                                </div>
+                    
+                                <p><i>After you input this data and click calculate button, the calculator will immediately display your
+                                        estimated monthly payments as well as total cost of borrowing if any with essential visual graph
+                                        data for better understanding. By playing with the inputs, you can investigate a range of scenarios
+                                        to find the best possible finance solution for your purpose.</i></p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding Your Results</h2>
+                                <h5>You can gain valuable insights from the aircraft loan calculator results. Here's how to interpret them:
+                                </h5>
+                                <ul>
+                                    <li class="mb-1"><strong>Monthly Payments: </strong>This is how much you would have to pay each month in
+                                        order to get your loan paid off. This is calculated by the loan amount, interest rate and loan term.
+                                        As always: Make sure it is a part of your monthly budget and doesn't add financial strain.</li>
+                                    <li class="mb-1"><strong>Total Payments: </strong>It shows the total months to pay off the loan.</li>
+                                    <li class="mb-1"><strong>Total Cost of Loan: </strong>These are the initial loan amount, and total
+                                        interest paid over the life of your mortgage. The most important to consider is the total cost of of
+                                        loan because this ties into how much you will pay for your aircraft over all.</li>
+                                    <li class="mb-1"><strong>Total Interest: </strong>This is the total interest paid over the life of the
+                                        loan.</li>
+                                    <li class="mb-1"><strong>Amortization Schedule: </strong>You will get an amortization schedule, which
+                                        shows you how much of each payment is principal and interest and how much you have to pay monthly.
+                                        Which helps you to understand how your loan balance is reducing over time.</li>
+                                </ul>
+                                <h5>Understanding the charts</h5>
+                                <ul>
+                                    <li class="mb-1"><strong>Donut Chart: </strong>This is a variation of a pie chart with a hollow center.
+                                        It is commonly used to visualize proportions or percentages of components within a whole.</li>
+                                    <h5>What it Represents:</h5>
+                                    <ul>
+                                        <li class="mb-1"><strong>Blue (Loan Amount): </strong>The portion of the total cost representing the
+                                            loan amount borrowed.</li>
+                                        <li class="mb-1"><strong>Pink (Total Interest): </strong>The portion representing the total interest
+                                            paid over the life of the loan.</li>
+                                        <li class="mb-1"><strong>Yellow (Down Payment): </strong>The portion representing the upfront down
+                                            payment made at the time of purchase.</li>
+                                    </ul>
+                                    <h5 class="mb-1">Purpose:</h5>
+                                    <p>This chart visually breaks down the components of the total cost of the loan (Loan Amount + Total
+                                        Interest + Down Payment) to show their relative contributions. The legend at the top helps identify
+                                        each segment.</p>
+                                </ul>
+                    
+                                <ul>
+                                    <li class="mb-1"><strong>Multi Line Chart: </strong>This is a multi-line chart, often used to represent
+                                        changes or trends over time. Here's what it shows based on the legend and the lines:</li>
+                                    <h5>What It Represents:</h5>
+                                    <ol>
+                                        <li class="mb-1"><strong>Blue (Balance):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the remaining loan balance over time.</li>
+                                                <li class="mb-1">The line slopes downward as the balance decreases with each payment.</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-1"><strong>Green (Interest):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the portion of the monthly payment allocated to interest over
+                                                    time.</li>
+                                                <li class="mb-1">This line typically curves downward as the interest portion decreases while
+                                                    the principal portion increases (common in amortized loans).</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-1"><strong>Pink (Payment):</strong>
+                                            <ul>
+                                                <li class="mb-1">Represents the total monthly payment.</li>
+                                                <li class="mb-1">It remains constant throughout the loan term in a fixed-rate loan.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <h5 class="mb-1">Purpose:</h5>
+                                    <ul>
+                                        <li class="mb-1">This chart is useful for visualizing how a loan progresses over its term:</li>
+                                        <ul>
+                                            <li class="mb-1">The balance decreases steadily.</li>
+                                            <li class="mb-1">The interest portion starts high but diminishes as more of the payment is
+                                                applied to the principal.</li>
+                                            <li class="mb-1">The total payment remains fixed (assuming a fixed-rate loan).</li>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <p>The information data obtained from interpreting these results and charts will help you with your aircraft
+                                    financing package decisions. By adjusting the purchase price, down payment, loan amount, interest rate
+                                    and term you can find a sweet spot between monthly payments that fit your budget but still keeping total
+                                    cost of loan to manageable level.</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <p>Buying an aircraft is not something anyone just goes out and buys everyday, but the finances are a
+                                    mission to work out. For small business owners or future pilots, it is complicated enough to negotiate
+                                    the world of aircraft financing. Read on to know about what an aircraft loan calculator is, how useful
+                                    it can be and also help you make informed decisions that will probably land those aviation fantasies
+                                    real far down the tarmac.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="what-is-loan">What is an Aircraft Loan?</h2>
+                                <p>A brand of a loan is an aircraft load and this type of finance was created just for buying an airplane.
+                                    In a nutshell, aircraft loans are by which you gain access to that funding-similar to how car loans
+                                    allow us to purchase cars or mortgages enable home buying. These loans also cover a variety of aircraft
+                                    in the market, including small single-engine planes to large commercial jets.</p>
+                                <p>Aircraft loans will be provided by the financial institutions, specialized aviation lenders, and some
+                                    manufacturers under certain terms and conditions, in other words interest rates, repayment schedules and
+                                    eligibility constraints. Some lenders also mandate a down payment (a percentage of the purchase price
+                                    that you pay cash at closing) For one to be successful in this niche, it is important to have an
+                                    understanding of these terms so that you obtain the best possible deal.</p>
+                                <p>Finding the right type of aircraft loan is important as there are a lot more options available. So you
+                                    should shop around for different loans. Here is where an <i>aircraft loan calculator</i> steps in to
+                                    assist on the process and make you understand what all financial obligations are included.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="why-essential">Why an Aircraft Loan Calculator Is Essential</h2>
+                                <p>The cost of an aircraft loan can be broken down into multiple components related to the total amount
+                                    borrowed, interest rate and term over which that money will be repaid. An aircraft loan calculator
+                                    simplifies these variables and helps display the monthly payments as amortization schedule table &
+                                    overall costs of your new purchase.</p>
+                                <p>Doing it without the help of a machine can be really more daunting and error-prone. This is way too much
+                                    work and you need a calculator that does this heavy lifting for you, takes care of all the complex math
+                                    involved here, so find out how to simplify your life. This lets you compare options that include
+                                    different metrics like principal amounts, rates of interest and term length to make sure a quote meets
+                                    your unique financing requirements.</p>
+                                <p>If you are a small business owner or student interested in becoming a pilot, an aircraft loan calculator
+                                    is vital. This helps you in your budget and financial planning, it will be a good indicator if you can
+                                    afford the loan without impacting other areas of your finances. While it is most useful as a tool for
+                                    financial advisors and aviation experts to help their clients make wise choices about aircraft finance.
+                                </p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="cost-determination">What Determines The Costs Of An Aircraft Loan</h2>
+                                <p>Aircraft loans sum up to a few things, all of them expensive. This can allow you to get a better deal on
+                                    your loan and help you effectively manage your money.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Loan Amount: </strong>How Much the Cost You want to borrow, that governs your
+                                        loan amount and consequently mode of payment as well as a total price for a loan. More common loan
+                                        amounts will typically increase in corresponding monthly payment sizes.</li>
+                                    <li class="mb-1"><strong>Interest Rate: </strong>Your credit score, market conditions and the lender can
+                                        all drive rates higher or lower. Lower the interest rate, more cost-effective a loan becomes.</li>
+                                    <li class="mb-1"><strong>Loan Term: </strong>The longer your loan term, the lower your monthly payments
+                                        will be, but the more interest you will pay over time. Conversely, shorter loan terms result in
+                                        higher monthly payments but less total interest.</li>
+                                </ul>
+                                <p>There are other variables such as the make, model and year of your aircraft as well as your financial
+                                    profile that affect loan costs. Taking these into account allows you to understand the financial
+                                    consequences of your aircraft loan and help doorstep one of the best financing alternatives.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="why-use">Why use our aircraft loan calculator</h2>
+                                <ul>
+                                    <li class="mb-1">Using our aircraft loan calculator should help the process. Friendly to use, accurate
+                                        and gives you results quickly enabling the maker of financial decisions, not only make informed but
+                                        intelligent choices.</li>
+                                    <li class="mb-1">It is a simple calculator, the input you need to provide: Purchase Price, Down Payment,
+                                        Interest Rate and Loan Term. After you fill out those details, it will calculate your Total Cost of
+                                        Loan, Total Interest, Monthly Payment and Total Payments along with charts for better understanding.
+                                        It helps you to see how different variables impact on your loan costs and decide the best course of
+                                        action.</li>
+                                    <li class="mb-1">Our aircraft loan calculator is available online and accessible from any location with
+                                        an internet connection. This service, managed by an appointed conservator, allows you to borrow
+                                        against an aircraft and calculate your monthly payments. It is an excellent resource for anyone
+                                        looking to finance an aircraft, whether you're a first-time buyer or an owner of multiple airplanes.
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="reduce-costs">Ways to reduce your aircraft loan costs</h2>
+                                <p>Trimming expenses by paying less in aircraft loan costs can end up being a big savings throughout the
+                                    life of your loan. These are ways to slash on your spending:</p>
+                                <ol>
+                                    <li class="mb-1"><strong>Improve Your Credit Score: </strong>In addition to this, a better credit score
+                                        could give you access to lower interest rates on your loan. Clear outstanding debts, stay away from
+                                        new credit requests and never miss your invoice payments for improving it.</li>
+                                    <li class="mb-1"><strong>Increase Your Down Payment: </strong>By providing a bigger down payment, you
+                                        reduce the principal amount that needs to be borrowed and therefore lower your monthly payment and
+                                        total loan cost. Work towards keeping 20% of the aircraft purchase price available as a down
+                                        payment.</li>
+                                    <li class="mb-1"><strong>Opt for a Shorter Loan Term: </strong>Shorter loan terms (e.g., 15 or 20 years
+                                        instead of 30) often come with lower interest rates. Although your monthly payments will be higher,
+                                        you'll pay significantly less interest overall.</li>
+                                    <li class="mb-1"><strong>Shop Around for Competitive Rates:</strong>Compare loan offers from multiple
+                                        lenders to find the best interest rate and terms. Consider working with lenders specializing in
+                                        aircraft financing.</li>
+                                    <li class="mb-1"><strong>Negotiate the Interest Rate: </strong>Some lenders may be open to negotiation,
+                                        especially if you have a strong financial profile. Use competing offers as leverage to secure a
+                                        lower rate.</li>
+                                    <li class="mb-1"><strong>Refinance the Loan: </strong>If rates drop or your credit improves after taking
+                                        out the loan, consider refinancing to get a lower interest rate or better terms. Be aware of any
+                                        fees or penalties for refinancing.</li>
+                                    <li class="mb-1"><strong>Make Extra Payments: </strong>Paying more than the minimum monthly amount helps
+                                        reduce the principal faster, lowering the interest paid over time. Confirm there are no prepayment
+                                        penalties with your lender.</li>
+                                    <li class="mb-1"><strong>Avoid Unnecessary Add-ons: </strong>Be cautious of optional extras, such as
+                                        extended warranties or insurance packages, that may increase your overall loan costs. Evaluate these
+                                        add-ons independently to decide if they’re necessar</li>
+                                    <li class="mb-1"><strong>Choose a Fixed Interest Rate: </strong>A fixed interest rate protects you from
+                                        potential rate increases over the loan term, providing cost predictability.</li>
+                                    <li class="mb-1"><strong>Lease vs. Purchase: </strong>If purchasing is not essential, consider leasing
+                                        an aircraft instead, which may offer lower monthly costs and fewer upfront expenses.</li>
+                                </ol>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="walk-rates">Walk the Rates</h2>
+                                <p>Shop around and compare rates from multiple lenders to secure the best terms. The advantage of working
+                                    with a broker is that they may be able to get you some good savings and give you access to unpublished
+                                    offers.</p>
+                                <p>While these tips may be basic and more common sense rather than advanced, they will definitely lower your
+                                    landing fees which means aircraft loan costs making aviation dreams a little less out of the blue.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="financing-simplified">Aircraft Financing Made Simple</h2>
+                                <p>There is more to financing an aircraft purchase than just obtaining a loan. Other factors that need to be
+                                    taken into account are insurance, service and maintenance costs.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Aircraft Insurance: </strong>Secure your investment with full insurance cover.
+                                        Compare rates to get the best deal and make sure you have comprehensive coverage that protects your
+                                        aircraft from damage and any liability lawsuits.</li>
+                                    <li class="mb-1"><strong>Cost of Maintenance and Operation: </strong>destruction-maintaining an aircraft
+                                        in peak condition requires regular maintenance Factor in ongoing maintenance, including inspection
+                                        costs and new parts or upgrades as well fuel and fees for hangar space.</li>
+                                    <li class="mb-1"><strong>Tax Implications: </strong>Learn how your aircraft purchase is taxed. For tax
+                                        advice that may apply to your aircraft ownership, contact a qualified professional.</li>
+                                </ul>
+                                <p>These factors will keep your excesses in check and make buying the aircraft financially viable without
+                                    breaking the bank.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <!-- <h2>Conclusion</h2> -->
+                                <p>Aircraft loan calculator is a tool which everyone considering an aircraft finance should use. Making it
+                                    easy for you to calculate loan costs helps in taking more rational financial decisions and allows
+                                    finding the best credit option suitable with your requirements.</p>
+                                <p>As long as you know what goes into the cost of an airplane loan and follow our advice for keeping those
+                                    costs low, you too can afford to live out your dreams in aviation without going broke. And take into
+                                    account other elements of aircraft ownership as well – like insurance, ongoing maintenance and tax
+                                    ramifications – to make sure you have a seamless and economically viable experience with your own
+                                    business jet.</p>
+                                <p>Ready to take the next step? Get your first taste of uncompromising freedom and calculate here all you
+                                    want with our aircraft loan calculator today!</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="faqAccordion">
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqHeading1">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                                        <strong>What is an aircraft loan calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faqCollapse1" class="accordion-collapse collapse show"
+                                                    aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        An aircraft loan calculator helps you estimate monthly payments, interest costs, and
+                                                        loan affordability based on loan amount, interest rate, and loan term.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqHeading2">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                                        <strong>How do I use the aircraft loan calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Simply enter the loan amount, interest rate, and loan term into the calculator.
+                                                        Click
+                                                        "Calculate" to see estimated monthly payments and total loan costs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqHeading3">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                                        <strong>What factors affect my aircraft loan payments?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Key factors include loan amount, interest rate, loan term, down payment, and
+                                                        lender-specific fees or requirements.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqHeading4">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                                        <strong>Can I get an aircraft loan with bad credit?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, but you may face higher interest rates and stricter terms. A larger down
+                                                        payment
+                                                        can improve your chances of loan approval.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqHeading5">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                                        <strong>Are there any hidden fees in aircraft financing?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Some lenders may charge processing fees, insurance costs, and prepayment penalties.
+                                                        Always review loan terms carefully before signing.
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="assets/js/aircraft-loan-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+    
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

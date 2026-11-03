@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Recast Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Calculators</a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item active" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action active">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Mortgage Recast Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="mortgage">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="remainingBalance" class="form-label">Remaining Balance
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the current outstanding balance on your mortgage. This is the amount you still owe to the lender.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="remainingBalance" required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="interestRate" class="form-label">Interest Rate
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the annual interest rate on your mortgage loan. This percentage affects your monthly payments and total interest paid over time.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="interestRate" required>
+                                                <span class="input-group-text my-input-group">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="currentMonthlyPayment" class="form-label">Current Monthly Payment
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your current monthly mortgage payment before recasting. This includes principal and interest but may exclude taxes and insurance.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="currentMonthlyPayment" required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="recastingPayment" class="form-label">Recasting Payment
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the additional lump sum payment you plan to make toward your mortgage principal. This will lower your remaining balance and reduce future monthly payments.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="recastingPayment" required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="recastingCost" class="form-label">Recasting Cost
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter any fees associated with recasting your mortgage. Some lenders charge a fee for processing the recast.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="recastingCost" required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 justify-content-center my-result-area">
+                            <div class="col-md-12 mt-3">
+                                <p id="monthlyPayment" style="background-color: rgb(181, 243, 174);"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr id="recastBalance">
+                                            </tr>
+                                            <tr id="monthlyPayment">
+                                            </tr>
+                                            <tr id="totalPayments">
+                                            </tr>
+                                            <tr id="totalInterestPaid">
+                                            </tr>
+                                            <tr id="totalPayment">
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 justify-content-center my-comparisn-area">
+                            <div class="col-md-12">
+                                <h2 class="mt-3 mb-3 text-center" id="comparisn"></h2>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table comparisn">
+                                        <thead>
+                                            <tr>
+                                                <th id="field"></th>
+                                                <th id="original"></th>
+                                                <th id="recast"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="comparisonTableBody">
+                                            <!-- Comparison results will be inserted here dynamically -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-4 my-amortization-area">
+                            <div class="col-md-12">
+                                <h2 class="mt-3 mb-3 text-center" id="schedule"></h2>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped amortization">
+                                        <thead class="mortgage-thead">
+                                            <tr>
+                                                <th id="head-payment-no"></th>
+                                                <th id="head-principal"></th>
+                                                <th id="head-interest"></th>
+                                                <th id="head-interest-paid"></th>
+                                                <th id="head-ending-balance"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="amortizationTableBody">
+                                            <!-- here monthly amortization table goes dynamically  -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Mortgage Recast Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Mortgage Recast Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding the Results</a>
+                                    <a href="#what-is-mortgage-recast" class="list-group-item list-group-item-action">3. What is Mortgage Recasting?</a>
+                                    <a href="#how-it-works" class="list-group-item list-group-item-action">4. How Does Mortgage Recasting Work?</a>
+                                    <a href="#who-benefits" class="list-group-item list-group-item-action">5. Who Can Benefit from Mortgage Recasting?</a>
+                                    <a href="#essential-features" class="list-group-item list-group-item-action">6. Essential Features of a Mortgage Recast Calculator</a>
+                                    <a href="#why-use-calculator" class="list-group-item list-group-item-action">7. Why Use a Mortgage Recast Calculator?</a>
+                                    <a href="#common-mistakes" class="list-group-item list-group-item-action">8. Common Mistakes to Avoid</a>
+                                    <a href="#how-to-get-accurate-results" class="list-group-item list-group-item-action">9. How to Get Accurate Results</a>
+                                    <a href="#limitations" class="list-group-item list-group-item-action">10. Considerations and Limitations</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">11. FAQ</a>
+                                </div>
+                            </div>
+                            
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use Mortgage Recast Calculator</h2>
+                                <p>A mortgage recast allows you to reduce your monthly payments by making a lump-sum payment toward the
+                                    remaining balance of your mortgage. This can be a great way to lower your financial burden without
+                                    refinancing. Here’s a simple guide on how to use a mortgage recast calculator:</p>
+                                <div>
+                                    <div class="mb-2">
+                                        <h3>1. Remaining Balance:</h3>
+                                        <ul>
+                                            <li>Enter the current remaining balance of your mortgage. This is the amount you still owe
+                                                after
+                                                making your monthly payments over the years. Make sure to input the exact balance, as
+                                                it’s
+                                                critical for an accurate recast calculation.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-2">
+                                        <h3>2. Interest Rate:</h3>
+                                        <ul>
+                                            <li>Input the interest rate on your mortgage. This is the annual percentage rate (APR) that
+                                                your
+                                                lender charges you for the loan. The interest rate impacts your monthly payments and the
+                                                overall cost of the loan, so be sure to use the correct rate from your loan agreement.
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-2">
+                                        <h3>3. Current Monthly Payment:</h3>
+                                        <ul>
+                                            <li>Enter your current monthly mortgage payment. This is the amount you pay every month
+                                                towards
+                                                your mortgage, which includes both principal and interest. You can find this amount on
+                                                your
+                                                mortgage statement or your lender's website.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-2">
+                                        <h3>4. Recasting Payment:</h3>
+                                        <ul>
+                                            <li>Specify the amount you plan to pay toward recasting your mortgage. This is the lump-sum
+                                                payment you want to make to reduce your loan balance. The recasting payment will help
+                                                adjust
+                                                your monthly payments downwards.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-2">
+                                        <h3>Recasting Cost:</h3>
+                                        <ul>
+                                            <li>The recasting cost refers to the fees associated with the recast. These can vary
+                                                depending
+                                                on the lender but are generally lower than refinancing costs. Some lenders may charge a
+                                                flat
+                                                fee or a percentage of the loan balance for recasting your mortgage.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h4>Once you input all the required data, the mortgage recast calculator will show you:</h4>
+                                <ul>
+                                    <li class="mb-1">The new monthly payment after making the lump-sum payment.</li>
+                                    <li class="mb-1">The total cost of the recasting, including any applicable fees.</li>
+                                    <li class="mb-1">The potential savings in interest payments over the remaining life of the loan.
+                                    </li>
+                                </ul>
+                                <p>This tool helps you determine if recasting your mortgage is the right financial decision and how much
+                                    you
+                                    could save in the long run. It’s ideal for homeowners who want to lower their monthly payments
+                                    without
+                                    going through the hassle of refinancing.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding The Results</h2>
+                                <p>After using a mortgage recast calculator, the results provide a clear picture of how the recast
+                                    impacts
+                                    your financial situation. Here’s an explanation of the key outcomes:</p>
+                                <div>
+                                    <div class="mb-3">
+                                        <h3>1. New Monthly Payment</h3>
+                                        <ul>
+                                            <li>
+                                                <p>This is the updated monthly amount you will pay after recasting your mortgage. The
+                                                    reduction in the principal balance, thanks to the lump-sum payment, leads to lower
+                                                    monthly payments while keeping the remaining loan term unchanged.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>2. New Remaining Balance</h3>
+                                        <ul>
+                                            <li>
+                                                <p>This indicates the new outstanding loan balance after the lump-sum payment has been
+                                                    applied. The reduced balance directly contributes to the lower monthly payment
+                                                    amount.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>3. Remaining Term</h3>
+                                        <ul>
+                                            <li>This shows the number of months left to pay off the mortgage. In most cases, recasting
+                                                doesn’t alter the loan term, meaning you’ll continue to pay the mortgage over the
+                                                original
+                                                schedule, but at the reduced payment rate.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>4. Recasting Cost</h3>
+                                        <ul>
+                                            <li>The recasting fee is the cost charged by your lender to process the recast. This is
+                                                typically a small, one-time fee, making it an affordable option compared to refinancing.
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>5. Total Cost Including Recasting</h3>
+                                        <ul>
+                                            <li>This total represents the new loan balance plus the recasting fee. It provides the full
+                                                financial picture after the recast adjustments are applied.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>6. Comparison: Original vs. Recast</h3>
+                                        <ul>
+                                            <li class="mb-2"><strong>Monthly Payment: </strong>Highlights the difference in monthly
+                                                payments
+                                                before and after the recast. The reduced payments can significantly improve cash flow.
+                                            </li>
+                                            <li class="mb-2"><strong>Total Interest: </strong>Shows how much less interest you’ll pay
+                                                over
+                                                the life of the loan due to the reduced principal balance.</li>
+                                            <li class="mb-2"><strong>Fees: </strong>Displays the cost of recasting compared to the
+                                                original
+                                                setup, which usually has no fees.</li>
+                                            <li class="mb-2"><strong>Savings: </strong>Illustrates the overall financial benefit of the
+                                                recast, reflecting the interest saved over the remaining loan term.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>By understanding these results, you can evaluate whether a mortgage recast aligns with your financial
+                                    goals. Recasting is an effective way to lower your monthly expenses and save on long-term interest,
+                                    all
+                                    while avoiding the complexities of refinancing.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="essential-features">Essential Features of a Mortgage Recast Calculator</h2>
+                                <p>A <strong>mortgage recast calculator</strong> is a valuable tool for homeowners looking to reduce
+                                    their
+                                    monthly payments by making a lump-sum payment on their mortgage. Below are some key features that
+                                    make
+                                    it an essential financial resource:</p>
+                
+                                <div>
+                                    <div class="mb-3">
+                                        <h4>1. Instant Results Based on Your Inputs</h4>
+                                        <p>A mortgage recast calculator provides <strong>quick and accurate calculations</strong> based
+                                            on
+                                            essential loan details, including:</p>
+                                        <ul>
+                                            <li class="mb-1"><strong>Current loan balance</strong> – The remaining amount on your
+                                                mortgage.
+                                            </li>
+                                            <li class="mb-1"><strong>Interest rate</strong> – The annual percentage rate (APR) of your
+                                                loan.
+                                            </li>
+                                            <li class="mb-1"><strong>Remaining loan term</strong> – The number of years left to pay off
+                                                your
+                                                mortgage.</li>
+                                            <li class="mb-1"><strong>Lump-sum payment</strong> – The extra amount you plan to pay
+                                                upfront.
+                                            </li>
+                                        </ul>
+                                        <p>By entering this information, the calculator instantly determines your <strong>new monthly
+                                                payment</strong> and potential long-term savings.</p>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h4>2. Insights on Interest Savings</h4>
+                                        <p>One of the biggest advantages of using a <strong>mortgage recast calculator</strong> is its
+                                            ability to show how much <strong>interest you can save</strong> over time. By reducing your
+                                            loan
+                                            balance, you may lower the total interest paid, helping you achieve financial freedom
+                                            faster.
+                                        </p>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h4>3. Visual Breakdown of Savings</h4>
+                                        <p>Many advanced mortgage recast calculators include <strong>charts and graphs</strong> to help
+                                            visualize:</p>
+                                        <ul>
+                                            <li class="mb-1">How your <strong>loan balance decreases</strong> over time.</li>
+                                            <li class="mb-1">The impact of a <strong>lump-sum payment</strong> on monthly payments.</li>
+                                            <li class="mb-1">The total interest savings over the loan’s remaining term.</li>
+                                        </ul>
+                                        <p>These visual insights make it easier to understand the benefits of <strong>mortgage
+                                                recasting</strong> and how it aligns with your long-term financial goals.</p>
+                                    </div>
+                                </div>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="why-use-calculator">Why Use a Mortgage Recast Calculator?</h2>
+                                <p>A <strong>mortgage recast calculator</strong> is a valuable tool for homeowners looking to reduce
+                                    their
+                                    monthly payments and maximize interest savings. Here’s why it’s essential:</p>
+                
+                                <div>
+                                    <div class="mb-3">
+                                        <h3>1. Clear Insights on Mortgage Savings</h3>
+                                        <p>The <strong>mortgage recast calculator</strong> provides a detailed breakdown of how a
+                                            lump-sum
+                                            payment affects your loan. By comparing your current monthly payments and interest with
+                                            potential savings, you can determine whether recasting is the right financial move.</p>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>2. Compare Recasting vs. Refinancing</h3>
+                                        <p>Not sure whether to refinance or recast? The calculator helps you evaluate both options.
+                                            Unlike
+                                            refinancing, <strong>mortgage recasting</strong> allows you to lower payments without the
+                                            hassle
+                                            of a new loan, avoiding high closing costs and credit checks.</p>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>3. Make Data-Driven Financial Decisions</h3>
+                                        <p>With accurate mortgage calculations, you can confidently assess how a lump-sum payment
+                                            impacts
+                                            your long-term financial goals. The tool ensures that homeowners are making informed choices
+                                            based on real numbers, not guesswork.</p>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>4. Essential Tool for Financial Planning</h3>
+                                        <p>For financial advisors, a <strong>mortgage recast calculator</strong> is an invaluable
+                                            resource.
+                                            It helps professionals guide clients in optimizing mortgage payments and choosing the best
+                                            strategy for reducing debt while maintaining financial flexibility.</p>
+                                    </div>
+                                </div>
+                
+                                <p>Using a <strong>mortgage recast calculator</strong> puts you in control of your mortgage strategy,
+                                    helping you lower payments, save on interest, and make smart financial decisions.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2>Key Benefits of Using a Mortgage Recast Calculator</h2>
+                                <p>A <strong>mortgage recast calculator</strong> is an essential tool for homeowners looking to lower
+                                    their
+                                    monthly mortgage payments and reduce interest costs. Here’s how it helps:</p>
+                
+                                <ul>
+                                    <li class="mb-3">
+                                        <h3>Gain Financial Clarity</h3>
+                                        <p>Using a <strong>mortgage recast calculator</strong> provides a clear view of your updated
+                                            loan
+                                            balance, interest savings, and reduced monthly payments after making a lump sum payment. By
+                                            entering details like your current mortgage balance, interest rate, and loan term, you get
+                                            instant insights into the impact of recasting. This allows homeowners to plan effectively
+                                            and
+                                            make well-informed financial decisions.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h3>Make Informed Mortgage Decisions</h3>
+                                        <p>A <strong>mortgage recast calculator</strong> helps you compare different lump sum payment
+                                            scenarios, enabling you to see the effect on your monthly mortgage payments and total
+                                            interest
+                                            savings. This feature is particularly useful for financial planners and homeowners who want
+                                            to
+                                            evaluate multiple options before making a commitment. With this tool, you can confidently
+                                            decide
+                                            whether a mortgage recast aligns with your long-term financial goals.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h3>Save Time and Avoid Manual Calculations</h3>
+                                        <p>Instead of spending hours on complex mortgage calculations, a <strong>mortgage recast
+                                                calculator</strong> delivers quick and accurate results in seconds. This tool eliminates
+                                            the
+                                            need for manual number crunching, ensuring that homeowners and financial advisors can
+                                            analyze
+                                            mortgage adjustments with minimal effort. By streamlining the process, you save time and
+                                            avoid
+                                            calculation errors.</p>
+                                    </li>
+                                </ul>
+                
+                                <p>By using a <strong>mortgage recast calculator</strong>, you can quickly determine your new monthly
+                                    payments, total savings, and loan balance reduction, making it easier to manage your mortgage and
+                                    optimize your financial future.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="common-mistakes">Common Mistakes to Avoid</h2>
+                                <p>Recasting your mortgage can be a great way to lower monthly payments, but homeowners often make
+                                    mistakes
+                                    that reduce its benefits. Here are two key errors to watch out for:</p>
+                
+                                <div>
+                                    <div class="mb-3">
+                                        <h3>1. Overlooking Recasting Fees</h3>
+                                        <p>Many homeowners assume mortgage recasting is free, but some lenders charge processing fees.
+                                            These
+                                            fees may be a fixed amount or depend on your loan balance, affecting your total savings.</p>
+                                        <p><strong>Tip:</strong> Before making a lump-sum payment, ask your lender about any recasting
+                                            fees.
+                                            Factor these costs into your calculations to determine whether recasting will truly save you
+                                            money.</p>
+                                    </div>
+                
+                                    <div class="mb-3">
+                                        <h3>2. Overestimating Potential Savings</h3>
+                                        <p>A <strong>mortgage recast calculator</strong> provides an estimate, but it may not include
+                                            all
+                                            lender-specific conditions, such as prepayment penalties or interest rate adjustments.
+                                            Relying
+                                            solely on these calculations can lead to unrealistic savings expectations.</p>
+                                        <p><strong>Tip:</strong> Use the calculator as a guideline, but confirm the actual figures with
+                                            your
+                                            lender. Ask about any hidden costs or restrictions that could impact your final savings.</p>
+                                    </div>
+                                </div>
+                
+                                <p>By being aware of these common mistakes, you can make an informed decision and maximize the benefits
+                                    of
+                                    mortgage recasting.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-get-accurate-results">How to Get Accurate Results with a Mortgage Recast Calculator</h2>
+                                <p>Using a <strong>mortgage recast calculator</strong> correctly can help you make informed financial
+                                    decisions. Follow these essential tips to ensure precise results:</p>
+                
+                                <ul>
+                                    <li class="mb-3">
+                                        <h3>1. Double-Check Your Loan Details</h3>
+                                        <p>Even minor errors in your loan balance, interest rate, or remaining term can impact the
+                                            calculation. Verify all details before entering them into the calculator to get accurate
+                                            projections.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h3>2. Compare Multiple Recasting Scenarios</h3>
+                                        <p>Test different lump-sum payment amounts to see how they affect your monthly payments and
+                                            total
+                                            interest savings. Exploring multiple scenarios helps you determine the most beneficial
+                                            recast
+                                            amount.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h3>3. Consult Your Lender for Final Confirmation</h3>
+                                        <p>While a mortgage recast calculator provides a reliable estimate, lender-specific policies,
+                                            fees,
+                                            and conditions may influence the final numbers. Always confirm the results with your lender
+                                            before making a decision.</p>
+                                    </li>
+                                </ul>
+                
+                                <p>By following these best practices, you can maximize the benefits of mortgage recasting and ensure a
+                                    well-informed financial strategy.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <p><strong>Looking to Lower Your Monthly Mortgage Payments Without Refinancing?</strong> A
+                                    <strong>mortgage
+                                        recast calculator</strong> can help you explore your options. This powerful tool shows how
+                                    making a
+                                    lump-sum payment toward your loan principal can reduce your monthly payments—without the hassle of
+                                    refinancing.</p>
+                                <p>In this guide, we’ll cover everything you need to know about <strong>mortgage recasting</strong>,
+                                    including how a mortgage recast calculator works, its benefits and drawbacks, and whether it’s the
+                                    right
+                                    choice for you. By the end, you’ll have the insights needed to make a confident financial decision.
+                                </p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="what-is-mortgage-recast">What Is Mortgage Recasting?</h2>
+                                <p><strong>Mortgage recasting</strong>, also known as <strong>re-amortization</strong>, is a simple way
+                                    to
+                                    lower your monthly mortgage payments without refinancing. It works by making a one-time lump-sum
+                                    payment
+                                    toward your loan principal, which reduces your remaining balance and lowers your monthly
+                                    payments—all
+                                    while keeping your current interest rate and loan terms unchanged.</p>
+                                <p>This strategy is ideal for homeowners who have received a financial windfall—such as a work bonus,
+                                    inheritance, or unexpected income—and want to reduce their mortgage costs. Unlike refinancing, which
+                                    requires taking out a new loan, recasting is a straightforward and cost-effective way to manage your
+                                    mortgage more efficiently.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="how-it-works">How Does Mortgage Recasting Work?</h2>
+                                <p>Mortgage recasting is a simple process that helps lower your monthly mortgage payments without
+                                    changing
+                                    your interest rate or loan term. When you make a large, one-time payment toward your loan principal,
+                                    your lender recalculates your monthly payments based on the new, reduced balance. This redistributes
+                                    the
+                                    remaining loan amount over the original term, resulting in smaller monthly payments.</p>
+                                <p>Unlike refinancing, which involves taking out a new loan, recasting keeps your current mortgage
+                                    intact.
+                                    It’s an excellent option for homeowners who want to free up cash flow and reduce financial strain
+                                    while
+                                    avoiding the costs and paperwork associated with refinancing.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="who-benefits">Who Can Benefit from Mortgage Recasting?</h2>
+                                <p>Mortgage recasting is a smart option for homeowners looking to lower their monthly payments without
+                                    refinancing. It’s especially beneficial for those who have received a financial windfall—such as a
+                                    work
+                                    bonus, inheritance, or proceeds from selling another property—and want to reduce their mortgage
+                                    burden.
+                                </p>
+                                <p>Financial experts often recommend recasting to homeowners who want to improve cash flow while keeping
+                                    their original loan terms intact. By making a lump-sum payment toward the principal, you can lower
+                                    your
+                                    monthly payments and free up money for other financial goals, such as investments, savings, or home
+                                    improvements.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2>How Accurate Are Mortgage Recast Calculators?</h2>
+                                <p>Mortgage recast calculators are powerful tools that provide quick insights into how a recast might
+                                    affect
+                                    your monthly payments. However, while they offer useful estimates, it’s essential to understand
+                                    their
+                                    limitations:</p>
+                
+                                <ol>
+                                    <li class="mb-3">
+                                        <strong>Accuracy Depends on Your Inputs</strong>
+                                        <p>The results are only as precise as the information you enter. To get the best estimate,
+                                            ensure
+                                            your loan balance, interest rate, and lump sum payment details are accurate.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <strong>Every Lender Has Different Policies</strong>
+                                        <p>Recasting rules, fees, and requirements vary between lenders. The calculator might not factor
+                                            in
+                                            specific costs or conditions that could affect your final savings.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <strong>A Planning Tool, Not a Guarantee</strong>
+                                        <p>While the calculator provides valuable insights, it’s a starting point—not a final answer.
+                                            Always
+                                            verify your numbers with your lender to get an exact breakdown of your new payments.</p>
+                                    </li>
+                                </ol>
+                
+                                <p>Using a mortgage recast calculator alongside professional advice ensures you make informed financial
+                                    decisions with confidence.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="limitations">Considerations and Limitations</h2>
+                                <p>Mortgage recast calculators are useful tools, but they do have some limitations to keep in mind:</p>
+                
+                                <ol>
+                                    <li class="mb-3">
+                                        <strong>Not a Replacement for Professional Advice</strong>
+                                        <p>While a mortgage recast calculator can provide helpful estimates, it’s not a substitute for
+                                            expert financial guidance. Consult your lender or financial advisor to ensure your decision
+                                            aligns with your overall financial goals.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <strong>Recasting Fees May Apply</strong>
+                                        <p>Some lenders charge fees for processing a mortgage recast, which can reduce your overall
+                                            savings.
+                                            Be sure to check with your lender and factor these costs into your calculations.</p>
+                                    </li>
+                
+                                    <li>
+                                        <strong>Not All Loans Qualify</strong>
+                                        <p>Mortgage recasting is typically available for conventional loans, but not all lenders offer
+                                            it.
+                                            Certain loan types, such as government-backed loans (e.g., FHA, VA), may not be eligible.
+                                            Always
+                                            verify with your lender to confirm if recasting is an option for your mortgage.</p>
+                                    </li>
+                                </ol>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <p><strong>Mortgage recasting</strong> is a valuable tool for homeowners who want to reduce their
+                                    monthly
+                                    payments and save on interest over the life of their mortgage. Thanks to a mortgage recast
+                                    calculator,
+                                    you can quickly estimate your projected savings with just four simple inputs about your loan and
+                                    lump
+                                    sum payment!</p>
+                                <p>This tool empowers you to make informed decisions about your home financing by providing clear
+                                    guidance
+                                    on how to use it, as well as outlining its advantages and disadvantages. Your financial goals are
+                                    incredibly important, and whether you're a homeowner or an advisor managing someone else's finances,
+                                    it's time to stop guessing and start taking control of your next steps.</p>
+                                <p><strong>Ready to learn the advantages of mortgage recasting?</strong> Calculate your savings now with
+                                    our
+                                    Mortgage Recast Calculator! If you have any specific questions, feel free to consult with an advisor
+                                    or
+                                    your lender for personalized advice tailored to your situation.</p>
+                            </section>
+                
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="mortgageFAQ">
+                
+                                            <!-- FAQ Item 1 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a mortgage recast?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        A mortgage recast (or re-amortization) allows you to lower your monthly mortgage
+                                                        payment by making a lump sum payment toward your loan principal. The remaining
+                                                        balance is then recalculated, and your payments are adjusted accordingly. This
+                                                        process doesn't change your interest rate or loan term.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 2 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How does the mortgage recast calculator work?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                                    data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator helps estimate the impact of making a lump-sum payment on your
+                                                        mortgage. You enter details like your loan balance, interest rate, remaining
+                                                        term,
+                                                        and the amount you wish to pay upfront. The calculator will show you your new
+                                                        monthly payment, how much interest you could save, and your total loan cost with
+                                                        recasting.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 3 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        <strong>Can I use the mortgage recast calculator for any mortgage?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        Mortgage recasting is not available for all types of mortgages. It typically
+                                                        applies
+                                                        to non-conventional loans, such as those backed by government programs or
+                                                        certain
+                                                        lenders’ specific offerings. Be sure to check with your lender to see if your
+                                                        loan
+                                                        qualifies for recasting.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 4 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        <strong>Are there any fees associated with mortgage recasting?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                                    data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        Some lenders charge fees to process a mortgage recast. These fees can vary
+                                                        depending
+                                                        on the lender and the size of your loan. It's important to verify with your
+                                                        lender
+                                                        if any fees apply and factor those into your calculations.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 5 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        <strong>Does recasting affect my interest rate or loan term?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                                    data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        No, recasting does not change your interest rate or loan term. It only reduces
+                                                        your
+                                                        monthly payment by recalculating the loan balance based on the lump sum payment
+                                                        you
+                                                        make. The remaining term and interest rate stay the same.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 6 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>How do I know if recasting is right for me?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                                    data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        A mortgage recast can be a good option if you have extra funds available and
+                                                        want to
+                                                        reduce your monthly payments without refinancing. It's particularly useful for
+                                                        homeowners with a lump sum of money from a bonus, inheritance, or other
+                                                        windfall.
+                                                        However, you should always consult with a financial advisor or lender to ensure
+                                                        it's
+                                                        the best option for your situation.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 7 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                                        aria-controls="collapseSeven">
+                                                        <strong>Will a mortgage recast hurt my credit score?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingSeven" data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        Recasting itself does not negatively impact your credit score. Since recasting
+                                                        only
+                                                        adjusts your payment structure without altering the loan's terms or interest
+                                                        rate,
+                                                        it shouldn't affect your credit. However, it’s always a good idea to stay up to
+                                                        date
+                                                        with payments to maintain a good credit score.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <!-- FAQ Item 8 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                                        aria-controls="collapseEight">
+                                                        <strong>How often can I recast my mortgage?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEight" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingEight" data-bs-parent="#mortgageFAQ">
+                                                    <div class="accordion-body">
+                                                        The frequency of mortgage recasting depends on your lender's policies. Some
+                                                        lenders
+                                                        allow multiple recasts over the life of the loan, while others may limit it to
+                                                        one
+                                                        or two times. Always check with your lender for specific terms.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/mortgage-recast-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

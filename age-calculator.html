@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item active" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action active">Age
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Age Calculator</h2>
+                            <div class="col-md-11 mb-3">
+                                <form id="age-calculator">
+                                    <!-- Birthday Section -->
+                                    <div class="mb-3">
+                                        <label class="d-block mb-2">Birthday</label>
+                                        <div class="d-grid gap-2" style="grid-template-columns: repeat(3, 1fr);">
+                                            <input type="number" class="form-control my-input-area" id="birth-day" placeholder="Day" required min="1" max="31">
+                                            <select class="form-select my-input-area" id="birth-month" required>
+                                                <option value="" disabled selected>Month</option>
+                                                <option value="1">January</option>
+                                                <option value="2">February</option>
+                                                <option value="3">March</option>
+                                                <option value="4">April</option>
+                                                <option value="5">May</option>
+                                                <option value="6">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">August</option>
+                                                <option value="9">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12">December</option>
+                                            </select>
+                                            <input type="number" class="form-control my-input-area" id="birth-year" placeholder="Year" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Age On Section -->
+                                    <div class="mb-3">
+                                        <label class="d-block mb-2">Age on</label>
+                                        <div class="d-grid gap-2" style="grid-template-columns: repeat(3, 1fr);">
+                                            <input type="number" class="form-control my-input-area" id="age-on-day" placeholder="Day" required min="1" max="31">
+                                            <select class="form-select my-input-area" id="age-on-month" required>
+                                                <option value="" disabled selected>Month</option>
+                                                <option value="1">January</option>
+                                                <option value="2">February</option>
+                                                <option value="3">March</option>
+                                                <option value="4">April</option>
+                                                <option value="5">May</option>
+                                                <option value="6">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">August</option>
+                                                <option value="9">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12">December</option>
+                                            </select>
+                                            <input type="number" class="form-control my-input-area" id="age-on-year" placeholder="Year" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Buttons Section -->
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            
+                            <div class="col-md-12 mt-3">
+                                <table class="table table-striped" id="table-info">
+                                    <tbody>
+                                        <!-- Results will be appended here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator end  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Age Calculator</h1>
+                            </section>
+                
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Age Calculator</a>
+                                    <a href="#example-calculation" class="list-group-item list-group-item-action">2. Example Calculation</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">3. Understanding the Results</a>
+                                    <a href="#why-useful" class="list-group-item list-group-item-action">4. Why is it Useful?</a>
+                                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">5. Types of Age Calculators and Their Uses</a>
+                                    <a href="#common-uses" class="list-group-item list-group-item-action">6. Common Uses of Age Calculators</a>
+                                    <a href="#key-features" class="list-group-item list-group-item-action">7. Key Features of Advanced Age Calculators</a>
+                                    <a href="#limitations" class="list-group-item list-group-item-action">8. Limitations and Common Errors</a>
+                                    <a href="#fun-facts" class="list-group-item list-group-item-action">9. Fun Facts About Age</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">10. FAQ</a>
+                                </div>
+                            </div>
+                
+                            
+                            <section class="mb-5">
+                                <h2 id="how-to-use" class="mb-3">How to Use the Age Calculator</h2>
+                                <p>The Age Calculator is a simple yet powerful tool to determine your age on a specific date. This guide
+                                    will walk you through how to use the interface effectively.</p>
+                                <h3 class="mb-3">Steps to Use the Age Calculator</h3>
+                
+                                <div>
+                                    <div class="ms-4 mb-4">
+                                        <h4>Step 1: Enter Your Birthday</h4>
+                                        <p class="mb-1">In the "Birthday" section, input your date of birth using the following fields:
+                                        </p>
+                                        <ul>
+                                            <li class="mb-1"><strong>Day: </strong>Enter the day you were born.</li>
+                                            <li class="mb-1"><strong>Month: </strong>Choose your birth month from the dropdown list.
+                                            </li>
+                                            <li class="mb-1"><strong>Year: </strong>Enter the year of your birth.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Step 2: Set the Age On Date</h4>
+                                        <p class="mb-1">The "Age on" section allows you to specify the date for which you want to
+                                            calculate
+                                            your age. By
+                                            default is is set to <strong><i>current date</i></strong> but you can change it to your
+                                            desired
+                                            date:</p>
+                                        <ul class="mb-1">
+                                            <li class="mb-1"><strong>Day: </strong>Enter the day.</li>
+                                            <li class="mb-1"><strong>Month: </strong>Choose the desired month from the dropdown.</li>
+                                            <li class="mb-1"><strong>Year: </strong>Enter the year.</li>
+                                        </ul>
+                                        <p><strong>This feature is helpful if you want to know your age on a future or past
+                                                date.</strong>
+                                        </p>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Step 3: Click the Calculate Button</h4>
+                                        <p class="mb-1">Once you’ve filled in both sections:</p>
+                                        <ul>
+                                            <li class="mb-1">Press the blue <strong>Calculate</strong> button.</li>
+                                            <li class="mb-1">The calculator will display your age in years, months, and days as of the
+                                                specified
+                                                "Age on"
+                                                date.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Step 4: Clear the Inputs (Optional)</h4>
+                                        <p class="mb-1">To reset the fields:</p>
+                                        <ul>
+                                            <li class="mb-1">Click the red <strong>Clear</strong> button.</li>
+                                            <li class="mb-1">This will erase all inputs, allowing you to start a new calculation.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                
+                                <div>
+                                    <h3 id="example-calculation">Example Calculation</h3>
+                
+                                    <div class="ms-4 mb-4">
+                                        <p class="mb-1">Let’s say:</p>
+                                        <ul>
+                                            <li class="mb-1">Your birthday is <strong>July 17, 1991</strong>.</li>
+                                            <li class="mb-1">You want to calculate your age on <strong>February 6, 2025</strong>.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <p class="mb-1">Steps:</p>
+                                        <ol>
+                                            <li class="mb-1">Enter <strong>17</strong> in the "Day" field under "Birthday."</li>
+                                            <li class="mb-1">Select <strong>July</strong> in the "Month" dropdown under "Birthday."</li>
+                                            <li class="mb-1">Enter <strong>1991</strong> in the "Year" field under "Birthday."</li>
+                                            <li class="mb-1">Enter <strong>6</strong> in the "Day" field under "Age on."</li>
+                                            <li class="mb-1">Select <strong>February</strong> in the "Month" dropdown under "Age on."
+                                            </li>
+                                            <li class="mb-1">Enter <strong>2025</strong> in the "Year" field under "Age on."</li>
+                                            <li class="mb-1">Press <strong>Calculate</strong> to get your precise age.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding the Results from an Age Calculator</h2>
+                                <p>The age calculator provides detailed insights into your age in various units, offering a fascinating
+                                    breakdown of how time has passed since your birth. Let’s explore how to interpret these results step
+                                    by
+                                    step.</p>
+                                <div>
+                                    <div class="ms-4 mb-4">
+                                        <h4>Exact Age</h4>
+                                        <p class="mb-2">The "Exact Age" section gives your age in <strong>years, months, and
+                                                days</strong>.
+                                            This is the
+                                            most common way we describe age in everyday life. For example:</p>
+                                        <ul>
+                                            <li class="mb-1"><strong>Years</strong> tell you the total number of full years you have
+                                                lived.
+                                            </li>
+                                            <li class="mb-1"><strong>Months</strong> represent the time that has passed since your last
+                                                birthday.</li>
+                                            <li class="mb-1"><strong>Days</strong> indicate how far along you are in the current month.
+                                            </li>
+                                        </ul>
+                                        <p>This breakdown is useful for milestones, such as celebrating half-birthdays or special
+                                            anniversaries.</p>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Age in Months</h4>
+                                        <p class="mb-2">The "Age in Months" section shows the total number of months you have lived,
+                                            plus
+                                            the remaining
+                                            days in the current month. It highlights:</p>
+                                        <ul>
+                                            <li class="mb-1">How many complete months have passed since your birth.</li>
+                                            <li class="mb-1">A granular view of your age, helpful for parents tracking a young child’s
+                                                growth.</li>
+                                        </ul>
+                                        <p>For example, knowing your age in months can be useful for comparing developmental milestones.
+                                        </p>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Age in Weeks</h4>
+                                        <p class="mb-2">This result breaks your age down into <strong>weeks and days</strong>.</p>
+                                        <ul>
+                                            <li class="mb-1">Weeks provide a unique perspective on the passage of time, often used in
+                                                healthcare or pregnancy-related calculations.</li>
+                                            <li class="mb-1">It helps you appreciate the smaller units of time you’ve experienced.</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Age in Days</h4>
+                                        <p class="mb-2">"Age in Days" gives the total count of days you have been alive. This is a
+                                            powerful
+                                            reminder of
+                                            how every single day adds to your life story.</p>
+                                        <ul>
+                                            <li class="mb-1">It’s perfect for special celebrations, like your 10,000th day alive!</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Age in Hours</h4>
+                                        <p>This section converts your age into <strong>hours</strong>, giving a deeper sense of how much
+                                            time has passed. It’s intriguing to think about how many hours of experiences, memories, and
+                                            achievements you’ve accumulated over your lifetime.</p>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Age in Minutes</h4>
+                                        <p>Minutes reveal a staggering number, showing just how much time you’ve spent breathing,
+                                            thinking,
+                                            and existing. This number emphasizes the importance of every moment.</p>
+                                    </div>
+                
+                                    <div class="ms-4 mb-4">
+                                        <h4>Age in Seconds</h4>
+                                        <p>Finally, "Age in Seconds" delivers an awe-inspiring figure that represents the entirety of
+                                            your
+                                            life in the smallest measurable unit of time. It’s a fun way to reflect on how many
+                                            heartbeats,
+                                            thoughts, and moments make up your journey.</p>
+                                    </div>
+                                </div>
+                
+                                <div>
+                                    <h3>Why These Results Matter</h3>
+                                    <p class="mb-2">Understanding your age in these different units offers several benefits:</p>
+                                    <div class="ms-2">
+                                        <ul>
+                                            <li class="mb-1"><strong>Perspective: </strong>It’s a reminder of the preciousness of time.
+                                            </li>
+                                            <li class="mb-1"><strong>Planning: </strong>Helps in tracking milestones and achievements.
+                                            </li>
+                                            <li class="mb-1"><strong>Celebration: </strong>Gives unique opportunities to celebrate
+                                                moments
+                                                like
+                                                your
+                                                1,000th week or 10 millionth minute.</li>
+                                            <li class="mb-1"><strong>Inspiration: </strong>Knowing how much time has passed motivates
+                                                you to
+                                                make
+                                                the most of every second ahead.</li>
+                                        </ul>
+                                    </div>
+                                    <p>By exploring your age through these different lenses, the age calculator gives you a richer
+                                        understanding
+                                        of time’s impact on your life. Every second counts—how will you make the most of the ones to
+                                        come?
+                                    </p>
+                
+                                </div>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <p>An age calculator is a tool designed to determine a person’s exact age based on their date of birth.
+                                    It
+                                    can calculate age in various time units, such as years, months, days, or even seconds, offering
+                                    precise
+                                    results in an instant.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="why-useful">Why is it Useful?</h2>
+                                <p>Age calculators are highly convenient, saving time and effort when determining age manually. They
+                                    find
+                                    applications in various fields such as healthcare, education, and legal documentation, where
+                                    accuracy is
+                                    essential.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="types-of-calculators" class="mb-3">Types of Age Calculators and Their Uses</h2>
+                
+                                <div class="ms-4 mb-4">
+                                    <h3>Online Age Calculators</h3>
+                                    <p><strong>Web-based age calculators</strong> are accessible from any device with an internet
+                                        connection. These
+                                        <strong>online tools</strong> instantly compute age based on the <strong>date of birth</strong>,
+                                        making them
+                                        useful for <strong>quick age verification, legal documentation, and personal tracking.</strong>
+                                    </p>
+                                </div>
+                
+                                <div class="ms-4 mb-4">
+                                    <h3>Offline Age Calculation Tools</h3>
+                                    <p>Offline solutions include <strong>Excel-based age calculators, manual formulas,</strong> and
+                                        <strong>standalone applications</strong> that do not require an internet connection. These are
+                                        often
+                                        used for
+                                        <strong>official paperwork, personal record-keeping,</strong> and <strong>backup
+                                            calculations</strong> when
+                                        internet access is unavailable.
+                                    </p>
+                                </div>
+                
+                                <div class="ms-4 mb-4">
+                                    <h3>Specialized Age Calculators</h3>
+                                    <p class="mb-2">Certain <strong>customized age calculators</strong> are designed for specific
+                                        applications, including:</p>
+                                    <ul>
+                                        <li class="mb-1"><strong>Retirement Age Calculators:</strong> Estimate the ideal retirement age
+                                            based on income, savings, and life expectancy.</li>
+                                        <li class="mb-1"><strong>Medical Age Calculators:</strong> Used in healthcare to determine
+                                            <strong>gestational age, biological age,</strong> and other age-related medical metrics.
+                                        </li>
+                                        <li class="mb-1"><strong>Astrology & Horoscope Age Calculators:</strong> Assist in generating
+                                            <strong>astrological predictions</strong> based on date and time of birth.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="common-uses" class="mb-3">Common Uses of Age Calculators</h2>
+                                <ul>
+                                    <li class="mb-3">
+                                        <h4>Healthcare & Medical Evaluations</h4>
+                                        <p>Doctors and healthcare professionals rely on <strong>age calculators</strong> to determine a
+                                            patient’s exact age for <strong>medical assessments, vaccination schedules, pediatric
+                                                care,</strong> and <strong>treatment planning</strong>. Age-based calculations are
+                                            crucial
+                                            for diagnosing age-related conditions and ensuring accurate dosage prescriptions.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h4>Education & Eligibility Verification</h4>
+                                        <p>Schools and universities use <strong>online age calculators</strong> to confirm eligibility
+                                            for
+                                            <strong>school admissions, scholarship programs, and competitive exams</strong>. Many
+                                            institutions have strict age criteria, making accurate age verification essential.
+                                        </p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h4>Legal Age Verification & Documentation</h4>
+                                        <p>Government agencies and employers use <strong>age verification tools</strong> to check
+                                            eligibility for official purposes, including <strong>passport applications, driver’s
+                                                licenses,
+                                                voting rights, employment,</strong> and <strong>age-restricted services</strong>.
+                                            Accurate
+                                            date-of-birth calculations help in compliance with legal requirements.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h4>Personal Use & Milestone Tracking</h4>
+                                        <p>Individuals use <strong>date-of-birth calculators</strong> to track significant life events
+                                            such
+                                            as <strong>birthdays, anniversaries, retirement planning,</strong> and <strong>special
+                                                occasions</strong>. These tools help in setting reminders for important milestones.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h4>Integration with Calendars & Digital Tools</h4>
+                                        <p>Many modern <strong>age calculator apps</strong> integrate with <strong>digital calendars,
+                                                scheduling tools,</strong> and <strong>reminder systems</strong>, making it easier to
+                                            track
+                                            age-related deadlines and notifications.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="key-features" class="mb-3">Key Features of Advanced Age Calculators</h2>
+                                <ul>
+                                    <li class="mb-3">
+                                        <h4>Customizable Age Calculation</h4>
+                                        <p>Advanced age calculators allow users to input past and future dates, making it easy to
+                                            compare
+                                            ages over time.
+                                            This is useful for retirement planning, medical assessments, and scheduling future events.
+                                        </p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h4>Support for Multiple Date Formats</h4>
+                                        <p>To enhance usability across different regions, these calculators accept various date formats,
+                                            including
+                                            DD/MM/YYYY, MM/DD/YYYY, and YYYY-MM-DD, ensuring accurate results worldwide.</p>
+                                    </li>
+                
+                                    <li class="mb-3">
+                                        <h4>Age Difference and Comparison</h4>
+                                        <p>Some tools can compare the age gap between two individuals, making them helpful for
+                                            relationship
+                                            age differences,
+                                            sibling comparisons, or professional age verification.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="limitations" class="mb-3">Limitations and Common Errors</h2>
+                                <div>
+                                    <div class="ms-4">
+                                        <h4>1. User Input Mistakes</h4>
+                                        <p>Incorrectly entered dates or formats can lead to inaccurate results.</p>
+                                    </div>
+                
+                                    <div class="ms-4">
+                                        <h4>2. Time Zone Discrepancies</h4>
+                                        <p>Calculations across different time zones may introduce slight variations in results,
+                                            particularly
+                                            when dealing with birth times.</p>
+                                    </div>
+                
+                                    <div class="ms-4">
+                                        <h4>3. Dependence on Accuracy</h4>
+                                        <p>The tool’s accuracy depends on the current date settings of the device being used.</p>
+                                    </div>
+                                </div>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <h2 id="fun-facts">Fun Facts About Age</h2>
+                                <ol>
+                                    <li class="mb-1"><strong>Oldest Recorded Ages: </strong>Jeanne Calment, a French woman, holds the
+                                        record
+                                        for the oldest verified age at 122 years and 164 days.</li>
+                                    <li class="mb-1"><strong>Cultural Importance: </strong>Age plays a significant role in various
+                                        cultures,
+                                        influencing rituals, traditions, and even astrological interpretations.</li>
+                                    <li class="mb-1"><strong>Age in Seconds: </strong>Ever wondered how many seconds you’ve been alive?
+                                        An
+                                        age calculator can reveal fascinating numbers, adding a fun twist to age discussions.</li>
+                                </ol>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <p>Age calculators are essential tools for accurately determining age in years, months, days, hours, and
+                                    even seconds. They consider leap years, support multiple date formats, and provide flexibility in
+                                    time
+                                    unit conversions.</p>
+                                <p>Whether you need to verify official documents, plan life events, or simply calculate your exact age,
+                                    an
+                                    online age calculator can streamline the process effortlessly.</p>
+                                <p>Discover free online age calculators or create your own to enhance your understanding of date
+                                    calculations and improve efficiency in daily tasks.</p>
+                            </section>
+                
+                
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="ageCalculatorFAQ">
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is an age calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        An age calculator is a tool that calculates a person’s age based on their date
+                                                        of
+                                                        birth and a
+                                                        specified date. It provides detailed results in years, months, days, and even
+                                                        smaller time units
+                                                        like hours, minutes, and seconds.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How do I use the age calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li class="mb-1">Enter your date of birth in the "Birthday" fields (day,
+                                                                month,
+                                                                and year).</li>
+                                                            <li class="mb-1">Specify the "Age on" date for which you want to calculate
+                                                                your
+                                                                age.</li>
+                                                            <li class="mb-1">Click the Calculate button to see the results.</li>
+                                                            <li class="mb-1">If you need to start over, click the <strong>Clear</strong>
+                                                                button.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        <strong>What information does the age calculator provide?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        You typically need the following details:
+                                                        <ul>
+                                                            <li class="mb-1">Exact age in years, months, and days.</li>
+                                                            <li class="mb-1">Total age in months, weeks, days, hours, minutes, and
+                                                                seconds.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        <strong>Can I calculate my age for a future date?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes! The "Age on" field lets you calculate your age for any future date, making
+                                                        it
+                                                        useful for
+                                                        planning birthdays, anniversaries, or milestones.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        <strong>Can I calculate someone else's age?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Absolutely! Simply enter the date of birth for the person you’re calculating for
+                                                        and
+                                                        choose the
+                                                        relevant "Age on" date.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>Is the age calculator accurate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, the calculator provides precise results by accounting for leap years and
+                                                        the
+                                                        exact number of
+                                                        days in each month. It avoids approximations like average days in months or
+                                                        years.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                                        aria-controls="collapseSeven">
+                                                        <strong>What are some practical uses for this age calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li class="mb-1">Tracking developmental milestones for children.</li>
+                                                            <li class="mb-1">Planning birthdays or anniversaries.</li>
+                                                            <li class="mb-1">Calculating eligibility for age-restricted activities
+                                                                (e.g.,
+                                                                voting,
+                                                                retirement).</li>
+                                                            <li class="mb-1">Fun facts, like celebrating your 10,000th day!</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                                        aria-controls="collapseEight">
+                                                        <strong>Why does the calculator show age in hours, minutes, and
+                                                            seconds?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        This feature provides a detailed and fun breakdown of your age, helping you
+                                                        appreciate the
+                                                        passage of time in smaller units.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqNine">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseNine" aria-expanded="false"
+                                                        aria-controls="collapseNine">
+                                                        <strong>Does the calculator work for historical dates?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, you can calculate ages for any date in the past or future, as long as the
+                                                        date
+                                                        of birth is
+                                                        valid.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTen">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                        <strong>Can the calculator handle different time zones?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="faqTen"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        No, the age calculator does not account for time zones. It calculates age based
+                                                        on
+                                                        calendar dates
+                                                        only.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqEleven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEleven" aria-expanded="false"
+                                                        aria-controls="collapseEleven">
+                                                        <strong>Why do I see zero in some results?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="faqEleven"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        If the "Age on" date is set earlier than the date of birth, the calculator will
+                                                        display zeros, as
+                                                        negative age calculations are not valid.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTwelve">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwelve" aria-expanded="false"
+                                                        aria-controls="collapseTwelve">
+                                                        <strong>Is the calculator mobile-friendly?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="faqTwelve"
+                                                    data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, the calculator is designed to work seamlessly on desktop and mobile
+                                                        devices,
+                                                        ensuring a
+                                                        responsive user experience.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqThirteen">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThirteen" aria-expanded="false"
+                                                        aria-controls="collapseThirteen">
+                                                        <strong>Can I share my results?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThirteen" class="accordion-collapse collapse"
+                                                    aria-labelledby="faqThirteen" data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        You can manually share the results by copying them or taking a screenshot.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFourteen">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFourteen" aria-expanded="false"
+                                                        aria-controls="collapseFourteen">
+                                                        <strong>Can I use the calculator offline?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFourteen" class="accordion-collapse collapse"
+                                                    aria-labelledby="faqFourteen" data-bs-parent="#ageCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        No, the calculator requires an internet connection to function unless
+                                                        specifically
+                                                        designed for
+                                                        offline use.
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/age-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+</body>
+
+</html>

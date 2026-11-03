@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item active" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action active">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Calorie Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="calorie-calculator">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="us-tab" data-bs-toggle="tab" href="#us"
+                                                role="tab" aria-controls="us" aria-selected="true">US Unit</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="metric-tab" data-bs-toggle="tab" href="#metric"
+                                                role="tab" aria-controls="metric" aria-selected="false">Metric Unit</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-3" id="myTabContent">
+                                        <!-- US Unit Tab -->
+                                        <div class="tab-pane fade show active" id="us" role="tabpanel"
+                                            aria-labelledby="us-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="age-us" class="form-label">Age
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your age in years">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="age-us" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">years</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Gender
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your gender">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="male-us" id="male-us">
+                                                            <label class="form-check-label" for="male-us">Male</label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="female-us" id="female-us">
+                                                            <label class="form-check-label"
+                                                                for="female-us">Female</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="us-height-feet" class="form-label">Height
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your height in feet and inches">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="us-height-feet" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">ft</span>
+                                                        <input type="number" class="form-control my-input-area ms-2"
+                                                            id="us-height-inches" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">in</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="weight-us" class="form-label">Weight
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your weight in pounds">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="weight-us" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">pounds</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="activity-us" class="form-label">Activity
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Choose your activity level">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <select class="form-select my-input-area" name=""
+                                                            id="activity-us">
+                                                            <option value="select" selected disabled>Select</option>
+                                                            <option value="no-exercise">No Exercise</option>
+                                                            <option value="light-exercise">Light Exercise</option>
+                                                            <option value="moderate-exercise">Moderate Exercise</option>
+                                                            <option value="active">Active</option>
+                                                            <option value="very-active">Very Active</option>
+                                                            <option value="extra-active">Extra Active</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-calculate-button-area">
+                                                <button type="submit" id="submit-us"
+                                                    class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                                <button type="button" id="clear-us" onclick="clearInputs()"
+                                                    class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                            </div>
+                                        </div>
+                                        <!-- Metric Unit Tab -->
+                                        <div class="tab-pane fade" id="metric" role="tabpanel"
+                                            aria-labelledby="metric-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="age-metric" class="form-label">Age
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your age in years">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="age-metric" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">years</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Gender
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your gender">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="male-metric" id="male-metric">
+                                                            <label class="form-check-label"
+                                                                for="male-metric">Male</label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" name="gender" type="radio"
+                                                                value="female-metric" id="female-metric">
+                                                            <label class="form-check-label"
+                                                                for="female-metric">Female</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="metric-height-feet" class="form-label">Height
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your height in cm (centimeter)">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="metric-height-feet" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group me-2">cm</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="weight-metric" class="form-label">Weight
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your weight in kg (kilogram)">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control my-input-area"
+                                                            id="weight-metric" min="1" step="any" required>
+                                                        <span class="input-group-text my-input-group">kg</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="activity-metric" class="form-label">Activity
+                                                        <span>
+                                                            <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Choose your activity level">?</button>
+                                                        </span>
+                                                    </label>
+                                                    <div class="input-group mb-3">
+                                                        <select class="form-select my-input-area" name=""
+                                                            id="activity-metric">
+                                                            <option value="select" selected disabled>Select</option>
+                                                            <option value="no-exercise">No Exercise</option>
+                                                            <option value="light-exercise">Light Exercise</option>
+                                                            <option value="moderate-exercise">Moderate Exercise</option>
+                                                            <option value="active">Active</option>
+                                                            <option value="very-active">Very Active</option>
+                                                            <option value="extra-active">Extra Active</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-calculate-button-area">
+                                                <button type="submit" id="submit-metric"
+                                                    class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                                <button type="button" id="clear-metric" onclick="clearInputs()"
+                                                    class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody id="result">
+                                            <!-- results will be shown in here  -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- calculator ends  -->
+        </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Calorie Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Calorie Calculator</a>
+                                    <a href="#how-it-works" class="list-group-item list-group-item-action">2. How a Calorie Calculator Works</a>
+                                    <a href="#benefits" class="list-group-item list-group-item-action">3. Benefits of Using a Calorie Calculator</a>
+                                    <a href="#high-calorie-foods" class="list-group-item list-group-item-action">4. Some High Calorie Foods</a>
+                                    <a href="#effective-use" class="list-group-item list-group-item-action">5. How to Use a Calorie Calculator Effectively</a>
+                                    <a href="#limitations" class="list-group-item list-group-item-action">6. Limitations of a Calorie Calculator</a>
+                                    <a href="#practical-application" class="list-group-item list-group-item-action">7. Practical Application</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">8. FAQ</a>
+                                </div>
+                            </div>
+                            
+                
+                            <section>
+                                <p>Have you ever wondered how many calories you need daily to achieve your health goals? A calorie
+                                    calculator can help you estimate this number based on your personal metrics. Whether you aim to lose
+                                    weight, maintain your current weight, or gain muscle, understanding your calorie needs is the first step
+                                    toward success. This tool offers a simple yet effective way to personalize your nutrition and take
+                                    charge of your health.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use the Calorie Calculator</h2>
+                                <p>The Calorie Calculator is a simple tool designed to help you estimate your daily calorie needs based on
+                                    various factors like age, gender, height, weight, and activity level. Follow these steps to use the
+                                    calculator effectively:</p>
+                    
+                                <h3>Step 1: Choose Your Measurement Unit</h3>
+                                <p>Select either <strong>US Unit</strong> (feet, inches, pounds) or <strong>Metric Unit</strong>
+                                    (centimeters, kilograms) to input your measurements accurately.</p>
+                    
+                                <h3>Step 2: Enter Your Age</h3>
+                                <p>Input your age in years. This helps determine your basal metabolic rate (BMR), which varies with age.</p>
+                    
+                                <h3>Step 3: Select Your Gender</h3>
+                                <p>Choose between <strong>Male</strong> or <strong>Female</strong>. Gender plays a role in calorie
+                                    requirements due to differences in muscle mass and metabolism.</p>
+                    
+                                <h3>Step 4: Enter Your Height</h3>
+                                <p>Provide your height in feet and inches (US units) or centimeters (Metric units) to ensure accurate
+                                    calculations.</p>
+                    
+                                <h3>Step 5: Enter Your Weight</h3>
+                                <p>Input your weight in pounds (US units) or kilograms (Metric units) to help determine your calorie
+                                    expenditure.</p>
+                    
+                                <h3>Step 6: Select Your Activity Level</h3>
+                                <p>Choose an activity level from the dropdown menu. Options typically include:</p>
+                                <ul>
+                                    <li class="mb-1">Sedentary (little or no exercise)</li>
+                                    <li class="mb-1">Lightly active (light exercise 1-3 days per week)</li>
+                                    <li class="mb-1">Moderately active (moderate exercise 3-5 days per week)</li>
+                                    <li class="mb-1">Very active (hard exercise 6-7 days per week)</li>
+                                    <li class="mb-1">Super active (intense exercise or physical job)</li>
+                                </ul>
+                    
+                                <h3>Step 7: Calculate Your Calories</h3>
+                                <p>Click the <strong>Calculate</strong> button to see your estimated daily calorie needs. If you want to
+                                    reset the inputs, use the <strong>Clear</strong> button.</p>
+                    
+                                <h3>Understanding the Results</h3>
+                                <p>The calculator will display your daily calorie requirement based on your inputs. This information can be
+                                    used to maintain, lose, or gain weight by adjusting your diet accordingly.</p>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="how-it-works">How a Calorie Calculator Works</h2>
+                                <p>A calorie calculator uses specific personal data to determine your daily calorie requirements. It factors
+                                    in metrics such as age, gender, weight, height, and activity level to provide an estimate of your Basal
+                                    Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE).</p>
+                                <ul>
+                                    <li class="mb-3">
+                                        <strong>Key Metrics Used:</strong>
+                                        <ul>
+                                            <li class="mb-1"><strong>Age: </strong>Caloric needs change as we age due to shifts in metabolism.</li>
+                                            <li class="mb-1"><strong>Gender: </strong>Men and women generally have different metabolic rates.</li>
+                                            <li class="mb-1"><strong>Weight and Height: </strong>These influence the energy your body needs to function.
+                                            </li>
+                                            <li class="mb-1"><strong>Activity Level: </strong>From sedentary lifestyles to intense physical activity,
+                                                this determines the additional calories burned beyond your BMR.</li>
+                                        </ul>
+                                    </li>
+                    
+                                    <li class="mb-3">
+                                        <strong>The Science Behind It:</strong>
+                                        <ul>
+                                            <li class="mb-1"><strong>Basal Metabolic Rate (BMR): </strong>The number of calories your body needs at rest
+                                                to maintain basic functions like breathing and digestion.</li>
+                                            <li class="mb-1"><strong>Total Daily Energy Expenditure (TDEE): </strong>BMR plus calories burned during
+                                                activities and exercise.</li>
+                                        </ul>
+                                    </li>
+                    
+                                    <li class="mb-3">
+                                        <strong>Formulas Used:</strong>
+                                        <ul>
+                                            <li class="mb-1"><strong>Harris-Benedict Equation: </strong>One of the oldest methods, offering a reliable
+                                                estimate of calorie needs.</li>
+                                            <li class="mb-1"><strong>Mifflin-St Jeor Equation: A more modern and accurate approach for calculating
+                                                    BMR.</strong></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="benefits">Benefits of Using a Calorie Calculator</h2>
+                                <p>A calorie calculator is a valuable tool for anyone looking to optimize their diet and achieve specific
+                                    health goals. Here are its key benefits:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Personalized Nutrition: </strong>It provides calorie recommendations tailored to your unique
+                                        needs and goals.</li>
+                                    <li class="mb-1"><strong>Improved Diet Management: </strong>You can plan meals effectively to align with your daily
+                                        calorie target.</li>
+                                    <li class="mb-1"><strong>Supports Fitness Goals: </strong>Whether you're aiming to lose fat, gain muscle, or maintain
+                                        weight, this tool ensures your energy balance aligns with your objectives.</li>
+                                </ul>
+                                <p>Here are some list of high calorie foods you should try</p>
+                                <h3 id="high-calorie-foods" class="text-center mb-4">Some High Calorie Foods</h3>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-8">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead class="table-dark">
+                                                        <tr>
+                                                            <th>Food</th>
+                                                            <th>Calories per 100g</th>
+                                                            <th>Macronutrients</th>
+                                                            <th>Health Benefits</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Peanut Butter</td>
+                                                            <td>588 kcal</td>
+                                                            <td>Protein, Healthy Fats, Carbs</td>
+                                                            <td>Great for muscle gain, rich in antioxidants</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Avocado</td>
+                                                            <td>160 kcal</td>
+                                                            <td>Healthy Fats, Fiber, Vitamins</td>
+                                                            <td>Supports heart health, packed with nutrients</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Oats</td>
+                                                            <td>389 kcal</td>
+                                                            <td>Carbs, Fiber, Protein</td>
+                                                            <td>Good for digestion, provides sustained energy</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dark Chocolate (85%+ Cocoa)</td>
+                                                            <td>600 kcal</td>
+                                                            <td>Healthy Fats, Fiber, Antioxidants</td>
+                                                            <td>Boosts brain function, reduces stress</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cheese</td>
+                                                            <td>402 kcal</td>
+                                                            <td>Protein, Calcium, Healthy Fats</td>
+                                                            <td>Good for bone health, high in protein</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Almonds</td>
+                                                            <td>579 kcal</td>
+                                                            <td>Healthy Fats, Protein, Vitamin E</td>
+                                                            <td>Supports brain health, good for skin</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Whole Milk</td>
+                                                            <td>61 kcal</td>
+                                                            <td>Protein, Carbs, Calcium</td>
+                                                            <td>Supports muscle recovery, rich in vitamins</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Salmon</td>
+                                                            <td>208 kcal</td>
+                                                            <td>Protein, Omega-3 Fatty Acids</td>
+                                                            <td>Boosts heart and brain health</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Eggs</td>
+                                                            <td>155 kcal</td>
+                                                            <td>Protein, Healthy Fats, Vitamins</td>
+                                                            <td>Helps muscle growth, full of essential nutrients</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rice</td>
+                                                            <td>130 kcal</td>
+                                                            <td>Carbs, Fiber, Protein</td>
+                                                            <td>Quick energy source, easy to digest</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Olive Oil</td>
+                                                            <td>884 kcal</td>
+                                                            <td>Healthy Fats, Antioxidants</td>
+                                                            <td>Supports heart health, reduces inflammation</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="effective-use">How to Use a Calorie Calculator Effectively</h2>
+                                <div>
+                                    <p>Using a calorie calculator is straightforward. Follow these steps for accurate results:</p>
+                                    <ol>
+                                        <li class="mb-1"><strong>Gather Personal Data: </strong>Note down your weight, height, age, and gender.</li>
+                                        <li class="mb-1"><strong>Select Activity Level: </strong>Choose from sedentary, lightly active, moderately
+                                            active, or very active based on your daily routine.</li>
+                                        <li class="mb-1"><strong>Set Your Goals: </strong>Decide if you want to lose weight, maintain weight, or build
+                                            muscle.</li>
+                                        <li class="mb-1"><strong>Enter Data into the Calculator: </strong>Input the details and let the calculator
+                                            provide your daily calorie recommendation.</li>
+                                    </ol>
+                                </div>
+                    
+                                <div>
+                                    <p><strong>Tips for Accurate Results:</strong></p>
+                                    <ul>
+                                        <li class="mb-1">Update your personal data regularly, especially if your weight changes significantly.</li>
+                                        <li class="mb-1">Adjust for lifestyle changes, such as starting a new exercise routine or altering your daily
+                                            activity level.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                    
+                    
+                            <section class="mb-5">
+                                <h2 id="limitations">Limitations of a Calorie Calculator</h2>
+                                <p>While a calorie calculator is a powerful tool, it’s not without limitations:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>General Estimates: </strong>Results are based on averages and may not account for individual
+                                        metabolic differences.</li>
+                                    <li class="mb-1"><strong>Nutrient Quality Not Considered: </strong>Calories alone don’t provide a complete picture of
+                                        a healthy diet; macronutrient balance matters too.</li>
+                                    <li class="mb-1"><strong>Not a Substitute for Professional Advice: </strong>If you have specific health concerns or
+                                        dietary restrictions, consult a registered dietitian or healthcare provider.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="practical-application">Practical Application</h2>
+                                <p>Let’s look at how a calorie calculator can be applied in real-life scenarios:</p>
+                                <ul>
+                                    <li class="mb-3">
+                                        <strong>Example for Weight Loss:</strong>
+                                        <ul>
+                                            <li class="mb-1">A 30-year-old woman weighing 70 kg, 165 cm tall, and lightly active. Her calorie calculator
+                                                suggests consuming 1,800 calories daily to maintain weight. To lose weight, she could aim
+                                                for 1,500 calories, creating a deficit of 300 calories per day.</li>
+                                        </ul>
+                                    </li>
+                    
+                                    <li class="mb-3">
+                                        <strong>Example for Muscle Gain:</strong>
+                                        <ul>
+                                            <li class="mb-1">A 25-year-old man weighing 80 kg, 180 cm tall, and moderately active. His TDEE is 2,500
+                                                calories. To build muscle, he might increase his intake to 2,800 calories per day, focusing
+                                                on protein-rich foods.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p><strong>Tracking Progress: </strong>Pair the calorie calculator with apps or food journals to monitor
+                                    intake and results. Adjust your calorie targets as needed based on progress.</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="faqAccordion">
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq1">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                        <strong>Do I need to count calories daily?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Not necessarily. Use the calculator as a guide and focus on consistent eating habits.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq2">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                        <strong>How often should I update my calorie needs?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Regularly update your information, especially after significant weight or activity changes.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq3">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                        <strong>Can I use a calorie calculator if I have health conditions?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, but consult a healthcare provider for personalized advice.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq4">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                        <strong>How accurate are the results?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        While not perfect, a calorie calculator provides a solid starting point for understanding
+                                                        your energy needs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq5">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                        <strong>Can I lose weight without counting calories?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, focusing on whole foods, portion control, and mindful eating can help you manage weight without strict calorie counting.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq6">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                        <strong>Does exercise affect my calorie needs?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, physical activity increases calorie expenditure, so your calorie needs may be higher if you exercise regularly.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq7">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                                        <strong>Should I eat back calories burned from exercise?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        It depends on your goals. If maintaining weight, replenishing some calories may be helpful. If losing weight, avoid overeating them.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq8">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                                        <strong>What is the best way to track my calories?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        You can use food tracking apps, nutrition labels, or a food journal to monitor your intake.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq9">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                                        <strong>Do different foods impact weight differently?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, nutrient-dense foods like protein and fiber help with satiety, while processed foods may lead to overeating.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faq10">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                                        <strong>What is a calorie deficit?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        A calorie deficit occurs when you consume fewer calories than your body burns, leading to weight loss.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/calorie-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

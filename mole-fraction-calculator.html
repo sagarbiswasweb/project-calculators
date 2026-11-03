@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mole Fraction Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item active" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action active">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Mole Fraction Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="moleFraction">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="moles-solute" class="form-label">Moles of Solute
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the number of moles of the solute. The solute is the substance dissolved in the solvent.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="moles-solute" step="any" required>
+                                                <!-- <span class="input-group-text my-input-group">ft<sup>2</sup></span> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="moles-solvent" class="form-label">Moles of Solvent
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the number of moles of the solvent. The solvent is the substance in which the solute is dissolved.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="moles-solvent" step="any" required>
+                                                <!-- <span class="input-group-text my-input-group">$/ft<sup>2</sup></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12 mt-3">
+                                 <table class="table" id="table-info">
+                                    <tbody>
+                                        <tr id="mole-solution"></tr>
+                                        <tr id="mole-fraction"></tr>
+                                        <tr id="mole-percent"></tr>
+                                    </tbody>
+                                 </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-article">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Mole Fraction Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#instructions" class="list-group-item list-group-item-action">1. Instructions for Using the Mole Fraction Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding the Results</a>
+                                    <a href="#what-is-mole-fraction" class="list-group-item list-group-item-action">3. What is Mole Fraction?</a>
+                                    <a href="#importance-in-chemistry" class="list-group-item list-group-item-action">4. Importance of Mole Fraction in Chemistry</a>
+                                    <a href="#how-it-works" class="list-group-item list-group-item-action">5. How the Mole Fraction Calculator Works</a>
+                                    <a href="#modifying-calculator" class="list-group-item list-group-item-action">6. Modifying the Mole Fraction Calculator</a>
+                                    <a href="#compatibility" class="list-group-item list-group-item-action">7. Compatibility with Other Systems</a>
+                                    <a href="#future-of-calculator" class="list-group-item list-group-item-action">8. The Future of Mole Fraction Calculator</a>
+                                    <a href="#improved-ui" class="list-group-item list-group-item-action">9. Improved UI and Functionalities</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">10. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="instructions" class="mb-3">Instructions for Using the Mole Fraction Calculator Step-by-Step</h2>
+                                <div class="mb-4">
+                                    <h4>Step 1: Collect Relevant Information</h4>
+                                    <ul>
+                                        <li class="mb-2">
+                                            <p class="mb-1"><strong>Gather Mole Data: </strong>Ensure you have the number of moles for each
+                                                component in your mixture. If moles are unavailable:</p>
+                                            <ul>
+                                                <li class="mb-1">For solids: Calculate moles using the molecular weight.</li>
+                                                <li class="mb-1">For liquids: Use molar volume.</li>
+                                            </ul>
+                                        </li>
+                    
+                                        <li class="mb-2">
+                                            <P><strong>Data Accuracy: </strong>Double-check your numbers. Small errors in input can lead to
+                                                significant calculation inaccuracies.</P>
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <h4>Step 2: Enter Data into the Calculator</h4>
+                                    <ol>
+                                        <li class="mb-2">
+                                            <P class="mb-1"><strong>Input Fields: </strong>Enter the number of moles for:</P>
+                                            <ul>
+                                                <li class="mb-1">The <strong>solute</strong> (the dissolved substance).</li>
+                                                <li class="mb-1">The <strong>solvent</strong> (the liquid or medium in which the solute
+                                                    dissolves).</li>
+                                            </ul>
+                                        </li>
+                    
+                                        <li class="mb-2">
+                                            <p><strong>Review Your Input: </strong>Verify all data for accuracy before proceeding.</p>
+                                        </li>
+                    
+                                        <li class="mb-2">
+                                            <p><strong>Calculate: </strong>Click the "Calculate" button to compute the mole fractions for
+                                                each component in your mixture.</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <h4>Step 3: Interpret the Results</h4>
+                                    <ul>
+                                        <li class="mb-2">
+                                            <p class="mb-1"><strong>Understanding Mole Fractions: </strong>The output will show the
+                                                proportion of each component in the mixture. For example:</p>
+                                            <ul>
+                                                <li>A mole fraction of 0.2 means 20% of the total moles belong to that component.</li>
+                                            </ul>
+                                        </li>
+                    
+                                        <li class="mb-2">
+                                            <P class="mb-1"><strong>Applications: </strong>Mole fractions are essential for:</P>
+                                            <ul>
+                                                <li class="mb-1">Predicting chemical reactions.</li>
+                                                <li class="mb-1">Designing distillation processes.</li>
+                                                <li class="mb-1">Formulating dissolving solutions.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding The Results</h2>
+                                <div class="mb-4">
+                                    <h4>After using the Mole Fraction Calculator, here's how to interpret the results:</h4>
+                                    <ol>
+                                        <li class="mb-2">
+                                            <strong>Total Moles in the Solution</strong>
+                                            <p>The total moles represent the sum of the moles of the solute and solvent in the mixture. This
+                                                value is essential because it provides the baseline for calculating the mole fractions of
+                                                each component.</p>
+                                        </li>
+                    
+                                        <li class="mb-2">
+                                            <strong>Mole Fraction</strong>
+                                            <p class="mb-1">The mole fraction is a dimensionless value that shows the proportion of one
+                                                component (e.g., solute) relative to the total mixture.</p>
+                                            <ul>
+                                                <li>It is calculated by dividing the moles of a specific component by the total moles in the
+                                                    solution. For example: If you have 20 moles of solute and 10.5 moles of solvent, the
+                                                    total moles would be 30.5. The mole fraction of the solute would then be 20 ÷ 30.5 ≈
+                                                    0.65574.</li>
+                                            </ul>
+                                        </li>
+                    
+                                        <li class="mb-2">
+                                            <strong>Mole Percent</strong>
+                                            <p class="mb-1">The mole percent expresses the mole fraction as a percentage.</p>
+                                            <ul>
+                                                <li>To find the mole percent, simply multiply the mole fraction by 100. Using the earlier
+                                                    example, the mole fraction of 0.65574 would correspond to approximately 65.57% of the
+                                                    total moles being contributed by the solute.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <h4>Practical Significance of the Results</h4>
+                                    <ol>
+                                        <li class="mb-2"><strong>Chemical Composition: </strong>Mole fractions provide insight into the
+                                            composition of your mixture and the relative quantities of each component.</li>
+                                        <li class="mb-2"><strong>Reactions and Properties: </strong>Mole fractions are crucial for
+                                            calculating reaction rates, determining equilibrium constants, and predicting mixture properties
+                                            such as boiling or freezing points.</li>
+                                        <li class="mb-2"><strong>Real-World Applications: </strong>These values are widely used in
+                                            chemistry, engineering, and industry for tasks like designing solutions, optimizing distillation
+                                            processes, and understanding solvent interactions.</li>
+                                    </ol>
+                                </div>
+                                <p>By understanding these outputs, you can better analyze and apply the results to scientific or practical
+                                    scenarios.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>Anyone working in chemistry, whether you are a student or researcher/professional must know what mole
+                                    fraction is and how it can be calculated. It is a very basic concept which has important aspects as far
+                                    as composition of mixtures, chemical reactions and solutions etc. are concerned so you may find it in
+                                    all or where almost all students get ready to carry out their experiments. Read — What is a mole
+                                    fraction along with the Mole Fraction Calculator used in it and why this device plays an important role
+                                    in perfect chemical analysis.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="what-is-mole-fraction" class="mb-3">Understanding Mole Fraction</h2>
+                                <h3>What Is Mole Fraction?</h3>
+                                <p>Mole fraction is a way to express the proportion of a specific component in a mixture. It represents the
+                                    ratio of the moles of a particular substance to the total number of moles of all substances in the
+                                    mixture. The components of the mixture are expressed as <strong>mole fractions</strong>.</p>
+                                <p>The mole fraction <strong class="fs-5"><i>X<sub>i</sub></i></strong> of a component <strong
+                                        class="fs-5"><i>i</i></strong> in a mixture is mathematically defined as:</p>
+                                <div class="text-center">
+                                    <h4><i>X<sub>i</sub> = n<sub>i</sub> / ∑n<sub>j</sub></i></h4>
+                                </div>
+                                <p>Where:</p>
+                                <ul>
+                                    <li class="mb-1"><strong class="fs-4"><i>n<sub>i</sub></i>:</strong> Molar amount of component <strong
+                                            class="fs-5"><i>i</i></strong></li>
+                                    <li class="mb-1"><strong class="fs-4"><i>∑n<sub>j</sub></i>:</strong> Total molar amount of all
+                                        components in the mixture.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="importance-in-chemistry" class="mb-3">Importance of Mole Fraction in Chemistry</h2>
+                                <p>Mole fraction is a <strong>key concept</strong> in many areas of chemistry and has a wide range of
+                                    applications, including:</p>
+                                <div class="mb-4">
+                                    <h4>Solutions and Mixtures</h4>
+                                    <p>Mole fractions are key mathematical tools for determining concentrations in mixtures. They are widely
+                                        applied in various scenarios, including:</p>
+                                    <ol>
+                                        <li class="mb-2">
+                                            <strong>Preparing Standard Solutions</strong>
+                                            <p>Accurate determination of mole fractions is critical for preparing standard solutions with
+                                                precise concentrations. This accuracy is essential for experiments, chemical analysis, and
+                                                industrial processes.</p>
+                                        </li>
+                    
+                                        <li class="mb-2">
+                                            <strong>Mole Fractions in Dilutions</strong>
+                                            <p>Mole fractions play an essential role when diluting solutions to achieve specific
+                                                concentrations. They ensure that the desired ratios of components are maintained during
+                                                dilution.</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <h4>Calculations: Gas Mixtures and Partial Pressures</h4>
+                                    <h5>Partial Pressure in Gas Mixtures</h5>
+                                    <p>Mole fractions are crucial when dealing with gas mixtures and their partial pressures. According to
+                                        Dalton's Law of Partial Pressures, the partial pressure of a gas in a mixture is directly
+                                        proportional to its mole fraction.</p>
+                                    <p>This concept is significant in:</p>
+                                    <ul>
+                                        <li class="mb-1"><strong>Environmental Science: </strong>Predicting the behavior of atmospheric
+                                            gases.</li>
+                                        <li class="mb-1"><strong>Industrial Gas Production: </strong>Ensuring safe and efficient mixing of
+                                            gases for production purposes.</li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <h4>Phase Equilibria and Thermodynamics</h4>
+                                    <p>Mole fractions play a vital role in thermodynamics. In thermodynamics, mole fractions are central to
+                                        phase equilibria, as they show how different phases can coexist at equilibrium. This concept is
+                                        crucial for investigating colligative properties like boiling point elevation and freezing point
+                                        depression, which depend on the mole fraction of the solute in a solution</p>
+                                    <p>The key points are:</p>
+                                    <ul>
+                                        <li class="mb-1"><strong>Mole fractions</strong> are used in <strong>phase equilibria</strong> to
+                                            determine how different phases (such as liquid, solid, and gas) are distributed in a system at
+                                            equilibrium.</li>
+                                        <li class="mb-1"><strong>Colligative properties</strong> like <strong>boiling point
+                                                elevation</strong> and <strong>freezing point depression</strong> depend on the
+                                            <strong>concentration</strong> of solute particles in the solution, which is often represented
+                                            by the mole fraction.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="how-it-works" class="mb-3">How Does The Mole Fraction Calculator Work</h2>
+                                <div>
+                                    <h4>Calculator Functionality Overview</h4>
+                                    <p>The mole fraction calculator is designed to simplify and accelerate mole fraction calculations. It
+                                        calculates the mole fraction of each component in a mixture by taking the moles of the individual
+                                        components as input.</p>
+                                </div>
+                    
+                                <div>
+                                    <h4>What You Need to Input</h4>
+                                    <ol>
+                                        <li class="mb-1"><strong>Moles of Each Component: </strong>Directly enter the number of moles for
+                                            each substance in the mixture.</li>
+                                        <li class="mb-1"><strong>If Mass or Volume is Given: </strong>Use molecular weight (for solids) or
+                                            molar volume (for liquids and gases) to calculate the moles before entering the values.</li>
+                                    </ol>
+                                </div>
+                    
+                                <div>
+                                    <h4>Process of Calculation</h4>
+                                    <p>The calculator uses the standard mole fraction formula (as described earlier) to determine the mole
+                                        fraction of each component in the mixture. It divides the moles of each component by the total
+                                        number of moles, providing accurate and consistent results.</p>
+                                </div>
+                    
+                                <div>
+                                    <h4>Key Features</h4>
+                                    <ul>
+                                        <li class="mb-1"><strong>Handles Multi-Component Mixtures: </strong>You can calculate mole fractions
+                                            for complex mixtures with multiple components.</li>
+                                        <li class="mb-1"><strong>Adaptable for Special Conditions: </strong>The calculator can accommodate
+                                            non-ideal behavior if adjustments are required during the process.</li>
+                                        <li class="mb-1"><strong>Consistent Accuracy: </strong>By applying reliable mathematical principles,
+                                            the calculator ensures dependable results for chemical calculations.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="modifying-calculator" class="mb-3">Modifying the Mole Fraction Calculator: Using the Calculator Like a Pro</h2>
+                                <h4>The Mole Fraction Calculator can be customized for specific applications, offering additional features
+                                    to enhance its functionality:</h4>
+                                <ul>
+                                    <li class="mb-1"><strong>Mixture Of Multiple Components: </strong>This feature allows the calculator to
+                                        handle complex mixtures and analyze them in detail, making it suitable for a variety of systems.
+                                    </li>
+                                    <li class="mb-1"><strong>Non-Ideal Solution Correction: </strong>For solutions that deviate from ideal
+                                        behavior, corrections can be applied to account for factors like temperature, pressure, or non-ideal
+                                        gas behavior.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="compatibility" class="mb-3">Compatibility with Alternative Reporting Systems</h2>
+                                <h4>The Mole Fraction Calculator can be integrated with advanced chemical analysis tools, including:</h4>
+                                <ul>
+                                    <li class="mb-1"><strong>Analysis Software: </strong>Connect the calculator to chemical analysis
+                                        software for enhanced calculations and simulations.</li>
+                                    <li class="mb-1"><strong>Data Management System: </strong>Integrate the calculator with your lab's data
+                                        management system to ensure seamless data management and logging.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="future-of-calculator" class="mb-2">The Future of Mole Fraction Calculator: AI and ML Integration</h2>
+                                <p>The future of Mole Fraction Calculators will be shaped by the integration of AI and machine learning,
+                                    offering significant advancements:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Predictive Analysis with AI: </strong>Prototype AI technology will enable
+                                        predictive analysis to determine how changes in mole fractions impact chemical reactions. This
+                                        allows users to optimize processes more effectively, leading to improved efficiency.</li>
+                                    <li class="mb-1"><strong>Personalized Recommendations: </strong>Leveraging past data, AI can provide
+                                        personalized recommendations to optimize chemical mixtures and reactions, enhancing process
+                                        customization and performance.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="improved-ui" class="mb-2">Improved UI and Functionalities</h2>
+                                <h4>We aim to enhance the Mole Fraction Calculator by adding the following features:</h4>
+                                <ul>
+                                    <li class="mb-1"><strong>Intuitive Interfaces: </strong>Improved user interfaces that make the
+                                        calculator easier to use, even for complex calculations.</li>
+                                    <li class="mb-1"><strong>Real-Time Changes and Validation: </strong>Features that validate changes in
+                                        real-time, alerting users to errors and ensuring accurate results.</li>
+                                </ul>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>The Mole Fraction Calculator is a powerful tool in chemistry, simplifying the calculation of mole
+                                    fractions while enhancing the accuracy and efficiency of chemical analysis. It helps users better
+                                    understand the composition of mixtures and make predictions about outcomes based on specific reaction
+                                    mechanisms. Whether you're a student or an academic researcher, the Mole Fraction Calculator is an
+                                    invaluable resource for both laboratory and industrial applications.</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="moleFractionFAQ">
+                                            <!-- FAQ Item 1 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a mole fraction?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#moleFractionFAQ">
+                                                    <div class="accordion-body">
+                                                        A mole fraction is the ratio of the number of moles of a component in a mixture to the total
+                                                        number of moles of all components in the mixture. It helps express the concentration of each
+                                                        component in a mixture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- FAQ Item 2 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How do I use the Mole Fraction Calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                                    data-bs-parent="#moleFractionFAQ">
+                                                    <div class="accordion-body">
+                                                        Simply enter the number of moles of each component in your mixture. The calculator will compute
+                                                        the mole fraction of each component based on the values you provide.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- FAQ Item 3 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>Can the Mole Fraction Calculator handle mixtures with multiple components?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                                    data-bs-parent="#moleFractionFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, the Mole Fraction Calculator is designed to work with mixtures of multiple components,
+                                                        allowing you to calculate the mole fraction for each substance in complex mixtures.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- FAQ Item 4 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>What if my solution is non-ideal?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                                    data-bs-parent="#moleFractionFAQ">
+                                                    <div class="accordion-body">
+                                                        For non-ideal solutions, additional corrections may be needed, such as adjustments for
+                                                        temperature, pressure, or deviations from ideal gas behavior. These corrections can be applied
+                                                        manually or in more advanced settings, depending on your specific use case.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- FAQ Item 5 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>Can the calculator be used for both liquid and gas phases?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                                    data-bs-parent="#moleFractionFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, the calculator can be used for both liquid and gas mixtures. Just input the relevant mole
+                                                        quantities for each phase, and the calculator will compute the mole fraction accordingly.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- FAQ Item 6 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>Does the Mole Fraction Calculator provide real-time error validation</strong>?
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                                    data-bs-parent="#moleFractionFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, the calculator includes real-time error validation, ensuring that any incorrect inputs or
+                                                        mistakes are flagged immediately, helping you avoid calculation errors.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- FAQ Item 7 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>Is the calculator compatible with laboratory and industrial environments?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                                    data-bs-parent="#moleFractionFAQ">
+                                                    <div class="accordion-body">
+                                                        Absolutely! Whether you're conducting experiments in a lab or working in an industrial setting,
+                                                        the Mole Fraction Calculator is a valuable tool for enhancing efficiency and accuracy in
+                                                        chemical analysis.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/mole-fraction-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

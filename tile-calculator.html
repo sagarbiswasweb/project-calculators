@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item active" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action active">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center mt-3 mb-3">
+                            <div class="col-md-10 mb-3">
+                                <form id="tile-calculator">
+                                    <h2 class="mt-3 mb-3 text-center">Tile Calculator</h2>
+                                    <div class="row mt-3">
+                                        <h5 class="text-center">Area Calculation</h5>
+                                        <div class="col-md-6">
+                                            <label for="area-length" class="form-label">Area Length
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total length of the area where tiles will be installed. You can choose the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="area-length" min="1" step="any" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="area-length-unit">
+                                                            <option value="centimeter">cm</option>
+                                                            <option selected value="meter">m</option>
+                                                            <option value="inch">in</option>
+                                                            <option value="feet">ft</option>
+                                                            <option value="yard">yd</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="area-width" class="form-label">Area Width
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total width of the area where tiles will be installed. You can choose the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="area-width" min="1" step="any" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="area-width-unit">
+                                                            <option value="centimeter">cm</option>
+                                                            <option selected value="meter">m</option>
+                                                            <option value="inch">in</option>
+                                                            <option value="feet">ft</option>
+                                                            <option value="yard">yd</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-center">Tile Calculation</h5>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <label for="tile-length" class="form-label">Tile Length
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the length of a single tile. You can choose the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="tile-length" min="1" step="any" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="tile-length-unit">
+                                                            <option selected value="centimeter">cm</option>
+                                                            <option value="meter">m</option>
+                                                            <option value="inch">in</option>
+                                                            <option value="feet">ft</option>
+                                                            <option value="yard">yd</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <!-- ager design er refference hisabe ei div ta comment out kore rakha holo -->
+
+                                        <!-- <div class="col-md-6">
+                                            <label for="tile-width" class="form-label">Tile Width</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="tile-width" min="1" step="any" required>
+                                                <span class="input-group-text my-input-group">
+                                                    <select class="form-select" id="tile-width-unit">
+                                                        <option selected value="centimeter">centimeter</option>
+                                                        <option value="meter">meter</option>
+                                                        <option value="inch">inch</option>
+                                                        <option value="feet">foot</option>
+                                                        <option value="yard">yard</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div> -->
+                                        <div class="col-md-6">
+                                            <label for="tile-width" class="form-label">Tile Width
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the width of a single tile. You can choose the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="tile-width" min="1" step="any" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="tile-width-unit">
+                                                            <option selected value="centimeter">cm</option>
+                                                            <option value="meter">m</option>
+                                                            <option value="inch">in</option>
+                                                            <option value="feet">ft</option>
+                                                            <option value="yard">yd</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <label for="gap" class="form-label">Gap between tiles
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the spacing (grout gap) between tiles. This affects the total number of tiles needed. You can choose the unit of measurement from the dropdown.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="gap" min="0" step="any" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <!-- <span class="input-group-text my-input-group"> -->
+                                                        <select class="my-input-area form-select" id="tile-gap-unit">
+                                                            <option selected value="millimeter">mm</option>
+                                                            <option value="centimeter">cm</option>
+                                                            <option value="meter">m</option>
+                                                            <option value="inch">in</option>
+                                                        </select>
+                                                    <!-- </span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="tile-wastage" class="form-label">Tile Wastage (%)
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the percentage of extra tiles needed to account for cutting, breakage, and future repairs. A default value of 5% is recommended.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" value="5" id="tile-wastage" step="any" required>
+                                                <span class="input-group-text my-input-group">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text-center">Tile price field is optional</h5>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <label for="tile-price" class="form-label">Per Tile Cost ($)
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the cost of a single tile. This field is optional and is used to estimate the total cost of purchasing the required tiles.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="tile-price" min="1" step="any">
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody id="result">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-atricle">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Tile Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Tile Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Tile Calculator Results</a>
+                                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">3. Types of Tile Calculators</a>
+                                    <a href="#essential-features" class="list-group-item list-group-item-action">4. Essential Features of a Tile Calculator</a>
+                                    <a href="#why-use" class="list-group-item list-group-item-action">5. Why Should You Use a Tile Calculator?</a>
+                                    <a href="#common-mistakes" class="list-group-item list-group-item-action">6. Common Mistakes to Avoid</a>
+                                    <a href="#popular-tools" class="list-group-item list-group-item-action">7. Popular Tile Calculator Tools</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">8. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use the Tile Calculator</h2>
+                                <p>Planning a tiling project? Our Tile Calculator helps you determine the exact number of tiles needed, accounting for tile gaps and wastage. Follow this step-by-step guide to accurately estimate the tiles required and the total cost for your project.</p>
+                            
+                                <h3>Step 1: Enter the Area Dimensions</h3>
+                                <p>Start by providing the dimensions of the area you want to tile. In the <strong>Area Calculation</strong> section:</p>
+                                <ul>
+                                    <li class="mb-1">Enter the <strong>Area Length</strong> – This is the longest side of the surface where tiles will be installed.</li>
+                                    <li class="mb-1">Enter the <strong>Area Width</strong> – This is the shorter side of the surface.</li>
+                                    <li class="mb-1">Use the dropdown menu to select the unit of measurement (meters, feet, etc.).</li>
+                                </ul>
+                                <p>These values define the total area where tiles will be placed.</p>
+                            
+                                <h3>Step 2: Input Tile Dimensions</h3>
+                                <p>In the <strong>Tile Calculation</strong> section, provide the size of a single tile:</p>
+                                <ul>
+                                    <li class="mb-1">Enter the <strong>Tile Length</strong> – This is the longer side of a single tile.</li>
+                                    <li class="mb-1">Enter the <strong>Tile Width</strong> – This is the shorter side of a single tile.</li>
+                                    <li class="mb-1">Choose the appropriate unit (centimeters, inches, etc.) from the dropdown menu.</li>
+                                </ul>
+                                <p>The calculator uses this data to determine how many tiles will fit in the given area.</p>
+                            
+                                <h3>Step 3: Set Tile Gaps and Wastage</h3>
+                                <p>To ensure an accurate calculation, include additional parameters:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Gap between tiles</strong>: Enter the spacing between tiles to allow for grout lines. Choose the unit (millimeters, inches, etc.).</li>
+                                    <li class="mb-1"><strong>Tile Wastage (%)</strong>: Set a percentage to account for tile cuts, breakage, and replacements. The default is 5%, but you can adjust this based on your project needs.</li>
+                                </ul>
+                                <p>Factoring in tile gaps and wastage ensures you purchase enough tiles without running short.</p>
+                            
+                                <h3>Step 4: (Optional) Enter Tile Price</h3>
+                                <p>If you want to estimate the total cost of your tiling project:</p>
+                                <ul>
+                                    <li class="mb-1">Enter the <strong>Per Tile Cost ($)</strong> in the designated input field.</li>
+                                    <li class="mb-1">This field is optional. If left blank, the calculator will only provide the number of tiles needed.</li>
+                                </ul>
+                                <p>Adding the tile price gives you a budget estimate for material costs.</p>
+                            
+                                <h3>Step 5: Calculate or Reset</h3>
+                                <ul>
+                                    <li class="mb-1">Click the <strong>Calculate</strong> button to generate the results. The calculator will display the total number of tiles required, including wastage.</li>
+                                    <li class="mb-1">If you entered the per-tile cost, the calculator will also display the estimated total cost.</li>
+                                    <li class="mb-1">Click the <strong>Clear</strong> button to reset all fields and start a new calculation.</li>
+                                </ul>
+                                
+                                <h3>Why Use This Tile Calculator?</h3>
+                                <p>Our Tile Calculator simplifies tiling projects by eliminating guesswork. It ensures:</p>
+                                <ul>
+                                    <li class="mb-1">Accurate tile quantity estimates.</li>
+                                    <li class="mb-1">Consideration of tile gaps and wastage for better planning.</li>
+                                    <li class="mb-1">Cost estimation to stay within your budget.</li>
+                                </ul>
+                                <p>Use this tool before purchasing tiles to save time and money while ensuring a perfect fit for your space!</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding Your Tile Calculator Results</h2>
+                                
+                                <p>Once you input the required values into the tile calculator, you will receive detailed results to help you plan your tiling project effectively. Below is an explanation of each result and how it is calculated.</p>
+                            
+                                <h3>Total Area</h3>
+                                <p>The total area represents the surface that needs to be covered with tiles. It is calculated using the formula:</p>
+                                <p><strong>Total Area = Area Length × Area Width</strong></p>
+                                <p>If you entered dimensions in meters, the result will be displayed in square meters (m²). For different unit selections, the area is automatically converted to the correct format.</p>
+                            
+                                <h3>Total Tiles Needed</h3>
+                                <p>This value indicates the number of tiles required to cover the total area. It takes into account:</p>
+                                <ul>
+                                    <li class="mb-1">The size of each tile (length and width).</li>
+                                    <li class="mb-1">Gaps between tiles (if specified).</li>
+                                    <li class="mb-1">Additional tile wastage percentage to compensate for cuts and breakage.</li>
+                                </ul>
+                                <p>The formula used to determine the total tiles needed is:</p>
+                                <p><strong>Total Tiles = (Total Area ÷ Single Tile Area) × (1 + Wastage Percentage)</strong></p>
+                                <p>Adjusting the tile size or wastage percentage will impact the total number of tiles required.</p>
+                            
+                                <h3>Total Cost</h3>
+                                <p>If you entered the cost per tile, the calculator provides an estimate of the total cost for your project. This is calculated as:</p>
+                                <p><strong>Total Cost = Total Tiles × Cost Per Tile</strong></p>
+                                <p>By modifying the tile price or selecting a different tile size, you can optimize the overall cost of your tiling project.</p>
+                            
+                                <h3>Optimizing Your Tiling Project</h3>
+                                <p>To ensure an efficient and cost-effective tiling process, consider the following:</p>
+                                <ul>
+                                    <li class="mb-1">Choosing larger tiles to reduce the number of tiles needed.</li>
+                                    <li class="mb-1">Adjusting the wastage percentage based on project complexity.</li>
+                                    <li class="mb-1">Comparing different tile prices to stay within budget.</li>
+                                </ul>
+                            
+                                <p>Use the tile calculator to experiment with different values and find the best solution for your tiling needs.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="types-of-calculators">Types of Tile Calculators</h2>
+                                
+                                <p>Tile calculators come in various types to help users accurately determine the number of tiles needed for different projects. Choosing the right type of calculator depends on the specific requirements of your tiling job. Below are the most common types of tile calculators and their uses.</p>
+                            
+                                <h3>1. Standard Tile Calculator</h3>
+                                <p>This is the most commonly used tile calculator. It calculates the number of tiles required based on:</p>
+                                <ul>
+                                    <li class="mb-1">Area dimensions (length and width)</li>
+                                    <li class="mb-1">Tile size (length and width)</li>
+                                    <li class="mb-1">Optional tile wastage percentage</li>
+                                </ul>
+                                <p>It is ideal for general flooring, wall tiling, and simple tiling projects.</p>
+                            
+                                <h3>2. Tile Gap Calculator</h3>
+                                <p>This calculator accounts for the space between tiles, known as grout or gap width. It ensures that:</p>
+                                <ul>
+                                    <li class="mb-1">Tile gaps are evenly distributed</li>
+                                    <li class="mb-1">Additional tiles needed for spacing adjustments are included</li>
+                                </ul>
+                                <p>It is useful for professionals who require precise tile placement, especially for aesthetic tiling patterns.</p>
+                            
+                                <h3>3. Tile Cost Calculator</h3>
+                                <p>This calculator estimates the total cost of a tiling project based on:</p>
+                                <ul>
+                                    <li class="mb-1">Tile price per unit</li>
+                                    <li class="mb-1">Total tiles needed</li>
+                                    <li class="mb-1">Wastage percentage</li>
+                                </ul>
+                                <p>It helps users budget their project by comparing different tile options and costs.</p>
+                            
+                                <h3>4. Room Shape Tile Calculator</h3>
+                                <p>Designed for irregularly shaped areas, this calculator allows users to input multiple sections of a room to determine the total tile requirement. It supports:</p>
+                                <ul>
+                                    <li class="mb-1">Rectangular and L-shaped rooms</li>
+                                    <li class="mb-1">Custom area segmentation</li>
+                                </ul>
+                                <p>It is ideal for complex floor plans where a standard calculation would be inaccurate.</p>
+                            
+                                <h3>5. Herringbone & Pattern Tile Calculator</h3>
+                                <p>This calculator helps users plan intricate tile layouts, such as:</p>
+                                <ul>
+                                    <li class="mb-1">Herringbone patterns</li>
+                                    <li class="mb-1">Diagonal tile arrangements</li>
+                                    <li class="mb-1">Chevron or basketweave designs</li>
+                                </ul>
+                                <p>It accounts for pattern alignment and additional tile wastage due to cuts.</p>
+                            
+                                <h3>6. Outdoor & Paver Tile Calculator</h3>
+                                <p>Used for outdoor tiling projects like patios and driveways, this calculator considers:</p>
+                                <ul>
+                                    <li class="mb-1">Weather-resistant tiles</li>
+                                    <li class="mb-1">Thicker grout spacing for better durability</li>
+                                    <li class="mb-1">Weight-bearing requirements</li>
+                                </ul>
+                                <p>It ensures accurate tile estimation for exterior spaces.</p>
+                            
+                                <h3>Choosing the Right Tile Calculator</h3>
+                                <p>To select the best tile calculator for your project, consider:</p>
+                                <ul>
+                                    <li class="mb-1">The type of surface being tiled</li>
+                                    <li class="mb-1">The complexity of the tile layout</li>
+                                    <li class="mb-1">The need for precise cost estimation</li>
+                                </ul>
+                                <p>Using the appropriate calculator can save time, reduce material waste, and help with accurate budgeting.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="essential-features">Essential Features of a Tile Calculator</h2>
+                                
+                                <p>A well-designed tile calculator simplifies the process of estimating the number of tiles required for a tiling project. Based on the functionality of our tile calculator, the following essential features ensure accuracy, usability, and efficiency.</p>
+                            
+                                <h3>1. Total Area Calculation</h3>
+                                <p>Our tile calculator automatically determines the total area to be covered based on user-provided dimensions. This feature:</p>
+                                <ul>
+                                    <li class="mb-1">Supports various unit measurements (meters, feet, yards, etc.)</li>
+                                    <li class="mb-1">Calculates the total surface area accurately</li>
+                                    <li class="mb-1">Handles irregular room dimensions by allowing segmented calculations</li>
+                                </ul>
+                            
+                                <h3>2. Tile Quantity Estimation</h3>
+                                <p>The calculator computes the exact number of tiles required based on the tile size input. It considers:</p>
+                                <ul>
+                                    <li class="mb-1">Tile length and width</li>
+                                    <li class="mb-1">Room dimensions</li>
+                                    <li class="mb-1">Gaps between tiles, if applicable</li>
+                                </ul>
+                                <p>This ensures that users purchase the correct quantity of tiles, minimizing waste and additional costs.</p>
+                            
+                                <h3>3. Tile Wastage Factor</h3>
+                                <p>To account for tile cuts, breakage, and layout adjustments, the calculator includes a wastage percentage option. This feature:</p>
+                                <ul>
+                                    <li class="mb-1">Allows users to add extra tiles for unexpected losses</li>
+                                    <li class="mb-1">Provides recommendations based on industry-standard wastage rates</li>
+                                    <li class="mb-1">Ensures sufficient tiles for complex layouts and pattern designs</li>
+                                </ul>
+                            
+                                <h3>4. Cost Estimation</h3>
+                                <p>For budget planning, the calculator includes a cost estimation feature, which:</p>
+                                <ul>
+                                    <li class="mb-1">Calculates the total cost based on price per tile</li>
+                                    <li class="mb-1">Includes an option to adjust pricing for different tile qualities</li>
+                                    <li class="mb-1">Provides a quick budget overview before purchasing materials</li>
+                                </ul>
+                            
+                                <h3>5. Responsive & User-Friendly Interface</h3>
+                                <p>Our tile calculator is designed for ease of use across all devices, featuring:</p>
+                                <ul>
+                                    <li class="mb-1">A clear and intuitive layout for seamless navigation</li>
+                                    <li class="mb-1">Mobile-friendly design for on-the-go calculations</li>
+                                    <li class="mb-1">Instant updates to calculations when input values change</li>
+                                </ul>
+                            
+                                <h3>6. Multiple Tile Layout Support</h3>
+                                <p>For users working with different tile arrangements, the calculator accommodates:</p>
+                                <ul>
+                                    <li class="mb-1">Standard grid layouts</li>
+                                    <li class="mb-1">Diagonal and herringbone patterns</li>
+                                    <li class="mb-1">Custom spacing for unique tile designs</li>
+                                </ul>
+                            
+                                <h3>7. Unit Conversion</h3>
+                                <p>To enhance flexibility, the calculator allows users to switch between measurement units, such as:</p>
+                                <ul>
+                                    <li class="mb-1">Feet to meters</li>
+                                    <li class="mb-1">Inches to centimeters</li>
+                                    <li class="mb-1">Yards to square meters</li>
+                                </ul>
+                                <p>This ensures compatibility with different regional preferences and construction standards.</p>
+                            
+                                <h3>8. Instant Results Display</h3>
+                                <p>The calculator provides real-time updates, allowing users to:</p>
+                                <ul>
+                                    <li class="mb-1">See immediate changes when modifying inputs</li>
+                                    <li class="mb-1">Check total area, tile count, and cost without reloading the page</li>
+                                    <li class="mb-1">Make quick adjustments to find the most cost-effective tiling solution</li>
+                                </ul>
+                            
+                                <h3>Why These Features Matter</h3>
+                                <p>By incorporating these features, our tile calculator provides a reliable, efficient, and user-friendly solution for planning tiling projects. Whether for homeowners, contractors, or tile retailers, these essential tools help ensure precise estimates and cost-effective purchases.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="why-use">Why Should You Use a Tile Calculator?</h2>
+                            
+                                <p>Planning a tiling project can be complex, especially when trying to determine the right number of tiles, cost estimates, and material requirements. A tile calculator simplifies this process by providing accurate calculations, saving time, reducing waste, and helping with budget planning. Below are the key reasons why you should use a tile calculator.</p>
+                            
+                                <h3>1. Accurate Tile Quantity Estimation</h3>
+                                <p>One of the biggest challenges in tiling projects is ensuring you purchase the correct number of tiles. A tile calculator:</p>
+                                <ul>
+                                    <li class="mb-1">Calculates the exact number of tiles needed based on area dimensions.</li>
+                                    <li class="mb-1">Includes a wastage factor to account for cutting, breakage, and pattern adjustments.</li>
+                                    <li class="mb-1">Helps prevent over-ordering or under-ordering, ensuring a smooth installation process.</li>
+                                </ul>
+                            
+                                <h3>2. Saves Time and Effort</h3>
+                                <p>Manual calculations can be time-consuming and prone to errors. A tile calculator automates the process, allowing you to:</p>
+                                <ul>
+                                    <li class="mb-1">Instantly get results without complex math.</li>
+                                    <li class="mb-1">Make quick adjustments to different tile sizes, patterns, and layouts.</li>
+                                    <li class="mb-1">Streamline project planning, especially for larger spaces.</li>
+                                </ul>
+                            
+                                <h3>3. Helps in Budget Planning</h3>
+                                <p>Knowing the total cost of your tiling project in advance helps you stay within budget. A tile calculator:</p>
+                                <ul>
+                                    <li class="mb-1">Estimates total expenses based on tile price per unit.</li>
+                                    <li class="mb-1">Allows users to compare different tile options for cost-effective choices.</li>
+                                    <li class="mb-1">Prevents unexpected costs due to miscalculations or insufficient materials.</li>
+                                </ul>
+                            
+                                <h3>4. Reduces Material Waste</h3>
+                                <p>Over-purchasing tiles can lead to unnecessary expenses, while under-purchasing may cause delays. Using a tile calculator:</p>
+                                <ul>
+                                    <li class="mb-1">Ensures you buy just the right amount of tiles.</li>
+                                    <li class="mb-1">Includes an adjustable wastage percentage to accommodate different tile patterns and cutting requirements.</li>
+                                    <li class="mb-1">Minimizes leftover tiles, reducing waste and environmental impact.</li>
+                                </ul>
+                            
+                                <h3>5. Supports Various Tile Layouts</h3>
+                                <p>Different tiling patterns require different calculations. A tile calculator helps with:</p>
+                                <ul>
+                                    <li class="mb-1">Standard grid layouts.</li>
+                                    <li class="mb-1">Diagonal, herringbone, and custom patterns.</li>
+                                    <li class="mb-1">Proper alignment for symmetrical and seamless designs.</li>
+                                </ul>
+                            
+                                <h3>6. Provides Instant Unit Conversions</h3>
+                                <p>Users working with different measurement units can benefit from built-in conversion features, which:</p>
+                                <ul>
+                                    <li class="mb-1">Convert between square meters, square feet, and square yards.</li>
+                                    <li class="mb-1">Allow easy switching between metric and imperial units.</li>
+                                    <li class="mb-1">Ensure compatibility with regional construction standards.</li>
+                                </ul>
+                            
+                                <h3>7. Ideal for Homeowners, Contractors, and Retailers</h3>
+                                <p>Whether you are a homeowner planning a DIY project, a contractor managing multiple jobs, or a retailer helping customers, a tile calculator:</p>
+                                <ul>
+                                    <li class="mb-1">Offers quick and precise calculations for small and large-scale projects.</li>
+                                    <li class="mb-1">Improves efficiency in material estimation and ordering processes.</li>
+                                    <li class="mb-1">Enhances customer experience by providing reliable tile quantity and cost estimates.</li>
+                                </ul>
+                            
+                                <h3>Conclusion</h3>
+                                <p>A tile calculator is an essential tool for anyone involved in tiling projects. It ensures accuracy, saves time, optimizes costs, and reduces waste. By using a tile calculator, you can plan your project with confidence and achieve the best results with minimal effort.</p>
+                            </section>
+                            
+                
+                            <section class="mb-5">
+                                <h2 id="common-mistakes">Common Mistakes to Avoid When Using a Tile Calculator</h2>
+                            
+                                <p>A tile calculator is a powerful tool for estimating the number of tiles needed for a project, but incorrect inputs or assumptions can lead to costly mistakes. Understanding common errors will help you get the most accurate results and avoid unnecessary expenses or delays.</p>
+                            
+                                <h3>1. Not Adding a Wastage Percentage</h3>
+                                <p>One of the biggest mistakes is forgetting to account for tile wastage due to cutting, breakage, and future repairs. To prevent shortages:</p>
+                                <ul>
+                                    <li class="mb-1">Always add an extra 5-10% for standard layouts.</li>
+                                    <li class="mb-1">Increase wastage to 15% or more for diagonal or intricate patterns.</li>
+                                    <li class="mb-1">Consider extra tiles for replacements in case of future damage.</li>
+                                </ul>
+                            
+                                <h3>2. Entering Incorrect Room or Tile Dimensions</h3>
+                                <p>Accurate input values are crucial for correct calculations. Common errors include:</p>
+                                <ul>
+                                    <li class="mb-1">Measuring only part of the area instead of the full surface.</li>
+                                    <li class="mb-1">Using rounded-off numbers instead of exact dimensions.</li>
+                                    <li class="mb-1">Forgetting to convert between units (e.g., inches to meters).</li>
+                                </ul>
+                                <p>Always double-check your measurements before inputting them into the calculator.</p>
+                            
+                                <h3>3. Ignoring Tile Spacing (Grout Lines)</h3>
+                                <p>Grout lines affect the total tile count, especially for smaller tiles. Mistakes related to spacing include:</p>
+                                <ul>
+                                    <li class="mb-1">Not factoring in grout width, which can change the final layout.</li>
+                                    <li class="mb-1">Choosing tiles without considering whether they require tight or wide spacing.</li>
+                                    <li class="mb-1">Underestimating how grout affects the overall coverage area.</li>
+                                </ul>
+                            
+                                <h3>4. Overlooking Different Tile Shapes and Patterns</h3>
+                                <p>The layout style can impact tile quantity. Common issues include:</p>
+                                <ul>
+                                    <li class="mb-1">Assuming all tiles fit perfectly without accounting for odd cuts.</li>
+                                    <li class="mb-1">Not adjusting for staggered or diagonal patterns, which require more tiles.</li>
+                                    <li class="mb-1">Forgetting that complex layouts increase material wastage.</li>
+                                </ul>
+                                <p>Always choose a tile pattern before calculating, as some styles require extra tiles.</p>
+                            
+                                <h3>5. Miscalculating Total Cost</h3>
+                                <p>Tile calculators can estimate costs, but errors in pricing inputs can cause budget issues. Watch out for:</p>
+                                <ul>
+                                    <li class="mb-1">Entering the price per box instead of the price per tile.</li>
+                                    <li class="mb-1">Forgetting to include taxes, delivery charges, or installation costs.</li>
+                                    <li class="mb-1">Not checking if the price is for a single tile or a pack.</li>
+                                </ul>
+                            
+                                <h3>6. Not Considering Floor Irregularities</h3>
+                                <p>Rooms with irregular shapes, slopes, or obstacles require special adjustments. Mistakes include:</p>
+                                <ul>
+                                    <li class="mb-1">Assuming all walls are straight and even.</li>
+                                    <li class="mb-1">Not measuring around fixtures like pillars or built-in furniture.</li>
+                                    <li class="mb-1">Using a standard rectangular measurement for L-shaped or curved areas.</li>
+                                </ul>
+                                <p>For complex spaces, break the area into smaller sections and calculate separately.</p>
+                            
+                                <h3>7. Forgetting to Round Up</h3>
+                                <p>Tile calculations often result in decimal values. Avoid these pitfalls:</p>
+                                <ul>
+                                    <li class="mb-1">Ordering exactly the number of tiles calculated instead of rounding up.</li>
+                                    <li class="mb-1">Not considering that tile packaging may require you to buy in full boxes.</li>
+                                    <li class="mb-1">Ignoring potential future repairs that may need matching tiles.</li>
+                                </ul>
+                                <p>Always round up to the nearest whole number or full tile box to ensure you have enough.</p>
+                            
+                                <h3>Conclusion</h3>
+                                <p>A tile calculator is an essential tool for planning tiling projects, but small errors in inputs and assumptions can lead to costly mistakes. By double-checking your measurements, considering wastage, and factoring in layout complexities, you can ensure an accurate and efficient tile calculation process. Avoid these common mistakes to save time, reduce waste, and stay within budget.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="popular-tools">Popular Tile Calculator Tools</h2>
+                            
+                                <p>Tile calculators help homeowners, contractors, and DIY enthusiasts accurately estimate the number of tiles needed for a project. With many tools available online, choosing the right one can save time and reduce material waste. Here are some of the most popular tile calculator tools and their features.</p>
+                            
+                                <h3>1. Online Tile Calculators</h3>
+                                <p>Many websites offer free tile calculators with advanced features, including unit conversions, cost estimations, and waste calculations. Some well-known platforms include:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Home Depot Tile Calculator:</strong> Allows users to calculate tile quantity based on room dimensions and pattern types.</li>
+                                    <li class="mb-1"><strong>Lowes Tile Estimator:</strong> Provides an easy way to determine tile requirements while factoring in grout width and layout styles.</li>
+                                    <li class="mb-1"><strong>CustomTileCalculator.com:</strong> A specialized tile calculator that supports different tile shapes, grout spacing, and pricing options.</li>
+                                </ul>
+                            
+                                <h3>2. Mobile Tile Calculator Apps</h3>
+                                <p>For on-the-go convenience, mobile apps provide real-time tile calculations with interactive features. Some top-rated apps include:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Tile Calculator Pro (iOS & Android):</strong> Allows users to calculate tile quantity, cost, and layout patterns with an intuitive interface.</li>
+                                    <li class="mb-1"><strong>Smart Tile Calculator:</strong> Includes advanced features like multi-room calculations, tile pattern recommendations, and unit conversions.</li>
+                                    <li class="mb-1"><strong>RoomSketcher Tile Planner:</strong> Offers 3D visualization to help users design and estimate tile needs for different spaces.</li>
+                                </ul>
+                            
+                                <h3>3. Manufacturer-Specific Tile Calculators</h3>
+                                <p>Many tile manufacturers provide their own calculators to help customers estimate tile requirements based on their products. Examples include:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Daltile Tile Estimator:</strong> A user-friendly tool that considers tile size, pattern, and room shape.</li>
+                                    <li class="mb-1"><strong>Marazzi USA Tile Calculator:</strong> Provides precise tile quantity and cost estimates for various types of tile installations.</li>
+                                    <li class="mb-1"><strong>Mohawk Flooring Tile Estimator:</strong> Helps users calculate tile needs while recommending compatible grout and adhesives.</li>
+                                </ul>
+                            
+                                <h3>4. Advanced Construction Software</h3>
+                                <p>For professional contractors and architects, advanced construction software integrates tile calculations with project planning. Some leading options include:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>AutoCAD Architecture:</strong> Allows precise floor planning with tile layout simulations.</li>
+                                    <li class="mb-1"><strong>PlanSwift Estimating Software:</strong> A powerful tool for construction professionals that includes detailed tile calculations and material estimates.</li>
+                                    <li class="mb-1"><strong>SketchUp Tile Planner:</strong> Enables 3D design and tile placement for accurate visualization and measurement.</li>
+                                </ul>
+                            
+                                <h3>Choosing the Right Tile Calculator</h3>
+                                <p>When selecting a tile calculator, consider the following factors:</p>
+                                <ul>
+                                    <li class="mb-1">Does it support different tile shapes and patterns?</li>
+                                    <li class="mb-1">Does it include waste percentage calculations?</li>
+                                    <li class="mb-1">Does it offer cost estimation based on tile price?</li>
+                                    <li class="mb-1">Is it available on mobile devices for convenience?</li>
+                                </ul>
+                            
+                                <h3>Conclusion</h3>
+                                <p>Whether you're planning a small DIY tiling project or a large-scale renovation, using the right tile calculator can make a significant difference. From free online tools to advanced construction software, these calculators help ensure accuracy, save money, and minimize waste. Explore the available options and choose the one that best fits your project needs.</p>
+                            </section>
+                            
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="tileCalculatorFAQ">
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a tile calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        A tile calculator helps you determine the number of tiles needed to cover a given surface area based on tile dimensions, spacing, and wastage percentage.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How do I use the tile calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Enter the area dimensions, tile size, grout spacing, and an optional wastage percentage. The calculator will estimate the total number of tiles required.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>Should I add extra tiles for wastage?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, it's recommended to add 5-10% extra tiles to account for cutting, breakage, and future repairs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>Can this calculator be used for different tile shapes?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        This calculator is designed for square and rectangular tiles. For irregular shapes, you may need a custom calculation.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>Does tile spacing affect the tile count?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, grout spacing slightly affects the final tile count. The calculator considers this when estimating the total tiles needed.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>Can this calculator be used for walls and floors?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, you can use it for both wall and floor tiling projects by entering the correct dimensions.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>Does the calculator consider different unit measurements?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, you can input dimensions in meters, feet, inches, or centimeters, and the calculator will convert them accordingly.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        <strong>How do I calculate the cost of tiles?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Multiply the total number of tiles required by the price per tile. Some calculators include an option to estimate total costs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="faqNine">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                        <strong>Why is my actual tile count different from the calculator’s estimate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine"
+                                                    data-bs-parent="#tileCalculatorFAQ">
+                                                    <div class="accordion-body">
+                                                        Variations can occur due to tile cutting, layout patterns, or wastage. It's always good to buy extra tiles.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/tile-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bond Order Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item active" href="dog-age-calculator.html">Dog Age Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost
+                                    Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage
+                            Calculator</a>
+                        <a href="mortgage-recast-calculator.html"
+                            class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree
+                            Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk
+                            Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft
+                            Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action">Boat Loan
+                            Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan
+                            Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole
+                            Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action active">Dog Age
+                            Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age
+                            Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income
+                            Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing
+                            Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day
+                            Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie
+                            Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan
+                            Calculator</a>
+                        <a href="construction-cost-calculator.html"
+                            class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick
+                            Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand
+                            Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete
+                            Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile
+                            Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Bond Order Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="bond-order-calculator">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="bonding-electrons" class="form-label">Bonding electrons
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total bonding electrons">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="bonding-electrons" min="1" step="any" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="anti-bonding-electrons" class="form-label">Antibonding electrons
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total antibonding electrons">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="anti-bonding-electrons" min="1" step="any" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="nav-to-result"></span>
+                    <div class="container">
+                        <div class="row mt-4 mb-4 my-result-area">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table mt-3">
+                                        <tbody id="result">
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <article class="my-atricle">
+            <!-- atom calculator content  -->
+            <div class="container mb-4">
+                <h2 class="mb-3">Table of Contents</h2>
+                <div class="list-group">
+                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use Bond Order Calculator</a>
+                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Bond Order Calculation Results</a>
+                    <a href="#types-of-calculators" class="list-group-item list-group-item-action">3. Types of Bond Order Calculators</a>
+                    <a href="#manual-calculation" class="list-group-item list-group-item-action">4. Manual Calculation</a>
+                    <a href="#essential-features" class="list-group-item list-group-item-action">5. Essential Features of a Bond Order Calculator</a>
+                    <a href="#why-use-calculator" class="list-group-item list-group-item-action">6. Why Should You Use a Bond Order Calculator?</a>
+                    <a href="#common-mistakes" class="list-group-item list-group-item-action">7. Common Mistakes to Avoid</a>
+                    <a href="#popular-calculators" class="list-group-item list-group-item-action">8. Popular Bond Order Calculators</a>
+                    <a href="#faq" class="list-group-item list-group-item-action">9. FAQ</a>
+                </div>
+            </div>
+        
+        
+            <section class="mb-5">
+                <h2 id="how-to-use">How to Use the Bond Order Calculator</h2>
+                <p>Our <strong>Bond Order Calculator</strong> helps you determine the bond order between two atoms in a molecule by using the molecular orbital theory formula. Whether you're studying chemistry, preparing for exams, or working on a science project, this calculator offers a fast and accurate way to evaluate molecular stability.</p>
+            
+                <h3>Step 1: Enter Electron Details</h3>
+                <ul>
+                    <li class="mb-1"><strong>Bonding Electrons:</strong> Enter the total number of electrons present in bonding molecular orbitals.</li>
+                    <li class="mb-1"><strong>Antibonding Electrons:</strong> Enter the total number of electrons present in antibonding molecular orbitals.</li>
+                </ul>
+            
+                <h3>Step 2: Calculate Bond Order</h3>
+                <ul>
+                    <li class="mb-1">Click the <strong>“Calculate”</strong> button to instantly compute the bond order using the formula: (Bonding Electrons − Antibonding Electrons) / 2.</li>
+                    <li class="mb-1">A valid result will display the calculated bond order. If bonding electrons are not greater than antibonding electrons, an error message will appear.</li>
+                </ul>
+            
+                <h3>Step 3: Clear and Reset</h3>
+                <p>If you wish to start a new calculation, click the <strong>“Clear”</strong> button to reset all input fields and results.</p>
+            
+                <h3>Why Use This Bond Order Calculator?</h3>
+                <ul>
+                    <li class="mb-1">Instant bond order calculation for molecular orbital theory</li>
+                    <li class="mb-1">Helps determine molecular stability and bond strength</li>
+                    <li class="mb-1">User-friendly interface suitable for students and educators</li>
+                    <li class="mb-1">Supports mobile and desktop usage with responsive design</li>
+                </ul>
+            
+                <p>This tool is perfect for understanding chemical bonding concepts, visualizing molecular structures, and supporting classroom and research work with reliable data.</p>
+            </section>
+            
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="understanding-results">Understanding Your Bond Order Calculation Results</h2>
+                <p>When you enter the number of bonding and antibonding electrons into the Bond Order Calculator, it determines the bond order of a molecule using the principles of molecular orbital theory. This gives you a clear understanding of the strength, type, and stability of chemical bonds. Here's what the results mean:</p>
+            
+                <h3>1. Bonding Electrons</h3>
+                <p>Bonding electrons occupy molecular orbitals that stabilize the molecule. These electrons promote bond formation between atoms and increase the overall molecular stability.</p>
+            
+                <h3>2. Antibonding Electrons</h3>
+                <p>Antibonding electrons reside in orbitals that work against bonding. They reduce bond strength and can make molecules unstable if present in large numbers.</p>
+            
+                <h3>3. Bond Order</h3>
+                <p>The bond order is calculated using the formula:</p>
+                <p><strong>Bond Order = (Number of Bonding Electrons − Number of Antibonding Electrons) / 2</strong></p>
+                <p>This numerical value helps you understand the type and strength of the bond:</p>
+                <ul>
+                    <li class="mb-1"><strong>Bond Order = 0:</strong> No bond exists — the molecule is unstable.</li>
+                    <li class="mb-1"><strong>Bond Order = 1:</strong> A single bond exists — moderate stability.</li>
+                    <li class="mb-1"><strong>Bond Order = 2:</strong> A double bond — stronger and shorter than a single bond.</li>
+                    <li class="mb-1"><strong>Bond Order = 3:</strong> A triple bond — very strong and short.</li>
+                    <li class="mb-1"><strong>Fractional Bond Orders:</strong> Indicate resonance or partial bonding, often found in complex molecules.</li>
+                </ul>
+            
+                <h3>Why Are These Bond Order Results Useful?</h3>
+                <ul>
+                    <li class="mb-1"><strong>Molecular Stability Prediction:</strong> Know whether a molecule is likely to exist based on its bond order.</li>
+                    <li class="mb-1"><strong>Chemical Bond Analysis:</strong> Understand how electrons contribute to bonding and antibonding interactions.</li>
+                    <li class="mb-1"><strong>Educational Tool:</strong> Great for students learning molecular orbital theory and chemical bonding concepts.</li>
+                    <li class="mb-1"><strong>Practical Chemistry:</strong> Helps researchers and chemists assess reactivity and structure of molecules.</li>
+                </ul>
+            
+                <p>By interpreting the bond order, you gain insights into the molecular structure, bond strength, and reactivity of compounds — essential for chemistry education, lab analysis, and advanced research.</p>
+            </section>
+            
+            
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="types-of-calculators">Types of Bond Order Calculators: Find the Best Tool for Your Molecular Analysis</h2>
+                <p>Bond order calculators are essential tools in chemistry that help determine the strength, stability, and type of bonds between atoms in a molecule. Depending on your academic level or research focus, selecting the right bond order calculator can provide deeper insights into molecular structure and bonding patterns.</p>
+              
+                <h3>1. <strong>Basic Bond Order Calculator</strong></h3>
+                <p>This calculator uses the classic bond order formula: (Number of bonding electrons − Number of antibonding electrons) / 2. It’s ideal for simple molecules analyzed through Molecular Orbital Theory (MOT).</p>
+                <ul>
+                  <li class="mb-1"><strong>Best for:</strong> Students learning molecular bonding in general chemistry courses.</li>
+                  <li class="mb-1"><strong>Outputs:</strong> Bond order value, bonding vs. antibonding electrons, molecular stability.</li>
+                </ul>
+              
+                <h3>2. <strong>Lewis Structure-Based Bond Order Calculator</strong></h3>
+                <p>Determines bond order using Lewis dot structures by dividing the total number of bonds between atoms by the number of bonded pairs.</p>
+                <ul>
+                  <li class="mb-1"><strong>Best for:</strong> Understanding resonance structures and formal bonding.</li>
+                  <li class="mb-1"><strong>Outputs:</strong> Bond order from Lewis diagrams, resonance insights.</li>
+                </ul>
+              
+                <h3>3. <strong>Resonance Bond Order Calculator</strong></h3>
+                <p>Used to calculate the average bond order across resonance structures of a molecule. This is especially useful for compounds like benzene or carbonate.</p>
+                <ul>
+                  <li class="mb-1"><strong>Best for:</strong> Organic and inorganic compounds with resonance.</li>
+                  <li class="mb-1"><strong>Outputs:</strong> Average bond order across all resonance contributors.</li>
+                </ul>
+              
+                <h3>4. <strong>Molecular Orbital Diagram Tool</strong></h3>
+                <p>Provides visual molecular orbital diagrams for diatomic molecules and calculates bond order directly from orbital filling. Great for advanced studies.</p>
+                <ul>
+                  <li class="mb-1"><strong>Best for:</strong> Advanced chemistry students and molecular orbital theory practice.</li>
+                  <li class="mb-1"><strong>Outputs:</strong> Visual MO diagram, bond order, magnetic properties.</li>
+                </ul>
+              
+                <h3>5. <strong>Polyatomic Bond Order Calculator</strong></h3>
+                <p>This advanced calculator determines bond order for polyatomic molecules using a combination of valence bond theory and resonance data.</p>
+                <ul>
+                  <li class="mb-1"><strong>Best for:</strong> Complex molecules with delocalized electrons.</li>
+                  <li class="mb-1"><strong>Outputs:</strong> Individual and average bond orders in multi-atom systems.</li>
+                </ul>
+              
+                <h2>Which Bond Order Calculator Should You Use?</h2>
+                <p>If you're just starting out, a basic bond order calculator using electron count is perfect. For more advanced bonding questions—especially involving resonance or MO theory—tools like the resonance or molecular orbital diagram calculators provide more detailed analysis. Always match the tool to your chemistry level and the complexity of the molecule you’re studying.</p>
+            </section>
+              
+        
+        
+        
+        
+        
+            <section class="mb-5">
+                <h2 id="manual-calculation" class="mb-3">How to Calculate Bond Order Manually</h2>
+                <p>Bond order is a key concept in chemical bonding, indicating the number of chemical bonds between a pair of atoms. It helps determine bond strength, stability, and length. Calculating bond order manually is essential for understanding molecular structure and reactivity, especially in molecular orbital theory and Lewis structures.</p>
+            
+                <h4>1. What Is Bond Order?</h4>
+                <p>Bond order represents the number of chemical bonds between two atoms in a molecule. A bond order of 1 means a single bond, 2 indicates a double bond, and 3 a triple bond. Fractional bond orders can occur in molecules with resonance or delocalized electrons.</p>
+            
+                <h4>2. Formula for Bond Order (Molecular Orbital Theory)</h4>
+                <p>In molecular orbital theory, bond order is calculated using the following formula:</p>
+                <p><strong>Bond Order = (Number of Bonding Electrons − Number of Antibonding Electrons) / 2</strong></p>
+                <p>This approach is commonly used for diatomic molecules and molecular orbital diagrams.</p>
+            
+                <h4>3. Example: Bond Order of O<sub>2</sub> (Oxygen Molecule)</h4>
+                <ul>
+                    <li>Bonding electrons = 10</li>
+                    <li>Antibonding electrons = 6</li>
+                </ul>
+                <p><strong>Bond Order = (10 − 6) / 2 = 2</strong></p>
+                <p>This means O<sub>2</sub> has a double bond, indicating a stable molecule with a bond order of 2.</p>
+            
+                <h4>4. Using Lewis Structures to Estimate Bond Order</h4>
+                <p>In molecules where molecular orbital diagrams are complex, you can use Lewis structures to estimate bond order. Use this simplified method:</p>
+                <p><strong>Bond Order = Total Number of Bonds / Number of Bonded Atom Pairs</strong></p>
+            
+                <h4>5. Example: Bond Order in NO<sub>3</sub><sup>−</sup> (Nitrate Ion)</h4>
+                <ul>
+                    <li>Nitrate has 3 resonance structures with one N=O double bond and two N–O single bonds in each.</li>
+                    <li>Total number of bonds = 4</li>
+                    <li>Number of N–O bonds = 3</li>
+                </ul>
+                <p><strong>Bond Order = 4 / 3 ≈ 1.33</strong></p>
+                <p>This fractional bond order indicates resonance and partial double bond character in all three N–O bonds.</p>
+            
+                <h4>6. Importance of Bond Order</h4>
+                <ul>
+                    <li><strong>Higher bond order</strong> means stronger, shorter, and more stable bonds.</li>
+                    <li><strong>Lower bond order</strong> suggests weaker, longer, and less stable bonds.</li>
+                    <li><strong>Bond order of 0</strong> implies the molecule or ion does not exist in a stable form.</li>
+                </ul>
+            
+                <h4>7. Use a Bond Order Calculator for Complex Molecules</h4>
+                <p>While manual methods are great for simple molecules, complex polyatomic species often require digital tools. A bond order calculator uses molecular orbital data or resonance structures to give accurate bond orders instantly, saving time and reducing errors.</p>
+            </section>
+            
+            
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="essential-features">Essential Features of a Bond Order Calculator</h2>
+                <p>A bond order calculator is a powerful tool in molecular chemistry that helps students, educators, and researchers determine the bond strength and stability between atoms in a molecule. Below are the key features that make a bond order calculator accurate, efficient, and user-centric:</p>
+            
+                <h3>1. Accurate Bond Order Calculation</h3>
+                <p>The primary function of the calculator is to compute bond order using molecular orbital theory or simple formulas depending on the input type.</p>
+                <ul>
+                    <li class="mb-1"><strong>Inputs:</strong> Number of bonding and antibonding electrons, or molecular formula.</li>
+                    <li class="mb-1"><strong>Output:</strong> Numerical bond order value.</li>
+                    <li class="mb-1"><strong>Application:</strong> Suitable for chemistry students, teachers, and molecular scientists.</li>
+                </ul>
+            
+                <h3>2. Multiple Calculation Methods</h3>
+                <p>Supports both molecular orbital theory and Lewis structure approaches for flexibility.</p>
+                <ul>
+                    <li class="mb-1"><strong>Method 1:</strong> (Bonding Electrons - Antibonding Electrons) / 2</li>
+                    <li class="mb-1"><strong>Method 2:</strong> Based on number of bonds in resonance structures divided by bond positions.</li>
+                </ul>
+            
+                <h3>3. Molecule-Based Inputs</h3>
+                <p>Allows users to input simple diatomic molecules or polyatomic molecules to get bond order across specific atoms.</p>
+                <ul>
+                    <li class="mb-1"><strong>Example Inputs:</strong> O<sub>2</sub>, N<sub>2</sub>, CO, NO<sub>2</sub>, etc.</li>
+                    <li class="mb-1"><strong>Advanced:</strong> Selection of atom pairs within a larger molecule for localized bond order.</li>
+                </ul>
+            
+                <h3>4. Bond Strength & Stability Indicators</h3>
+                <p>Displays qualitative indicators such as "Stable", "Moderately Stable", or "Unstable" based on bond order value.</p>
+                <ul>
+                    <li class="mb-1"><strong>Bond Order 3:</strong> Strong triple bond, highly stable.</li>
+                    <li class="mb-1"><strong>Bond Order 1:</strong> Single bond, basic stability.</li>
+                    <li class="mb-1"><strong>Bond Order 0:</strong> Indicates no bond—molecule unlikely to exist.</li>
+                </ul>
+            
+                <h3>5. Visualization Support</h3>
+                <p>Optionally includes diagrams or orbital filling to help users visualize molecular orbitals and bonding.</p>
+                <ul>
+                    <li class="mb-1"><strong>Feature:</strong> Simple MO diagrams or Lewis structure overlays.</li>
+                    <li class="mb-1"><strong>Best For:</strong> Classroom learning and interactive chemistry tutorials.</li>
+                </ul>
+            
+                <h3>6. Mobile-Responsive Interface</h3>
+                <p>Optimized for phones, tablets, and desktops to ensure accessibility on any device.</p>
+                <ul>
+                    <li class="mb-1"><strong>Touch-Optimized:</strong> Drop-downs, sliders, and buttons suited for smaller screens.</li>
+                    <li class="mb-1"><strong>Responsive Layout:</strong> Adjusts input/output format based on device size.</li>
+                </ul>
+            
+                <h3>7. Instant Calculations</h3>
+                <p>Real-time calculation as users enter electron counts or select molecular structures.</p>
+                <ul>
+                    <li class="mb-1"><strong>Benefit:</strong> Immediate feedback enhances conceptual understanding.</li>
+                    <li class="mb-1"><strong>Use Case:</strong> Ideal for live demonstrations and quick problem-solving.</li>
+                </ul>
+            
+                <h3>8. Integrated Learning Support</h3>
+                <p>Some calculators include guides or links to tutorials explaining bond order, molecular orbitals, and bonding types.</p>
+                <ul>
+                    <li class="mb-1"><strong>Educational:</strong> Pop-up tips, glossary links, or video tutorials embedded.</li>
+                    <li class="mb-1"><strong>Helpful For:</strong> Self-learners, homeschoolers, and exam prep.</li>
+                </ul>
+            
+                <h3>9. Extended Chemistry Tools</h3>
+                <p>Bundled tools like hybridization checker, VSEPR shape calculator, and resonance structure analyzer.</p>
+                <ul>
+                    <li class="mb-1"><strong>Best For:</strong> Students and teachers who need more than just bond order results.</li>
+                </ul>
+            </section>
+            
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="why-use-calculator">Why Should You Use a Bond Order Calculator?</h2>
+                <p>If you're a student, educator, or researcher in chemistry or molecular science, a bond order calculator is an essential tool for quickly and accurately determining the stability and strength of chemical bonds. Below are the key reasons why using a bond order calculator enhances your understanding and efficiency in molecular analysis.</p>
+              
+                <h3>1. <strong>Accurate Bond Order Determination</strong></h3>
+                <p>Manually calculating bond order using molecular orbital theory or Lewis structures can be complex. A bond order calculator streamlines this process by delivering instant and precise results.</p>
+                <ul>
+                  <li class="mb-1"><strong>Reduces errors:</strong> Avoids missteps in bond calculations.</li>
+                  <li class="mb-1"><strong>Reliable outcomes:</strong> Ensures accuracy in electron pairing and bonding analysis.</li>
+                </ul>
+              
+                <h3>2. <strong>Improves Understanding of Molecular Stability</strong></h3>
+                <p>Bond order directly reflects the strength and stability of a chemical bond. The calculator helps users:</p>
+                <ul>
+                  <li class="mb-1"><strong>Assess stability:</strong> Higher bond order indicates greater bond strength.</li>
+                  <li class="mb-1"><strong>Interpret reactivity:</strong> Predict how molecules will behave in reactions.</li>
+                </ul>
+              
+                <h3>3. <strong>Supports Education and Learning</strong></h3>
+                <p>Perfect for students and educators, the calculator is a valuable learning aid when studying chemical bonding.</p>
+                <ul>
+                  <li class="mb-1"><strong>Visualize bonds:</strong> Understand single, double, and triple bonds with clarity.</li>
+                  <li class="mb-1"><strong>Practice MO theory:</strong> Reinforce concepts of bonding and antibonding orbitals.</li>
+                </ul>
+              
+                <h3>4. <strong>Time-Saving and User-Friendly</strong></h3>
+                <p>No need for pen-and-paper calculations or complex molecular diagrams. A bond order calculator provides:</p>
+                <ul>
+                  <li class="mb-1"><strong>Instant results:</strong> Quickly determine bond order with minimal input.</li>
+                  <li class="mb-1"><strong>Easy interface:</strong> Designed for all levels of users.</li>
+                </ul>
+              
+                <h3>5. <strong>Essential for Molecular Chemistry</strong></h3>
+                <p>For researchers and professionals, bond order is a key parameter in molecular modeling, reaction prediction, and compound analysis.</p>
+                <ul>
+                  <li class="mb-1"><strong>Predict bond lengths:</strong> Bond order correlates with bond length and strength.</li>
+                  <li class="mb-1"><strong>Guide synthesis:</strong> Identify the most stable bonding configurations.</li>
+                </ul>
+              
+                <h3>6. <strong>Enhances Scientific Accuracy</strong></h3>
+                <p>Precise bond order data leads to more consistent results and reduces reliance on theoretical estimates.</p>
+                <ul>
+                  <li class="mb-1"><strong>Standardized values:</strong> Supports reproducibility in research.</li>
+                  <li class="mb-1"><strong>Validated results:</strong> Based on molecular orbital calculations or electron count methods.</li>
+                </ul>
+              
+                <h3>7. <strong>Useful Across Multiple Fields</strong></h3>
+                <p>Bond order analysis is important in a wide range of disciplines:</p>
+                <ul>
+                  <li class="mb-1"><strong>Organic Chemistry:</strong> Understand conjugation and resonance structures.</li>
+                  <li class="mb-1"><strong>Inorganic Chemistry:</strong> Analyze bonding in coordination compounds.</li>
+                  <li class="mb-1"><strong>Biochemistry:</strong> Explore bonding patterns in biomolecules.</li>
+                </ul>
+              
+                <h3>8. <strong>Ideal for Beginners and Experts Alike</strong></h3>
+                <p>Whether you're just learning about molecular bonding or performing advanced research, a bond order calculator offers the flexibility and accuracy you need to succeed.</p>
+            </section>
+              
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="common-mistakes">Common Mistakes to Avoid When Using a Bond Order Calculator</h2>
+                <p>A bond order calculator is a helpful tool for predicting molecular stability and the number of chemical bonds between atoms. However, incorrect inputs or misunderstandings can lead to misleading or invalid results. Below are the most common mistakes to watch out for when using a bond order calculator.</p>
+            
+                <h3>1. <strong>Confusing Bond Order with Bond Type</strong></h3>
+                <p>Bond order is not the same as single, double, or triple bonds. It often involves fractional values, especially in resonance structures.</p>
+                <p><strong>Solution:</strong> Understand that bond order reflects the average number of bonds per atom pair, not just the type of bond.</p>
+            
+                <h3>2. <strong>Incorrectly Entering Molecular Orbitals</strong></h3>
+                <p>One of the most common errors is miscounting electrons in bonding and antibonding orbitals, which directly affects the bond order.</p>
+                <p><strong>Solution:</strong> Accurately assign electrons to molecular orbitals, especially for molecules with more than 10 electrons.</p>
+            
+                <h3>3. <strong>Using Atomic Orbitals Instead of Molecular Orbitals</strong></h3>
+                <p>Some users mistakenly use atomic orbital configurations instead of molecular orbital theory.</p>
+                <p><strong>Solution:</strong> Always use the molecular orbital diagram relevant to the molecule’s electron count and symmetry.</p>
+            
+                <h3>4. <strong>Forgetting to Consider Electron Configuration for Ions</strong></h3>
+                <p>Bond order changes when electrons are gained or lost, as in ions like O₂⁻ or N₂⁺.</p>
+                <p><strong>Solution:</strong> Adjust the total electron count when working with charged species to ensure accurate results.</p>
+            
+                <h3>5. <strong>Misinterpreting Resonance Structures</strong></h3>
+                <p>Many molecules, like benzene, have resonance structures, resulting in fractional bond orders.</p>
+                <p><strong>Solution:</strong> Calculate the average bond order across all valid resonance structures for such molecules.</p>
+            
+                <h3>6. <strong>Ignoring Molecular Geometry and Orbital Overlap</strong></h3>
+                <p>Bond order does not exist in isolation—it’s affected by orbital hybridization and geometry.</p>
+                <p><strong>Solution:</strong> Use bond order in conjunction with VSEPR or hybridization theory when predicting molecular shape and reactivity.</p>
+            
+                <h3>7. <strong>Applying Diatomic Rules to Polyatomic Molecules</strong></h3>
+                <p>Bond order calculations that work for diatomic molecules may not apply directly to complex molecules.</p>
+                <p><strong>Solution:</strong> For polyatomic compounds, calculate bond orders between specific atom pairs or use advanced methods like MO theory with symmetry labels.</p>
+            
+                <h3>8. <strong>Incorrectly Counting Total Electrons</strong></h3>
+                <p>Bond order relies on knowing the exact number of valence electrons in the molecule.</p>
+                <p><strong>Solution:</strong> Count all valence electrons carefully, considering charges and lone pairs, before entering values into the calculator.</p>
+            
+                <h3>9. <strong>Overlooking Calculator-Specific Input Guidelines</strong></h3>
+                <p>Each bond order calculator may have unique input methods, such as selecting from predefined molecules or entering orbital configurations manually.</p>
+                <p><strong>Solution:</strong> Read and follow the input instructions of the calculator to avoid formatting or logic errors.</p>
+            </section>
+            
+            
+        
+        
+            <section class="mb-5">
+                <h2 id="popular-calculators">Popular Bond Order Calculators for Understanding Molecular Stability</h2>
+                <p>Bond order calculators are essential tools in chemical bonding analysis, helping users determine the stability, bond strength, and electronic structure of molecules. These calculators are particularly useful for students, researchers, and professionals working in molecular chemistry and quantum mechanics. Below are some of the most popular bond order calculators used today.</p>
+            
+                <h3>1. <strong>Basic Bond Order Calculator</strong></h3>
+                <p>This calculator determines the bond order by applying the formula: <code>(number of bonding electrons − number of antibonding electrons) ÷ 2</code>.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Simple input fields for bonding and antibonding electrons.</li>
+                    <li class="mb-1">Instant calculation of bond order value.</li>
+                    <li class="mb-1">Helps assess bond stability in diatomic molecules.</li>
+                </ul>
+            
+                <h3>2. <strong>Molecular Orbital Bond Order Calculator</strong></h3>
+                <p>Ideal for more advanced users, this calculator applies molecular orbital theory to determine bond order across various molecular species.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Supports molecules like O<sub>2</sub>, N<sub>2</sub>, F<sub>2</sub>, and their ions.</li>
+                    <li class="mb-1">Includes MO diagrams and electron configuration inputs.</li>
+                    <li class="mb-1">Predicts magnetic properties along with bond order.</li>
+                </ul>
+            
+                <h3>3. <strong>Resonance Structure Bond Order Calculator</strong></h3>
+                <p>This tool calculates bond order for molecules with resonance structures by averaging bonds across equivalent positions.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Calculates bond order using total bonds divided by bond locations.</li>
+                    <li class="mb-1">Useful for compounds like benzene and carbonate ions.</li>
+                    <li class="mb-1">Helps visualize delocalized electrons.</li>
+                </ul>
+            
+                <h3>4. <strong>Lewis Structure-Based Bond Order Calculator</strong></h3>
+                <p>This calculator allows you to draw or describe Lewis structures to derive bond order between specific atom pairs.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Interactive input of bond counts in Lewis structures.</li>
+                    <li class="mb-1">Identifies single, double, and triple bonds.</li>
+                    <li class="mb-1">Best for visual learners and organic chemistry problems.</li>
+                </ul>
+            
+                <h3>5. <strong>Polyatomic Molecule Bond Order Calculator</strong></h3>
+                <p>This advanced tool determines average bond order in complex molecules with multiple atoms and bonding variations.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li class="mb-1">Handles polyatomic ions and molecules with branching structures.</li>
+                    <li class="mb-1">Accepts molecular input or predefined templates.</li>
+                    <li class="mb-1">Ideal for inorganic chemistry and coordination compounds.</li>
+                </ul>
+            </section>
+            
+        
+        
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <h2 id="faq" class="mb-3">Bond Order Calculator - FAQ</h2>
+                        <div class="accordion" id="bondOrderCalculatorFAQ">
+            
+                            <div class="accordion-item" id="faq-definition">
+                                <h3 class="accordion-header" id="faqOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>What does the bond order represent?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Bond order indicates the number of chemical bonds between a pair of atoms in a molecule. A higher bond order means a stronger, more stable bond.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="faq-how-to-use">
+                                <h3 class="accordion-header" id="faqTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <strong>How do I use this calculator?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Simply enter the number of bonding and antibonding electrons. The calculator instantly uses the formula: <code>(Bonding - Antibonding) / 2</code> to give you the bond order.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="faq-input-required">
+                                <h3 class="accordion-header" id="faqThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <strong>What values should I input?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        You need to enter the number of electrons occupying bonding and antibonding molecular orbitals. These values are usually derived from molecular orbital diagrams.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="faq-accuracy">
+                                <h3 class="accordion-header" id="faqFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <strong>Is the calculation accurate?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Yes, the calculator applies the standard bond order formula precisely. The accuracy depends on the correct input of bonding and antibonding electrons.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="faq-fractional">
+                                <h3 class="accordion-header" id="faqFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <strong>Can bond order be a decimal value?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Yes. Molecules like benzene or O<sub>2</sub> can have fractional bond orders due to resonance and delocalized electrons (e.g., 1.5).
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="faq-importance">
+                                <h3 class="accordion-header" id="faqSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <strong>Why is bond order important?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Bond order helps predict molecular properties like stability, bond strength, and reactivity. A bond order of zero suggests the molecule cannot exist under normal conditions.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="faq-example">
+                                <h3 class="accordion-header" id="faqSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        <strong>Can you give an example?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        Sure! For O<sub>2</sub>, the molecular orbital theory shows 10 bonding electrons and 6 antibonding electrons. Bond Order = (10 − 6)/2 = 2.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item" id="faq-compare-strength">
+                                <h3 class="accordion-header" id="faqEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        <strong>How does bond order affect bond strength and length?</strong>
+                                    </button>
+                                </h3>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight" data-bs-parent="#bondOrderCalculatorFAQ">
+                                    <div class="accordion-body">
+                                        A higher bond order generally means a stronger and shorter bond. For example, triple bonds (bond order 3) are stronger and shorter than double bonds (bond order 2).
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+        </article>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About
+                                    Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our
+                                    Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy
+                                    Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt
+                        facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi
+                        aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i
+                                class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank"
+                                class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#"
+                                target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span
+                            id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/bond-order-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+</body>
+
+</html>

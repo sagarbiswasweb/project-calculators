@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Loan Calculator</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- bootstrap 5.3.x css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font-awesome 6.5.2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font robo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR START =====================  -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top my-navbar-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>CALCULATORS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Calculators
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                            <li><a class="dropdown-item" href="mortgage-recast-calculator.html">Mortgage Recast Calculator</a></li>
+                            <li><a class="dropdown-item" href="tree-removal-cost-calculator.html">Tree Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="barndominium-cost-calculator.html">Barndominium Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="invisalign-cost-calculator.html">Invisalign Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="junk-removal-cost-calculator.html">Junk Removal Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="aircraft-loan-calculator.html">Aircraft Loan Calculator</a></li>
+                            <li><a class="dropdown-item active" href="boat-loan-calculator.html">Boat Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="bridge-loan-calculator.html">Bridge Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="mole-fraction-calculator.html">Mole Fraction Calculator</a></li>
+                            <li><a class="dropdown-item" href="dog-age-calculator.html">Dog Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="cat-age-calculator.html">Cat Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="gm-income-calculator.html">GM Income Calculator</a></li>
+                            <li><a class="dropdown-item" href="towing-estimate-calculator.html">Towing Estimate Calculator</a></li>
+                            <li><a class="dropdown-item" href="lap-day-calculator.html">Lap Day Calculator</a></li>
+                            <li><a class="dropdown-item" href="age-calculator.html">Age Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmi-calculator.html">BMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="bmr-calculator.html">BMR Calculator</a></li>
+                            <li><a class="dropdown-item" href="calorie-calculator.html">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="loan-calculator.html">Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="construction-cost-calculator.html">Construction Cost Calculator</a></li>
+                            <li><a class="dropdown-item" href="brick-calculator.html">Brick Calculator</a></li>
+                            <li><a class="dropdown-item" href="sand-calculator.html">Sand Calculator</a></li>
+                            <li><a class="dropdown-item" href="concrete-calculator.html">Concrete Calculator</a></li>
+                            <li><a class="dropdown-item" href="tile-calculator.html">Tile Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Calculator" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR ENDS =====================  -->
+
+    <!-- ========================= MAIN AREA START =======================  -->
+    <main>
+        <div class="container my-mt-80 my-main-bg-color">
+            <div class="row">
+                <!-- sidebar start -->
+                <div class="col-md-3 mt-3 mb-3 order-md-1 order-2">
+                    <div class="list-group">
+                        <!-- this heading will only appear in mobile view  -->
+                        <h2 class="d-md-none text-center">Other Calculators</h2>
+                        <a href="index.html" class="list-group-item list-group-item-action">Basic Calculator</a>
+                        <a href="mortgage-calculator.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+                        <a href="mortgage-recast-calculator.html" class="list-group-item list-group-item-action">Mortgage Recast Calculator</a>
+                        <a href="tree-removal-cost-calculator.html" class="list-group-item list-group-item-action">Tree Removal Cost Calculator</a>
+                        <a href="barndominium-cost-calculator.html" class="list-group-item list-group-item-action">Barndominium Cost Calculator</a>
+                        <a href="invisalign-cost-calculator.html" class="list-group-item list-group-item-action">Invisalign Cost Calculator</a>
+                        <a href="junk-removal-cost-calculator.html" class="list-group-item list-group-item-action">Junk Removal Cost Calculator</a>
+                        <a href="aircraft-loan-calculator.html" class="list-group-item list-group-item-action">Aircraft Loan Calculator</a>
+                        <a href="boat-loan-calculator.html" class="list-group-item list-group-item-action active">Boat Loan Calculator</a>
+                        <a href="bridge-loan-calculator.html" class="list-group-item list-group-item-action">Bridge Loan Calculator</a>
+                        <a href="mole-fraction-calculator.html" class="list-group-item list-group-item-action">Mole Fraction Calculator</a>
+                        <a href="dog-age-calculator.html" class="list-group-item list-group-item-action">Dog Age Calculator</a>
+                        <a href="cat-age-calculator.html" class="list-group-item list-group-item-action">Cat Age Calculator</a>
+                        <a href="gm-income-calculator.html" class="list-group-item list-group-item-action">GM Income Calculator</a>
+                        <a href="towing-estimate-calculator.html" class="list-group-item list-group-item-action">Towing Estimate Calculator</a>
+                        <a href="lap-day-calculator.html" class="list-group-item list-group-item-action">Lap Day Calculator</a>
+                        <a href="age-calculator.html" class="list-group-item list-group-item-action">Age Calculator</a>
+                        <a href="bmi-calculator.html" class="list-group-item list-group-item-action">BMI Calculator</a>
+                        <a href="bmr-calculator.html" class="list-group-item list-group-item-action">BMR Calculator</a>
+                        <a href="calorie-calculator.html" class="list-group-item list-group-item-action">Calorie Calculator</a>
+                        <a href="loan-calculator.html" class="list-group-item list-group-item-action">Loan Calculator</a>
+                        <a href="construction-cost-calculator.html" class="list-group-item list-group-item-action">Construction Cost Calculator</a>
+                        <a href="brick-calculator.html" class="list-group-item list-group-item-action">Brick Calculator</a>
+                        <a href="sand-calculator.html" class="list-group-item list-group-item-action">Sand Calculator</a>
+                        <a href="concrete-calculator.html" class="list-group-item list-group-item-action">Concrete Calculator</a>
+                        <a href="tile-calculator.html" class="list-group-item list-group-item-action">Tile Calculator</a>
+                    </div>
+                </div>
+                <!-- sidebar ends  -->
+
+                <!-- calculator start  -->
+                <div class="col-md-9 order-md-2 order-1">
+                    <div class="container my-calculator-bg">
+                        <div class="row justify-content-center  mt-3 mb-3">
+                            <h2 class="mt-3 mb-3 text-center">Boat Loan Calculator</h2>
+                            <div class="col-md-10 mb-3">
+                                <form id="boatLoan">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="boatBudget" class="form-label">Boat Budget
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the total purchase price of the boat. This is the amount before taxes, fees, or any additional costs">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="boatBudget" required>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="downPayment" class="form-label">Down Payment
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the initial amount you will pay upfront for the boat. It can be amount or percentage of the purchase price, select it from right side. A higher down payment can reduce your loan amount and monthly payments.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control my-input-area" id="downPayment" required>
+                                                </div>
+                                                <div class="col-3 ps-1">
+                                                    <select class="my-input-area form-select" id="downPayment-unit">
+                                                        <option value="percentage">%</option>
+                                                        <option value="dollar">$</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanAmount" class="form-label">Loan Amount
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="The loan amount is automatically calculated as the budget price minus the down payment. This is the amount you will finance through the loan.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="loanAmount" required readonly>
+                                                <span class="input-group-text my-input-group">$</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="interestRate" class="form-label">Interest Rate
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the annual interest rate for your loan. This rate affects your monthly payments and the total cost of financing">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control my-input-area" id="interestRate" required>
+                                                <span class="input-group-text my-input-group">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="loanDuration" class="form-label">Loan Duration
+                                                <span>
+                                                    <button type="button" class="tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter the loan term in years. This is the duration over which you will repay the loan. A longer term may lower monthly payments but increase total interest costs.">?</button>
+                                                </span>
+                                            </label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control my-input-area" id="loanDuration" required>
+                                                <span class="input-group-text my-input-group">years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-calculate-button-area">
+                                        <button type="submit" id="submit" class="btn btn-primary col-6 me-2 my-calculate-button">Calculate</button>
+                                        <button type="button" id="clear" onclick="clearInputs()" class="btn btn-danger col-6 ms-2 my-clear-button">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4 my-result-area">
+                            <div class="row m-0">
+                                <div class="col-md-12 mt-3 text-center">
+                                    <p id="monthlyPayment" style="background-color: rgb(181, 243, 174);"></p>
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody id="result">
+                                                <!-- result will be shown here  -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <canvas id="donutChart">
+                                        <!-- boat loan donut chart  -->
+                                    </canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-4 my-amortization-area">
+                            <div class="col-md-12 mt-3 mb-3">
+                                <canvas id="multiLineChart">
+                                    <!-- boat loan multi line chart  -->
+                                </canvas>
+                            </div>
+                            <div class="col-md-12">
+                                <h2 class="mt-3 mb-3 text-center" id="schedule"></h2>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped amortization">
+                                        <thead class="mortgage-thead">
+                                            <tr>
+                                                <th id="payment-no"></th>
+                                                <th id="princpal"></th>
+                                                <th id="interest"></th>
+                                                <th id="interest-paid"></th>
+                                                <th id="ending-balance"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="amortizationTableBody">
+                                            <!-- here monthly amortization table goes dynamically  -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator ends  -->
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 my-calculator-content">
+                    <article class="my-article">
+                        <div class="container-fluid">
+                            <section class="mb-5">
+                                <h1 class="text-center">Boat Loan Calculator</h1>
+                            </section>
+                
+                            <div class="container mb-4">
+                                <h2 class="mb-3">Table of Contents</h2>
+                                <div class="list-group">
+                                    <a href="#how-to-use" class="list-group-item list-group-item-action">1. How to Use the Boat Loan Calculator</a>
+                                    <a href="#understanding-results" class="list-group-item list-group-item-action">2. Understanding Your Boat Loan Results</a>
+                                    <a href="#what-is-boat-loan" class="list-group-item list-group-item-action">3. What is a Boat Loan?</a>
+                                    <a href="#why-essential" class="list-group-item list-group-item-action">4. Why a Boat Loan Calculator is Essential</a>
+                                    <a href="#factors-affecting-cost" class="list-group-item list-group-item-action">5. Key Factors That Affect the Cost of a Boat Loan</a>
+                                    <a href="#how-to-reduce-costs" class="list-group-item list-group-item-action">6. How to Reduce Boat Loan Costs</a>
+                                    <a href="#how-to-finance" class="list-group-item list-group-item-action">7. How to Finance Your Boat Purchase</a>
+                                    <a href="#understanding-terms" class="list-group-item list-group-item-action">8. Understanding Boat Loan Terms</a>
+                                    <a href="#budgeting-costs" class="list-group-item list-group-item-action">9. Budgeting for Boat Ownership Costs</a>
+                                    <a href="#consult-expert" class="list-group-item list-group-item-action">10. Consult a Financial Expert</a>
+                                    <a href="#faq" class="list-group-item list-group-item-action">11. FAQ</a>
+                                </div>
+                            </div>
+                            
+                    
+                            <section class="mb-5">
+                                <h2 id="how-to-use">How to Use the Boat Loan Calculator</h2>
+                                <p>Our easy-to-use <strong>Boat Loan Calculator</strong> helps you estimate your monthly payments and total loan costs in just five simple steps.</p>
+                                
+                                <div class="ms-4">
+                                    <div>
+                                        <h3>1. Enter the Purchase Price</h3>
+                                        <p>Input the total cost of the boat before applying your down payment. This includes the base price and any additional costs.</p>
+                                    </div>
+                                    <div>
+                                        <h3>2. Set Your Down Payment</h3>
+                                        <p>Select how you want to enter your <strong>down payment</strong>—either as a percentage (%) of the purchase price or as a fixed dollar ($) amount.</p>
+                                    </div>
+                                    <div>
+                                        <h3>3. Loan Amount Calculation</h3>
+                                        <p>This field automatically calculates your <strong>loan amount</strong> by subtracting the down payment from the purchase price—no manual entry required.</p>
+                                    </div>
+                                    <div>
+                                        <h3>4. Specify Interest Rate</h3>
+                                        <p>Enter the <strong>annual interest rate</strong> for your loan. If unsure, use an estimated rate based on your <strong>credit score and market conditions</strong>.</p>
+                                    </div>
+                                    <div>
+                                        <h3>5. Choose Loan Term</h3>
+                                        <p>Select the loan term in years. A longer term may reduce monthly payments but could increase the overall interest paid.</p>
+                                    </div>
+                                    <div>
+                                        <h3>6. Calculate Your Loan</h3>
+                                        <p>Click the <strong>Calculate</strong> button to generate a detailed estimate of your monthly payments, total interest paid, and overall loan costs.</p>
+                                    </div>
+                                </div>
+                            
+                                <p>By following these steps, you can easily compare different loan options and choose the best financing plan for your boat purchase.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-results">Understanding Your Boat Loan Results</h2>
+                                
+                                <div class="ms-4 mb-4">
+                                    <h4 class="mb-3">Once you use our <strong>Boat Loan Calculator</strong> to estimate your <strong>monthly payments, total loan cost, and interest paid</strong>, it's crucial to interpret these results for better financial planning. Below is a breakdown of key loan terms:</h4>
+                                    <ul>
+                                        <li class="mb-1"><strong>Monthly Payment:</strong> The fixed amount you’ll pay each month, covering both the <strong>principal loan balance and interest</strong>.</li>
+                                        <li class="mb-1"><strong>Total Loan Duration:</strong> The total number of months required to repay your <strong>boat loan</strong>.</li>
+                                        <li class="mb-1"><strong>Total Loan Cost:</strong> The sum of the <strong>loan amount plus total interest</strong> over the repayment period.</li>
+                                        <li class="mb-1"><strong>Total Interest Paid:</strong> The cumulative interest you’ll pay over the loan term. Lower interest rates and shorter loan terms help minimize this cost.</li>
+                                        <li class="mb-1"><strong>Amortization Schedule:</strong> A detailed breakdown of each payment, showing how much goes toward the <strong>principal vs. interest</strong>, helping you track your loan balance over time.</li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="ms-4 mb-4">
+                                    <h3>Visualizing Your Loan with Charts</h3>
+                            
+                                    <!-- Donut Chart Explanation -->
+                                    <div class="mb-4 ms-3">
+                                        <h4>Donut Chart: Loan Breakdown</h4>
+                                        <p>The <strong>donut chart</strong> provides a visual summary of your loan’s key components, making it easier to understand the total cost.</p>
+                            
+                                        <h4>What It Represents:</h4>
+                                        <ul>
+                                            <li class="mb-1"><strong>Blue (Loan Amount):</strong> The borrowed amount.</li>
+                                            <li class="mb-1"><strong>Pink (Total Interest Paid):</strong> The total interest accrued over the loan term.</li>
+                                            <li class="mb-1"><strong>Yellow (Down Payment):</strong> The upfront payment made at purchase.</li>
+                                        </ul>
+                            
+                                        <h4>Why It Matters:</h4>
+                                        <p>This chart helps you visually compare the <strong>loan amount, interest, and down payment</strong>, allowing for better financial decision-making.</p>
+                                    </div>
+                            
+                                    <!-- Multi-Line Chart Explanation -->
+                                    <div class="mb-4 ms-3">
+                                        <h4>Multi-Line Chart: Loan Progression Over Time</h4>
+                                        <p>The <strong>multi-line chart</strong> illustrates how your loan balance, interest, and monthly payments change over time.</p>
+                            
+                                        <h4>Key Indicators:</h4>
+                                        <ol>
+                                            <li class="mb-2"><strong>Blue Line (Loan Balance):</strong>
+                                                <ul>
+                                                    <li class="mb-1">Shows the remaining loan balance as it decreases monthly.</li>
+                                                    <li class="mb-1">Steady downward slope indicates debt reduction over time.</li>
+                                                </ul>
+                                            </li>
+                            
+                                            <li class="mb-2"><strong>Green Line (Interest Paid):</strong>
+                                                <ul>
+                                                    <li class="mb-1">Displays how much of each payment is allocated toward interest.</li>
+                                                    <li class="mb-1">Decreases over time as more of your payment goes toward principal.</li>
+                                                </ul>
+                                            </li>
+                            
+                                            <li class="mb-2"><strong>Pink Line (Total Monthly Payment):</strong>
+                                                <ul>
+                                                    <li class="mb-1">Represents the consistent monthly payment amount in a fixed-rate loan.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                            
+                                        <h4>Why It Matters:</h4>
+                                        <ul>
+                                            <li class="mb-1">Visualizes how your loan balance decreases over time.</li>
+                                            <li class="mb-1">Shows how <strong>interest payments decline</strong> as more goes toward the principal.</li>
+                                            <li class="mb-1">Helps in planning finances based on a predictable payment schedule.</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <p>By analyzing these charts, you can make informed decisions about your <strong>boat financing</strong>, adjust your loan terms, and optimize your repayment strategy.</p>
+                                </div>
+                            </section>
+                            
+                    
+                            <section class="mb-5">
+                                <p>What boating enthusiast does not get excited about the idea of cruising across open water — wind in your hair and sun on your face. However, before you get caught into that adventure there are some steps to addressing one of the most important parts — how will I pay for this dream boat! Enter our Boat Loan Calculator. The purpose of this Boating Finance Calculator Tool is to provide you with a better understanding regarding the financial aspects involved in buying a boat, thereby easing out your journey. No matter if you are a long time seaman, or only just starting to make your purchase these guides will provide the insight.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="what-is-boat-loan">What is a Boat Loan?</h2>
+                                <p>A <strong>boat loan</strong> is a specialized financing option designed to help buyers purchase a boat by spreading the cost over time. Similar to auto loans, boat loans allow borrowers to make manageable monthly payments rather than paying the full price upfront. Lenders offer various loan terms, <strong>interest rates</strong>, and <strong>repayment options</strong> based on financial eligibility.</p>
+                                <p>Most <strong>boat financing options</strong> are secured loans, meaning the boat itself serves as <strong>collateral</strong>. This reduces lender risk and can lead to <strong>lower interest rates</strong> compared to unsecured loans. However, borrowers should carefully review loan terms and ensure timely repayments to avoid the risk of repossession.</p>
+                                <p>Understanding how <strong>boat loans</strong> work is essential for making informed financial decisions. By comparing <strong>loan rates, terms, and repayment options</strong>, you can choose the best financing solution that fits your budget—getting you on the water faster and stress-free.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="why-essential">Why a Boat Loan Calculator is Essential for Smart Financing</h2>
+                                <p>Securing a <strong>boat loan</strong> can involve many uncertainties, from interest rates to monthly payments. A <strong>Boat Loan Calculator</strong> simplifies the process by providing instant, accurate estimates, helping you plan your financing with confidence. This tool allows you to calculate your <strong>monthly payment, total interest paid, and loan term</strong>—giving you a clear financial outlook.</p>
+                                <h3>Key Benefits of Using a Boat Loan Calculator</h3>
+                                <ul>
+                                    <li class="mb-1"><strong>Transparency & Clarity:</strong> Converts complex financial details into easy-to-understand figures, helping you make informed decisions.</li>
+                                    <li class="mb-1"><strong>Budget Planning:</strong> Helps you anticipate all expenses, reducing financial surprises along the way.</li>
+                                    <li class="mb-1"><strong>Loan Comparison:</strong> Allows you to test different <strong>loan terms</strong> and <strong>interest rates</strong> to find the best financing option for your budget.</li>
+                                </ul>
+                                <p>For anyone considering boat ownership, a <strong>Boat Loan Calculator</strong> is a must-have tool to streamline the decision-making process and ensure a financially sound purchase.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="factors-affecting-cost">Key Factors That Affect the Cost of a Boat Loan</h2>
+                                <p>When financing a boat, several factors influence the total cost of your loan. Understanding these elements can help you make informed financial decisions and secure the best possible terms.</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Interest Rates:</strong> Your <strong>boat loan interest rate</strong> plays a major role in determining your overall loan cost. Interest rates vary based on your <strong>credit score, loan term, and market conditions</strong>. A lower rate means lower monthly payments and less interest paid over time.</li>
+                                    <li class="mb-1"><strong>Loan Term:</strong> The <strong>length of your loan</strong> affects both your monthly payment and total interest costs. Longer loan terms reduce monthly payments but result in higher interest costs over time. Shorter terms mean higher monthly payments but less interest paid overall. Choosing the right balance is key to staying within your budget.</li>
+                                    <li class="mb-1"><strong>Down Payment:</strong> A higher down payment reduces the loan amount, leading to lower monthly payments and reduced interest costs. Many lenders require a <strong>20% down payment</strong>, but putting more money upfront can save you even more in the long run.</li>
+                                </ul>
+                                <p>By understanding these key factors, you can tailor your boat financing to work in your favor and align with your long-term financial goals.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2>Boat Loan Calculator – Simplify Your Financing</h2>
+                                <p>Our <strong>Boat Loan Calculator</strong> is a powerful tool designed to help you estimate your <strong>monthly payments, total interest, and loan affordability</strong>. By eliminating the guesswork, this calculator provides accurate financial projections, making boat financing easier to understand.</p>
+                                <h3>Why Use Our Boat Loan Calculator?</h3>
+                                <ul>
+                                    <li class="mb-1"><strong>Customizable Loan Inputs:</strong> Adjust the <strong>loan amount, interest rate, and repayment term</strong> to see how different factors affect your monthly payment and total cost.</li>
+                                    <li class="mb-1"><strong>Comprehensive Loan Summary:</strong> Get a detailed breakdown of your loan, including the <strong>principal balance, interest costs, and total repayment amount</strong>, ensuring full transparency.</li>
+                                    <li class="mb-1"><strong>User-Friendly Interface:</strong> Our <strong>intuitive design</strong> makes it simple to enter your details and receive instant results without any hassle.</li>
+                                </ul>
+                                <p>By using our Boat Loan Calculator, you can <strong>make informed financial decisions</strong>, compare different financing options, and plan your purchase with confidence.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-reduce-costs">How to Reduce Boat Loan Costs</h2>
+                                <p>Lowering your <strong>boat loan expenses</strong> can save you money and make boat ownership more affordable. Here are some effective ways to secure a better loan deal:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Boost Your Credit Score:</strong> A higher credit score can help you qualify for <strong>lower interest rates and better loan terms</strong>. Pay off outstanding balances, make timely payments, and check your credit report for errors to improve your score.</li>
+                                    <li class="mb-1"><strong>Compare Loan Offers:</strong> Don’t settle for the first offer—shop around and compare rates from <strong>banks, credit unions, and online lenders</strong>. Getting multiple quotes ensures you secure the best financing terms available.</li>
+                                    <li class="mb-1"><strong>Increase Your Down Payment:</strong> A larger down payment reduces the loan amount, leading to <strong>lower monthly payments and less interest paid over time</strong>. Aim for at least 20% of the boat’s purchase price if possible.</li>
+                                </ul>
+                                <p>By following these strategies, you can <strong>reduce your boat loan costs</strong>, improve your financial flexibility, and make your dream of boat ownership a reality.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="how-to-finance">How to Finance Your Boat Purchase</h2>
+                                <p>Buying a boat is an exciting milestone, but for many, it requires securing the right <strong>boat loan</strong>. Financing a boat isn’t just about getting loan approval—it involves careful budgeting, comparing loan options, and making informed decisions.</p>
+                                <p><strong>Assess Your Budget:</strong> Before exploring loan options, evaluate how much you can afford. Consider not just the <strong>boat price</strong> but also ongoing expenses such as <strong>insurance, maintenance, docking fees, and fuel costs</strong>.</p>
+                                <p><strong>Compare Loan Offers:</strong> Shop around for the best <strong>boat loan interest rates</strong>, repayment terms, and lender options. Look beyond the lowest interest rate—make sure the loan terms align with your budget and long-term financial goals.</p>
+                                <p><strong>Plan for the Future:</strong> A well-structured loan ensures that <strong>boat ownership remains enjoyable</strong> without becoming a financial burden. Making smart financing decisions today will help you enjoy your boat for years to come.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="understanding-terms">Understanding Boat Loan Terms: What to Look For</h2>
+                                <p>Before signing a <strong>boat loan</strong> agreement, it’s essential to understand the key terms, fees, and conditions. Carefully reviewing the loan details can help you avoid unexpected costs and ensure the loan aligns with your financial goals.</p>
+                                <p><strong>Key Factors to Consider:</strong></p>
+                                <ul>
+                                    <li class="mb-1"><strong>Interest Rates & APR:</strong> Check whether the rate is fixed or variable and understand how it impacts your total repayment.</li>
+                                    <li class="mb-1"><strong>Loan Fees & Penalties:</strong> Be aware of origination fees, late payment penalties, and any hidden charges.</li>
+                                    <li class="mb-1"><strong>Early Repayment Terms:</strong> Some loans charge prepayment penalties. Ensure you have the flexibility to pay off your loan early if desired.</li>
+                                </ul>
+                                <p>Understanding these terms empowers you to make an informed decision, helping you secure a <strong>boat loan</strong> that fits your budget without unexpected surprises.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="budgeting-costs">Budgeting for Boat Ownership Costs</h2>
+                                <p>Owning a boat involves more than just the purchase price. There are ongoing expenses that can add up quickly, and planning for them is essential. Some key costs to consider include:</p>
+                                <ul>
+                                    <li class="mb-1"><strong>Insurance:</strong> Protect your investment with the right coverage, which varies based on boat type, size, and usage.</li>
+                                    <li class="mb-1"><strong>Maintenance & Repairs:</strong> Regular servicing, cleaning, and unexpected repairs can be costly over time.</li>
+                                    <li class="mb-1"><strong>Storage & Docking Fees:</strong> Whether you keep your boat at a marina or in dry storage, these costs should be factored into your budget.</li>
+                                    <li class="mb-1"><strong>Fuel & Operating Costs:</strong> Larger boats consume more fuel, and expenses can fluctuate based on usage and fuel prices.</li>
+                                </ul>
+                                <p>By budgeting for these additional expenses upfront, you can avoid financial surprises and enjoy boat ownership without stress.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <h2 id="consult-expert">Consult a Financial Expert</h2>
+                                <p>Working with a financial advisor or marine financing specialist can provide valuable insights tailored to your unique situation. They can help you navigate loan terms, interest rates, and repayment options, ensuring you make a well-informed decision.</p>
+                                <p>By seeking expert guidance, you can streamline the boat-buying process, minimize financial stress, and focus on enjoying your new investment with confidence.</p>
+                            </section>
+                    
+                
+                            <section class="mb-5">
+                                <p>Boat financing can seem complex, but with the right tools and knowledge, you can navigate the process smoothly and get on the water faster. While securing a loan takes time, our Boat Loan Calculator simplifies the process in seconds, providing precise financial details tailored to your needs.</p>
+                                <p>By understanding what influences boat loan rates, using cost-saving strategies, and seeking expert advice, you can turn your dream of boat ownership into reality. Remember, the goal is to maximize your time enjoying the open water—not stressing over financing.</p>
+                                <p>Ready to set sail? Use our Boat Loan Calculator to get pre-approved today and make your dream boat a reality. Happy boating!</p>
+                            </section>
+                    
+                            
+                            <section class="mb-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-10">
+                                        <h2 id="faq" class="mb-3">FAQ</h2>
+                                        <div class="accordion" id="boatLoanFAQ">
+                            
+                                            <!-- FAQ Item 1 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <strong>What is a boat loan calculator?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        A boat loan calculator helps you estimate your monthly payments, total interest, and overall loan cost based on the loan amount, interest rate, and repayment term.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 2 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <strong>How does the boat loan calculator work?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        The calculator uses your loan amount, interest rate, and loan term to determine your estimated monthly payment. It also calculates the total interest paid over the life of the loan.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 3 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <strong>What factors affect my boat loan interest rate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        Several factors impact your boat loan interest rate, including your credit score, loan amount, loan term, the age of the boat, and the lender's policies.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 4 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <strong>Can I use the calculator for used boats?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFour" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes! The boat loan calculator works for both new and used boats. Keep in mind that interest rates and loan terms may vary depending on the boat's age and condition.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 5 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <strong>How can I lower my boat loan interest rate?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFive" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        You can secure a lower interest rate by improving your credit score, making a larger down payment, choosing a shorter loan term, or shopping around for the best lender rates.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 6 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <strong>What is the typical loan term for a boat loan?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSix" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingSix" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        Boat loan terms typically range from 2 to 20 years, depending on the loan amount, lender policies, and your credit profile. Longer loan terms usually result in lower monthly payments but higher total interest.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 7 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <strong>Do I need a down payment for a boat loan?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingSeven" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        Most lenders require a down payment of 10-20% of the boat’s purchase price. A larger down payment can help lower your monthly payments and interest rate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 8 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        <strong>Can I pay off my boat loan early?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseEight" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingEight" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        Yes, many lenders allow early repayment, but some may charge prepayment penalties. Be sure to check your loan agreement for any additional fees before paying off your loan early.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- FAQ Item 9 -->
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingNine">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                        <strong>What other costs should I consider when financing a boat?</strong>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseNine" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingNine" data-bs-parent="#boatLoanFAQ">
+                                                    <div class="accordion-body">
+                                                        Besides your monthly loan payment, consider costs like insurance, maintenance, fuel, storage, docking fees, and registration. These expenses can add up, so it's important to budget for them in advance.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </main>
+    <!-- ========================= MAIN AREA ENDS =======================  -->
+
+    <!-- ======================= FOOTER START ======================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-4 my-footer-container">
+                <div class="col-md-4 my-footer">
+                    <ul class="my-footer-ul p-0">
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>About Us</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Our Services</strong></a></li>
+                        <li class="my-footer-item mt-3"><a href="#" class="my-footer-link-style"><strong>Privacy Policy</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-footer text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor vitae ipsa minima deserunt facere voluptas sit atque magni! Consectetur necessitatibus at voluptatem rem rerum animi aliquam vero consequuntur voluptatibus.</p>
+                </div>
+                <div class="col-md-4 my-footer">
+                    <div class="my-footer-socials">
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-facebook-f my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-twitter my-footer-icon"></i></a>
+                        <a href="#" class="my-footer-link-style"><i class="fa-brands fa-discord my-footer-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- developed by start -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Developed by <span><a href="#" target="_blank" class="my-footer-link-style">Avijit Biswas (Sagar)</a></span> & <span><a href="#" target="_blank" class="my-footer-link-style">Kishor Sarker</a></span> &copy; <span id="currentYear"></span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- developed by ends -->
+    </footer>
+    <!-- ======================= FOOTER END ======================== -->
+
+    <!-- Overlay it prevent touch when navbar is toggled in mobile view -->
+    <div id="overlay"></div>
+
+    <!-- bootstrap 5.3.x js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/overlay.js"></script>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="assets/js/boat-loan-calculator.js"></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+
+        // Update the HTML content with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
